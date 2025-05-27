@@ -1,0 +1,236 @@
+.badges-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #eef2f7 0%, #f5f7fa 100%);
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, #6a11cb, #4a6cf7);
+      border-radius: 2px;
+    }
+  }
+  
+  .badges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .badge-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid transparent;
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    
+    // Pastel background colors and top border gradients
+    &:nth-child(1) {
+      background-color: rgba(246, 255, 237, 0.8); // Light pastel green
+      background-image: linear-gradient(to right, #4ade80, #22c55e);
+    }
+    
+    &:nth-child(2) {
+      background-color: rgba(238, 242, 255, 0.8); // Light pastel blue
+      background-image: linear-gradient(to right, #60a5fa, #3b82f6);
+    }
+    
+    &:nth-child(3) {
+      background-color: rgba(255, 241, 242, 0.8); // Light pastel red
+      background-image: linear-gradient(to right, #f87171, #ef4444);
+    }
+    
+    &:nth-child(4) {
+      background-color: rgba(255, 247, 237, 0.8); // Light pastel orange
+      background-image: linear-gradient(to right, #FF9966, #FF5E62);
+    }
+    
+    &:nth-child(5) {
+      background-color: rgba(245, 243, 255, 0.8); // Light pastel purple
+      background-image: linear-gradient(to right, #a78bfa, #8b5cf6);
+    }
+    
+    &:nth-child(6) {
+      background-color: rgba(254, 252, 232, 0.8); // Light pastel yellow
+      background-image: linear-gradient(to right, #facc15, #eab308);
+    }
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .badge-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      
+      .badge-image {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-right: 1rem;
+        border-radius: 8px;
+      }
+      
+      .badge-fallback {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(45deg, #6a11cb, #4a6cf7);
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        border-radius: 8px;
+        margin-right: 1rem;
+      }
+      
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #333;
+        margin: 0;
+        flex: 1;
+      }
+    }
+    
+    .badge-issuer {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    
+    .badge-date {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 1rem;
+    }
+    
+    .badge-skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      
+      .skill-tag {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        transition: all 0.2s ease;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        
+        &:hover {
+          transform: translateY(-2px);
+        }
+      }
+    }
+    
+    // Specific color styles with higher specificity (moved outside of nested structure)
+    .badge-skills .skill-tag:nth-child(1) { 
+      color: #0284c7 !important; 
+      border: 1px solid rgba(2, 132, 199, 0.3) !important;
+      background-color: rgba(224, 242, 254, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(2) { 
+      color: #16a34a !important; 
+      border: 1px solid rgba(22, 163, 74, 0.3) !important;
+      background-color: rgba(220, 252, 231, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(3) { 
+      color: #3b82f6 !important; 
+      border: 1px solid rgba(59, 130, 246, 0.3) !important;
+      background-color: rgba(219, 234, 254, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(4) { 
+      color: #ca8a04 !important; 
+      border: 1px solid rgba(202, 138, 4, 0.3) !important;
+      background-color: rgba(254, 249, 195, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(5) { 
+      color: #0f172a !important; 
+      border: 1px solid rgba(15, 23, 42, 0.3) !important;
+      background-color: rgba(241, 245, 249, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(6) { 
+      color: #0d9488 !important; 
+      border: 1px solid rgba(13, 148, 136, 0.3) !important;
+      background-color: rgba(204, 251, 241, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(7) { 
+      color: #c2410c !important; 
+      border: 1px solid rgba(194, 65, 12, 0.3) !important;
+      background-color: rgba(255, 237, 213, 0.8) !important;
+    }
+    
+    .badge-skills .skill-tag:nth-child(8) { 
+      color: #15803d !important; 
+      border: 1px solid rgba(21, 128, 61, 0.3) !important;
+      background-color: rgba(220, 252, 231, 0.8) !important;
+    }
+    
+    .verify-link {
+      margin-top: auto;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(to right, #4a6cf7, #6a11cb);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(74, 108, 247, 0.3);
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(74, 108, 247, 0.4);
+      }
+      
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+}

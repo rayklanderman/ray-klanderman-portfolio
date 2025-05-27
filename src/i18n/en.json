@@ -2,11 +2,30 @@
   "header": {
     "subtitle": "Software Developer | AI Prompt Engineer | Creative",
     "downloadCV": "Download CV",
-    "share": "Share Profile"
+    "share": "Share Profile",
+    "jobTitles": {
+      "softwareEngineer": "Software Engineer",
+      "dataAnalyst": "Data Analyst",
+      "promptEngineer": "AI Prompt Engineer",
+      "creative": "Creative"
+    }
   },
   "share": {
     "message": "Check out Raymond Klanderman's Portfolio - Software Developer & AI Engineer",
     "copied": "Portfolio URL copied to clipboard!"
+  },
+  "elevatorPitch": {
+    "title": "My Elevator Pitch",
+    "subtitle": "Why Work With Me?",
+    "description": "In this short video, I share my background, skills, and what makes me a unique candidate for your project or team.",
+    "cta": "Let's Work Together",
+    "paragraphs": {
+      "0": "Did you know many young people in Africa still struggle to access the right jobs, despite being highly skilled?",
+      "1": "I'm Raymond Klanderman, a global AI Prompt Engineer, Fullstack Developer, and aspiring Data Analyst. I specialize in building smart digital tools that connect people to real opportunities—through the power of data and AI.",
+      "2": "I recently led the development of AI Health Chat, a project that won 1st place in an innovation hackathon by using Grok to deliver personalized, privacy-focused health insights.",
+      "3": "Now, I'm building Kazi Connect—an AI-powered job-matching platform that uses skill-based logic to pair youth with verified, scam-free jobs.",
+      "4": "I turn data into decisions, and LLMs into accessible solutions—and I'm excited to collaborate with mission-driven teams creating real-world impact."
+    }
   },
   "profile": {
     "title": "Professional Profile",
@@ -14,32 +33,55 @@
   },
   "projects": {
     "title": "Featured Projects",
-    "viewProject": "View Project",
+    "viewProject": "View Live",
+    "featured": "Featured",
+    "comingSoon": "Coming Soon",
     "items": {
       "sauti": {
         "name": "Sauti ya Wanainchi",
-        "description": "A platform for community engagement and feedback collection",
-        "technologies": ["React", "Node.js", "MongoDB", "Express"]
+        "shortDescription": "Community engagement & feedback platform",
+        "description": "A comprehensive platform that enables communities to provide feedback, report issues, and engage with local officials. Features include real-time updates, geolocation mapping, and analytics dashboard.",
+        "technologies": ["React", "Node.js", "MongoDB", "Express"],
+        "github": "https://github.com/yourusername/sauti-ya-wanainchi"
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "description": "AI-powered healthcare consultation platform with Supabase integration",
-        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"]
+        "shortDescription": "AI-powered healthcare consultation platform",
+        "description": "An intelligent healthcare consultation application that uses advanced AI to provide preliminary medical guidance. Built with a secure Supabase backend for user data and medical history storage. Features conversational UI and symptom analysis.",
+        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
+        "featured": true,
+        "github": "https://github.com/yourusername/ai-health-chat",
+        "url": "https://ai-health-chat.vercel.app/"
       },
       "dutch": {
         "name": "Dutch Learning App",
-        "description": "Interactive platform for learning Dutch language",
-        "technologies": ["React", "Firebase", "TailwindCSS", "i18n"]
+        "shortDescription": "Interactive Dutch language learning platform",
+        "description": "A gamified educational app designed to make learning Dutch engaging and effective. Features include pronunciation guides, vocabulary building exercises, grammar lessons, and progress tracking with personalized learning paths.",
+        "technologies": ["React", "Firebase", "TailwindCSS", "i18n"],
+        "github": "https://github.com/yourusername/dutch-learning-app"
       },
       "civic": {
         "name": "Civic Alert Lite",
-        "description": "Community-driven civic issue reporting system with Firebase backend",
-        "technologies": ["React Native", "Firebase", "Google Maps API"]
+        "shortDescription": "Community-driven civic issue reporting system",
+        "description": "A mobile application that empowers citizens to report and track civic issues in their communities. Integrated with geolocation services, push notifications, and administrative dashboards for local authorities to manage reported issues.",
+        "technologies": ["React Native", "Firebase", "Google Maps API"],
+        "github": "https://github.com/yourusername/civic-alert-lite"
       },
       "kpesa": {
         "name": "Kpesa",
-        "description": "Financial management app for personal and business use",
-        "technologies": ["Flutter", "Firebase", "Cloud Functions"]
+        "shortDescription": "Smart financial management solution",
+        "description": "A comprehensive financial management application for personal and business use. Features include expense tracking, budget planning, financial insights, multi-currency support, and secure cloud backup of financial data.",
+        "technologies": ["Flutter", "Firebase", "Cloud Functions", "Charts"],
+        "github": "https://github.com/yourusername/kpesa-app"
+      },
+      "kaziConnect": {
+        "name": "Kazi Connect",
+        "shortDescription": "AI-powered job matching platform",
+        "description": "An innovative job marketplace that uses artificial intelligence to match job seekers with suitable opportunities. Features include CV analysis, skill assessment, automated application tracking, and personalized job recommendations based on user profile and preferences.",
+        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
+        "url": "https://kazi-connect.vercel.app/",
+        "github": "https://github.com/rayklanderman/kazi-connect",
+        "featured": true
       }
     }
   },
@@ -51,42 +93,37 @@
       "alx": {
         "name": "ALX Data Analytics Program",
         "institution": "Data Analytics Cohort 2025",
-        "description": [
-          "Gaining expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau.",
-          "Applying Agile methodologies for collaborative problem-solving."
-        ]
+        "period": "2025 - Present",
+        "description1": "Gaining expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau.",
+        "description2": "Applying Agile methodologies for collaborative problem-solving."
       },
       "worldquant_cv": {
         "name": "Applied AI Lab: Deep Learning for Computer Vision",
         "institution": "WorldQuant University",
-        "description": [
-          "Mastering deep learning frameworks and computer vision techniques",
-          "Building and deploying real-world AI applications"
-        ]
+        "period": "2025",
+        "description1": "Mastering deep learning frameworks and computer vision techniques",
+        "description2": "Building and deploying real-world AI applications"
       },
       "worldquant_ds": {
         "name": "Applied Data Science Lab",
         "institution": "WorldQuant University",
-        "description": [
-          "Advanced data analysis and machine learning techniques",
-          "Real-world data science project implementation"
-        ]
+        "period": "2025",
+        "description1": "Advanced data analysis and machine learning techniques",
+        "description2": "Real-world data science project implementation"
       },
-      "stanford": {
+      "code_in_place": {
         "name": "Code in Place: Introduction to Programming with Python",
         "institution": "Stanford University",
-        "description": [
-          "Intensive Python programming course from Stanford University",
-          "Completed diagnostic assessment and final project with distinction"
-        ]
+        "period": "2024",
+        "description1": "Intensive Python programming course from Stanford University",
+        "description2": "Completed diagnostic assessment and final project with distinction"
       },
-      "mua": {
+      "mua_diploma": {
         "name": "Diploma in Information Communication Technology",
         "institution": "Management University of Africa (MUA)",
-        "description": [
-          "Graduated with Distinction",
-          "Focus on modern software development and IT infrastructure"
-        ]
+        "period": "2021-2024",
+        "description1": "Graduated with Distinction",
+        "description2": "Focus on modern software development and IT infrastructure"
       }
     }
   },

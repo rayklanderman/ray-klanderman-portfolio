@@ -1,8 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ToastContainer } from 'react-toastify';
 import Header from './components/Header';
-import CV from './components/CV';
+import CV from './components/CV_new';
+import Projects from './components/Projects';
+import ElevatorPitch from './components/ElevatorPitch';
+import Education from './components/Education_new';
+import Badges from './components/Badges';
 import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import './i18n/config';
@@ -10,21 +14,6 @@ import './styles/main.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
 const App: React.FC = () => {
-  useEffect(() => {
-    // Register service worker for PWA
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
-          .then(() => {
-            console.log('ServiceWorker registration successful');
-          })
-          .catch(err => {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-      });
-    }
-  }, []);
-
   return (
     <>
       <motion.div 
@@ -36,7 +25,12 @@ const App: React.FC = () => {
         <LanguageSwitcher />
         <Header />
         <main>
-          <CV />
+          <CV /> {/* Profile section */}
+          <Projects />
+          <ElevatorPitch />
+          <Education />
+          <Badges />
+          {/* Contact section is in the Footer component */}
         </main>
         <Footer />
       </motion.div>

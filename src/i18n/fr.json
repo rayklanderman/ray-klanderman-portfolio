@@ -2,7 +2,13 @@
   "header": {
     "subtitle": "Développeur Logiciel | Ingénieur en Prompt AI | Créatif",
     "downloadCV": "Télécharger CV",
-    "share": "Partager le Profil"
+    "share": "Partager le Profil",
+    "jobTitles": {
+      "softwareEngineer": "Ingénieur Logiciel",
+      "dataAnalyst": "Analyste de Données",
+      "promptEngineer": "Ingénieur en Prompt AI",
+      "creative": "Créatif"
+    }
   },
   "share": {
     "message": "Découvrez le Portfolio de Raymond Klanderman - Développeur Logiciel & Ingénieur en IA",
@@ -14,6 +20,9 @@
   },
   "projects": {
     "title": "Projets en Vedette",
+    "viewProject": "Voir le Projet",
+    "featured": "En Vedette",
+    "comingSoon": "Bientôt Disponible",
     "items": {
       "sauti": {
         "name": "Sauti ya Wanainchi",
@@ -21,7 +30,9 @@
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "description": "Plateforme de consultation médicale alimentée par l'IA avec intégration Supabase"
+        "description": "Plateforme de consultation médicale alimentée par l'IA avec intégration Supabase",
+        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
+        "featured": true
       },
       "dutch": {
         "name": "Application d'Apprentissage du Néerlandais",
@@ -34,9 +45,15 @@
       "kpesa": {
         "name": "Kpesa",
         "description": "Application de gestion financière pour usage personnel et professionnel"
+      },
+      "kaziConnect": {
+        "name": "Kazi Connect",
+        "description": "Plateforme de mise en relation professionnelle alimentée par l'IA avec analyse de CV et suivi des candidatures",
+        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
+        "url": "https://kazi-connect.vercel.app/",
+        "featured": true
       }
-    },
-    "viewProject": "Voir le Projet"
+    }
   },
   "education": {
     "title": "Formation",
@@ -46,50 +63,37 @@
       "alx": {
         "name": "Programme Data Analytics ALX",
         "institution": "Cohorte Data Analytics 2025",
-        "description": [
-          "Expertise en nettoyage, visualisation et interprétation des données avec SQL, Power BI et Tableau.",
-          "Application des méthodologies Agile pour la résolution collaborative de problèmes."
-        ]
+        "period": "2025 - Présent",
+        "description1": "Expertise en nettoyage, visualisation et interprétation des données avec SQL, Power BI et Tableau.",
+        "description2": "Application des méthodologies Agile pour la résolution collaborative de problèmes."
       },
       "worldquant_cv": {
         "name": "Laboratoire d'IA Appliquée : Deep Learning pour la Vision par Ordinateur",
         "institution": "WorldQuant University",
-        "description": [
-          "Maîtrise des frameworks de deep learning et des techniques de vision par ordinateur",
-          "Construction et déploiement d'applications d'IA pour le monde réel"
-        ]
+        "period": "2025",
+        "description1": "Maîtrise des frameworks de deep learning et des techniques de vision par ordinateur",
+        "description2": "Construction et déploiement d'applications d'IA pour le monde réel"
       },
       "worldquant_ds": {
         "name": "Laboratoire de Science des Données Appliquée",
         "institution": "WorldQuant University",
-        "description": [
-          "Techniques avancées d'analyse de données et d'apprentissage automatique",
-          "Implémentation de projets de science des données du monde réel"
-        ]
+        "period": "2025",
+        "description1": "Techniques avancées d'analyse de données et d'apprentissage automatique",
+        "description2": "Implémentation de projets de science des données du monde réel"
       },
-      "worldquant_ai": {
-        "name": "Intelligence Artificielle",
-        "institution": "WorldQuant University",
-        "description": [
-          "Étude approfondie des principes et applications de l'IA",
-          "Focus sur l'implémentation pratique des solutions IA"
-        ]
-      },
-      "stanford": {
+      "code_in_place": {
         "name": "Code in Place : Introduction à la Programmation avec Python",
         "institution": "Stanford University",
-        "description": [
-          "Cours intensif de programmation Python de Stanford University",
-          "Évaluation diagnostique et projet final réussis avec distinction"
-        ]
+        "period": "2024",
+        "description1": "Cours intensif de programmation Python de Stanford University",
+        "description2": "Évaluation diagnostique et projet final réussis avec distinction"
       },
-      "mua": {
-        "name": "Diplôme en Technologies de l'Information",
+      "mua_diploma": {
+        "name": "Diplôme en Technologies de l'Information et de la Communication",
         "institution": "Management University of Africa (MUA)",
-        "description": [
-          "Diplômé avec distinction",
-          "Spécialisation en développement logiciel moderne et infrastructure IT"
-        ]
+        "period": "2021-2024",
+        "description1": "Diplômé avec distinction",
+        "description2": "Spécialisation en développement logiciel moderne et infrastructure IT"
       }
     }
   },
@@ -162,6 +166,19 @@
     "sending": "Envoi en cours...",
     "success": "Message envoyé avec succès !",
     "error": "Échec de l'envoi. Veuillez réessayer."
+  },
+  "elevatorPitch": {
+    "title": "Mon Elevator Pitch",
+    "subtitle": "Pourquoi Travailler Avec Moi ?",
+    "description": "Dans cette courte vidéo, je partage mon parcours, mes compétences et ce qui fait de moi un candidat unique pour votre projet ou votre équipe.",
+    "cta": "Travaillons Ensemble",
+    "paragraphs": {
+      "0": "Saviez-vous que de nombreux jeunes en Afrique ont encore du mal à accéder aux bons emplois, malgré leurs compétences élevées ?",
+      "1": "Je suis Raymond Klanderman, ingénieur en IA, développeur fullstack et aspirant analyste de données. Je me spécialise dans la création d'outils numériques intelligents qui relient les gens à de réelles opportunités grâce à la puissance des données et de l'IA.",
+      "2": "Récemment, j'ai dirigé le développement d'AI Health Chat, un projet qui a remporté le premier prix d'un hackathon d'innovation en utilisant Grok pour fournir des informations de santé personnalisées et respectueuses de la vie privée.",
+      "3": "Actuellement, je travaille sur Kazi Connect, une plateforme d'appariement d'emplois alimentée par l'IA qui utilise une logique basée sur les compétences pour mettre en relation les jeunes avec des emplois vérifiés et sans arnaque.",
+      "4": "Je transforme les données en décisions et les LLM en solutions accessibles - et j'ai hâte de collaborer avec des équipes motivées qui veulent avoir un impact réel."
+    }
   },
   "language": {
     "en": "Anglais",

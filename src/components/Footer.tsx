@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter } from 'react-icons/fa';
+import './Footer.scss';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -40,26 +41,88 @@ const Footer: React.FC = () => {
     }
   };
 
-  const socialLinks = [
+  interface SocialLink {
+    icon: React.ReactElement;
+    url: string;
+    label: string;
+    color: string;
+  }
+
+  const socialLinks: SocialLink[] = [
     {
       icon: <FaGithub />,
       url: 'https://github.com/rayklanderman',
-      label: 'GitHub'
+      label: 'GitHub',
+      color: '#333333'
     },
     {
       icon: <FaLinkedin />,
       url: 'https://www.linkedin.com/in/raymondklanderman/',
-      label: 'LinkedIn'
+      label: 'LinkedIn',
+      color: '#0077B5'
+    },
+    {
+      icon: <FaYoutube />,
+      url: 'https://www.youtube.com/@RayKlanderman',
+      label: 'YouTube',
+      color: '#FF0000'
+    },
+    {
+      icon: <FaTwitter />,
+      url: 'https://x.com/rayklanderman',
+      label: 'X (Twitter)',
+      color: '#000000'
     },
     {
       icon: <FaEnvelope />,
       url: 'mailto:rayklanderman@gmail.com',
-      label: 'Email'
+      label: 'Email',
+      color: '#EA4335'
     }
   ];
 
+  const inputStyles = {
+    width: '100%',
+    padding: '0.75rem 1rem',
+    borderRadius: '8px',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    color: 'white',
+    fontSize: '1rem',
+    transition: 'all 0.3s ease',
+    boxSizing: 'border-box' as const
+  };
+
+  const focusStyles = {
+    outline: 'none',
+    borderColor: 'white',
+    boxShadow: '0 0 0 2px rgba(255, 255, 255, 0.2)'
+  };
+
+  const placeholderStyles = {
+    color: 'rgba(255, 255, 255, 0.6)'
+  };
+
+  // Add global style for placeholder
+  React.useEffect(() => {
+    const style = document.createElement('style');
+    style.textContent = `
+      input::placeholder,
+      textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6) !important;
+      }
+    `;
+    document.head.appendChild(style);
+    return () => {
+      document.head.removeChild(style);
+      return undefined; // Explicitly return void
+    };
+  }, []);
+
   return (
     <motion.footer
+      id="contact-me"
+      className="footer contact-section"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -71,8 +134,10 @@ const Footer: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <h2>{t('contact.title')}</h2>
-          <form onSubmit={handleSubmit}>
+          <h2 className="contact-title">
+            {t('contact.title')}
+          </h2>
+          <form onSubmit={handleSubmit} className="contact-form-container">
             <div className="form-group">
               <input
                 type="text"
@@ -80,6 +145,13 @@ const Footer: React.FC = () => {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
+                className="form-input"
+                onFocus={(e) => {
+                  e.target.classList.add('form-input-focus');
+                }}
+                onBlur={(e) => {
+                  e.target.classList.remove('form-input-focus');
+                }}
               />
             </div>
             <div className="form-group">
@@ -89,6 +161,13 @@ const Footer: React.FC = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
+                className="form-input"
+                onFocus={(e) => {
+                  e.target.classList.add('form-input-focus');
+                }}
+                onBlur={(e) => {
+                  e.target.classList.remove('form-input-focus');
+                }}
               />
             </div>
             <div className="form-group">
@@ -97,14 +176,22 @@ const Footer: React.FC = () => {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
+                rows={5}
+                className="form-textarea"
+                onFocus={(e) => {
+                  e.target.classList.add('form-input-focus');
+                }}
+                onBlur={(e) => {
+                  e.target.classList.remove('form-input-focus');
+                }}
               />
             </div>
-            <motion.button
-              type="submit"
-              className="btn glossy"
+            <motion.button 
+              type="submit" 
               disabled={isSubmitting}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={!isSubmitting ? { scale: 1.05 } : {}}
+              whileTap={!isSubmitting ? { scale: 0.95 } : {}}
+              className={`submit-button ${isSubmitting ? 'submitting' : ''}`}
             >
               {isSubmitting ? t('contact.sending') : t('contact.send')}
             </motion.button>
@@ -135,19 +222,29 @@ const Footer: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          {socialLinks.map((link) => (
-            <motion.a
-              key={link.label}
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={link.label}
               className="social-link"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              title={link.label}
+              style={{ 
+                backgroundColor: link.color,
+                transition: 'all 0.3s ease'
+              }}
             >
-              {link.icon}
-            </motion.a>
+              {React.cloneElement(link.icon, { 
+                className: 'social-icon',
+                size: 24,
+                style: { 
+                  color: 'white', 
+                  fill: 'white',
+                  transition: 'all 0.3s ease'
+                }
+              })}
+            </a>
           ))}
         </motion.div>
       </div>

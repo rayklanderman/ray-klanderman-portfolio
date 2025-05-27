@@ -2,7 +2,13 @@
   "header": {
     "subtitle": "Software Ontwikkelaar | AI Prompt Engineer | Creatief",
     "downloadCV": "Download CV",
-    "share": "Profiel Delen"
+    "share": "Profiel Delen",
+    "jobTitles": {
+      "softwareEngineer": "Software Engineer",
+      "dataAnalyst": "Data Analist",
+      "promptEngineer": "AI Prompt Engineer",
+      "creative": "Creatief"
+    }
   },
   "share": {
     "message": "Bekijk het Portfolio van Raymond Klanderman - Software Ontwikkelaar & AI Engineer",
@@ -12,8 +18,24 @@
     "title": "Professioneel Profiel",
     "description": "Als gepassioneerde Software Ontwikkelaar, AI Prompt Engineer en Cloud Enthousiasteling, streef ik ernaar om slimme, schaalbare oplossingen te ontwerpen die echte uitdagingen oplossen. Mijn expertise omvat full-stack ontwikkeling, AI-integratie en cloud computing, waardoor ik applicaties kan maken die zowel innovatief als impactvol zijn. Gedreven door een onverzadigbare nieuwsgierigheid, verdiep ik me voortdurend in AI-implementatie en cloudtechnologieën, en ben ik erop gebrand om de grenzen van wat technologie kan bereiken te verleggen. Ik werk graag samen aan spannende projecten of verken de nieuwste technologieën—laten we samen iets buitengewoons creëren!"
   },
+  "elevatorPitch": {
+    "title": "Mijn Elevator Pitch",
+    "subtitle": "Waarom met mij samenwerken?",
+    "description": "In deze korte video deel ik mijn achtergrond, vaardigheden en wat mij een unieke kandidaat maakt voor uw project of team.",
+    "cta": "Laten we Samenwerken",
+    "paragraphs": {
+      "0": "Wist u dat veel jonge mensen in Afrika nog steeds moeite hebben om aan het juiste werk te komen, ondanks dat ze hoogopgeleid zijn?",
+      "1": "Ik ben Raymond Klanderman, een wereldwijde AI Prompt Engineer, Fullstack Developer en aspirant Data Analyst. Ik ben gespecialiseerd in het bouwen van slimme digitale tools die mensen verbinden met echte kansen - door de kracht van data en AI.",
+      "2": "Onlangs leidde ik de ontwikkeling van AI Health Chat, een project dat de eerste prijs won in een innovatiehackathon door gebruik te maken van Grok om gepersonaliseerde, privacygerichte gezondheidsinzichten te leveren.",
+      "3": "Momenteel werk ik aan Kazi Connect - een door AI aangedreven platform voor het matchen van banen dat op vaardigheden gebaseerde logica gebruikt om jongeren te koppelen aan geverifieerde, oplichtingsvrije banen.",
+      "4": "Ik zet data om in beslissingen en LLM's in toegankelijke oplossingen - en ik kijk er naar uit om samen te werken met gedreven teams die een echte impact willen maken."
+    }
+  },
   "projects": {
     "title": "Uitgelichte Projecten",
+    "viewProject": "Bekijk Project",
+    "featured": "Uitgelicht",
+    "comingSoon": "Binnenkort Beschikbaar",
     "items": {
       "kenyanese": {
         "name": "Kenyanese",
@@ -33,7 +55,9 @@
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "description": "AI-aangedreven gezondheidsconsultatieplatform met Supabase-integratie"
+        "description": "AI-aangedreven gezondheidsconsultatieplatform met Supabase-integratie",
+        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
+        "featured": true
       },
       "dutch": {
         "name": "Nederlandse Leerapplicatie",
@@ -45,10 +69,17 @@
       },
       "kpesa": {
         "name": "Kpesa",
-        "description": "Financieel beheerapp voor persoonlijk en zakelijk gebruik"
+        "description": "Financieel beheerapp voor persoonlijk en zakelijk gebruik",
+        "featured": true
+      },
+      "kaziConnect": {
+        "name": "Kazi Connect",
+        "description": "AI-aangedreven vacatureplatform met CV-analyse en sollicitatiebeheer",
+        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
+        "url": "https://kazi-connect.vercel.app/",
+        "featured": true
       }
-    },
-    "viewProject": "Project Bekijken"
+    }
   },
   "education": {
     "title": "Opleiding",
@@ -58,50 +89,37 @@
       "alx": {
         "name": "ALX Data Analytics Programma",
         "institution": "Data Analytics Cohort 2025",
-        "description": [
-          "Expertise in data cleaning, visualisatie en interpretatie met SQL, Power BI en Tableau.",
-          "Toepassing van Agile methodologieën voor collaboratieve probleemoplossing."
-        ]
+        "period": "2025 - Heden",
+        "description1": "Expertise in data cleaning, visualisatie en interpretatie met SQL, Power BI en Tableau.",
+        "description2": "Toepassing van Agile methodologieën voor collaboratieve probleemoplossing."
       },
       "worldquant_cv": {
         "name": "Toegepaste AI Lab: Deep Learning voor Computer Vision",
         "institution": "WorldQuant University",
-        "description": [
-          "Beheersing van deep learning frameworks en computer vision technieken",
-          "Bouwen en implementeren van AI-toepassingen voor de praktijk"
-        ]
+        "period": "2025",
+        "description1": "Beheersing van deep learning frameworks en computer vision technieken",
+        "description2": "Bouwen en implementeren van echte AI-toepassingen"
       },
       "worldquant_ds": {
         "name": "Toegepaste Data Science Lab",
         "institution": "WorldQuant University",
-        "description": [
-          "Geavanceerde data-analyse en machine learning technieken",
-          "Implementatie van praktijkgerichte data science projecten"
-        ]
+        "period": "2025",
+        "description1": "Geavanceerde gegevensanalyse en machine learning technieken",
+        "description2": "Implementatie van echte data science projecten"
       },
-      "worldquant_ai": {
-        "name": "Kunstmatige Intelligentie",
-        "institution": "WorldQuant University",
-        "description": [
-          "Uitgebreide studie van AI-principes en toepassingen",
-          "Focus op praktische implementatie van AI-oplossingen"
-        ]
-      },
-      "stanford": {
+      "code_in_place": {
         "name": "Code in Place: Introductie tot Programmeren met Python",
         "institution": "Stanford University",
-        "description": [
-          "Intensieve Python programmeercursus van Stanford University",
-          "Diagnostische beoordeling en eindproject met onderscheiding afgerond"
-        ]
+        "period": "2024",
+        "description1": "Intensieve programmeercursus Python van Stanford University",
+        "description2": "Diagnostische beoordeling en eindproject met onderscheiding voltooid"
       },
-      "mua": {
-        "name": "Diploma Informatietechnologie",
+      "mua_diploma": {
+        "name": "Diploma Informatie- en Communicatietechnologie",
         "institution": "Management University of Africa (MUA)",
-        "description": [
-          "Afgestudeerd met onderscheiding",
-          "Focus op moderne softwareontwikkeling en IT-infrastructuur"
-        ]
+        "period": "2021-2024",
+        "description1": "Afgestudeerd met onderscheiding",
+        "description2": "Focus op moderne softwareontwikkeling en IT-infrastructuur"
       }
     }
   },
