@@ -94,10 +94,13 @@
       background: #007AFF;
       color: white;
       box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    }
 
-      img {
-        filter: brightness(0) invert(1);
-      }
+    .language-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
   }
 }
