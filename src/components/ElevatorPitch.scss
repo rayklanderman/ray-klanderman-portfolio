@@ -1,6 +1,6 @@
 .elevator-pitch-section {
   padding: 5rem 0;
-  background: linear-gradient(to right, #f8f9fa, #f1f5f9);
+  background: var(--bg-color);
   
   .container {
     max-width: 1200px;
@@ -13,7 +13,7 @@
     margin-bottom: 3rem;
     font-size: 2.2rem;
     font-weight: 700;
-    color: #1e293b;
+    color: var(--text-color);
     position: relative;
     
     &:after {
@@ -24,7 +24,7 @@
       transform: translateX(-50%);
       width: 50px;
       height: 3px;
-      background: linear-gradient(90deg, #21468B 0%, #3b82f6 100%);
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       border-radius: 2px;
     }
   }
@@ -45,7 +45,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     overflow: hidden;
-    background: #fff;
+    background: var(--card-bg);
     position: relative;
     min-height: 450px;
     
@@ -72,7 +72,7 @@
   
   .pitch-content {
     padding: 2rem;
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -94,7 +94,7 @@
     h3 {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #21468B;
+      color: var(--primary-color);
       margin-bottom: 1.5rem;
       position: relative;
       display: inline-block;
@@ -106,14 +106,15 @@
         bottom: -8px;
         width: 60px;
         height: 3px;
-        background: #f59e0b;
+        background: var(--accent-color);
         border-radius: 2px;
       }
     }
     
     .pitch-script {
       margin-bottom: 1.5rem;
-      color: #4b5563;
+      color: var(--text-color);
+      opacity: 0.9;
       line-height: 1.7;
       
       p {
@@ -122,12 +123,13 @@
         
         &:first-of-type {
           font-style: italic;
-          color: #64748b;
+          color: var(--text-color);
+          opacity: 0.8;
         }
         
         &:last-of-type {
           font-weight: 500;
-          color: #334155;
+          color: var(--text-color);
         }
       }
     }

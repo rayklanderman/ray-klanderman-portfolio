@@ -20,10 +20,53 @@ $primary-light: #3060b3;    // Slightly lighter blue
 $primary-lighter: #4070c3;  // Even lighter blue
 $primary-dark: #193d78;     // Darker blue
 $secondary-light: #007a52;  // Slightly lighter green
-$accent-light: #c33040;     // Slightly lighter red
+
+// Dark theme colors
+$dark-background-color: #1a1a1a;
+$dark-text-color: #f5f5f5;
+$dark-header-bg: #2a2a2a;
+$dark-primary-color: #4a90e2;
+$dark-secondary-color: #50c878;
+$dark-accent-color: #ff6b6b;
 
 // Import section title styles
-@import 'section-title';
+@use 'section-title';
+
+// Spacing scale
+:root {
+  --space-xs: 0.25rem;   // 4px
+  --space-sm: 0.5rem;    // 8px
+  --space-md: 1rem;      // 16px
+  --space-lg: 1.5rem;    // 24px
+  --space-xl: 2rem;      // 32px
+  --space-2xl: 3rem;     // 48px
+  --space-3xl: 4rem;     // 64px
+  --space-4xl: 6rem;     // 96px
+
+  // Light theme (default)
+  --bg-color: #{$background-color};
+  --text-color: #{$text-color};
+  --header-bg: #{$header-bg};
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --accent-color: #{$accent-color};
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+// Dark theme
+[data-theme="dark"] {
+  --bg-color: #{$dark-background-color};
+  --text-color: #{$dark-text-color};
+  --header-bg: #{$dark-header-bg};
+  --primary-color: #{$dark-primary-color};
+  --secondary-color: #{$dark-secondary-color};
+  --accent-color: #{$dark-accent-color};
+  --card-bg: rgba(42, 42, 42, 0.9);
+  --glass-bg: rgba(0, 0, 0, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
 
 // Global styles
 * {
@@ -33,10 +76,11 @@ $accent-light: #c33040;     // Slightly lighter red
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
-  color: $text-color;
-  background-color: $background-color;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 // Ensure no underlines on any links
@@ -44,5 +88,29 @@ a {
   text-decoration: none !important;
   &:hover, &:focus, &:visited {
     text-decoration: none !important;
+  }
+}
+
+// Accessibility: Respect user preferences for reduced motion
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Accessibility: Improved focus indicators
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+// High contrast mode support
+@media (prefers-contrast: high) {
+  body {
+    background-color: #ffffff;
+    color: #000000;
   }
 }

@@ -35,7 +35,7 @@ const CVRequestModal: React.FC<CVRequestModalProps> = ({ onClose }) => {
         const data = await response.json();
         toast.error(data.error || 'Error sending message. Please try again.');
       }
-    } catch (error) {
+    } catch {
       toast.error('Network error. Please check your connection and try again.');
     } finally {
       setIsSubmitting(false);

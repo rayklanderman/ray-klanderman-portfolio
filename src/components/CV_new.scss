@@ -1,7 +1,7 @@
 // CV Section Styling
 .cv-section {
   padding: 4rem 0;
-  background-color: #f8f9fa;
+  background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
   
@@ -33,13 +33,14 @@
   p {
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 2rem;
   }
 }
 
 .profile-content {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 2rem;
@@ -48,6 +49,7 @@
   
   p {
     margin-bottom: 1.5rem;
+    color: #333; /* Keep dark text for profile description */
   }
 }
 
@@ -60,7 +62,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50px;
-  color: #21468B;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;

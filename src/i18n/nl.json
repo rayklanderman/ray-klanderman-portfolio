@@ -16,7 +16,7 @@
   },
   "profile": {
     "title": "Professioneel Profiel",
-    "description": "Als gepassioneerde Software Ontwikkelaar, AI Prompt Engineer en Cloud Enthousiasteling, streef ik ernaar om slimme, schaalbare oplossingen te ontwerpen die echte uitdagingen oplossen. Mijn expertise omvat full-stack ontwikkeling, AI-integratie en cloud computing, waardoor ik applicaties kan maken die zowel innovatief als impactvol zijn. Gedreven door een onverzadigbare nieuwsgierigheid, verdiep ik me voortdurend in AI-implementatie en cloudtechnologieën, en ben ik erop gebrand om de grenzen van wat technologie kan bereiken te verleggen. Ik werk graag samen aan spannende projecten of verken de nieuwste technologieën—laten we samen iets buitengewoons creëren!"
+    "description": "Als softwareontwikkelaar, AI-praktijkbeoefenaar en data-analist bouw ik intelligente, schaalbare systemen die echte problemen oplossen. Mijn werk omvat full-stack ontwikkeling, machine learning, data-analyse, cloudtechnologieën en CI/CD-automatisering. Ik ontwikkel met Python, JavaScript, React, Flutter, SQL en Google Cloud, en ik geniet van het bouwen van intelligente workflows met behulp van API's, agent-gebaseerde systemen en Retrieval-Augmented Generation (RAG) architecturen.\n\nIk produceer ook duidelijke digitale content die productcommunicatie en outreach ondersteunt. Nieuwsgierigheid drijft alles wat ik doe, van het experimenteren met nieuwe ML-technieken tot het verkennen van vooruitgang in automatisering en AI-implementatie. Ik ben altijd enthousiast om samen te werken aan vooruitstrevende projecten die technologie naar het volgende niveau tillen."
   },
   "elevatorPitch": {
     "title": "Mijn Elevator Pitch",
@@ -37,6 +37,24 @@
     "featured": "Uitgelicht",
     "comingSoon": "Binnenkort Beschikbaar",
     "items": {
+      "tutaLearn": {
+        "name": "TutaLearn - Afrikaans Educatief Platform",
+        "description": "Een Progressive Web App (PWA) die AI-aangedreven, cultureel relevante educatie levert aan Afrikaanse studenten via WhatsApp met offline ondersteuning en gelokaliseerde content in het Engels en Swahili.",
+        "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
+        "url": "https://www.tutalearn.study/"
+      },
+      "codebaseGenius": {
+        "name": "Codebase Genius - AI Documentatiesysteem",
+        "description": "Een AI-aangedreven platform dat automatisch professionele documentatie genereert voor elke GitHub-repository met behulp van Google Gemini en een multi-agent systeem met interactieve grafiekvisualisatie.",
+        "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
+        "url": "https://geniuscodebase.streamlit.app/"
+      },
+      "weatherWise": {
+        "name": "WeatherWise Planner - NASA Aardgegevens voor Slimme Planning",
+        "description": "Een wereldwijd klimaatplanningstool die gebruik maakt van 20+ jaar NASA Aardgegevens en Groq-aangedreven AI om locatiespecifieke historische weersinzichten en risicowaarschijnlijkheden te leveren voor landbouw, reizen en evenementen.",
+        "technologies": ["TypeScript", "Python", "React", "FastAPI", "Groq Llama 3.3 70B", "NASA GIBS", "Plotly.js", "PWA"],
+        "url": "https://www.weatherwise.earth/"
+      },
       "kenyanese": {
         "name": "Kenyanese",
         "description": "Sociaal netwerk platform ontworpen om Kenianen te verbinden en content te delen. Het werd opgericht in 2024 en biedt verschillende functionaliteiten, waaronder het maken van profielen, updates plaatsen, deelnemen aan groepen en privéberichten via de berichtenfunctie. Hier is een algemeen overzicht van de tech stack: Front-end: HTML5, CSS3, JavaScript, ReactJS Back-end: Node.js, Express.js Database: MongoDB"
@@ -49,34 +67,22 @@
         "name": "Stream Alive WebMeet",
         "description": "Webmeet maakt gebruik van Jitsi's open-source WebRTC technologie voor zijn belangrijkste videovergaderfuncties. Dit stelt Webmeet in staat om realtime video- en audiostreaming aan te bieden. Door gebruik te maken van Jitsi's robuuste tech stack biedt Webmeet een functierijke WebRTC web vergaderervaring."
       },
-      "sauti": {
-        "name": "Sauti ya Wanainchi",
-        "description": "Een platform voor gemeenschapsbetrokkenheid en feedback verzameling"
-      },
       "aiHealth": {
         "name": "AI Health Chat",
         "description": "AI-aangedreven gezondheidsconsultatieplatform met Supabase-integratie",
         "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
-        "featured": true
-      },
-      "dutch": {
-        "name": "Nederlandse Leerapplicatie",
-        "description": "Interactief platform voor het leren van de Nederlandse taal"
+        "featured": true,
+        "url": "https://aihealthchat.qzz.io/"
       },
       "civic": {
         "name": "Civic Alert Lite",
         "description": "Gemeenschapsgericht meldingssysteem voor burgerlijke kwesties met Firebase backend"
       },
-      "kpesa": {
-        "name": "Kpesa",
-        "description": "Financieel beheerapp voor persoonlijk en zakelijk gebruik",
-        "featured": true
-      },
       "kaziConnect": {
         "name": "Kazi Connect",
         "description": "AI-aangedreven vacatureplatform met CV-analyse en sollicitatiebeheer",
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
-        "url": "https://kazi-connect.vercel.app/",
+        "url": "https://www.kaziconnect.work/",
         "featured": true
       }
     }
@@ -86,40 +92,84 @@
     "ongoing": "Lopend",
     "completed": "Afgerond",
     "items": {
-      "alx": {
-        "name": "ALX Data Analytics Programma",
-        "institution": "Data Analytics Cohort 2025",
-        "period": "2025 - Heden",
-        "description1": "Expertise in data cleaning, visualisatie en interpretatie met SQL, Power BI en Tableau.",
-        "description2": "Toepassing van Agile methodologieën voor collaboratieve probleemoplossing."
+      "bachelor_cs": {
+        "name": "Bachelor of Computer Science",
+        "institution": "University of the People (UoPeople)",
+        "period": "2025 – 2028 (Projected)",
+        "status": "Lopend",
+        "description": [
+          "Pursuing a comprehensive degree in Computer Science with focus on software engineering, algorithms, and modern technologies."
+        ],
+        "skills": []
+      },
+      "diploma_ict": {
+        "name": "Diploma in Information Communication Technology",
+        "institution": "Management University of Africa (MUA)",
+        "period": "2021 – 2024",
+        "status": "Afgerond",
+        "description": [
+          "Graduated with Distinction",
+          "Focus on modern software development and IT infrastructure"
+        ],
+        "skills": ["Software Development", "IT Infrastructure", "Project Management"]
+      },
+      "alx_ds": {
+        "name": "Data Science Program",
+        "institution": "ALX",
+        "period": "2025 – Present",
+        "status": "Lopend",
+        "description": [
+          "Advanced from completed Data Analytics Cohort 2025",
+          "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
+          "Mastery of Advanced Python, Machine Learning, AI, and predictive modeling",
+          "Applying Agile methodologies for collaborative, real-world problem-solving"
+        ],
+        "skills": ["SQL", "Power BI", "Tableau", "Advanced Python", "Machine Learning", "AI", "Agile", "Data Science"]
+      },
+      "plp_africa": {
+        "name": "Power Learn Project (PLP) Africa – Software Development Program",
+        "institution": "Power Learn Project (PLP) Africa",
+        "period": "Completed December 2024",
+        "status": "Afgerond",
+        "description": [
+          "Successfully completed a 16-week intensive program in Software Development",
+          "Specialized in Web Development, Python Development, and Database Development",
+          "Mastered Python, Web Technologies, Database Management, Dart with Flutter, and Soft Skills"
+        ],
+        "skills": ["Python", "Web Development", "Database Management", "Dart", "Flutter", "Soft Skills"]
       },
       "worldquant_cv": {
-        "name": "Toegepaste AI Lab: Deep Learning voor Computer Vision",
+        "name": "Applied AI Lab: Deep Learning for Computer Vision",
         "institution": "WorldQuant University",
-        "period": "2025",
-        "description1": "Beheersing van deep learning frameworks en computer vision technieken",
-        "description2": "Bouwen en implementeren van echte AI-toepassingen"
+        "period": "2025 – Present",
+        "status": "Lopend",
+        "description": [
+          "Mastering deep learning frameworks and computer vision techniques",
+          "Building and deploying real-world AI applications"
+        ],
+        "skills": ["Deep Learning", "Computer Vision", "AI"]
       },
       "worldquant_ds": {
-        "name": "Toegepaste Data Science Lab",
+        "name": "Applied Data Science Lab",
         "institution": "WorldQuant University",
-        "period": "2025",
-        "description1": "Geavanceerde gegevensanalyse en machine learning technieken",
-        "description2": "Implementatie van echte data science projecten"
+        "period": "2025 – Present",
+        "status": "Lopend",
+        "description": [
+          "Advanced data analysis and machine learning techniques",
+          "Real-world data science project implementation"
+        ],
+        "skills": ["Data Science", "Machine Learning", "Analytics"]
       },
       "code_in_place": {
-        "name": "Code in Place: Introductie tot Programmeren met Python",
+        "name": "Code in Place: Introduction to Programming with Python",
         "institution": "Stanford University",
         "period": "2024",
-        "description1": "Intensieve programmeercursus Python van Stanford University",
-        "description2": "Diagnostische beoordeling en eindproject met onderscheiding voltooid"
-      },
-      "mua_diploma": {
-        "name": "Diploma Informatie- en Communicatietechnologie",
-        "institution": "Management University of Africa (MUA)",
-        "period": "2021-2024",
-        "description1": "Afgestudeerd met onderscheiding",
-        "description2": "Focus op moderne softwareontwikkeling en IT-infrastructuur"
+        "status": "Afgerond",
+        "description": [
+          "Intensive Python programming course from Stanford University",
+          "Completed diagnostic assessment and final project with distinction"
+        ],
+        "skills": ["Python", "Programming Fundamentals", "Diagnostic Badge", "Final Project Badge"]
       }
     }
   },
@@ -128,58 +178,63 @@
     "viewCertification": "Bekijk Certificaat"
   },
   "badges": {
-    "title": "Badges en Certificaten",
-    "verify": "Certificaat Verifiëren →",
-    "items": {
-      "responsible_ai_privacy": {
-        "name": "Verantwoorde AI voor Ontwikkelaars: Privacy en Veiligheid",
-        "issuer": "Google Cloud",
-        "skills": ["AI Privacy", "Beveiliging", "Verantwoorde AI"]
+    "title": "Badges en Certificeringen",
+    "platforms": {
+      "google_skills": {
+        "platform": "Google Skills",
+        "description": "Een platform dat training en certificeringen biedt voor Google Cloud partners, waarmee expertise wordt getoond in AI, ML en cloud technologieën.",
+        "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
+        "badges_count": 18,
+        "highlight_badges": [
+          "Google Cloud Essentials",
+          "Vector Search and Embeddings",
+          "Responsible AI for Developers (Privacy, Safety, Interpretability, Fairness)",
+          "Machine Learning Operations (MLOps) for Generative AI",
+          "Introduction to Vertex AI Studio",
+          "Generative AI Fundamentals"
+        ]
       },
-      "responsible_ai_transparency": {
-        "name": "Verantwoorde AI voor Ontwikkelaars: Interpreteerbaarheid en Transparantie",
-        "issuer": "Google Cloud",
-        "skills": ["AI Transparantie", "ML Interpreteerbaarheid", "AI Ethiek"]
-      },
-      "cybersecurity": {
-        "name": "Cybersecurity Fundamentals",
-        "issuer": "IBM",
-        "skills": ["Cybersecurity", "Netwerkbeveiliging", "Beveiligingspraktijken"]
-      },
-      "ibm_data": {
-        "name": "IBM Data Fundamentals",
-        "issuer": "IBM",
-        "skills": ["Data Science", "Machine Learning", "Statistiek"]
-      },
-      "google_cloud": {
-        "name": "Google Cloud Essentials",
-        "issuer": "Google Cloud",
-        "skills": ["Cloud Computing", "DevOps", "Beveiliging"]
-      },
-      "mlops": {
-        "name": "MLOps voor Generatieve AI",
-        "issuer": "Google Cloud",
-        "skills": ["MLOps", "AI/ML", "DevOps"]
+      "credly": {
+        "platform": "Credly",
+        "description": "Open Badge platform portefeuille die verworven vaardigheden toont op het gebied van AI, cloud en ontwikkeling.",
+        "profile_url": "https://www.credly.com/users/rayklanderman/badges#credly",
+        "highlight_badges": [
+          "AWS Educate Introduction to Generative AI - Training Badge",
+          "Code Generation and Optimization Using IBM Granite",
+          "AWS Educate Machine Learning Foundations - Training Badge",
+          "Data Fundamentals Issued by IBM SkillsBuild",
+          "Cybersecurity Fundamentals Issued by IBM SkillsBuild"
+        ]
       },
       "oracle_cloud": {
-        "name": "Oracle Cloud Infrastructuur",
-        "issuer": "Oracle",
-        "skills": ["Cloud Architectuur", "Infrastructuur", "Beveiliging"]
+        "platform": "Oracle Cloud Infrastructure",
+        "certification": "2025 Certified AI Foundations Associate",
+        "description": "Certificering die fundamentele AI/ML concepten en praktische toepassingen introduceert binnen Oracle Cloud Infrastructure, inclusief generatieve AI, LLMs en OCI AI diensten.",
+        "issued_by": "Oracle",
+        "expiration": "30 oktober 2027",
+        "badge_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7418DAC9DB558E4572B75960D015FF4F8AC815414D000F75011C3391E0103A33",
+        "skills": [
+          "AI & ML Fundamentals",
+          "Deep Learning (CNNs, RNNs, LSTMs)",
+          "OCI AI Tools & Services",
+          "Generatieve AI & Large Language Models",
+          "Oracle 23ai & Select AI"
+        ]
       },
-      "stem": {
-        "name": "Engels voor STEM",
-        "issuer": "Badgr",
-        "skills": ["Technisch Schrijven", "Communicatie", "Documentatie"]
+      "google_developers": {
+        "platform": "Google for Developers",
+        "description": "Officieel ontwikkelaarprofiel dat bijdragen, leerpaden en vaardigheidsbadges in Google technologieën benadrukt.",
+        "profile_url": "https://g.dev/rayklanderman"
       },
-      "responsible_ai": {
-        "name": "Verantwoorde AI",
-        "issuer": "Google Cloud",
-        "skills": ["AI Ethiek", "Machine Learning", "Governance"]
+      "microsoft_learn": {
+        "platform": "Microsoft Learn",
+        "description": "Leerprofiel dat voltooide paden en toegepaste vaardigheden demonstreert in Azure, AI en cloudontwikkeling.",
+        "profile_url": "https://learn.microsoft.com/en-us/users/devray/?tab=applied-skills-tab"
       },
-      "prompt_design": {
-        "name": "Prompt Ontwerp",
-        "issuer": "Google Cloud",
-        "skills": ["AI/ML", "Prompt Engineering", "LLMs"]
+      "parchment": {
+        "platform": "Parchment Digital Badges",
+        "description": "Digitale credential portefeuille die geverifieerde badges host van meerdere uitgevende organisaties.",
+        "profile_url": "https://badges.parchment.com/public/collections/5b589fba604640ecb8d46b5a4432e9de"
       }
     }
   },

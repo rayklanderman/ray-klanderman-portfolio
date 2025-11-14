@@ -29,7 +29,7 @@
   },
   "profile": {
     "title": "Professional Profile",
-    "description": "As a passionate Software Developer, AI Prompt Engineer, and Cloud Enthusiast, I thrive on designing smart, scalable solutions that solve real-world challenges. My expertise spans full-stack development, AI integration, and cloud computing, empowering me to craft applications that are both innovative and impactful. Fueled by an insatiable curiosity, I'm always diving deeper into AI deployment and cloud technologies, eager to push the limits of what technology can achieve. I'd love to connect, collaborate on exciting projects, or explore the latest in tech—let's make something extraordinary together!"
+    "description": "As a software developer, AI practitioner, and data analyst, I build smart, scalable systems that solve real-world problems. My work spans full-stack development, machine learning, data analytics, cloud technologies, and CI/CD automation. I develop with Python, JavaScript, React, Flutter, SQL, and Google Cloud, and I enjoy building intelligent workflows using APIs, agent-based systems, and Retrieval-Augmented Generation (RAG) architectures.\n\nI also produce clear digital content that supports product communication and outreach. Curiosity drives everything I do, from experimenting with new ML techniques to exploring advances in automation and AI deployment. I'm always excited to collaborate on forward-thinking projects that push technology to the next level."
   },
   "projects": {
     "title": "Featured Projects",
@@ -37,12 +37,26 @@
     "featured": "Featured",
     "comingSoon": "Coming Soon",
     "items": {
-      "sauti": {
-        "name": "Sauti ya Wanainchi",
-        "shortDescription": "Community engagement & feedback platform",
-        "description": "A comprehensive platform that enables communities to provide feedback, report issues, and engage with local officials. Features include real-time updates, geolocation mapping, and analytics dashboard.",
-        "technologies": ["React", "Node.js", "MongoDB", "Express"],
-        "github": "https://github.com/yourusername/sauti-ya-wanainchi"
+      "tutaLearn": {
+        "name": "TutaLearn - African Educational Platform",
+        "shortDescription": "AI-powered educational PWA for African students",
+        "description": "A Progressive Web App (PWA) delivering AI-powered, culturally relevant education to African students via WhatsApp with offline support and localized content in English and Swahili.",
+        "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
+        "url": "https://www.tutalearn.study/"
+      },
+      "codebaseGenius": {
+        "name": "Codebase Genius - AI Documentation System",
+        "shortDescription": "AI-powered platform for automatic GitHub documentation",
+        "description": "An AI-powered platform that automatically generates professional documentation for any GitHub repository using Google Gemini and a multi-agent system with interactive graph visualization.",
+        "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
+        "url": "https://geniuscodebase.streamlit.app/"
+      },
+      "weatherWise": {
+        "name": "WeatherWise Planner - NASA Earth Data for Smart Planning",
+        "shortDescription": "Global climate planning tool using NASA Earth data",
+        "description": "A global climate planning tool using 20+ years of NASA Earth data and Groq-powered AI to deliver location-specific historical weather insights and risk probabilities for agriculture, travel, and events.",
+        "technologies": ["TypeScript", "Python", "React", "FastAPI", "Groq Llama 3.3 70B", "NASA GIBS", "Plotly.js", "PWA"],
+        "url": "https://www.weatherwise.earth/"
       },
       "aiHealth": {
         "name": "AI Health Chat",
@@ -51,14 +65,7 @@
         "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
         "featured": true,
         "github": "https://github.com/yourusername/ai-health-chat",
-        "url": "https://ai-health-chat.vercel.app/"
-      },
-      "dutch": {
-        "name": "Dutch Learning App",
-        "shortDescription": "Interactive Dutch language learning platform",
-        "description": "A gamified educational app designed to make learning Dutch engaging and effective. Features include pronunciation guides, vocabulary building exercises, grammar lessons, and progress tracking with personalized learning paths.",
-        "technologies": ["React", "Firebase", "TailwindCSS", "i18n"],
-        "github": "https://github.com/yourusername/dutch-learning-app"
+        "url": "https://aihealthchat.qzz.io/"
       },
       "civic": {
         "name": "Civic Alert Lite",
@@ -67,19 +74,12 @@
         "technologies": ["React Native", "Firebase", "Google Maps API"],
         "github": "https://github.com/yourusername/civic-alert-lite"
       },
-      "kpesa": {
-        "name": "Kpesa",
-        "shortDescription": "Smart financial management solution",
-        "description": "A comprehensive financial management application for personal and business use. Features include expense tracking, budget planning, financial insights, multi-currency support, and secure cloud backup of financial data.",
-        "technologies": ["Flutter", "Firebase", "Cloud Functions", "Charts"],
-        "github": "https://github.com/yourusername/kpesa-app"
-      },
       "kaziConnect": {
         "name": "Kazi Connect",
         "shortDescription": "AI-powered job matching platform",
         "description": "An innovative job marketplace that uses artificial intelligence to match job seekers with suitable opportunities. Features include CV analysis, skill assessment, automated application tracking, and personalized job recommendations based on user profile and preferences.",
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
-        "url": "https://kazi-connect.vercel.app/",
+        "url": "https://www.kaziconnect.work/",
         "github": "https://github.com/rayklanderman/kazi-connect",
         "featured": true
       }
@@ -90,96 +90,145 @@
     "ongoing": "Ongoing",
     "completed": "Completed",
     "items": {
-      "alx": {
-        "name": "ALX Data Analytics Program",
-        "institution": "Data Analytics Cohort 2025",
-        "period": "2025 - Present",
-        "description1": "Gaining expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau.",
-        "description2": "Applying Agile methodologies for collaborative problem-solving."
+      "bachelor_cs": {
+        "name": "Bachelor of Computer Science",
+        "institution": "University of the People (UoPeople)",
+        "period": "2025 – 2028 (Projected)",
+        "status": "Ongoing",
+        "description": [
+          "Pursuing a comprehensive degree in Computer Science with focus on software engineering, algorithms, and modern technologies."
+        ],
+        "skills": []
+      },
+      "diploma_ict": {
+        "name": "Diploma in Information Communication Technology",
+        "institution": "Management University of Africa (MUA)",
+        "period": "2021 – 2024",
+        "status": "Completed",
+        "description": [
+          "Graduated with Distinction",
+          "Focus on modern software development and IT infrastructure"
+        ],
+        "skills": ["Software Development", "IT Infrastructure", "Project Management"]
+      },
+      "alx_ds": {
+        "name": "Data Science Program",
+        "institution": "ALX",
+        "period": "2025 – Present",
+        "status": "Ongoing",
+        "description": [
+          "Advanced from completed Data Analytics Cohort 2025",
+          "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
+          "Mastery of Advanced Python, Machine Learning, AI, and predictive modeling",
+          "Applying Agile methodologies for collaborative, real-world problem-solving"
+        ],
+        "skills": ["SQL", "Power BI", "Tableau", "Advanced Python", "Machine Learning", "AI", "Agile", "Data Science"]
+      },
+      "plp_africa": {
+        "name": "Power Learn Project (PLP) Africa – Software Development Program",
+        "institution": "Power Learn Project (PLP) Africa",
+        "period": "Completed December 2024",
+        "status": "Completed",
+        "description": [
+          "Successfully completed a 16-week intensive program in Software Development",
+          "Specialized in Web Development, Python Development, and Database Development",
+          "Mastered Python, Web Technologies, Database Management, Dart with Flutter, and Soft Skills"
+        ],
+        "skills": ["Python", "Web Development", "Database Management", "Dart", "Flutter", "Soft Skills"]
       },
       "worldquant_cv": {
         "name": "Applied AI Lab: Deep Learning for Computer Vision",
         "institution": "WorldQuant University",
-        "period": "2025",
-        "description1": "Mastering deep learning frameworks and computer vision techniques",
-        "description2": "Building and deploying real-world AI applications"
+        "period": "2025 – Present",
+        "status": "Ongoing",
+        "description": [
+          "Mastering deep learning frameworks and computer vision techniques",
+          "Building and deploying real-world AI applications"
+        ],
+        "skills": ["Deep Learning", "Computer Vision", "AI"]
       },
       "worldquant_ds": {
         "name": "Applied Data Science Lab",
         "institution": "WorldQuant University",
-        "period": "2025",
-        "description1": "Advanced data analysis and machine learning techniques",
-        "description2": "Real-world data science project implementation"
+        "period": "2025 – Present",
+        "status": "Ongoing",
+        "description": [
+          "Advanced data analysis and machine learning techniques",
+          "Real-world data science project implementation"
+        ],
+        "skills": ["Data Science", "Machine Learning", "Analytics"]
       },
       "code_in_place": {
         "name": "Code in Place: Introduction to Programming with Python",
         "institution": "Stanford University",
         "period": "2024",
-        "description1": "Intensive Python programming course from Stanford University",
-        "description2": "Completed diagnostic assessment and final project with distinction"
-      },
-      "mua_diploma": {
-        "name": "Diploma in Information Communication Technology",
-        "institution": "Management University of Africa (MUA)",
-        "period": "2021-2024",
-        "description1": "Graduated with Distinction",
-        "description2": "Focus on modern software development and IT infrastructure"
+        "status": "Completed",
+        "description": [
+          "Intensive Python programming course from Stanford University",
+          "Completed diagnostic assessment and final project with distinction"
+        ],
+        "skills": ["Python", "Programming Fundamentals", "Diagnostic Badge", "Final Project Badge"]
       }
     }
   },
   "badges": {
-    "title": "Badges & Certificates",
-    "verify": "Verify Certificate →",
-    "items": {
-      "responsible_ai_privacy": {
-        "name": "Responsible AI for Developers: Privacy & Safety",
-        "issuer": "Google Cloud",
-        "skills": ["AI Privacy", "Security", "Responsible AI"]
+    "title": "Badges & Certifications",
+    "platforms": {
+      "google_skills": {
+        "platform": "Google Skills",
+        "description": "A platform that provides training and certifications for Google Cloud partners, showcasing expertise in AI, ML, and cloud technologies.",
+        "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
+        "badges_count": 18,
+        "highlight_badges": [
+          "Google Cloud Essentials",
+          "Vector Search and Embeddings",
+          "Responsible AI for Developers (Privacy, Safety, Interpretability, Fairness)",
+          "Machine Learning Operations (MLOps) for Generative AI",
+          "Introduction to Vertex AI Studio",
+          "Generative AI Fundamentals"
+        ]
       },
-      "responsible_ai_transparency": {
-        "name": "Responsible AI for Developers: Interpretability & Transparency",
-        "issuer": "Google Cloud",
-        "skills": ["AI Transparency", "ML Interpretability", "AI Ethics"]
-      },
-      "cybersecurity": {
-        "name": "Cybersecurity Fundamentals",
-        "issuer": "IBM",
-        "skills": ["Cybersecurity", "Network Security", "Security Best Practices"]
-      },
-      "ibm_data": {
-        "name": "IBM Data Fundamentals",
-        "issuer": "IBM",
-        "skills": ["Data Science", "Machine Learning", "Statistics"]
-      },
-      "google_cloud": {
-        "name": "Google Cloud Essentials",
-        "issuer": "Google Cloud",
-        "skills": ["Cloud Computing", "DevOps", "Security"]
-      },
-      "mlops": {
-        "name": "MLOps for Generative AI",
-        "issuer": "Google Cloud",
-        "skills": ["MLOps", "AI/ML", "DevOps"]
+      "credly": {
+        "platform": "Credly",
+        "description": "Open Badge platform wallet showcasing acquired skillsets across AI, cloud, and development domains.",
+        "profile_url": "https://www.credly.com/users/rayklanderman/badges#credly",
+        "highlight_badges": [
+          "AWS Educate Introduction to Generative AI - Training Badge",
+          "Code Generation and Optimization Using IBM Granite",
+          "AWS Educate Machine Learning Foundations - Training Badge",
+          "Data Fundamentals Issued by IBM SkillsBuild",
+          "Cybersecurity Fundamentals Issued by IBM SkillsBuild"
+        ]
       },
       "oracle_cloud": {
-        "name": "Oracle Cloud Infrastructure",
-        "issuer": "Oracle",
-        "skills": ["Cloud Architecture", "Infrastructure", "Security"]
+        "platform": "Oracle Cloud Infrastructure",
+        "certification": "2025 Certified AI Foundations Associate",
+        "description": "Certification introducing foundational AI/ML concepts and practical applications within Oracle Cloud Infrastructure, including generative AI, LLMs, and OCI AI services.",
+        "issued_by": "Oracle",
+        "expiration": "October 30, 2027",
+        "badge_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7418DAC9DB558E4572B75960D015FF4F8AC815414D000F75011C3391E0103A33",
+        "skills": [
+          "AI & ML Fundamentals",
+          "Deep Learning (CNNs, RNNs, LSTMs)",
+          "OCI AI Tools & Services",
+          "Generative AI & Large Language Models",
+          "Oracle 23ai & Select AI"
+        ]
       },
-      "stem": {
-        "name": "English for STEM",
-        "issuer": "Badgr",
-        "skills": ["Technical Writing", "Communication", "Documentation"]
+      "google_developers": {
+        "platform": "Google for Developers",
+        "description": "Official developer profile highlighting contributions, learning paths, and skill badges in Google technologies.",
+        "profile_url": "https://g.dev/rayklanderman"
       },
-      "responsible_ai": {
-        "name": "Responsible AI",
-        "issuer": "Google Cloud",
-        "skills": ["AI Ethics", "Machine Learning", "Governance"]
+      "microsoft_learn": {
+        "platform": "Microsoft Learn",
+        "description": "Learning profile demonstrating completed paths and applied skills in Azure, AI, and cloud development.",
+        "profile_url": "https://learn.microsoft.com/en-us/users/devray/?tab=applied-skills-tab"
       },
-      "prompt_design": {
-        "name": "Prompt Design",
-        "issuer": "Google Cloud",
-        "skills": ["AI/ML", "Prompt Engineering", "LLMs"]
+      "parchment": {
+        "platform": "Parchment Digital Badges",
+        "description": "Digital credential wallet hosting verified badges from multiple issuing organizations.",
+        "profile_url": "https://badges.parchment.com/public/collections/5b589fba604640ecb8d46b5a4432e9de"
       }
     }
   },

@@ -17,41 +17,21 @@ const Contact: React.FC = () => {
   }
 
   return (
-    <section id="contact-me" className="contact-section" style={{ color: 'white' }}>
+    <section id="contact-me" className="contact-section">
       <div className="container">
-        <motion.div 
+        <motion.h2 
           className="section-title"
           initial={{ y: 20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          style={{
-            textAlign: 'center',
-            marginBottom: '3rem'
-          }}
         >
-          <h2 style={{
-            color: 'white',
-            fontSize: '2.5rem',
-            fontWeight: 700,
-            marginBottom: '1rem',
-            textTransform: 'uppercase',
-            letterSpacing: '1px'
-          }}>
-            Contact Me
-          </h2>
-          <div style={{
-            height: '4px',
-            width: '80px',
-            background: 'linear-gradient(90deg, #4a6cf7, #6a11cb)',
-            margin: '0 auto',
-            borderRadius: '2px'
-          }} />
-        </motion.div>
+          Contact Me
+        </motion.h2>
         
-        <form onSubmit={handleFormSubmit} className="contact-form" style={{ color: 'white' }}>
+        <form onSubmit={handleFormSubmit} className="contact-form">
           <div className="form-group">
-            <label htmlFor="email" style={{ color: 'white' }}>
-              <span className="label-text" style={{ color: 'white' }}>Email Address</span>
+            <label htmlFor="email">
+              <span className="label-text">Email Address</span>
               <input
                 id="email"
                 type="email"
@@ -59,7 +39,6 @@ const Contact: React.FC = () => {
                 required
                 className="form-input"
                 placeholder="your.email@example.com"
-                style={{ color: 'white' }}
               />
               <ValidationError 
                 prefix="Email" 
@@ -72,8 +51,8 @@ const Contact: React.FC = () => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="message" style={{ color: 'white' }}>
-              <span className="label-text" style={{ color: 'white' }}>Your Message</span>
+            <label htmlFor="message">
+              <span className="label-text">Your Message</span>
               <textarea
                 id="message"
                 name="message"
@@ -81,7 +60,6 @@ const Contact: React.FC = () => {
                 className="form-textarea"
                 placeholder="How can I help you?"
                 rows={5}
-                style={{ color: 'white' }}
               />
               <ValidationError 
                 prefix="Message" 

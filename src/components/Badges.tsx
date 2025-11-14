@@ -6,60 +6,55 @@ import './Badges.scss';
 const Badges: React.FC = () => {
   const { t } = useTranslation();
 
-  const badges = [
+  const platforms = [
     {
-      id: 'google_cloud',
-      name: t('badges.items.google_cloud.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13957857',
-      imageUrl: '/badges/google-cloud.svg',
-      issuer: t('badges.items.google_cloud.issuer'),
-      issueDate: '2024-02-15',
-      skills: t('badges.items.google_cloud.skills', { returnObjects: true }) as string[]
+      id: 'google_skills',
+      platform: t('badges.platforms.google_skills.platform'),
+      description: t('badges.platforms.google_skills.description'),
+      profileUrl: t('badges.platforms.google_skills.profile_url'),
+      badgesCount: t('badges.platforms.google_skills.badges_count'),
+      highlightBadges: t('badges.platforms.google_skills.highlight_badges', { returnObjects: true }) as string[],
+      logo: '/badges/google-skills.svg'
     },
     {
-      id: 'mlops',
-      name: t('badges.items.mlops.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/12568746',
-      imageUrl: '/badges/mlops.svg',
-      issuer: t('badges.items.mlops.issuer'),
-      issueDate: '2023-11-10',
-      skills: t('badges.items.mlops.skills', { returnObjects: true }) as string[]
+      id: 'credly',
+      platform: t('badges.platforms.credly.platform'),
+      description: t('badges.platforms.credly.description'),
+      profileUrl: t('badges.platforms.credly.profile_url'),
+      highlightBadges: t('badges.platforms.credly.highlight_badges', { returnObjects: true }) as string[],
+      logo: '/badges/credly.svg'
     },
     {
       id: 'oracle_cloud',
-      name: t('badges.items.oracle_cloud.name'),
-      url: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=1234567',
-      imageUrl: '/badges/oracle-cloud.svg',
-      issuer: t('badges.items.oracle_cloud.issuer'),
-      issueDate: '2023-09-05',
-      skills: t('badges.items.oracle_cloud.skills', { returnObjects: true }) as string[]
+      platform: t('badges.platforms.oracle_cloud.platform'),
+      certification: t('badges.platforms.oracle_cloud.certification'),
+      description: t('badges.platforms.oracle_cloud.description'),
+      issuedBy: t('badges.platforms.oracle_cloud.issued_by'),
+      expiration: t('badges.platforms.oracle_cloud.expiration'),
+      badgeUrl: t('badges.platforms.oracle_cloud.badge_url'),
+      skills: t('badges.platforms.oracle_cloud.skills', { returnObjects: true }) as string[],
+      logo: '/badges/oracle.svg'
     },
     {
-      id: 'stem',
-      name: t('badges.items.stem.name'),
-      url: 'https://www.credly.com/badges/12345678',
-      imageUrl: '/badges/stem.svg',
-      issuer: t('badges.items.stem.issuer'),
-      issueDate: '2023-08-20',
-      skills: t('badges.items.stem.skills', { returnObjects: true }) as string[]
+      id: 'google_developers',
+      platform: t('badges.platforms.google_developers.platform'),
+      description: t('badges.platforms.google_developers.description'),
+      profileUrl: t('badges.platforms.google_developers.profile_url'),
+      logo: '/badges/google-developers.svg'
     },
     {
-      id: 'responsible_ai',
-      name: t('badges.items.responsible_ai.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/13899903',
-      imageUrl: '/badges/responsible-ai.svg',
-      issuer: t('badges.items.responsible_ai.issuer'),
-      issueDate: '2023-07-15',
-      skills: t('badges.items.responsible_ai.skills', { returnObjects: true }) as string[]
+      id: 'microsoft_learn',
+      platform: t('badges.platforms.microsoft_learn.platform'),
+      description: t('badges.platforms.microsoft_learn.description'),
+      profileUrl: t('badges.platforms.microsoft_learn.profile_url'),
+      logo: '/badges/microsoft-learn.svg'
     },
     {
-      id: 'prompt_design',
-      name: t('badges.items.prompt_design.name'),
-      url: 'https://www.cloudskillsboost.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504/badges/12560333',
-      imageUrl: '/badges/prompt-design.svg',
-      issuer: t('badges.items.prompt_design.issuer'),
-      issueDate: '2023-06-10',
-      skills: t('badges.items.prompt_design.skills', { returnObjects: true }) as string[]
+      id: 'parchment',
+      platform: t('badges.platforms.parchment.platform'),
+      description: t('badges.platforms.parchment.description'),
+      profileUrl: t('badges.platforms.parchment.profile_url'),
+      logo: '/badges/parchment.svg'
     }
   ];
 
@@ -77,90 +72,88 @@ const Badges: React.FC = () => {
         </motion.h2>
 
         <motion.div 
-          className="badges-grid"
+          className="platforms-grid"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ staggerChildren: 0.1, delayChildren: 0.2 }}
         >
-          {badges.map((badge, index) => (
+          {platforms.map((platform, index) => (
             <motion.div
-              key={badge.id}
-              className="badge-card"
+              key={platform.id}
+              className="platform-card"
               initial={{ opacity: 0, y: 30, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: 0.1 * index }}
               whileHover={{ y: -8, boxShadow: "0 15px 30px rgba(0, 0, 0, 0.1)" }}
             >
-              <div className="badge-header">
+              <div className="platform-header">
                 <img 
-                  src={badge.imageUrl} 
-                  alt={badge.name} 
-                  className="badge-image"
+                  src={platform.logo} 
+                  alt={platform.platform} 
+                  className="platform-logo"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
                     const fallback = document.createElement('div');
-                    fallback.className = 'badge-fallback';
-                    fallback.textContent = badge.name.charAt(0).toUpperCase();
+                    fallback.className = 'platform-fallback';
+                    fallback.textContent = platform.platform.charAt(0).toUpperCase();
                     target.parentNode?.insertBefore(fallback, target.nextSibling);
                   }}
                 />
-                <h3>{badge.name}</h3>
+                <h3>{platform.platform}</h3>
+                {platform.certification && (
+                  <div className="certification-badge">{platform.certification}</div>
+                )}
               </div>
-              <div className="badge-issuer">{badge.issuer}</div>
-              <div className="badge-date">
-                {new Date(badge.issueDate).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                })}
-              </div>
-              {badge.skills && badge.skills.length > 0 && (
-                <div className="badge-skills">
-                  {badge.skills.map((skill, i) => {
-                    // Define colors that will work in all browsers
-                    const colors = [
-                      { bg: '#e0f2fe', text: '#0284c7' }, // Blue
-                      { bg: '#dcfce7', text: '#16a34a' }, // Green
-                      { bg: '#dbeafe', text: '#3b82f6' }, // Light blue
-                      { bg: '#fef9c3', text: '#ca8a04' }, // Yellow
-                      { bg: '#f1f5f9', text: '#0f172a' }, // Slate
-                      { bg: '#ccfbf1', text: '#0d9488' }, // Teal
-                      { bg: '#ffedd5', text: '#c2410c' }, // Orange
-                      { bg: '#dcfce7', text: '#15803d' }  // Forest green
-                    ];
-                    
-                    const index = i % colors.length;
-                    
-                    return (
-                      <span 
-                        key={i}
-                        style={{
-                          display: 'inline-block',
-                          padding: '4px 10px',
-                          backgroundColor: colors[index].bg,
-                          color: colors[index].text,
-                          borderRadius: '20px',
-                          margin: '0 6px 6px 0',
-                          fontSize: '14px',
-                          fontWeight: 500,
-                          border: `1px solid ${colors[index].text}20`
-                        }}
-                      >
-                        {skill}
-                      </span>
-                    );
-                  })}
+
+              <p className="platform-description">{platform.description}</p>
+
+              {platform.badgesCount && (
+                <div className="badges-count">
+                  <span className="count">{platform.badgesCount}</span> badges earned
                 </div>
               )}
+
+              {platform.certification && platform.expiration && (
+                <div className="certification-details">
+                  <div className="issued-by">Issued by: {platform.issuedBy}</div>
+                  <div className="expiration">Expires: {platform.expiration}</div>
+                </div>
+              )}
+
+              {platform.highlightBadges && platform.highlightBadges.length > 0 && (
+                <div className="highlight-badges">
+                  <h4>Highlight Badges:</h4>
+                  <div className="badges-list">
+                    {platform.highlightBadges.map((badge, i) => (
+                      <span key={i} className="badge-item">{badge}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {platform.skills && platform.skills.length > 0 && (
+                <div className="platform-skills">
+                  {platform.skills.map((skill, i) => (
+                    <span 
+                      key={i}
+                      className={`skill-tag skill-tag-${(i % 8) + 1}`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              )}
+
               <a 
-                href={badge.url} 
+                href={platform.badgeUrl || platform.profileUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="verify-link"
+                className="platform-link"
               >
-                {t('badges.verify')}
+                {platform.certification ? 'View Certification' : 'View Profile'} →
               </a>
             </motion.div>
           ))}

@@ -20,40 +20,36 @@ const Projects: FC = () => {
 
   // Project URLs and images
   const projectData: Record<string, { image: string; github: string; url: string }> = {
+    tutaLearn: {
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/tutalearn',
+      url: 'https://www.tutalearn.study/'
+    },
+    codebaseGenius: {
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/jaseci-proj',
+      url: 'https://geniuscodebase.streamlit.app/'
+    },
+    weatherWise: {
+      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/weatherwiseplanner',
+      url: 'https://www.weatherwise.earth/'
+    },
     aiHealth: {
       image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/ai-health-chat',
-      url: 'https://ai-health-chat.vercel.app/'
-    },
-    sauti: {
-      image: 'https://images.unsplash.com/photo-1522071820081-009c5fdc0a27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/civic-engagement-fabric',
-      url: 'https://civic-engagement-fabric-one.vercel.app/'
-    },
-    dutch: {
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80',
-      github: 'https://github.com/rayklanderman/dutchlearning',
-      url: 'https://dutchlearning.vercel.app/'
+      url: 'https://aihealthchat.qzz.io/'
     },
     civic: {
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/civic-alert-lite',
       url: 'https://civic-alert-lite.web.app/'
     },
-    kpesa: {
-      image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/k-pesa',
-      url: '#'
-    },
     kaziConnect: {
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/kazi-connect',
-      url: 'https://kazi-connect.vercel.app/'
+      url: 'https://www.kaziconnect.work/'
     }
-  };
-
-  const getProjectImage = (projectKey: string) => {
-    return projectData[projectKey]?.image || 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80';
   };
 
   // Get GitHub URL from project data

@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -81,28 +81,6 @@ const Footer: React.FC = () => {
     }
   ];
 
-  const inputStyles = {
-    width: '100%',
-    padding: '0.75rem 1rem',
-    borderRadius: '8px',
-    border: '1px solid rgba(255, 255, 255, 0.2)',
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    color: 'white',
-    fontSize: '1rem',
-    transition: 'all 0.3s ease',
-    boxSizing: 'border-box' as const
-  };
-
-  const focusStyles = {
-    outline: 'none',
-    borderColor: 'white',
-    boxShadow: '0 0 0 2px rgba(255, 255, 255, 0.2)'
-  };
-
-  const placeholderStyles = {
-    color: 'rgba(255, 255, 255, 0.6)'
-  };
-
   // Add global style for placeholder
   React.useEffect(() => {
     const style = document.createElement('style');
@@ -134,7 +112,7 @@ const Footer: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <h2 className="contact-title">
+          <h2 className="section-title">
             {t('contact.title')}
           </h2>
           <form onSubmit={handleSubmit} className="contact-form-container">

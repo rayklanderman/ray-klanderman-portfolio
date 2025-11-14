@@ -1,6 +1,6 @@
 .projects-section {
   padding: 4rem 0;
-  background: #f8f9fa;
+  background: var(--bg-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 
   .container {
@@ -14,7 +14,7 @@
     margin-bottom: 3rem;
     font-size: 2.2rem;
     font-weight: 700;
-    color: #1e293b;
+    color: var(--text-color);
     position: relative;
     
     &:after {
@@ -25,7 +25,7 @@
       transform: translateX(-50%);
       width: 50px;
       height: 3px;
-      background: linear-gradient(90deg, #21468B 0%, #3b82f6 100%);
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       border-radius: 2px;
     }
   }
@@ -53,9 +53,19 @@
     padding: 1.5rem;
     
     // Pastel background colors for different projects
-    &[data-key="sauti"] {
-      background: #e0f2fe; // Light blue
-      border-left: 4px solid #0ea5e9;
+    &[data-key="tutaLearn"] {
+      background: #e8f4fd; // Light blue
+      border-left: 4px solid #2563eb;
+    }
+    
+    &[data-key="codebaseGenius"] {
+      background: #f0f9ff; // Light cyan
+      border-left: 4px solid #0891b2;
+    }
+    
+    &[data-key="weatherWise"] {
+      background: #fef3c7; // Light yellow
+      border-left: 4px solid #d97706;
     }
     
     &[data-key="aiHealth"] {
@@ -63,19 +73,9 @@
       border-left: 4px solid #e11d48;
     }
     
-    &[data-key="dutch"] {
-      background: #e0f2e9; // Light green
-      border-left: 4px solid #10b981;
-    }
-    
     &[data-key="civic"] {
       background: #fff7ed; // Light orange
       border-left: 4px solid #fb923c;
-    }
-    
-    &[data-key="kpesa"] {
-      background: #f1f5f9; // Light gray
-      border-left: 4px solid #64748b;
     }
     
     &[data-key="kaziConnect"] {
@@ -156,18 +156,18 @@
   }
 
   .project-technology {
-    background: rgba(255, 255, 255, 0.5);
-    color: #475569;
+    background: var(--glass-bg);
+    color: var(--text-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
     transition: all 0.2s ease;
-    backdrop-filter: blur(4px);
+    border: 1px solid var(--glass-border);
     
     &:hover {
       transform: translateY(-2px);
-      background: rgba(255, 255, 255, 0.7);
+      background: var(--card-bg);
     }
     
     // Tech-specific styles
@@ -247,13 +247,41 @@
       color: #ef4444; 
       border: 1px solid rgba(239, 68, 68, 0.3);
     }
-    &[data-tech*='Dart'] { 
-      color: #0ea5e9; 
-      border: 1px solid rgba(14, 165, 233, 0.3);
+    &[data-tech*='Python'] { 
+      color: #306998; 
+      border: 1px solid rgba(48, 105, 152, 0.3);
     }
-    &[data-tech*='PLpgSQL'] { 
-      color: #0369a1; 
-      border: 1px solid rgba(3, 105, 161, 0.3);
+    &[data-tech*='Groq'] { 
+      color: #8b5cf6; 
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    &[data-tech*='WhatsApp'] { 
+      color: #25d366; 
+      border: 1px solid rgba(37, 211, 102, 0.3);
+    }
+    &[data-tech*='Gemini'] { 
+      color: #4285f4; 
+      border: 1px solid rgba(66, 133, 244, 0.3);
+    }
+    &[data-tech*='Streamlit'] { 
+      color: #ff4b4b; 
+      border: 1px solid rgba(255, 75, 75, 0.3);
+    }
+    &[data-tech*='NetworkX'] { 
+      color: #306998; 
+      border: 1px solid rgba(48, 105, 152, 0.3);
+    }
+    &[data-tech*='FastAPI'] { 
+      color: #009688; 
+      border: 1px solid rgba(0, 150, 136, 0.3);
+    }
+    &[data-tech*='NASA'] { 
+      color: #0b3d91; 
+      border: 1px solid rgba(11, 61, 145, 0.3);
+    }
+    &[data-tech*='Plotly'] { 
+      color: #3f4f75; 
+      border: 1px solid rgba(63, 79, 117, 0.3);
     }
   }
 

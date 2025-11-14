@@ -1,10 +1,11 @@
 import './Header.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import CVRequestModal from './CVRequestModal';
+import { useTheme } from './ThemeContext';
 import * as React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter, FaShareAlt } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter, FaShareAlt, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -13,16 +14,19 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
+  const { theme, toggleTheme } = useTheme();
+
+  console.log('Header theme:', theme);
 
   // Define menu items
-  const menuItems = [
+  const menuItems = useMemo(() => [
     { id: 'profile', label: t('menu.profile') },
     { id: 'projects', label: t('menu.projects') },
     { id: 'elevator', label: 'Elevator Pitch' },
     { id: 'education', label: t('menu.education') },
     { id: 'badges', label: t('menu.badges') },
     { id: 'contact-me', label: 'Contact Me' }
-  ];
+  ], [t]);
 
   // Handle scroll effect for header
   useEffect(() => {
@@ -301,6 +305,13 @@ const Header = () => {
             </div>
           </div>
           <div className="cta-buttons">
+            <button 
+              className="theme-toggle" 
+              onClick={toggleTheme}
+              aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+            >
+              {theme === 'light' ? <FaMoon /> : <FaSun />}
+            </button>
             <button className="download-cv" onClick={handleOpenModal}>
               {t('header.downloadCV')}
             </button>
