@@ -1,12 +1,12 @@
 {
   "header": {
-    "subtitle": "Software Ontwikkelaar | AI Prompt Engineer | Creatief",
+    "subtitle": "Software Ontwikkelaar | AI - ML | Creatief",
     "downloadCV": "Download CV",
     "share": "Profiel Delen",
     "jobTitles": {
       "softwareEngineer": "Software Engineer",
       "dataAnalyst": "Data Analist",
-      "promptEngineer": "AI Prompt Engineer",
+      "promptEngineer": "AI - ML",
       "creative": "Creatief"
     }
   },
@@ -16,7 +16,7 @@
   },
   "profile": {
     "title": "Professioneel Profiel",
-    "description": "Als softwareontwikkelaar, AI-praktijkbeoefenaar en data-analist bouw ik intelligente, schaalbare systemen die echte problemen oplossen. Mijn werk omvat full-stack ontwikkeling, machine learning, data-analyse, cloudtechnologieën en CI/CD-automatisering. Ik ontwikkel met Python, JavaScript, React, Flutter, SQL en Google Cloud, en ik geniet van het bouwen van intelligente workflows met behulp van API's, agent-gebaseerde systemen en Retrieval-Augmented Generation (RAG) architecturen.\n\nIk produceer ook duidelijke digitale content die productcommunicatie en outreach ondersteunt. Nieuwsgierigheid drijft alles wat ik doe, van het experimenteren met nieuwe ML-technieken tot het verkennen van vooruitgang in automatisering en AI-implementatie. Ik ben altijd enthousiast om samen te werken aan vooruitstrevende projecten die technologie naar het volgende niveau tillen."
+    "description": "Ik bouw slimme, schaalbare software en AI-systemen die echte problemen oplossen. Mijn werk omvat full-stack engineering, machine learning, data-analyse, cloud-architectuur en geautomatiseerde deployment pipelines.\n\nIk ontwerp en lever productieklare applicaties met behulp van Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL en Google Cloud. Ik specialiseer me in intelligente workflows aangedreven door API's, autonome agenten, vector search en Retrieval-Augmented Generation (RAG). Mijn tooling omvat Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph en moderne LLM-providers zoals OpenAI, Anthropic, Gemini, Groq en Ollama.\n\nBuiten engineering om zet ik data om in inzichten en inzichten in functies die producten worden waar mensen op vertrouwen. Ik creëer ook duidelijke technische content—tutorials, docs en demos—die teams helpt complexe systemen met vertrouwen te adopteren en uit te breiden.\n\nMijn missie is eenvoudig: bouw tools die mensen begrijpen, en empower mensen om nog betere tools te bouwen. Nieuwsgierigheid drijft mijn werk, van snelle ML-prototyping tot het productioniseren van agenten en het automatiseren van end-to-end workflows.\n\nAltijd open voor samenwerking met teams die de volgende generatie mensgerichte AI bouwen."
   },
   "elevatorPitch": {
     "title": "Mijn Elevator Pitch",

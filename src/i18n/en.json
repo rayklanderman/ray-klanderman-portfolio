@@ -1,12 +1,12 @@
 {
   "header": {
-    "subtitle": "Software Developer | AI Prompt Engineer | Creative",
+    "subtitle": "Software Developer | AI - ML | Creative",
     "downloadCV": "Download CV",
     "share": "Share Profile",
     "jobTitles": {
       "softwareEngineer": "Software Engineer",
       "dataAnalyst": "Data Analyst",
-      "promptEngineer": "AI Prompt Engineer",
+      "promptEngineer": "AI - ML",
       "creative": "Creative"
     }
   },
@@ -29,7 +29,7 @@
   },
   "profile": {
     "title": "Professional Profile",
-    "description": "As a software developer, AI practitioner, and data analyst, I build smart, scalable systems that solve real-world problems. My work spans full-stack development, machine learning, data analytics, cloud technologies, and CI/CD automation. I develop with Python, JavaScript, React, Flutter, SQL, and Google Cloud, and I enjoy building intelligent workflows using APIs, agent-based systems, and Retrieval-Augmented Generation (RAG) architectures.\n\nI also produce clear digital content that supports product communication and outreach. Curiosity drives everything I do, from experimenting with new ML techniques to exploring advances in automation and AI deployment. I'm always excited to collaborate on forward-thinking projects that push technology to the next level."
+    "description": "I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines.\n\nI design and ship production-ready applications using Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL, and Google Cloud. I specialize in intelligent workflows powered by APIs, autonomous agents, vector search, and Retrieval-Augmented Generation (RAG). My tooling includes Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph, and modern LLM providers like OpenAI, Anthropic, Gemini, Groq, and Ollama.\n\nBeyond engineering, I turn data into insights and insights into features that become products people rely on. I also create clear technical content—tutorials, docs, and demos—that helps teams adopt and extend complex systems with confidence.\n\nMy mission is simple: build tools that understand people, and empower people to build even better tools. Curiosity drives my work, from rapid ML prototyping to productionizing agents and automating end-to-end workflows.\n\nAlways open to collaborating with teams building the next generation of human-centered AI."
   },
   "projects": {
     "title": "Featured Projects",

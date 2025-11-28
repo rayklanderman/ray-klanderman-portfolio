@@ -1,12 +1,12 @@
 {
   "header": {
-    "subtitle": "Développeur Logiciel | Ingénieur en Prompt AI | Créatif",
+    "subtitle": "Développeur Logiciel | IA - ML | Créatif",
     "downloadCV": "Télécharger CV",
     "share": "Partager le Profil",
     "jobTitles": {
       "softwareEngineer": "Ingénieur Logiciel",
       "dataAnalyst": "Analyste de Données",
-      "promptEngineer": "Ingénieur en Prompt AI",
+      "promptEngineer": "IA - ML",
       "creative": "Créatif"
     }
   },
@@ -16,7 +16,7 @@
   },
   "profile": {
     "title": "Profil Professionnel",
-    "description": "En tant que développeur logiciel, praticien de l'IA et analyste de données, je construis des systèmes intelligents et évolutifs qui résolvent des problèmes concrets. Mon travail couvre le développement full-stack, l'apprentissage automatique, l'analyse de données, les technologies cloud et l'automatisation CI/CD. Je développe avec Python, JavaScript, React, Flutter, SQL et Google Cloud, et j'aime créer des workflows intelligents utilisant des API, des systèmes basés sur des agents et des architectures de génération augmentée par récupération (RAG).\n\nJe produis également du contenu numérique clair qui soutient la communication produit et la sensibilisation. La curiosité motive tout ce que je fais, de l'expérimentation de nouvelles techniques de ML à l'exploration des avancées en automatisation et déploiement d'IA. Je suis toujours enthousiaste à l'idée de collaborer sur des projets avant-gardistes qui poussent la technologie au niveau supérieur."
+    "description": "Je construis des logiciels intelligents et évolutifs et des systèmes d'IA qui résolvent des problèmes concrets. Mon travail couvre l'ingénierie full-stack, l'apprentissage automatique, l'analyse de données, l'architecture cloud et les pipelines de déploiement automatisés.\n\nJe conçois et déploie des applications prêtes pour la production en utilisant Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL et Google Cloud. Je me spécialise dans les workflows intelligents alimentés par des API, des agents autonomes, la recherche vectorielle et la génération augmentée par récupération (RAG). Mes outils incluent Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph et des fournisseurs modernes de LLM comme OpenAI, Anthropic, Gemini, Groq et Ollama.\n\nAu-delà de l'ingénierie, je transforme les données en insights et les insights en fonctionnalités qui deviennent des produits sur lesquels les gens comptent. Je crée également du contenu technique clair—tutoriels, docs et démos—qui aide les équipes à adopter et étendre des systèmes complexes avec confiance.\n\nMa mission est simple : construire des outils qui comprennent les gens, et permettre aux gens de construire des outils encore meilleurs. La curiosité motive mon travail, du prototypage ML rapide à la mise en production d'agents et à l'automatisation des workflows de bout en bout.\n\nToujours ouvert à collaborer avec des équipes construisant la prochaine génération d'IA centrée sur l'humain."
   },
   "projects": {
     "title": "Projets en Vedette",
