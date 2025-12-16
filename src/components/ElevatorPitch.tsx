@@ -29,8 +29,8 @@ const ElevatorPitch: FC = () => {
           >
             <iframe 
               className="video-iframe"
-              src="https://www.youtube.com/embed/un_eBNkqCRc?rel=0&showinfo=0&controls=1&autoplay=0&mute=0&loop=0&modestbranding=1&fs=1&color=white&hl=en&iv_load_policy=3&quality=hd1080" 
-              title="My Elevator Pitch" 
+              src="https://www.youtube.com/embed?listType=playlist&list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G" 
+              title="My Elevator Pitch Playlist" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
@@ -54,8 +54,6 @@ const ElevatorPitch: FC = () => {
               <p>{t('elevatorPitch.paragraphs.2', 'I recently led the development of AI Health Chat, a project that won 1st place in an innovation hackathon by using Grok to deliver personalized, privacy-focused health insights.')}</p>
               
               <p>{t('elevatorPitch.paragraphs.3', 'Now, I\'m building Kazi Connect—an AI-powered job-matching platform that uses skill-based logic to pair youth with verified, scam-free jobs.')}</p>
-              
-              <p>{t('elevatorPitch.paragraphs.4', 'I turn data into decisions, and LLMs into accessible solutions—and I\'m excited to collaborate with mission-driven teams creating real-world impact.')}</p>
             </div>
             
             <motion.a 

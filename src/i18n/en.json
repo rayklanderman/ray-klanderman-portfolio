@@ -17,14 +17,13 @@
   "elevatorPitch": {
     "title": "My Elevator Pitch",
     "subtitle": "Why Work With Me?",
-    "description": "In this short video, I share my background, skills, and what makes me a unique candidate for your project or team.",
+    "description": "Check out my elevator pitch playlist: https://youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G&si=3o8n9A67ZJLDlwIL",
     "cta": "Let's Work Together",
     "paragraphs": {
-      "0": "Did you know many young people in Africa still struggle to access the right jobs, despite being highly skilled?",
-      "1": "I'm Raymond Klanderman, a global AI Prompt Engineer, Fullstack Developer, and aspiring Data Analyst. I specialize in building smart digital tools that connect people to real opportunities—through the power of data and AI.",
-      "2": "I recently led the development of AI Health Chat, a project that won 1st place in an innovation hackathon by using Grok to deliver personalized, privacy-focused health insights.",
-      "3": "Now, I'm building Kazi Connect—an AI-powered job-matching platform that uses skill-based logic to pair youth with verified, scam-free jobs.",
-      "4": "I turn data into decisions, and LLMs into accessible solutions—and I'm excited to collaborate with mission-driven teams creating real-world impact."
+      "0": "Did you know that in many parts of Africa, youth unemployment affects over 45% of young people aged 15–34—millions of talented, skilled individuals struggling to find meaningful opportunities despite their potential?",
+      "1": "Hi, I'm Raymond Klanderman, a full-stack AI engineer and developer passionate about building scalable, human-centered systems that solve real problems. I specialize in turning complex data and advanced AI into practical tools—using technologies like Python with FastAPI and Streamlit, React/Next.js, Flutter, vector databases like Pinecone and Weaviate, and frameworks such as LangChain, LlamaIndex, and LangGraph. I work with leading LLMs from OpenAI, Anthropic, Groq, Gemini, and more to create intelligent workflows, autonomous agents, and Retrieval-Augmented Generation systems.",
+      "2": "Some of my standout projects include: Kazi Connect, an AI-powered job-matching platform I've built that uses skill-based logic to connect African youth with verified, scam-free opportunities—directly tackling unemployment head-on. AI Health Chat, which won 1st place in an innovation hackathon by leveraging Grok for personalized, privacy-focused health insights. GeminiQuest, a magical multimodal learning app where users sketch physics ideas and get real-time simulations, textbook citations, and live AI tutoring—built with Gemini Vision and React. And AutoResearcher, a multi-agent system using Google's Vertex AI Agent Kit that turns one prompt into a fully cited, 20-page research report with charts in under 10 minutes.",
+      "3": "I turn insights into production-ready products that empower people—from rapid prototyping to deploying autonomous agents that deliver real impact. I'm always excited to collaborate with mission-driven teams building the next generation of AI tools that understand and uplift people. If you're working on innovative projects in AI, data, or social good, let's connect—I'd love to explore how we can team up!"
     }
   },
   "profile": {

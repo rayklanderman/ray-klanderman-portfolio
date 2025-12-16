@@ -21,14 +21,13 @@
   "elevatorPitch": {
     "title": "Mijn Elevator Pitch",
     "subtitle": "Waarom met mij samenwerken?",
-    "description": "In deze korte video deel ik mijn achtergrond, vaardigheden en wat mij een unieke kandidaat maakt voor uw project of team.",
+    "description": "Bekijk mijn elevator pitch playlist: https://youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G&si=3o8n9A67ZJLDlwIL",
     "cta": "Laten we Samenwerken",
     "paragraphs": {
-      "0": "Wist u dat veel jonge mensen in Afrika nog steeds moeite hebben om aan het juiste werk te komen, ondanks dat ze hoogopgeleid zijn?",
-      "1": "Ik ben Raymond Klanderman, een wereldwijde AI Prompt Engineer, Fullstack Developer en aspirant Data Analyst. Ik ben gespecialiseerd in het bouwen van slimme digitale tools die mensen verbinden met echte kansen - door de kracht van data en AI.",
-      "2": "Onlangs leidde ik de ontwikkeling van AI Health Chat, een project dat de eerste prijs won in een innovatiehackathon door gebruik te maken van Grok om gepersonaliseerde, privacygerichte gezondheidsinzichten te leveren.",
-      "3": "Momenteel werk ik aan Kazi Connect - een door AI aangedreven platform voor het matchen van banen dat op vaardigheden gebaseerde logica gebruikt om jongeren te koppelen aan geverifieerde, oplichtingsvrije banen.",
-      "4": "Ik zet data om in beslissingen en LLM's in toegankelijke oplossingen - en ik kijk er naar uit om samen te werken met gedreven teams die een echte impact willen maken."
+      "0": "Wist u dat in veel delen van Afrika de jeugdwerkloosheid meer dan 45% van de jongeren tussen 15 en 34 jaar treft—miljoenen getalenteerde, gekwalificeerde individuen die worstelen om betekenisvolle kansen te vinden ondanks hun potentieel?",
+      "1": "Hoi, ik ben Raymond Klanderman, een full-stack AI-ingenieur en ontwikkelaar gepassioneerd door het bouwen van schaalbare, mensgerichte systemen die echte problemen oplossen. Ik specialiseer me in het omzetten van complexe data en geavanceerde AI in praktische tools—met behulp van technologieën zoals Python met FastAPI en Streamlit, React/Next.js, Flutter, vector databases zoals Pinecone en Weaviate, en frameworks zoals LangChain, LlamaIndex en LangGraph. Ik werk met toonaangevende LLMs van OpenAI, Anthropic, Groq, Gemini, en meer om intelligente workflows, autonome agenten en Retrieval-Augmented Generation systemen te creëren.",
+      "2": "Enkele van mijn opvallende projecten omvatten: Kazi Connect, een door AI aangedreven vacatureplatform dat ik heb gebouwd en dat op vaardigheden gebaseerde logica gebruikt om Afrikaanse jongeren te verbinden met geverifieerde, scam-vrije kansen—rechtstreeks de werkloosheid aanpakken. AI Health Chat, dat de eerste plaats won in een innovatiehackathon door Grok te gebruiken voor gepersonaliseerde, privacygerichte gezondheidsinzichten. GeminiQuest, een magische multimodale leerapp waar gebruikers natuurkunde-ideeën schetsen en realtime simulaties, tekstboekcitaten en live AI-tutoring krijgen—gebouwd met Gemini Vision en React. En AutoResearcher, een multi-agent systeem met Google's Vertex AI Agent Kit dat één prompt omzet in een volledig geciteerd, 20-pagina onderzoekrapport met grafieken in minder dan 10 minuten.",
+      "3": "Ik zet inzichten om in productieklare producten die mensen empoweren—van snelle prototyping tot het deployen van autonome agenten die echte impact leveren. Ik ben altijd enthousiast om samen te werken met gemotiveerde teams die de volgende generatie AI-tools bouwen die mensen begrijpen en opheffen. Als je werkt aan innovatieve projecten in AI, data of sociaal goed, laten we connecten—ik zou graag verkennen hoe we kunnen samenwerken!"
     }
   },
   "projects": {
