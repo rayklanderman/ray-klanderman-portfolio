@@ -22,7 +22,7 @@ const Header = () => {
   const menuItems = useMemo(() => [
     { id: 'profile', label: t('menu.profile') },
     { id: 'projects', label: t('menu.projects') },
-    { id: 'elevator', label: 'Elevator Pitch' },
+    { id: 'showcase', label: 'Showcase' },
     { id: 'education', label: t('menu.education') },
     { id: 'badges', label: t('menu.badges') },
     { id: 'contact-me', label: 'Contact Me' }

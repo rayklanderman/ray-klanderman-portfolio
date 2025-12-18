@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import Header from './components/Header';
 import CV from './components/CV_new';
 const Projects = React.lazy(() => import('./components/Projects'));
-const ElevatorPitch = React.lazy(() => import('./components/ElevatorPitch'));
+const Showcase = React.lazy(() => import('./components/Showcase'));
 const Education = React.lazy(() => import('./components/Education_new'));
 const Badges = React.lazy(() => import('./components/Badges'));
 import Footer from './components/Footer';
@@ -30,7 +30,7 @@ const AppContent: React.FC = () => {
         <CV /> {/* Profile section */}
         <Suspense fallback={<SectionSkeleton />}>
           <Projects />
-          <ElevatorPitch />
+          <Showcase />
           <Education />
           <Badges />
         </Suspense>
