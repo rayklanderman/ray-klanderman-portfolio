@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
     },
     {
       icon: <FaLinkedin />,
-      url: 'https://www.linkedin.com/in/raymondklanderman/',
+      url: 'https://www.linkedin.com/in/rayklanderman/',
       label: 'LinkedIn',
       color: '#0077B5'
     },
