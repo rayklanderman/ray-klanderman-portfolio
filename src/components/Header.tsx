@@ -8,6 +8,13 @@ import * as React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter, FaShareAlt, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
+interface MenuItem {
+  id: string;
+  label: string;
+  external?: boolean;
+  url?: string;
+}
+
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
@@ -19,13 +26,14 @@ const Header = () => {
   console.log('Header theme:', theme);
 
   // Define menu items
-  const menuItems = useMemo(() => [
+  const menuItems: MenuItem[] = useMemo(() => [
     { id: 'profile', label: t('menu.profile') },
     { id: 'projects', label: t('menu.projects') },
     { id: 'showcase', label: 'Showcase' },
     { id: 'education', label: t('menu.education') },
     { id: 'badges', label: t('menu.badges') },
-    { id: 'contact-me', label: 'Contact Me' }
+    { id: 'contact-me', label: 'Contact Me' },
+    { id: 'services', label: 'Services', external: true, url: 'https://www.devray.site/' }
   ], [t]);
 
   // Handle scroll effect for header
@@ -293,7 +301,7 @@ const Header = () => {
                   <motion.button
                     key={item.id}
                     className={`menu-button ${activeSection === item.id ? 'active' : ''}`}
-                    onClick={() => handleMenuItemClick(item.id)}
+                    onClick={() => item.external ? window.open(item.url, '_blank') : handleMenuItemClick(item.id)}
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
