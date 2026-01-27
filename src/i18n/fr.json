@@ -20,38 +20,45 @@
   },
   "projects": {
     "title": "Projets en Vedette",
+    "subtitle": "Une vitrine de nos derniers travaux démontrant notre expertise dans le développement web, l'IA/ML et les applications mobiles.",
     "viewProject": "Voir le Projet",
     "featured": "En Vedette",
     "comingSoon": "Bientôt Disponible",
     "items": {
       "tutaLearn": {
         "name": "TutaLearn - Plateforme Éducative Africaine",
-        "description": "Une Progressive Web App (PWA) fournissant une éducation alimentée par l'IA et culturellement pertinente aux étudiants africains via WhatsApp avec support hors ligne et contenu localisé en anglais et swahili.",
+        "description": "PWA éducative alimentée par l'IA pour les étudiants africains. Fonctionnalités incluant des parcours d'apprentissage personnalisés, intégration WhatsApp et évaluations adaptatives.",
         "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
-        "url": "https://www.tutalearn.study/"
+        "url": "https://www.tutalearn.study/",
+        "featured": true
       },
       "codebaseGenius": {
         "name": "Codebase Genius - Système de Documentation IA",
-        "description": "Une plateforme alimentée par l'IA qui génère automatiquement une documentation professionnelle pour tout dépôt GitHub utilisant Google Gemini et un système multi-agent avec visualisation graphique interactive.",
+        "description": "Plateforme alimentée par l'IA pour la documentation automatique GitHub. Génère des docs complets à partir de l'analyse de code base utilisant des LLMs.",
         "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
-        "url": "https://geniuscodebase.streamlit.app/"
-      },
-      "weatherWise": {
-        "name": "WeatherWise Planner - Données NASA pour une Planification Intelligente",
-        "description": "Un outil de planification climatique mondiale utilisant 20+ années de données terrestres NASA et l'IA Groq pour fournir des insights météorologiques historiques spécifiques à la localisation et des probabilités de risque pour l'agriculture, les voyages et les événements.",
-        "technologies": ["TypeScript", "Python", "React", "FastAPI", "Groq Llama 3.3 70B", "NASA GIBS", "Plotly.js", "PWA"],
-        "url": "https://www.weatherwise.earth/"
+        "url": "https://geniuscodebase.streamlit.app/",
+        "featured": true
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "description": "Plateforme de consultation médicale alimentée par l'IA avec intégration Supabase",
-        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
-        "featured": true,
-        "url": "https://aihealthchat.qzz.io/"
+        "description": "Plateforme de consultation médicale alimentée par l'IA. Vérification des symptômes et conseils de santé utilisant des modèles d'IA sécurisés.",
+        "technologies": ["Next.js", "Supabase", "xAI", "Grok", "TypeScript"],
+        "url": "https://aihealthchat.qzz.io/",
+        "featured": true
       },
-      "civic": {
-        "name": "Civic Alert Lite",
-        "description": "Système de signalement des problèmes civiques avec backend Firebase"
+      "serenityAI": {
+        "name": "SerenityAI",
+        "description": "Un compagnon de bien-être mental alimenté par l'IA conçu pour aider les gens à mieux comprendre et prendre soin de leur bien-être mental. Fonctionnalités incluant des agents intelligents offrant un soutien émotionnel personnalisé, suivi de l'humeur, insights de journalisation et analyse des patterns—avec le bien-être avant la productivité comme principe directeur.",
+        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "Architecture LLM", "Agents IA"],
+        "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
+      "weruDigital": {
+        "name": "Weru Digital",
+        "description": "Un site multimédia pour Weru TV et FM featuring streaming radio en direct, streaming TV en direct et programmation planifiée pour les deux. Optimisé SEO avec flux RSS de nouvelles auto-mise à jour, optimisation alimentée par l'IA, support PWA et compatibilité multiplateforme.",
+        "technologies": ["WordPress", "PWA", "Streaming en Direct", "IA", "SEO", "RSS", "Multiplateforme"],
+        "url": "https://werudigital.co.ke/",
+        "featured": true
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -210,6 +217,57 @@
         "platform": "Parchment Digital Badges",
         "description": "Portefeuille d'identifiants numériques hébergeant des badges vérifiés de plusieurs organisations émettrices.",
         "profile_url": "https://badges.parchment.com/public/collections/5b589fba604640ecb8d46b5a4432e9de"
+      },
+      "alx_data_analytics": {
+        "platform": "ALX Africa",
+        "certification": "Certificat Professionnel en Analyse de Données",
+        "description": "Programme professionnel rigoureux en Analyse de Données, conçu pour l'ère numérique. Compétences clés incluent : Analyse et Visualisation de Données : Utilisation d'outils comme Excel, SQL, Python (Pandas, Matplotlib, Seaborn), et Tableau/Power BI. Fondements Statistiques : Statistiques descriptives et inférentielles, tests d'hypothèses et interprétation des données. Développement Professionnel : Communication, résolution de problèmes, collaboration et compétences en gestion de projet adaptées aux rôles tech. Projets Réels : Techniques analytiques appliquées pour nettoyer, analyser et visualiser des ensembles de données — fournissant des insights actionnables. Cette certification démontre ma capacité à transformer les données brutes en intelligence commerciale stratégique — reliant l'analyse technique à l'exécution professionnelle.",
+        "issued_by": "ALX Africa",
+        "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
+        "skills": [
+          "Analyse et Visualisation de Données",
+          "Fondements Statistiques",
+          "Python (Pandas, Matplotlib, Seaborn)",
+          "SQL",
+          "Tableau/Power BI",
+          "Excel",
+          "Tests d'Hypothèses",
+          "Interprétation des Données"
+        ]
+      },
+      "power_learn_csdp": {
+        "platform": "Power Learn Project Africa",
+        "certification": "Certified Software Development Professional (CSDP)",
+        "description": "Programme intensif en Développement Logiciel terminé avec succès, couvrant : Programmation Python : Syntaxe de base, structures de données, POO, scripting et développement d'applications. Technologies Web : Fondamentaux frontend et backend utilisant des outils et frameworks modernes. Gestion de Base de Données : Conception, interrogation et gestion de bases de données relationnelles avec SQL. Dart avec Flutter : Développement d'applications mobiles pour déploiement multiplateforme. Compétences Douces : Résolution de problèmes, collaboration, gestion du temps et communication professionnelle. Spécialisé dans le Développement Web, le Développement Python et le Développement de Base de Données — construction d'applications évolutives et réelles avec les meilleures pratiques de l'industrie.",
+        "issued_by": "Power Learn Project Africa",
+        "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
+        "skills": [
+          "Programmation Python",
+          "Technologies Web",
+          "Gestion de Base de Données",
+          "Dart avec Flutter",
+          "POO",
+          "SQL",
+          "Développement d'Applications Mobiles",
+          "Résolution de Problèmes"
+        ]
+      },
+      "worldquant_data_science": {
+        "platform": "WorldQuant University",
+        "certification": "Applied Data Science Lab",
+        "description": "Pendant ce programme intensif, j'ai travaillé avec des ensembles de données réels pour construire des pipelines de bout en bout—couvrant tout, du nettoyage des données non structurées au déploiement de modèles prédictifs. Spécifiquement, j'ai apprécié : Modélisation de la Volatilité : Utilisation de modèles GARCH pour prévoir le risque de marché pour des actifs comme le Groupe MTN ($MTNOY$). Analyse de Séries Temporelles : Implémentation de validation walk-forward et d'outils de diagnostic comme les graphiques ACF/PACF. Développement d'API : Construction de modèles robustes basés sur des classes pour servir des prédictions avec des métriques intégrées comme AIC et BIC. En complétant une série de huit projets pratiques, j'ai acquis des compétences en science des données dans la gestion de bases de données, la modélisation, la visualisation, et plus encore.",
+        "issued_by": "WorldQuant University",
+        "credential_url": "https://www.credly.com/badges/cbb48521-41dd-48bc-aa53-78e0037762d2/linked_in_profile",
+        "skills": [
+          "Modélisation de la Volatilité",
+          "Analyse de Séries Temporelles",
+          "Modèles GARCH",
+          "Validation Walk-forward",
+          "Développement d'API",
+          "Modélisation Prédictive",
+          "Visualisation de Données",
+          "Gestion de Base de Données"
+        ]
       }
     }
   },
@@ -241,7 +299,7 @@
     "fr": "Français"
   },
   "menu": {
-    "profile": "Vitrine",
+    "profile": "Profil",
     "projects": "Projets",
     "education": "Éducation",
     "badges": "Badges"

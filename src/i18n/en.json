@@ -32,6 +32,7 @@
   },
   "projects": {
     "title": "Featured Projects",
+    "subtitle": "A showcase of our latest work demonstrating expertise across web development, AI/ML, and mobile applications.",
     "viewProject": "View Live",
     "featured": "Featured",
     "comingSoon": "Coming Soon",
@@ -39,39 +40,42 @@
       "tutaLearn": {
         "name": "TutaLearn - African Educational Platform",
         "shortDescription": "AI-powered educational PWA for African students",
-        "description": "A Progressive Web App (PWA) delivering AI-powered, culturally relevant education to African students via WhatsApp with offline support and localized content in English and Swahili.",
+        "description": "AI-powered educational PWA for African students. Features include personalized learning paths, WhatsApp integration, and adaptive assessments.",
         "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
-        "url": "https://www.tutalearn.study/"
+        "url": "https://www.tutalearn.study/",
+        "featured": true
       },
       "codebaseGenius": {
         "name": "Codebase Genius - AI Documentation System",
         "shortDescription": "AI-powered platform for automatic GitHub documentation",
-        "description": "An AI-powered platform that automatically generates professional documentation for any GitHub repository using Google Gemini and a multi-agent system with interactive graph visualization.",
+        "description": "AI-powered platform for automatic GitHub documentation. Generates comprehensive docs from codebase analysis using LLMs.",
         "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
-        "url": "https://geniuscodebase.streamlit.app/"
-      },
-      "weatherWise": {
-        "name": "WeatherWise Planner - NASA Earth Data for Smart Planning",
-        "shortDescription": "Global climate planning tool using NASA Earth data",
-        "description": "A global climate planning tool using 20+ years of NASA Earth data and Groq-powered AI to deliver location-specific historical weather insights and risk probabilities for agriculture, travel, and events.",
-        "technologies": ["TypeScript", "Python", "React", "FastAPI", "Groq Llama 3.3 70B", "NASA GIBS", "Plotly.js", "PWA"],
-        "url": "https://www.weatherwise.earth/"
+        "url": "https://geniuscodebase.streamlit.app/",
+        "featured": true
       },
       "aiHealth": {
         "name": "AI Health Chat",
         "shortDescription": "AI-powered healthcare consultation platform",
-        "description": "An intelligent healthcare consultation application that uses advanced AI to provide preliminary medical guidance. Built with a secure Supabase backend for user data and medical history storage. Features conversational UI and symptom analysis.",
-        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
-        "featured": true,
-        "github": "https://github.com/yourusername/ai-health-chat",
-        "url": "https://aihealthchat.qzz.io/"
+        "description": "AI-powered healthcare consultation platform. Symptom checking and health advice using secure AI models.",
+        "technologies": ["Next.js", "Supabase", "xAI", "Grok", "TypeScript"],
+        "url": "https://aihealthchat.qzz.io/",
+        "featured": true
       },
-      "civic": {
-        "name": "Civic Alert Lite",
-        "shortDescription": "Community-driven civic issue reporting system",
-        "description": "A mobile application that empowers citizens to report and track civic issues in their communities. Integrated with geolocation services, push notifications, and administrative dashboards for local authorities to manage reported issues.",
-        "technologies": ["React Native", "Firebase", "Google Maps API"],
-        "github": "https://github.com/yourusername/civic-alert-lite"
+      "serenityAI": {
+        "name": "SerenityAI",
+        "shortDescription": "AI-powered mental wellness companion",
+        "description": "An AI-powered mental wellness companion designed to help people better understand and care for their mental wellbeing. Features intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis—with wellness before productivity as the guiding principle.",
+        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "LLM Architecture", "AI Agents"],
+        "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
+      "weruDigital": {
+        "name": "Weru Digital",
+        "shortDescription": "Multimedia site for Weru TV and FM",
+        "description": "A multimedia site for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming for both. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility.",
+        "technologies": ["WordPress", "PWA", "Live Streaming", "AI", "SEO", "RSS", "Cross-platform"],
+        "url": "https://werudigital.co.ke/",
+        "featured": true
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -228,6 +232,57 @@
         "platform": "Parchment Digital Badges",
         "description": "Digital credential wallet hosting verified badges from multiple issuing organizations.",
         "profile_url": "https://badges.parchment.com/public/collections/5b589fba604640ecb8d46b5a4432e9de"
+      },
+      "alx_data_analytics": {
+        "platform": "ALX Africa",
+        "certification": "Data Analytics Professional Certificate",
+        "description": "Completed a rigorous professional program in Data Analytics, designed for the digital age. Key competencies include: Data Analysis & Visualization: Using tools like Excel, SQL, Python (Pandas, Matplotlib, Seaborn), and Tableau/Power BI. Statistical Foundations: Descriptive & inferential statistics, hypothesis testing, and data interpretation. Professional Development: Communication, problem-solving, collaboration, and project management skills tailored for tech roles. Real-World Projects: Applied analytical techniques to clean, analyze, and visualize datasets — delivering actionable insights. This certification demonstrates my ability to transform raw data into strategic business intelligence — bridging technical analysis with professional execution.",
+        "issued_by": "ALX Africa",
+        "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
+        "skills": [
+          "Data Analysis & Visualization",
+          "Statistical Foundations",
+          "Python (Pandas, Matplotlib, Seaborn)",
+          "SQL",
+          "Tableau/Power BI",
+          "Excel",
+          "Hypothesis Testing",
+          "Data Interpretation"
+        ]
+      },
+      "power_learn_csdp": {
+        "platform": "Power Learn Project Africa",
+        "certification": "Certified Software Development Professional (CSDP)",
+        "description": "Successfully completed an intensive program in Software Development, covering: Python Programming: Core syntax, data structures, OOP, scripting, and application development. Web Technologies: Frontend and backend fundamentals using modern tools and frameworks. Database Management: Designing, querying, and managing relational databases with SQL. Dart with Flutter: Mobile app development for cross-platform deployment. Soft Skills: Problem-solving, collaboration, time management, and professional communication. Specialized in Web Development, Python Development, and Database Development — building scalable, real-world applications with industry best practices.",
+        "issued_by": "Power Learn Project Africa",
+        "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
+        "skills": [
+          "Python Programming",
+          "Web Technologies",
+          "Database Management",
+          "Dart with Flutter",
+          "OOP",
+          "SQL",
+          "Mobile App Development",
+          "Problem-solving"
+        ]
+      },
+      "worldquant_data_science": {
+        "platform": "WorldQuant University",
+        "certification": "Applied Data Science Lab",
+        "description": "During this intensive program, I worked with real-world datasets to build end-to-end pipelines—covering everything from wrangling unstructured data to deploying predictive models. Specifically, I enjoyed: Volatility Modeling: Using GARCH models to forecast market risk for assets like the MTN Group ($MTNOY$). Time-Series Analysis: Implementing walk-forward validation and diagnostic tools like ACF/PACF plots. API Development: Building robust, class-based models to serve predictions with integrated metrics like AIC and BIC. By completing a series of eight hands-on projects, I've gained data science skills in database management, modeling, visualization, and more.",
+        "issued_by": "WorldQuant University",
+        "credential_url": "https://www.credly.com/badges/cbb48521-41dd-48bc-aa53-78e0037762d2/linked_in_profile",
+        "skills": [
+          "Volatility Modeling",
+          "Time-Series Analysis",
+          "GARCH Models",
+          "Walk-forward Validation",
+          "API Development",
+          "Predictive Modeling",
+          "Data Visualization",
+          "Database Management"
+        ]
       }
     }
   },
@@ -241,7 +296,7 @@
     "error": "Failed to send message. Please try again."
   },
   "menu": {
-    "profile": "Showcase",
+    "profile": "Profile",
     "projects": "Projects",
     "education": "Education",
     "badges": "Badges"

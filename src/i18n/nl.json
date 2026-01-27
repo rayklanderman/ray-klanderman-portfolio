@@ -32,50 +32,45 @@
   },
   "projects": {
     "title": "Uitgelichte Projecten",
+    "subtitle": "Een showcase van ons laatste werk dat expertise demonstreert in webontwikkeling, AI/ML en mobiele applicaties.",
     "viewProject": "Bekijk Project",
     "featured": "Uitgelicht",
     "comingSoon": "Binnenkort Beschikbaar",
     "items": {
       "tutaLearn": {
         "name": "TutaLearn - Afrikaans Educatief Platform",
-        "description": "Een Progressive Web App (PWA) die AI-aangedreven, cultureel relevante educatie levert aan Afrikaanse studenten via WhatsApp met offline ondersteuning en gelokaliseerde content in het Engels en Swahili.",
+        "description": "AI-aangedreven educatieve PWA voor Afrikaanse studenten. Functies omvatten gepersonaliseerde leerpaden, WhatsApp-integratie en adaptieve assessments.",
         "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
-        "url": "https://www.tutalearn.study/"
+        "url": "https://www.tutalearn.study/",
+        "featured": true
       },
       "codebaseGenius": {
         "name": "Codebase Genius - AI Documentatiesysteem",
-        "description": "Een AI-aangedreven platform dat automatisch professionele documentatie genereert voor elke GitHub-repository met behulp van Google Gemini en een multi-agent systeem met interactieve grafiekvisualisatie.",
+        "description": "AI-aangedreven platform voor automatische GitHub-documentatie. Genereert uitgebreide docs van codebase-analyse met behulp van LLMs.",
         "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
-        "url": "https://geniuscodebase.streamlit.app/"
-      },
-      "weatherWise": {
-        "name": "WeatherWise Planner - NASA Aardgegevens voor Slimme Planning",
-        "description": "Een wereldwijd klimaatplanningstool die gebruik maakt van 20+ jaar NASA Aardgegevens en Groq-aangedreven AI om locatiespecifieke historische weersinzichten en risicowaarschijnlijkheden te leveren voor landbouw, reizen en evenementen.",
-        "technologies": ["TypeScript", "Python", "React", "FastAPI", "Groq Llama 3.3 70B", "NASA GIBS", "Plotly.js", "PWA"],
-        "url": "https://www.weatherwise.earth/"
-      },
-      "kenyanese": {
-        "name": "Kenyanese",
-        "description": "Sociaal netwerk platform ontworpen om Kenianen te verbinden en content te delen. Het werd opgericht in 2024 en biedt verschillende functionaliteiten, waaronder het maken van profielen, updates plaatsen, deelnemen aan groepen en privéberichten via de berichtenfunctie. Hier is een algemeen overzicht van de tech stack: Front-end: HTML5, CSS3, JavaScript, ReactJS Back-end: Node.js, Express.js Database: MongoDB"
-      },
-      "weather": {
-        "name": "Weer Notificatie App",
-        "description": "Een op Python gebaseerde desktop applicatie die realtime weerupdates direct naar je desktop levert. Het maakt gebruik van de OpenWeather API om weergegevens op te halen en gebruikt de Plyer bibliotheek om informatieve meldingen weer te geven."
-      },
-      "webmeet": {
-        "name": "Stream Alive WebMeet",
-        "description": "Webmeet maakt gebruik van Jitsi's open-source WebRTC technologie voor zijn belangrijkste videovergaderfuncties. Dit stelt Webmeet in staat om realtime video- en audiostreaming aan te bieden. Door gebruik te maken van Jitsi's robuuste tech stack biedt Webmeet een functierijke WebRTC web vergaderervaring."
+        "url": "https://geniuscodebase.streamlit.app/",
+        "featured": true
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "description": "AI-aangedreven gezondheidsconsultatieplatform met Supabase-integratie",
-        "technologies": ["Next.js", "Supabase", "OpenAI", "TypeScript"],
-        "featured": true,
-        "url": "https://aihealthchat.qzz.io/"
+        "description": "AI-aangedreven gezondheidsconsultatieplatform. Symptoomcontrole en gezondheidsadvies met behulp van beveiligde AI-modellen.",
+        "technologies": ["Next.js", "Supabase", "xAI", "Grok", "TypeScript"],
+        "url": "https://aihealthchat.qzz.io/",
+        "featured": true
       },
-      "civic": {
-        "name": "Civic Alert Lite",
-        "description": "Gemeenschapsgericht meldingssysteem voor burgerlijke kwesties met Firebase backend"
+      "serenityAI": {
+        "name": "SerenityAI",
+        "description": "Een AI-aangedreven mentale wellness companion ontworpen om mensen te helpen hun mentale welzijn beter te begrijpen en te verzorgen. Functies omvatten intelligente agenten die gepersonaliseerde emotionele ondersteuning bieden, humeur tracking, journaling inzichten en patroonanalyse—met wellness voor productiviteit als leidende principe.",
+        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "LLM Architectuur", "AI Agenten"],
+        "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
+      "weruDigital": {
+        "name": "Weru Digital",
+        "description": "Een multimediaplatform voor Weru TV en FM met live radio streaming, live TV streaming en geplande programmering voor beide. SEO-vriendelijk met automatisch bijwerkende RSS nieuwskanalen, AI-aangedreven optimalisatie, PWA-ondersteuning en cross-platform compatibiliteit.",
+        "technologies": ["WordPress", "PWA", "Live Streaming", "AI", "SEO", "RSS", "Cross-platform"],
+        "url": "https://werudigital.co.ke/",
+        "featured": true
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -234,6 +229,57 @@
         "platform": "Parchment Digital Badges",
         "description": "Digitale credential portefeuille die geverifieerde badges host van meerdere uitgevende organisaties.",
         "profile_url": "https://badges.parchment.com/public/collections/5b589fba604640ecb8d46b5a4432e9de"
+      },
+      "alx_data_analytics": {
+        "platform": "ALX Africa",
+        "certification": "Data Analytics Professional Certificate",
+        "description": "Voltooide een rigoureus professioneel programma in Data Analytics, ontworpen voor het digitale tijdperk. Kerncompetenties omvatten: Data Analyse & Visualisatie: Gebruik van tools zoals Excel, SQL, Python (Pandas, Matplotlib, Seaborn), en Tableau/Power BI. Statistische Fundamenten: Beschrijvende en inferentiële statistiek, hypothesetoetsing en data-interpretatie. Professionele Ontwikkeling: Communicatie, probleemoplossing, samenwerking en projectmanagement vaardigheden aangepast voor tech-rollen. Real-World Projecten: Toegepaste analytische technieken om datasets schoon te maken, te analyseren en te visualiseren — levering van actionable insights. Deze certificering toont mijn vermogen aan om ruwe data om te zetten in strategische business intelligence — brug tussen technische analyse en professionele uitvoering.",
+        "issued_by": "ALX Africa",
+        "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
+        "skills": [
+          "Data Analyse & Visualisatie",
+          "Statistische Fundamenten",
+          "Python (Pandas, Matplotlib, Seaborn)",
+          "SQL",
+          "Tableau/Power BI",
+          "Excel",
+          "Hypothesetoetsing",
+          "Data-interpretatie"
+        ]
+      },
+      "power_learn_csdp": {
+        "platform": "Power Learn Project Africa",
+        "certification": "Certified Software Development Professional (CSDP)",
+        "description": "Met succes voltooid intensief programma in Software Development, dekking: Python Programmeren: Core syntax, data structuren, OOP, scripting en applicatieontwikkeling. Web Technologieën: Frontend en backend fundamentals met moderne tools en frameworks. Database Management: Ontwerp, query en beheer relationele databases met SQL. Dart met Flutter: Mobile app ontwikkeling voor cross-platform deployment. Soft Skills: Probleemoplossing, samenwerking, tijdmanagement en professionele communicatie. Gespecialiseerd in Web Development, Python Development en Database Development — bouw schaalbare, real-world applicaties met industry best practices.",
+        "issued_by": "Power Learn Project Africa",
+        "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
+        "skills": [
+          "Python Programmeren",
+          "Web Technologieën",
+          "Database Management",
+          "Dart met Flutter",
+          "OOP",
+          "SQL",
+          "Mobile App Ontwikkeling",
+          "Probleemoplossing"
+        ]
+      },
+      "worldquant_data_science": {
+        "platform": "WorldQuant University",
+        "certification": "Applied Data Science Lab",
+        "description": "Tijdens dit intensieve programma werkte ik met real-world datasets om end-to-end pipelines te bouwen—van het wrangelen van ongestructureerde data tot het deployen van predictieve modellen. Specifiek genoot ik van: Volatility Modeling: GARCH modellen gebruiken om markt risico te voorspellen voor assets zoals de MTN Group ($MTNOY$). Time-Series Analysis: Walk-forward validation implementeren en diagnostische tools zoals ACF/PACF plots. API Development: Robuuste, class-based modellen bouwen om voorspellingen te serveren met geïntegreerde metrics zoals AIC en BIC. Door een serie van acht hands-on projecten te voltooien, heb ik data science skills verkregen in database management, modeling, visualisatie en meer.",
+        "issued_by": "WorldQuant University",
+        "credential_url": "https://www.credly.com/badges/cbb48521-41dd-48bc-aa53-78e0037762d2/linked_in_profile",
+        "skills": [
+          "Volatility Modeling",
+          "Time-Series Analysis",
+          "GARCH Modellen",
+          "Walk-forward Validation",
+          "API Development",
+          "Predictieve Modeling",
+          "Data Visualisatie",
+          "Database Management"
+        ]
       }
     }
   },
@@ -253,7 +299,7 @@
     "fr": "Frans"
   },
   "menu": {
-    "profile": "Showcase",
+    "profile": "Profiel",
     "projects": "Projecten",
     "education": "Opleiding",
     "badges": "Badges"

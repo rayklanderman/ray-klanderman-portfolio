@@ -55,6 +55,36 @@ const Badges: React.FC = () => {
       description: t('badges.platforms.parchment.description'),
       profileUrl: t('badges.platforms.parchment.profile_url'),
       logo: '/badges/parchment.svg'
+    },
+    {
+      id: 'alx_data_analytics',
+      platform: t('badges.platforms.alx_data_analytics.platform'),
+      certification: t('badges.platforms.alx_data_analytics.certification'),
+      description: t('badges.platforms.alx_data_analytics.description'),
+      issuedBy: t('badges.platforms.alx_data_analytics.issued_by'),
+      credentialUrl: t('badges.platforms.alx_data_analytics.credential_url'),
+      skills: t('badges.platforms.alx_data_analytics.skills', { returnObjects: true }) as string[],
+      logo: '/badges/alx-africa.svg'
+    },
+    {
+      id: 'power_learn_csdp',
+      platform: t('badges.platforms.power_learn_csdp.platform'),
+      certification: t('badges.platforms.power_learn_csdp.certification'),
+      description: t('badges.platforms.power_learn_csdp.description'),
+      issuedBy: t('badges.platforms.power_learn_csdp.issued_by'),
+      credentialUrl: t('badges.platforms.power_learn_csdp.credential_url'),
+      skills: t('badges.platforms.power_learn_csdp.skills', { returnObjects: true }) as string[],
+      logo: '/badges/power-learn.svg'
+    },
+    {
+      id: 'worldquant_data_science',
+      platform: t('badges.platforms.worldquant_data_science.platform'),
+      certification: t('badges.platforms.worldquant_data_science.certification'),
+      description: t('badges.platforms.worldquant_data_science.description'),
+      issuedBy: t('badges.platforms.worldquant_data_science.issued_by'),
+      credentialUrl: t('badges.platforms.worldquant_data_science.credential_url'),
+      skills: t('badges.platforms.worldquant_data_science.skills', { returnObjects: true }) as string[],
+      logo: '/badges/worldquant.svg'
     }
   ];
 
@@ -123,6 +153,12 @@ const Badges: React.FC = () => {
                 </div>
               )}
 
+              {platform.certification && platform.issuedBy && !platform.expiration && (
+                <div className="certification-details">
+                  <div className="issued-by">Issued by: {platform.issuedBy}</div>
+                </div>
+              )}
+
               {platform.highlightBadges && platform.highlightBadges.length > 0 && (
                 <div className="highlight-badges">
                   <h4>Highlight Badges:</h4>
@@ -148,7 +184,7 @@ const Badges: React.FC = () => {
               )}
 
               <a 
-                href={platform.badgeUrl || platform.profileUrl} 
+                href={platform.badgeUrl || platform.credentialUrl || platform.profileUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="platform-link"

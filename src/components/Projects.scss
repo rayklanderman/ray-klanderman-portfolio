@@ -30,6 +30,17 @@
     }
   }
 
+  .section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -52,35 +63,35 @@
     cursor: pointer;
     padding: 1.5rem;
     
-    // Pastel background colors for different projects
+    // Pastel background colors for different featured projects
     &[data-key="tutaLearn"] {
-      background: #e8f4fd; // Light blue
+      background: linear-gradient(135deg, #e8f4fd 0%, #dbeafe 100%); // Light blue gradient
       border-left: 4px solid #2563eb;
     }
     
     &[data-key="codebaseGenius"] {
-      background: #f0f9ff; // Light cyan
+      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); // Light cyan gradient
       border-left: 4px solid #0891b2;
     }
     
-    &[data-key="weatherWise"] {
-      background: #fef3c7; // Light yellow
-      border-left: 4px solid #d97706;
-    }
-    
     &[data-key="aiHealth"] {
-      background: #fbe2e3; // Light pink
-      border-left: 4px solid #e11d48;
+      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); // Light red/pink gradient
+      border-left: 4px solid #dc2626;
     }
     
-    &[data-key="civic"] {
-      background: #fff7ed; // Light orange
-      border-left: 4px solid #fb923c;
+    &[data-key="serenityAI"] {
+      background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%); // Light purple gradient
+      border-left: 4px solid #7c3aed;
+    }
+    
+    &[data-key="weruDigital"] {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); // Light green gradient
+      border-left: 4px solid #059669;
     }
     
     &[data-key="kaziConnect"] {
-      background: #f0f4ff; // Light indigo
-      border-left: 4px solid #6366f1;
+      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); // Light yellow gradient
+      border-left: 4px solid #d97706;
     }
 
     &:hover {
@@ -282,6 +293,42 @@
     &[data-tech*='Plotly'] { 
       color: #3f4f75; 
       border: 1px solid rgba(63, 79, 117, 0.3);
+    }
+    &[data-tech*='xAI'] { 
+      color: #000000; 
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    &[data-tech*='JacLang'] { 
+      color: #7c3aed; 
+      border: 1px solid rgba(124, 58, 237, 0.3);
+    }
+    &[data-tech*='LLM'] { 
+      color: #6366f1; 
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+    &[data-tech*='AI'] { 
+      color: #8b5cf6; 
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    &[data-tech*='WordPress'] { 
+      color: #21759b; 
+      border: 1px solid rgba(33, 117, 155, 0.3);
+    }
+    &[data-tech*='Live'] { 
+      color: #dc2626; 
+      border: 1px solid rgba(220, 38, 38, 0.3);
+    }
+    &[data-tech*='SEO'] { 
+      color: #059669; 
+      border: 1px solid rgba(5, 150, 105, 0.3);
+    }
+    &[data-tech*='RSS'] { 
+      color: #f59e0b; 
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+    &[data-tech*='Cross-platform'] { 
+      color: #0891b2; 
+      border: 1px solid rgba(8, 145, 178, 0.3);
     }
   }
 

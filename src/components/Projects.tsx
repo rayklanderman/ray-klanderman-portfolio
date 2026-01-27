@@ -30,20 +30,20 @@ const Projects: FC = () => {
       github: 'https://github.com/rayklanderman/jaseci-proj',
       url: 'https://geniuscodebase.streamlit.app/'
     },
-    weatherWise: {
-      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/weatherwiseplanner',
-      url: 'https://www.weatherwise.earth/'
-    },
     aiHealth: {
       image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/ai-health-chat',
       url: 'https://aihealthchat.qzz.io/'
     },
-    civic: {
+    serenityAI: {
+      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/serenityai',
+      url: 'https://serenityai.qzz.io/'
+    },
+    weruDigital: {
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/civic-alert-lite',
-      url: 'https://civic-alert-lite.web.app/'
+      github: 'https://github.com/rayklanderman/weru-digital',
+      url: 'https://werudigital.co.ke/'
     },
     kaziConnect: {
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
@@ -83,6 +83,18 @@ const Projects: FC = () => {
         >
           {t('projects.title')}
         </motion.h2>
+        
+        {t('projects.subtitle') && (
+          <motion.p 
+            className="section-subtitle"
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            {t('projects.subtitle')}
+          </motion.p>
+        )}
         
         <div className="projects-grid">
           {Object.entries(projects).map(([key, project]) => {

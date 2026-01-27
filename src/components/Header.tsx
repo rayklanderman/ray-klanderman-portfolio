@@ -197,7 +197,7 @@ const Header = () => {
         <div className="header-content">
         <div className="profile-image-container">
           <img 
-            src="/images/profile.png" 
+            src="/images/profile1.png" 
             alt="Raymond Klanderman" 
             className="profile-image"
           />
