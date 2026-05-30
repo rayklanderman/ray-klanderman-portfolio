@@ -1,0 +1,40 @@
+.section-skeleton {
+  padding: var(--space-4xl) 0;
+  
+  .title-skeleton {
+    margin: 0 auto var(--space-3xl);
+  }
+  
+  .cards-skeleton {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-2xl);
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card-skeleton {
+    background: rgba(255, 255, 255, 0.95);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: var(--space-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    > .skeleton {
+      margin-bottom: var(--space-sm);
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .skills-skeleton {
+      display: flex;
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "header": {
+    "subtitle": "Software Developer | AI - ML | Creative",
+    "downloadCV": "Download CV",
+    "share": "Share Profile",
+    "jobTitles": {
+      "softwareEngineer": "Software Engineer",
+      "dataAnalyst": "Data Analyst",
+      "promptEngineer": "AI - ML",
+      "creative": "Creative"
+    }
+  },
+  "share": {
+    "message": "Check out Raymond Klanderman's Portfolio - Software Developer & AI Engineer",
+    "copied": "Portfolio URL copied to clipboard!"
+  },
+  "elevatorPitch": {
+    "title": "My Elevator Pitch",
+    "subtitle": "Why Work With Me?",
+    "description": "Check out my elevator pitch playlist: https://youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G&si=3o8n9A67ZJLDlwIL",
+    "cta": "Let's Work Together",
+    "paragraphs": {
+      "0": "Did you know that in many parts of Africa, youth unemployment affects over 45% of young people aged 15–34—millions of talented, skilled individuals struggling to find meaningful opportunities despite their potential?",
+      "1": "Hi, I'm Raymond Klanderman, a full-stack AI engineer and developer passionate about building scalable, human-centered systems that solve real problems. I specialize in turning complex data and advanced AI into practical tools—using technologies like Python with FastAPI and Streamlit, React/Next.js, Flutter, vector databases like Pinecone and Weaviate, and frameworks such as LangChain, LlamaIndex, and LangGraph. I work with leading LLMs from OpenAI, Anthropic, Groq, Gemini, and more to create intelligent workflows, autonomous agents, and Retrieval-Augmented Generation systems.",
+      "2": "Some of my standout projects include: Kazi Connect, an AI-powered job-matching platform I've built that uses skill-based logic to connect African youth with verified, scam-free opportunities—directly tackling unemployment head-on. AI Health Chat, which won 1st place in an innovation hackathon by leveraging Grok for personalized, privacy-focused health insights. GeminiQuest, a magical multimodal learning app where users sketch physics ideas and get real-time simulations, textbook citations, and live AI tutoring—built with Gemini Vision and React. And AutoResearcher, a multi-agent system using Google's Vertex AI Agent Kit that turns one prompt into a fully cited, 20-page research report with charts in under 10 minutes.",
+      "3": "I turn insights into production-ready products that empower people—from rapid prototyping to deploying autonomous agents that deliver real impact. I'm always excited to collaborate with mission-driven teams building the next generation of AI tools that understand and uplift people. If you're working on innovative projects in AI, data, or social good, let's connect—I'd love to explore how we can team up!"
+    }
+  },
+  "profile": {
+    "title": "Professional Profile",
+    "description": "I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines.\n\nI design and ship production-ready applications using Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL, and Google Cloud. I specialize in intelligent workflows powered by APIs, autonomous agents, vector search, and Retrieval-Augmented Generation (RAG). My tooling includes Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph, and modern LLM providers like OpenAI, Anthropic, Gemini, Groq, and Ollama.\n\nBeyond engineering, I turn data into insights and insights into features that become products people rely on. I also create clear technical content—tutorials, docs, and demos—that helps teams adopt and extend complex systems with confidence.\n\nMy mission is simple: build tools that understand people, and empower people to build even better tools. Curiosity drives my work, from rapid ML prototyping to productionizing agents and automating end-to-end workflows.\n\nAlways open to collaborating with teams building the next generation of human-centered AI."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of our latest work demonstrating expertise across web development, AI/ML, and mobile applications.",
+    "viewProject": "View Live",
+    "featured": "Featured",
+    "comingSoon": "Coming Soon",
+    "items": {
+      "tutaLearn": {
+        "name": "TutaLearn - African Educational Platform",
+        "shortDescription": "AI-powered educational PWA for African students",
+        "description": "AI-powered educational PWA for African students. Features include personalized learning paths, WhatsApp integration, and adaptive assessments.",
+        "technologies": [
+          "Python",
+          "TypeScript",
+          "Groq API",
+          "PWA",
+          "WhatsApp API"
+        ],
+        "url": "https://www.tutalearn.study/",
+        "featured": true
+      },
+      "codebaseGenius": {
+        "name": "Codebase Genius - AI Documentation System",
+        "shortDescription": "AI-powered platform for automatic GitHub documentation",
+        "description": "AI-powered platform for automatic GitHub documentation. Generates comprehensive docs from codebase analysis using LLMs.",
+        "technologies": [
+          "Python",
+          "TypeScript",
+          "Google Gemini API",
+          "Streamlit",
+          "NetworkX",
+          "FastAPI"
+        ],
+        "url": "https://geniuscodebase.streamlit.app/",
+        "featured": true
+      },
+      "aiHealth": {
+        "name": "AI Health Chat",
+        "shortDescription": "AI-powered healthcare consultation platform",
+        "description": "AI-powered healthcare consultation platform. Symptom checking and health advice using secure AI models.",
+        "technologies": [
+          "Next.js",
+          "Supabase",
+          "xAI",
+          "Grok",
+          "TypeScript"
+        ],
+        "url": "https://aihealthchat.qzz.io/",
+        "featured": true
+      },
+      "serenityAI": {
+        "name": "SerenityAI",
+        "shortDescription": "AI-powered mental wellness companion",
+        "description": "An AI-powered mental wellness companion designed to help people better understand and care for their mental wellbeing. Features intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis—with wellness before productivity as the guiding principle.",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "JacLang",
+          "Groq API",
+          "LLM Architecture",
+          "AI Agents"
+        ],
+        "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
+      "weruDigital": {
+        "name": "Weru Digital",
+        "shortDescription": "Multimedia site for Weru TV and FM",
+        "description": "A multimedia site for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming for both. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility.",
+        "technologies": [
+          "WordPress",
+          "PWA",
+          "Live Streaming",
+          "AI",
+          "SEO",
+          "RSS",
+          "Cross-platform"
+        ],
+        "url": "https://werudigital.co.ke/",
+        "featured": true
+      },
+      "kaziConnect": {
+        "name": "Kazi Connect",
+        "shortDescription": "AI-powered job matching platform",
+        "description": "An innovative job marketplace that uses artificial intelligence to match job seekers with suitable opportunities. Features include CV analysis, skill assessment, automated application tracking, and personalized job recommendations based on user profile and preferences.",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Firebase",
+          "OpenAI",
+          "PWA"
+        ],
+        "url": "https://www.kaziconnect.work/",
+        "github": "https://github.com/rayklanderman/kazi-connect",
+        "featured": true
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "items": {
+      "bachelor_cs": {
+        "name": "Bachelor of Computer Science",
+        "institution": "University of the People (UoPeople)",
+        "period": "2025 – 2028 (Projected)",
+        "status": "Ongoing",
+        "description": [
+          "Current Standing: SAP",
+          "Cumulative GPA: 3.95",
+          "Credits Earned: 21 / 120 (As of April 2026)",
+          "Pursuing a comprehensive degree in Computer Science with a focus on software engineering, algorithms, and modern technologies."
+        ],
+        "skills": []
+      },
+      "diploma_ict": {
+        "name": "Diploma in Information Communication Technology",
+        "institution": "Management University of Africa (MUA)",
+        "period": "2021 – 2024",
+        "status": "Completed",
+        "description": [
+          "Graduated with Distinction",
+          "Focus on modern software development and IT infrastructure"
+        ],
+        "skills": [
+          "Software Development",
+          "IT Infrastructure",
+          "Project Management"
+        ]
+      },
+      "alx_ds": {
+        "name": "Data Science Program",
+        "institution": "ALX",
+        "period": "2025 – Present",
+        "status": "Ongoing",
+        "description": [
+          "Advanced from completed Data Analytics Cohort 2025",
+          "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
+          "Mastery of Advanced Python, Machine Learning, AI, and predictive modeling",
+          "Applying Agile methodologies for collaborative, real-world problem-solving"
+        ],
+        "skills": [
+          "SQL",
+          "Power BI",
+          "Tableau",
+          "Advanced Python",
+          "Machine Learning",
+          "AI",
+          "Agile",
+          "Data Science"
+        ]
+      },
+      "plp_africa": {
+        "name": "Power Learn Project (PLP) Africa – Software Development Program",
+        "institution": "Power Learn Project (PLP) Africa",
+        "period": "Completed December 2024",
+        "status": "Completed",
+        "description": [
+          "Successfully completed a 16-week intensive program in Software Development",
+          "Specialized in Web Development, Python Development, and Database Development",
+          "Mastered Python, Web Technologies, Database Management, Dart with Flutter, and Soft Skills"
+        ],
+        "skills": [
+          "Python",
+          "Web Development",
+          "Database Management",
+          "Dart",
+          "Flutter",
+          "Soft Skills"
+        ]
+      },
+      "worldquant_cv": {
+        "name": "Applied AI Lab: Deep Learning for Computer Vision",
+        "institution": "WorldQuant University",
+        "period": "2025 – Present",
+        "status": "Ongoing",
+        "description": [
+          "Mastering deep learning frameworks and computer vision techniques",
+          "Building and deploying real-world AI applications"
+        ],
+        "skills": [
+          "Deep Learning",
+          "Computer Vision",
+          "AI"
+        ]
+      },
+      "worldquant_ds": {
+        "name": "Applied Data Science Lab",
+        "institution": "WorldQuant University",
+        "period": "2025 – Present",
+        "status": "Ongoing",
+        "description": [
+          "Advanced data analysis and machine learning techniques",
+          "Real-world data science project implementation"
+        ],
+        "skills": [
+          "Data Science",
+          "Machine Learning",
+          "Analytics"
+        ]
+      },
+      "code_in_place": {
+        "name": "Code in Place: Introduction to Programming with Python",
+        "institution": "Stanford University",
+        "period": "2024",
+        "status": "Completed",
+        "description": [
+          "Intensive Python programming course from Stanford University",
+          "Completed diagnostic assessment and final project with distinction"
+        ],
+        "skills": [
+          "Python",
+          "Programming Fundamentals",
+          "Diagnostic Badge",
+          "Final Project Badge"
+        ]
+      }
+    }
+  },
+  "badges": {
+    "title": "Badges & Certifications",
+    "platforms": {
+      "oracle_cloud": {
+        "platform": "Oracle Cloud Infrastructure",
+        "certification": "2025 Certified AI Foundations Associate",
+        "description": "Certification introducing foundational AI/ML concepts and practical applications within Oracle Cloud Infrastructure, including generative AI, LLMs, and OCI AI services.",
+        "issued_by": "Oracle",
+        "expiration": "October 30, 2027",
+        "badge_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7418DAC9DB558E4572B75960D015FF4F8AC815414D000F75011C3391E0103A33",
+        "skills": [
+          "AI & ML Fundamentals",
+          "Deep Learning (CNNs, RNNs, LSTMs)",
+          "OCI AI Tools & Services",
+          "Generative AI & Large Language Models",
+          "Oracle 23ai & Select AI"
+        ]
+      },
+      "alx_data_analytics": {
+        "platform": "ALX Africa",
+        "certification": "Data Analytics Professional Certificate",
+        "description": "Completed a rigorous professional program in Data Analytics, designed for the digital age. Key competencies include: Data Analysis & Visualization: Using tools like Excel, SQL, Python (Pandas, Matplotlib, Seaborn), and Tableau/Power BI. Statistical Foundations: Descriptive & inferential statistics, hypothesis testing, and data interpretation. Professional Development: Communication, problem-solving, collaboration, and project management skills tailored for tech roles. Real-World Projects: Applied analytical techniques to clean, analyze, and visualize datasets — delivering actionable insights. This certification demonstrates my ability to transform raw data into strategic business intelligence — bridging technical analysis with professional execution.",
+        "issued_by": "ALX Africa",
+        "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
+        "skills": [
+          "Data Analysis & Visualization",
+          "Statistical Foundations",
+          "Python (Pandas, Matplotlib, Seaborn)",
+          "SQL",
+          "Tableau/Power BI",
+          "Excel",
+          "Hypothesis Testing",
+          "Data Interpretation"
+        ]
+      },
+      "power_learn_csdp": {
+        "platform": "Power Learn Project Africa",
+        "certification": "Certified Software Development Professional (CSDP)",
+        "description": "Successfully completed an intensive program in Software Development, covering: Python Programming: Core syntax, data structures, OOP, scripting, and application development. Web Technologies: Frontend and backend fundamentals using modern tools and frameworks. Database Management: Designing, querying, and managing relational databases with SQL. Dart with Flutter: Mobile app development for cross-platform deployment. Soft Skills: Problem-solving, collaboration, time management, and professional communication. Specialized in Web Development, Python Development, and Database Development — building scalable, real-world applications with industry best practices.",
+        "issued_by": "Power Learn Project Africa",
+        "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
+        "skills": [
+          "Python Programming",
+          "Web Technologies",
+          "Database Management",
+          "Dart with Flutter",
+          "OOP",
+          "SQL",
+          "Mobile App Development",
+          "Problem-solving"
+        ]
+      },
+      "worldquant_data_science": {
+        "platform": "WorldQuant University",
+        "certification": "Applied Data Science Lab",
+        "description": "Earners of this badge have completed eight end-to-end, applied data science projects. Explored and cleaned data, created ETL pipelines, built machine learning models for supervised and unsupervised learning tasks, and created visualizations. Projects included Housing in Mexico, Apartment Sales in Buenos Aires, Air Quality in Nairobi, Earthquake Damage in Nepal, Bankruptcy in Poland, Customer Segmentation in the US, A/B Testing, and Volatility Forecasting in India.",
+        "issued_by": "WorldQuant University",
+        "credential_url": "https://www.wqu.edu/adsl",
+        "skills": [
+          "API Design",
+          "Data Science",
+          "Data Visualization",
+          "Machine Learning",
+          "MongoDB",
+          "Python",
+          "SQL",
+          "Statistics"
+        ]
+      },
+      "alx_machine_learning": {
+        "platform": "ALX Africa",
+        "certification": "Machine Learning Certificate",
+        "description": "Completed the Machine Learning track, demonstrating understanding of machine learning algorithms and techniques to build predictive models and data-driven solutions.",
+        "issued_by": "ALX Africa",
+        "credential_url": "#",
+        "skills": [
+          "Machine Learning Algorithms",
+          "Predictive Modeling",
+          "Data-Driven Solutions",
+          "Python"
+        ]
+      },
+      "alx_data_science": {
+        "platform": "ALX Africa",
+        "certification": "Data Science Programme",
+        "description": "Completed the full Data Science programme consisting of Professional Foundations, Data Analytics, Python, and Machine Learning. Learned essential skills in machine learning, statistical analysis, and data visualization while working on real-world projects.",
+        "issued_by": "ALX Africa",
+        "credential_url": "#",
+        "skills": [
+          "Data Science",
+          "Machine Learning",
+          "Statistical Analysis",
+          "Data Visualization",
+          "Leadership",
+          "Python"
+        ]
+      },
+      "linux_kcna": {
+        "platform": "Linux Foundation",
+        "certification": "Kubernetes and Cloud Native Associate (KCNA)",
+        "description": "Demonstrated basic knowledge of Kubernetes and cloud-native technologies, including deploying applications using kubectl commands, architecture (containers, pods, nodes, clusters), service mesh, and GitOps.",
+        "issued_by": "Linux Foundation",
+        "credential_url": "https://training.linuxfoundation.org/certification/kubernetes-cloud-native-associate/",
+        "skills": [
+          "Application Containers",
+          "Cloud Native",
+          "Clusters",
+          "GitOps",
+          "Kubernetes",
+          "Pods",
+          "Service Mesh"
+        ]
+      },
+      "google_adk": {
+        "platform": "Google Cloud",
+        "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
+        "description": "Formulated real-world language model research problems; built a simple tokenizer; prepared datasets for training transformer language models; pretrained and fine-tuned LLMs.",
+        "issued_by": "Google Cloud",
+        "credential_url": "https://www.skills.google/course_templates/1596",
+        "skills": [
+          "Agent Development Kit",
+          "AI Agents",
+          "LLM Fine-Tuning",
+          "Model Training",
+          "Pretraining LLMs",
+          "Tokenization"
+        ]
+      },
+      "google_security": {
+        "platform": "Google Cloud",
+        "certification": "Implement Cloud Security Fundamentals",
+        "description": "Created and assigned roles with IAM; managed service accounts; enabled private connectivity and implemented cloud security best practices on Google Cloud.",
+        "issued_by": "Google Cloud",
+        "credential_url": "https://www.cloudskillsboost.google/course_templates/645",
+        "skills": [
+          "App Deployment",
+          "Authentication",
+          "Cloud Key Management",
+          "GKE",
+          "IAM",
+          "Kubectl",
+          "Kubernetes",
+          "Security",
+          "VPC Peering"
+        ]
+      },
+      "google_load_balancing": {
+        "platform": "Google Cloud",
+        "certification": "Implement Load Balancing on Compute Engine",
+        "description": "Wrote gcloud commands, created and deployed VMs, ran containerized applications on GKE, and configured network load balancing on Google Cloud.",
+        "issued_by": "Google Cloud",
+        "credential_url": "https://www.cloudskillsboost.google/course_templates/648",
+        "skills": [
+          "Cloud Computing",
+          "Compute Engine",
+          "GKE",
+          "Kubernetes",
+          "Networking"
+        ]
+      },
+      "google_serverless": {
+        "platform": "Google Cloud",
+        "certification": "Develop Serverless Applications on Cloud Run",
+        "description": "Integrated Cloud Run with Cloud Storage, architected resilient asynchronous systems, and constructed REST API gateways using Cloud Run and Pub/Sub.",
+        "issued_by": "Google Cloud",
+        "credential_url": "https://www.cloudskillsboost.google/course_templates/741",
+        "skills": [
+          "Cloud Build",
+          "Cloud Run",
+          "Cloud Storage",
+          "Containers",
+          "Docker",
+          "Firestore",
+          "Microservices",
+          "Pub/Sub",
+          "REST API",
+          "Serverless"
+        ]
+      },
+      "anthropic_fluency": {
+        "platform": "Anthropic",
+        "certification": "AI Fluency Framework & Foundations",
+        "description": "Completed the AI Fluency Framework & Foundations program from Anthropic, demonstrating a clear understanding of fundamental AI concepts.",
+        "issued_by": "Anthropic",
+        "credential_url": "https://verify.skilljar.com/c/3tkg8je2ykb9",
+        "skills": [
+          "AI Foundations",
+          "AI Fluency",
+          "LLM Basics"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "menu": {
+    "profile": "Profile",
+    "projects": "Projects",
+    "education": "Education",
+    "badges": "Badges"
+  },
+  "language": {
+    "en": "English",
+    "nl": "Dutch",
+    "fr": "French"
+  }
+}

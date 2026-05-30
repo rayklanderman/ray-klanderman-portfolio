@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradGCloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34a853;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="150" cy="150" r="150" fill="#f8f9fa"/>
+  <circle cx="150" cy="150" r="120" fill="url(#gradGCloud)" opacity="0.1"/>
+  <g transform="translate(75,75) scale(0.5)">
+    <path d="M150 50l87.5 50v100l-87.5 50-87.5-50V100L150 50z" fill="#4285f4"/>
+    <path d="M150 75l62.5 35v70l-62.5 35-62.5-35v-70L150 75zm0 20l-42.5 25v50l42.5 25 42.5-25v-50L150 95z" fill="#34a853"/>
+    <path d="M150 115l22.5 15v30l-22.5 15-22.5-15v-30l22.5-15z" fill="#4285f4"/>
+  </g>
+</svg>
