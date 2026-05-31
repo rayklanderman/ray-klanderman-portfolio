@@ -1,10 +1,8 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 import './Showcase.scss';
 
 const Showcase: FC = () => {
-  const { t } = useTranslation();
 
   return (
     <section id="showcase" className="showcase-section">
