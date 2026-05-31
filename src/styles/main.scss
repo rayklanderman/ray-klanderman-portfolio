@@ -11,7 +11,7 @@ $primary-color: $netherlands-blue;        // Dutch blue as primary
 $secondary-color: $kenya-green;           // Kenyan green as secondary
 $accent-color: $netherlands-red;          // Dutch red as accent
 $background-color: #FFFFFF;               // White background
-$text-color: #333333;                     // Dark text for readability
+$text-color: #1e293b;                     // Dark text for readability
 $header-bg: $netherlands-blue;            // Solid Dutch blue
 $header-height: 100vh;
 
@@ -22,12 +22,12 @@ $primary-dark: #193d78;     // Darker blue
 $secondary-light: #007a52;  // Slightly lighter green
 
 // Dark theme colors
-$dark-background-color: #1a1a1a;
-$dark-text-color: #f5f5f5;
-$dark-header-bg: #2a2a2a;
-$dark-primary-color: #4a90e2;
-$dark-secondary-color: #50c878;
-$dark-accent-color: #ff6b6b;
+$dark-background-color: #0f172a;
+$dark-text-color: #f8fafc;
+$dark-header-bg: #0f172a;
+$dark-primary-color: #3b82f6;
+$dark-secondary-color: #10b981;
+$dark-accent-color: #ef4444;
 
 // Import section title styles
 @use 'section-title';
@@ -45,27 +45,41 @@ $dark-accent-color: #ff6b6b;
 
   // Light theme (default)
   --bg-color: #{$background-color};
+  --surface-1: #ffffff;
+  --surface-2: #f1f5f9;
   --text-color: #{$text-color};
+  --text-muted: #64748b;
   --header-bg: #{$header-bg};
   --primary-color: #{$primary-color};
   --secondary-color: #{$secondary-color};
   --accent-color: #{$accent-color};
-  --card-bg: rgba(255, 255, 255, 0.9);
-  --glass-bg: rgba(255, 255, 255, 0.1);
+  --card-bg: #ffffff;
+  --glass-bg: rgba(255, 255, 255, 0.8);
   --glass-border: rgba(255, 255, 255, 0.2);
+  --hover-overlay: rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 // Dark theme
 [data-theme="dark"] {
   --bg-color: #{$dark-background-color};
+  --surface-1: #1e293b;
+  --surface-2: #334155;
   --text-color: #{$dark-text-color};
+  --text-muted: #94a3b8;
   --header-bg: #{$dark-header-bg};
   --primary-color: #{$dark-primary-color};
   --secondary-color: #{$dark-secondary-color};
   --accent-color: #{$dark-accent-color};
-  --card-bg: rgba(42, 42, 42, 0.9);
-  --glass-bg: rgba(0, 0, 0, 0.2);
+  --card-bg: #1e293b;
+  --glass-bg: rgba(30, 41, 59, 0.8);
   --glass-border: rgba(255, 255, 255, 0.1);
+  --hover-overlay: rgba(255, 255, 255, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
 }
 
 // Global styles
@@ -75,12 +89,20 @@ $dark-accent-color: #ff6b6b;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
   color: var(--text-color);
   background-color: var(--bg-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .section-title {
+  font-family: 'Outfit', -apple-system, sans-serif;
 }
 
 // Ensure no underlines on any links

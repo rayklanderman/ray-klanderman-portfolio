@@ -137,7 +137,7 @@
         "name": "Bachelor of Computer Science",
         "institution": "University of the People (UoPeople)",
         "period": "2025 – 2028 (Projected)",
-        "status": "Ongoing",
+        "status": "Completed",
         "description": [
           "Current Standing: SAP",
           "Cumulative GPA: 3.95",
@@ -165,7 +165,7 @@
         "name": "Data Science Program",
         "institution": "ALX",
         "period": "2025 – Present",
-        "status": "Ongoing",
+        "status": "Completed",
         "description": [
           "Advanced from completed Data Analytics Cohort 2025",
           "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
@@ -206,7 +206,7 @@
         "name": "Applied AI Lab: Deep Learning for Computer Vision",
         "institution": "WorldQuant University",
         "period": "2025 – Present",
-        "status": "Ongoing",
+        "status": "Completed",
         "description": [
           "Mastering deep learning frameworks and computer vision techniques",
           "Building and deploying real-world AI applications"
@@ -221,7 +221,7 @@
         "name": "Applied Data Science Lab",
         "institution": "WorldQuant University",
         "period": "2025 – Present",
-        "status": "Ongoing",
+        "status": "Completed",
         "description": [
           "Advanced data analysis and machine learning techniques",
           "Real-world data science project implementation"
@@ -440,6 +440,78 @@
           "AI Fluency",
           "LLM Basics"
         ]
+      },
+      "bcs_generative_ai": {
+        "platform": "BCS",
+        "certification": "Foundation Certificate in Generative AI",
+        "description": "Demonstrates foundational knowledge of Generative AI principles, applications, and ethical considerations.",
+        "issued_by": "BCS, The Chartered Institute for IT",
+        "credential_url": "#",
+        "skills": ["Generative AI", "AI Ethics", "AI Principles"]
+      },
+      "google_cybersecurity": {
+        "platform": "Google",
+        "certification": "Cybersecurity Certificate",
+        "description": "Foundational knowledge and skills in cybersecurity, including identifying risks, protecting networks, and responding to cyber threats.",
+        "issued_by": "Google",
+        "credential_url": "#",
+        "skills": ["Cybersecurity", "Network Security", "Threat Intelligence", "Security Protocols"]
+      },
+      "ibm_data": {
+        "platform": "IBM",
+        "certification": "IBM Data Certification",
+        "description": "Demonstrates comprehensive skills and knowledge in data science, analytics, and business intelligence methodologies utilizing IBM tools.",
+        "issued_by": "IBM",
+        "credential_url": "#",
+        "skills": ["Data Science", "Data Analytics", "IBM Tools", "Business Intelligence"]
+      },
+      "google_mlops": {
+        "platform": "Google Cloud",
+        "certification": "Machine Learning Operations (MLOps)",
+        "description": "Skills in deploying, testing, monitoring, and automating ML systems in production environments.",
+        "issued_by": "Google Cloud",
+        "credential_url": "#",
+        "skills": ["MLOps", "Model Deployment", "Automation", "CI/CD for ML"]
+      },
+      "google_prompt_design": {
+        "platform": "Google Cloud",
+        "certification": "Prompt Design in Vertex AI",
+        "description": "Practical skills in designing and optimizing prompts for Large Language Models using Vertex AI.",
+        "issued_by": "Google Cloud",
+        "credential_url": "#",
+        "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
+      },
+      "google_responsible_ai": {
+        "platform": "Google Cloud",
+        "certification": "Responsible AI",
+        "description": "Understanding of the principles and practices for developing and deploying AI systems responsibly.",
+        "issued_by": "Google Cloud",
+        "credential_url": "#",
+        "skills": ["AI Ethics", "Fairness in AI", "Responsible AI Practices"]
+      },
+      "google_responsible_ai_privacy": {
+        "platform": "Google Cloud",
+        "certification": "Responsible AI: Privacy",
+        "description": "Knowledge of privacy principles, techniques, and best practices in the context of artificial intelligence.",
+        "issued_by": "Google Cloud",
+        "credential_url": "#",
+        "skills": ["Data Privacy", "AI Ethics", "Privacy-Preserving ML"]
+      },
+      "google_responsible_ai_transparency": {
+        "platform": "Google Cloud",
+        "certification": "Responsible AI: Transparency",
+        "description": "Understanding how to build transparent and explainable AI systems to foster trust.",
+        "issued_by": "Google Cloud",
+        "credential_url": "#",
+        "skills": ["Explainable AI", "Transparency", "Model Interpretability"]
+      },
+      "google_stem": {
+        "platform": "STEM",
+        "certification": "STEM Professional Professional",
+        "description": "Acknowledges foundational learning and continuous development in Science, Technology, Engineering, and Mathematics fields.",
+        "issued_by": "Authorized issuer",
+        "credential_url": "#",
+        "skills": ["Science", "Technology", "Engineering", "Mathematics", "Problem Solving"]
       }
     }
   },

@@ -39,17 +39,71 @@
 }
 
 .profile-content {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--surface-1);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-md);
   margin-top: 2rem;
+  border: 1px solid var(--glass-border);
   
   p {
     margin-bottom: 1.5rem;
-    color: #333; /* Keep dark text for profile description */
+    color: var(--text-color);
+  }
+}
+
+.skills-cloud-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0 1rem;
+  text-align: left;
+}
+
+.skill-category {
+  background: var(--surface-2);
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+
+  .category-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    
+    svg {
+      font-size: 1.2rem;
+    }
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .skill-badge {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--glass-border);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
   }
 }
 
@@ -58,9 +112,9 @@
   align-items: center;
   justify-content: center;
   padding: 0.8rem 2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--surface-2);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--glass-border);
   border-radius: 50px;
   color: var(--primary-color);
   font-weight: 600;
@@ -69,12 +123,12 @@
   transition: all 0.3s ease;
   text-decoration: none;
   margin-top: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
   
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--hover-overlay);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--shadow-md);
   }
   
   &:active {

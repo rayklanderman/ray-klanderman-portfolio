@@ -1,5 +1,5 @@
 import './Header.scss';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
 import CVRequestModal from './CVRequestModal';
@@ -22,8 +22,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
-
-  console.log('Header theme:', theme);
+  const prevScrollY = useRef(false);
 
   // Define menu items
   const menuItems: MenuItem[] = useMemo(() => [
@@ -39,15 +38,16 @@ const Header = () => {
   // Handle scroll effect for header
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== isScrolled) {
-        setIsScrolled(isScrolled);
+      const scrolled = window.scrollY > 10;
+      if (scrolled !== prevScrollY.current) {
+        setIsScrolled(scrolled);
+        prevScrollY.current = scrolled;
       }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isScrolled]);
+  }, []);
   
   // Close menu when clicking outside
   useEffect(() => {

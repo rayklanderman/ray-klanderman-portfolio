@@ -51,22 +51,24 @@ body .footer .social-links,
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
+    border: 1px solid var(--glass-border);
+    background-color: var(--surface-1);
+    color: var(--text-color);
     font-size: 1rem;
+    font-family: inherit;
     transition: all 0.3s ease;
     box-sizing: border-box;
     
     &::placeholder {
-      color: rgba(255, 255, 255, 0.6) !important;
+      color: var(--text-muted) !important;
+      opacity: 0.8;
     }
     
     &:focus,
     &.form-input-focus {
       outline: none;
-      border-color: white;
-      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 2px rgba(var(--primary-color), 0.2);
     }
   }
   
@@ -79,8 +81,8 @@ body .footer .social-links,
     padding: 0.75rem 2rem;
     border-radius: 8px;
     border: none;
-    background-color: #FFD700;
-    color: #21468B;
+    background-color: var(--primary-color);
+    color: white;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -90,7 +92,8 @@ body .footer .social-links,
     
     &:hover:not(:disabled) {
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: var(--shadow-sm);
+      filter: brightness(1.1);
     }
     
     &:active:not(:disabled) {
@@ -115,7 +118,7 @@ body .footer .social-links,
         top: 50%;
         left: 50%;
         margin: -10px 0 0 -10px;
-        border: 2px solid #21468B;
+        border: 2px solid white;
         border-top-color: transparent;
         border-radius: 50%;
         animation: spin 0.8s linear infinite;
@@ -149,8 +152,8 @@ body .footer .social-links,
 
 /* Global footer styles */
 .footer {
-  background-color: #21468B; /* Dutch blue background */
-  color: white;
+  background-color: var(--surface-2);
+  color: var(--text-color);
   padding: 4rem 2rem;
 
   .footer-content {
@@ -219,16 +222,16 @@ body .footer .social-links,
       svg, .social-icon {
         width: 26px !important;
         height: 26px !important;
-        color: white !important;
-        fill: white !important;
+        color: var(--text-color) !important;
+        fill: var(--text-color) !important;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       /* Hover state */
       &:hover {
-        background: var(--hover-bg-color) !important;
+        background: var(--hover-overlay) !important;
         transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: var(--shadow-md);
         
         svg, .social-icon {
           transform: scale(1.2);

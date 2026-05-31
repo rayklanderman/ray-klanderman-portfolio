@@ -53,49 +53,33 @@ const Footer: React.FC = () => {
       icon: <FaGithub />,
       url: 'https://github.com/rayklanderman',
       label: 'GitHub',
-      color: '#333333'
+      color: 'transparent'
     },
     {
       icon: <FaLinkedin />,
       url: 'https://www.linkedin.com/in/rayklanderman/',
       label: 'LinkedIn',
-      color: '#0077B5'
+      color: 'transparent'
     },
     {
       icon: <FaYoutube />,
       url: 'https://www.youtube.com/@RayKlanderman',
       label: 'YouTube',
-      color: '#FF0000'
+      color: 'transparent'
     },
     {
       icon: <FaTwitter />,
       url: 'https://x.com/rayklanderman',
       label: 'X (Twitter)',
-      color: '#000000'
+      color: 'transparent'
     },
     {
       icon: <FaEnvelope />,
       url: 'mailto:rayklanderman@gmail.com',
       label: 'Email',
-      color: '#EA4335'
+      color: 'transparent'
     }
   ];
-
-  // Add global style for placeholder
-  React.useEffect(() => {
-    const style = document.createElement('style');
-    style.textContent = `
-      input::placeholder,
-      textarea::placeholder {
-        color: rgba(255, 255, 255, 0.6) !important;
-      }
-    `;
-    document.head.appendChild(style);
-    return () => {
-      document.head.removeChild(style);
-      return undefined; // Explicitly return void
-    };
-  }, []);
 
   return (
     <motion.footer
@@ -217,8 +201,6 @@ const Footer: React.FC = () => {
                 className: 'social-icon',
                 size: 24,
                 style: { 
-                  color: 'white', 
-                  fill: 'white',
                   transition: 'all 0.3s ease'
                 }
               })}

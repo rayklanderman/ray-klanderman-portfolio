@@ -7,35 +7,50 @@ const Badges: React.FC = () => {
   const { t } = useTranslation();
 
   const badgeKeys = [
-    { id: 'alx_data_analytics', logo: '/badges/alx-data-analytics.png' },
-    { id: 'alx_machine_learning', logo: '/badges/alx-machine-learning.png' },
-    { id: 'alx_data_science', logo: '/badges/alx-data-science.png' },
-    { id: 'worldquant_data_science', logo: '/badges/worldquant.png' },
-    { id: 'linux_kcna', logo: '/badges/linux-kcna.png' },
-    { id: 'google_adk', logo: '/badges/google-cloud.png' },
-    { id: 'google_security', logo: '/badges/google-cloud.png' },
-    { id: 'google_load_balancing', logo: '/badges/google-cloud.png' },
-    { id: 'google_serverless', logo: '/badges/google-cloud.png' },
-    { id: 'anthropic_fluency', logo: '/badges/anthropic.png' },
-    { id: 'oracle_cloud', logo: '/badges/oracle.png' },
+    { id: 'alx_data_analytics', logo: '/badges/Data-analytics-certificate-raymond-klanderman(ALX).png' },
+    { id: 'alx_data_science', logo: '/badges/Data-science-certificate-raymond-klanderman(ALX).png' },
+    { id: 'alx_machine_learning', logo: '/badges/Machine-learning-certificate-raymond-klanderman(ALX).png' },
+    { id: 'worldquant_data_science', logo: '/badges/Applied Data Science Lab.png' },
+    { id: 'linux_kcna', logo: '/badges/KCNA-Kubernetes and Cloud Native Associate.png' },
+    { id: 'google_adk', logo: '/badges/Engineer AI Agents with Agent Development Kit (ADK).png' },
+    { id: 'google_security', logo: '/badges/Implement Cloud Security Fundamentals on Google Cloud Skill Badge.png' },
+    { id: 'google_load_balancing', logo: '/badges/Implement Load Balancing on Compute Engine Skill Badge.png' },
+    { id: 'google_serverless', logo: '/badges/Develop Serverless Applications on Cloud Run Skill Badge.png' },
+    { id: 'anthropic_fluency', logo: '/badges/AI Fluency-Framework & Foundations.jpg' },
+    { id: 'oracle_cloud', logo: '/badges/Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate.png' },
+    { id: 'bcs_generative_ai', logo: '/badges/BCS Generative AI.jpg' },
+    { id: 'google_cybersecurity', logo: '/badges/cybersecurity.svg' },
+    { id: 'ibm_data', logo: '/badges/ibm-data.svg' },
+    { id: 'google_mlops', logo: '/badges/mlops.svg' },
+    { id: 'google_prompt_design', logo: '/badges/prompt-design.svg' },
+    { id: 'google_responsible_ai', logo: '/badges/responsible-ai.svg' },
+    { id: 'google_responsible_ai_privacy', logo: '/badges/responsible-ai-privacy.svg' },
+    { id: 'google_responsible_ai_transparency', logo: '/badges/responsible-ai-transparency.svg' },
+    { id: 'google_stem', logo: '/badges/stem.svg' },
     { id: 'power_learn_csdp', logo: '/badges/power-learn.png' }
   ];
 
-  const platforms = badgeKeys.map(badge => ({
-    id: badge.id,
-    platform: t(`badges.platforms.${badge.id}.platform`),
-    certification: t(`badges.platforms.${badge.id}.certification`),
-    description: t(`badges.platforms.${badge.id}.description`),
-    issuedBy: t(`badges.platforms.${badge.id}.issued_by`),
-    expiration: t(`badges.platforms.${badge.id}.expiration`),
-    badgeUrl: t(`badges.platforms.${badge.id}.badge_url`),
-    credentialUrl: t(`badges.platforms.${badge.id}.credential_url`),
-    profileUrl: t(`badges.platforms.${badge.id}.profile_url`),
-    badgesCount: t(`badges.platforms.${badge.id}.badges_count`),
-    highlightBadges: t(`badges.platforms.${badge.id}.highlight_badges`, { returnObjects: true, defaultValue: [] }) as string[],
-    skills: t(`badges.platforms.${badge.id}.skills`, { returnObjects: true, defaultValue: [] }) as string[],
-    logo: badge.logo
-  }));
+  const platforms = badgeKeys.map(badge => {
+    const pPlatform = t(`badges.platforms.${badge.id}.platform`, { defaultValue: '' });
+    // If the platform name isn't found, default it to just the ID or omit it if we want.
+    // However, if we know it's missing entirely in some languages, fallback to English or hide it.
+    // But mostly we just want to avoid rendering raw i18n keys for optional fields.
+    return {
+      id: badge.id,
+      platform: pPlatform || badge.id,
+      certification: t(`badges.platforms.${badge.id}.certification`, { defaultValue: '' }),
+      description: t(`badges.platforms.${badge.id}.description`, { defaultValue: '' }),
+      issuedBy: t(`badges.platforms.${badge.id}.issued_by`, { defaultValue: '' }),
+      expiration: t(`badges.platforms.${badge.id}.expiration`, { defaultValue: '' }),
+      badgeUrl: t(`badges.platforms.${badge.id}.badge_url`, { defaultValue: '' }),
+      credentialUrl: t(`badges.platforms.${badge.id}.credential_url`, { defaultValue: '' }),
+      profileUrl: t(`badges.platforms.${badge.id}.profile_url`, { defaultValue: '' }),
+      badgesCount: t(`badges.platforms.${badge.id}.badges_count`, { defaultValue: '' }),
+      highlightBadges: t(`badges.platforms.${badge.id}.highlight_badges`, { returnObjects: true, defaultValue: [] }) as string[],
+      skills: t(`badges.platforms.${badge.id}.skills`, { returnObjects: true, defaultValue: [] }) as string[],
+      logo: badge.logo
+    };
+  });
 
   return (
     <section id="badges" className="badges-section">

@@ -18,7 +18,7 @@
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: linear-gradient(90deg, #6a11cb, #4a6cf7);
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       border-radius: 2px;
     }
   }
@@ -39,83 +39,22 @@
   }
 
   .platform-card {
-    background: var(--card-bg);
+    background: var(--surface-1);
+    border: 1px solid var(--glass-border);
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-sm);
     padding: 1.5rem;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    border-top: 5px solid transparent;
-    background-size: 100% 5px;
-    background-repeat: no-repeat;
-
-    // Pastel background colors and top border gradients
-    &:nth-child(12n+1) {
-      background-color: rgba(246, 255, 237, 0.8); // Light pastel green
-      background-image: linear-gradient(to right, #4ade80, #22c55e);
-    }
-
-    &:nth-child(12n+2) {
-      background-color: rgba(238, 242, 255, 0.8); // Light pastel blue
-      background-image: linear-gradient(to right, #60a5fa, #3b82f6);
-    }
-
-    &:nth-child(12n+3) {
-      background-color: rgba(255, 241, 242, 0.8); // Light pastel red
-      background-image: linear-gradient(to right, #f87171, #ef4444);
-    }
-
-    &:nth-child(12n+4) {
-      background-color: rgba(255, 247, 237, 0.8); // Light pastel orange
-      background-image: linear-gradient(to right, #FF9966, #FF5E62);
-    }
-
-    &:nth-child(12n+5) {
-      background-color: rgba(245, 243, 255, 0.8); // Light pastel purple
-      background-image: linear-gradient(to right, #a78bfa, #8b5cf6);
-    }
-
-    &:nth-child(12n+6) {
-      background-color: rgba(254, 252, 232, 0.8); // Light pastel yellow
-      background-image: linear-gradient(to right, #facc15, #eab308);
-    }
-    
-    &:nth-child(12n+7) {
-      background-color: rgba(236, 253, 245, 0.8); // Light pastel teal
-      background-image: linear-gradient(to right, #2dd4bf, #0d9488);
-    }
-
-    &:nth-child(12n+8) {
-      background-color: rgba(250, 245, 255, 0.8); // Light pastel fuchsia
-      background-image: linear-gradient(to right, #e879f9, #c026d3);
-    }
-
-    &:nth-child(12n+9) {
-      background-color: rgba(240, 253, 250, 0.8); // Light pastel cyan
-      background-image: linear-gradient(to right, #22d3ee, #0891b2);
-    }
-
-    &:nth-child(12n+10) {
-      background-color: rgba(254, 242, 242, 0.8); // Light pastel rose
-      background-image: linear-gradient(to right, #fb7185, #e11d48);
-    }
-
-    &:nth-child(12n+11) {
-      background-color: rgba(241, 245, 249, 0.8); // Light slate
-      background-image: linear-gradient(to right, #94a3b8, #64748b);
-    }
-
-    &:nth-child(12n+12) {
-      background-color: rgba(243, 244, 246, 0.8); // Light gray
-      background-image: linear-gradient(to right, #9ca3af, #4b5563);
-    }
+    border-top: 4px solid var(--primary-color);
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-lg);
+      border-top-color: var(--secondary-color);
     }
 
     .platform-header {
@@ -126,23 +65,24 @@
       gap: 0.5rem;
 
       .platform-logo {
-        width: 60px;
-        height: 60px;
+        width: auto;
+        max-width: 120px;
+        height: 70px;
         object-fit: contain;
         border-radius: 8px;
       }
 
       .platform-fallback {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(45deg, #6a11cb, #4a6cf7);
-        color: white;
-        font-size: 1.5rem;
-        font-weight: 700;
-        border-radius: 8px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 700;
+      border-radius: 8px;
       }
 
       h3 {
@@ -154,7 +94,7 @@
       }
 
       .certification-badge {
-        background: linear-gradient(45deg, #f59e0b, #d97706);
+        background: linear-gradient(45deg, var(--accent-color, #f59e0b), var(--accent-secondary, #d97706));
         color: white;
         padding: 0.25rem 0.75rem;
         border-radius: 20px;
@@ -216,13 +156,13 @@
         gap: 0.5rem;
 
         .badge-item {
-          background: rgba(74, 108, 247, 0.1);
-          color: #4a6cf7;
+          background: color-mix(in srgb, var(--primary-color) 10%, transparent);
+          color: var(--primary-color);
           padding: 0.25rem 0.5rem;
           border-radius: 12px;
           font-size: 0.8rem;
           font-weight: 500;
-          border: 1px solid rgba(74, 108, 247, 0.2);
+          border: 1px solid color-mix(in srgb, var(--primary-color) 20%, transparent);
         }
       }
     }
@@ -240,59 +180,13 @@
         font-size: 0.8rem;
         font-weight: 500;
         transition: all 0.2s ease;
-        border: 1px solid rgba(0, 0, 0, 0.1);
+        background: var(--surface-2);
+        color: var(--text-color);
+        border: 1px solid var(--glass-border);
 
         &:hover {
           transform: translateY(-2px);
-        }
-
-        // Specific color styles for skill tags
-        &.skill-tag-1 {
-          color: #0284c7 !important;
-          border: 1px solid rgba(2, 132, 199, 0.3) !important;
-          background-color: rgba(224, 242, 254, 0.8) !important;
-        }
-
-        &.skill-tag-2 {
-          color: #16a34a !important;
-          border: 1px solid rgba(22, 163, 74, 0.3) !important;
-          background-color: rgba(220, 252, 231, 0.8) !important;
-        }
-
-        &.skill-tag-3 {
-          color: #3b82f6 !important;
-          border: 1px solid rgba(59, 130, 246, 0.3) !important;
-          background-color: rgba(219, 234, 254, 0.8) !important;
-        }
-
-        &.skill-tag-4 {
-          color: #ca8a04 !important;
-          border: 1px solid rgba(202, 138, 4, 0.3) !important;
-          background-color: rgba(254, 249, 195, 0.8) !important;
-        }
-
-        &.skill-tag-5 {
-          color: #0f172a !important;
-          border: 1px solid rgba(15, 23, 42, 0.3) !important;
-          background-color: rgba(241, 245, 249, 0.8) !important;
-        }
-
-        &.skill-tag-6 {
-          color: #0d9488 !important;
-          border: 1px solid rgba(13, 148, 136, 0.3) !important;
-          background-color: rgba(204, 251, 241, 0.8) !important;
-        }
-
-        &.skill-tag-7 {
-          color: #c2410c !important;
-          border: 1px solid rgba(194, 65, 12, 0.3) !important;
-          background-color: rgba(255, 237, 213, 0.8) !important;
-        }
-
-        &.skill-tag-8 {
-          color: #15803d !important;
-          border: 1px solid rgba(21, 128, 61, 0.3) !important;
-          background-color: rgba(220, 252, 231, 0.8) !important;
+          background: var(--hover-overlay);
         }
       }
     }
@@ -301,7 +195,7 @@
       margin-top: auto;
       display: inline-block;
       padding: 0.5rem 1rem;
-      background: linear-gradient(to right, #4a6cf7, #6a11cb);
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
       color: white;
       text-decoration: none;
       border-radius: 25px;
@@ -309,11 +203,11 @@
       font-weight: 500;
       text-align: center;
       transition: all 0.3s ease;
-      box-shadow: 0 2px 10px rgba(74, 108, 247, 0.3);
+      box-shadow: 0 2px 10px color-mix(in srgb, var(--primary-color) 30%, transparent);
 
       &:hover {
         transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(74, 108, 247, 0.4);
+        box-shadow: 0 5px 15px color-mix(in srgb, var(--primary-color) 40%, transparent);
       }
 
       &:active {

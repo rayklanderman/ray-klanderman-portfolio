@@ -4,7 +4,7 @@
   overflow: hidden;
   background: var(--header-bg);
   color: white;
-  min-height: 85vh; /* Reduced from 100vh to 85vh */
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,8 +17,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at top right, rgba(174, 28, 40, 0.3), transparent 50%),
-                radial-gradient(circle at bottom left, rgba(33, 70, 139, 0.3), transparent 50%);
+    background: radial-gradient(circle at top right, rgba(var(--accent-color), 0.1), transparent 50%),
+                radial-gradient(circle at bottom left, rgba(var(--primary-color), 0.1), transparent 50%);
     z-index: 0;
   }
 
@@ -419,7 +419,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, #34C759, #2a9e47); /* Used hardcoded darker value instead of color.adjust() */
+  background: var(--primary-color);
   color: white;
   min-width: 160px;
   justify-content: center;
@@ -431,7 +431,8 @@
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 199, 89, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
   }
 
   svg {
@@ -441,10 +442,11 @@
 }
 
 .share-button {
-  background: linear-gradient(135deg, #007AFF, #0062cc); /* Used hardcoded darker value instead of color.adjust() */
+  background: var(--secondary-color);
   
   &:hover {
-    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
   }
 }
 

@@ -43,16 +43,18 @@
 
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(280px, auto);
     gap: 1.5rem;
     margin: 0 auto;
     max-width: 1200px;
   }
 
   .project-card {
+    grid-column: span 4;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -62,44 +64,42 @@
     position: relative;
     cursor: pointer;
     padding: 1.5rem;
+    background: var(--surface-1);
+    border: 1px solid var(--glass-border);
     
-    // Pastel background colors for different featured projects
+    // Tech-themed border colors for different featured projects
     &[data-key="tutaLearn"] {
-      background: linear-gradient(135deg, #e8f4fd 0%, #dbeafe 100%); // Light blue gradient
       border-left: 4px solid #2563eb;
     }
     
     &[data-key="codebaseGenius"] {
-      background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); // Light cyan gradient
       border-left: 4px solid #0891b2;
     }
     
     &[data-key="aiHealth"] {
-      background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%); // Light red/pink gradient
       border-left: 4px solid #dc2626;
     }
     
     &[data-key="serenityAI"] {
-      background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%); // Light purple gradient
       border-left: 4px solid #7c3aed;
     }
     
     &[data-key="weruDigital"] {
-      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); // Light green gradient
       border-left: 4px solid #059669;
     }
     
     &[data-key="kaziConnect"] {
-      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); // Light yellow gradient
       border-left: 4px solid #d97706;
     }
 
     &:hover {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-lg);
       transform: translateY(-5px);
+      border-color: var(--primary-color);
     }
 
     &.featured {
+      grid-column: span 6;
       position: relative;
       
       &:before {
@@ -133,29 +133,42 @@
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
-    color: #1e293b;
+    color: var(--text-color);
     display: flex;
     align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+    position: relative;
     
     a {
-      color: #1e293b;
+      color: var(--text-color);
       text-decoration: none;
       transition: color 0.2s;
       
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+
       &:hover { 
-        color: #3b82f6; 
+        color: var(--primary-color); 
       }
     }
   }
 
   .project-description {
-    color: #4b5563;
+    color: var(--text-muted);
     margin-bottom: 1.25rem;
     line-height: 1.5;
     font-size: 0.95rem;
     flex-grow: 1;
+    position: relative;
+    z-index: 2;
   }
 
   .project-technologies {
@@ -164,6 +177,8 @@
     gap: 0.5rem;
     margin-bottom: 1.5rem;
     margin-top: auto;
+    position: relative;
+    z-index: 2;
   }
 
   .project-technology {
@@ -336,6 +351,8 @@
     display: flex;
     gap: 0.75rem;
     margin-top: auto;
+    position: relative;
+    z-index: 2;
   }
 
   .project-link-btn {
@@ -351,17 +368,17 @@
     text-decoration: none;
     transition: all 0.2s ease;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.7);
-    color: #1e293b;
+    background: var(--surface-2);
+    color: var(--text-color);
     
     svg {
       transition: transform 0.2s ease;
     }
     
     &:hover {
-      background: rgba(255, 255, 255, 0.9);
+      background: var(--hover-overlay);
       transform: translateY(-2px);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: var(--shadow-sm);
       
       svg {
         transform: translateX(2px);
@@ -369,30 +386,32 @@
     }
     
     &.primary {
-      background: rgba(33, 70, 139, 0.15);
-      color: #21468B;
-      border: 1px solid rgba(33, 70, 139, 0.3);
+      background: rgba(var(--primary-color), 0.1);
+      color: var(--primary-color);
+      border: 1px solid rgba(var(--primary-color), 0.3);
       
       &:hover {
-        background: rgba(33, 70, 139, 0.2);
+        background: rgba(var(--primary-color), 0.15);
       }
     }
     
     &.secondary {
-      background: rgba(0, 0, 0, 0.05);
-      color: #475569;
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: var(--glass-bg);
+      color: var(--text-muted);
+      border: 1px solid var(--glass-border);
       
       &:hover {
-        background: rgba(0, 0, 0, 0.1);
+        background: var(--surface-2);
       }
     }
   }
 
   @media (max-width: 1024px) {
     .projects-grid {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       gap: 1.25rem;
+    }
+    .project-card, .project-card.featured {
+      grid-column: span 6;
     }
   }
 
@@ -405,18 +424,17 @@
     }
     
     .projects-grid {
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 1rem;
     }
     
-    .project-card {
+    .project-card, .project-card.featured {
+      grid-column: span 12;
       padding: 1.25rem;
     }
   }
 
   @media (max-width: 600px) {
     .projects-grid {
-      grid-template-columns: 1fr;
       gap: 1rem;
     }
     

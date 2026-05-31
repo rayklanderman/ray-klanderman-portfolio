@@ -28,10 +28,11 @@ const Showcase: FC = () => {
         >
           <iframe 
             className="video-iframe"
-            src="https://www.youtube.com/embed?listType=playlist&list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G" 
+            src="https://www.youtube.com/embed/Jk6mjeeWHoA?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G" 
             title="My Showcase Playlist" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            loading="lazy"
             allowFullScreen
           ></iframe>
         </motion.div>

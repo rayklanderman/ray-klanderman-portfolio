@@ -108,14 +108,6 @@ const Projects: FC = () => {
                 key={key} 
                 className={`project-card${isFeatured ? ' featured' : ''}`}
                 data-key={key}
-                onClick={() => projectUrl !== '#' && window.open(projectUrl, '_blank')}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if ((e.key === 'Enter' || e.key === ' ') && projectUrl !== '#') {
-                    window.open(projectUrl, '_blank');
-                  }
-                }}
               >
                 {isFeatured && (
                   <span className="featured-badge">
