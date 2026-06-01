@@ -19,7 +19,7 @@ const Badges: React.FC = () => {
     { id: 'anthropic_fluency', logo: '/badges/AI Fluency-Framework & Foundations.jpg' },
     { id: 'oracle_cloud', logo: '/badges/Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate.png' },
     { id: 'bcs_generative_ai', logo: '/badges/BCS Generative AI.jpg' },
-    { id: 'google_cybersecurity', logo: '/badges/cybersecurity.svg' },
+    { id: 'google_skills', logo: '/badges/Google skills.gif' },
     { id: 'ibm_data', logo: '/badges/ibm-data.svg' },
     { id: 'google_mlops', logo: '/badges/mlops.svg' },
     { id: 'google_prompt_design', logo: '/badges/prompt-design.svg' },

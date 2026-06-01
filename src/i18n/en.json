@@ -507,13 +507,13 @@
         "credential_url": "#",
         "skills": ["Generative AI", "AI Ethics", "AI Principles"]
       },
-      "google_cybersecurity": {
-        "platform": "Google",
-        "certification": "Cybersecurity Certificate",
-        "description": "Hands-on cybersecurity training covering threat identification, network protection, SIEM tools, and incident response. Includes Python, Linux, and SQL for security analysis and automation.",
+      "google_skills": {
+        "platform": "Google Skills",
+        "description": "Google Skills platform profile showcasing completed courses and earned skill badges across Google Cloud, AI/ML, security, and serverless domains. Gold League member with 20,096 points and 27 skill badges since 2023.",
         "issued_by": "Google",
-        "credential_url": "#",
-        "skills": ["Cybersecurity", "Network Security", "Threat Intelligence", "Security Protocols", "SIEM", "Python"]
+        "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
+        "badges_count": "27",
+        "skills": ["Google Cloud", "AI/ML", "Cloud Security", "Serverless", "Prompt Design", "MLOps"]
       },
       "ibm_data": {
         "platform": "IBM",

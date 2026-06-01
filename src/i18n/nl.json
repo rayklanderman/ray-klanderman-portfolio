@@ -445,13 +445,13 @@
           "AI Principles"
         ]
       },
-      "google_cybersecurity": {
-        "platform": "Google",
-        "certification": "Cybersecurity Certificate",
-        "description": "Hands-on cybersecurity training covering threat identification, network protection, SIEM tools, and incident response. Includes Python, Linux, and SQL for security analysis and automation.",
+      "google_skills": {
+        "platform": "Google Skills",
+        "description": "Google Skills-profiel met voltooide cursussen en behaalde vaardigheidsbadges op het gebied van Google Cloud, AI/ML, beveiliging en serverless. Gold League-lid met 20.096 punten en 27 vaardigheidsbadges sinds 2023.",
         "issued_by": "Google",
-        "credential_url": "#",
-        "skills": ["Cybersecurity", "Network Security", "Threat Intelligence", "Security Protocols", "SIEM", "Python"]
+        "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
+        "badges_count": "27",
+        "skills": ["Google Cloud", "AI/ML", "Cloud Beveiliging", "Serverless", "Prompt Design", "MLOps"]
       },
       "ibm_data": {
         "platform": "IBM",
