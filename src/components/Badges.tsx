@@ -20,10 +20,10 @@ const Badges: React.FC = () => {
     { id: 'oracle_cloud', logo: '/badges/Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate.png' },
     { id: 'bcs_generative_ai', logo: '/badges/BCS Generative AI.jpg' },
     { id: 'google_skills', logo: '/badges/Google skills.gif' },
-    { id: 'ibm_data', logo: '/badges/ibm-data.svg' },
-    { id: 'google_mlops', logo: '/badges/mlops.svg' },
-    { id: 'google_prompt_design', logo: '/badges/prompt-design.svg' },
-    { id: 'google_stem', logo: '/badges/stem.svg' },
+    { id: 'google_prompt_design', logo: '/badges/Prompt Design in Vertex AI Skill Badge.png' },
+    { id: 'aws_educate_genai', logo: '/badges/AWS Educate Introduction to Generative AI - Training Badge.png' },
+    { id: 'aws_educate_ml', logo: '/badges/AWS Educate Machine Learning Foundations - Training Badge.png' },
+    { id: 'ibm_granite', logo: '/badges/Code Generation and Optimization Using IBM Granite.png' },
     { id: 'power_learn_csdp', logo: '/badges/power-learn.png' }
   ];
 

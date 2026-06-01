@@ -515,22 +515,6 @@
         "badges_count": "27",
         "skills": ["Google Cloud", "AI/ML", "Cloud Security", "Serverless", "Prompt Design", "MLOps"]
       },
-      "ibm_data": {
-        "platform": "IBM",
-        "certification": "IBM Data Science Professional Certificate",
-        "description": "Professional data science training covering Python, SQL, data analysis, visualization, statistical modeling, and machine learning. Hands-on projects using Pandas, NumPy, Scikit-learn, and Jupyter on real-world datasets.",
-        "issued_by": "IBM",
-        "credential_url": "#",
-        "skills": ["Data Science", "Data Analytics", "Python", "Machine Learning", "Statistical Modeling", "SQL"]
-      },
-      "google_mlops": {
-        "platform": "Google Cloud",
-        "certification": "Machine Learning Operations (MLOps)",
-        "description": "Hands-on skills in building MLOps pipelines using Vertex AI, covering automated deployment, model monitoring, Kubeflow, and production ML system lifecycle management on Google Cloud.",
-        "issued_by": "Google Cloud",
-        "credential_url": "#",
-        "skills": ["MLOps", "Model Deployment", "Automation", "CI/CD for ML", "Vertex AI", "Kubeflow"]
-      },
       "google_prompt_design": {
         "platform": "Google Cloud",
         "certification": "Prompt Design in Vertex AI",
@@ -539,13 +523,29 @@
         "credential_url": "#",
         "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
       },
-      "google_stem": {
-        "platform": "STEM",
-        "certification": "STEM Professional Professional",
-        "description": "Acknowledges foundational learning and continuous development in Science, Technology, Engineering, and Mathematics fields.",
-        "issued_by": "Authorized issuer",
-        "credential_url": "#",
-        "skills": ["Science", "Technology", "Engineering", "Mathematics", "Problem Solving"]
+      "aws_educate_genai": {
+        "platform": "AWS Educate",
+        "certification": "Introduction to Generative AI - Training Badge",
+        "description": "Foundational understanding of generative AI concepts, including large language models, prompt engineering, and responsible AI principles for real-world cloud applications.",
+        "issued_by": "Amazon Web Services (AWS)",
+        "credential_url": "https://www.credly.com/earner/earned/badge/d6a0ac7a-2275-4b4b-b2b7-66b1e2b2ee73",
+        "skills": ["Generative AI", "Large Language Models", "Prompt Engineering", "Responsible AI"]
+      },
+      "aws_educate_ml": {
+        "platform": "AWS Educate",
+        "certification": "Machine Learning Foundations - Training Badge",
+        "description": "Introductory knowledge of machine learning concepts, including supervised and unsupervised learning, model training, evaluation, and deployment strategies on AWS.",
+        "issued_by": "Amazon Web Services (AWS)",
+        "credential_url": "https://www.credly.com/earner/earned/badge/bcc32848-a45f-4aff-87f4-2aa53ace81e8",
+        "skills": ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Model Training", "AWS"]
+      },
+      "ibm_granite": {
+        "platform": "IBM",
+        "certification": "Code Generation and Optimization Using IBM Granite",
+        "description": "Hands-on training in code generation, optimization, and AI-assisted software development using IBM Granite models. Covers prompt-based code synthesis and performance tuning.",
+        "issued_by": "IBM",
+        "credential_url": "https://www.credly.com/earner/earned/badge/c5dcd4da-3757-4893-945b-50ca7d025ec2",
+        "skills": ["Code Generation", "IBM Granite", "AI-Assisted Development", "Prompt Engineering", "Code Optimization"]
       }
     }
   },
