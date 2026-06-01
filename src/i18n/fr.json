@@ -314,9 +314,9 @@
       "alx_machine_learning": {
         "platform": "ALX Africa",
         "certification": "Machine Learning Certificate",
-        "description": "Completed the Machine Learning track, demonstrating understanding of machine learning algorithms and techniques to build predictive models and data-driven solutions.",
+        "description": "Maîtrise des algorithmes de machine learning pour construire des modèles prédictifs et des solutions basées sur les données.",
         "issued_by": "ALX Africa",
-        "credential_url": "#",
+        "credential_url": "https://savanna.alxafrica.com/certificates/6x9eYLcJSX",
         "skills": [
           "Machine Learning Algorithms",
           "Predictive Modeling",
@@ -327,9 +327,9 @@
       "alx_data_science": {
         "platform": "ALX Africa",
         "certification": "Data Science Programme",
-        "description": "Completed the full Data Science programme consisting of Professional Foundations, Data Analytics, Python, and Machine Learning. Learned essential skills in machine learning, statistical analysis, and data visualization while working on real-world projects.",
+        "description": "Formation complète en science des données incluant les fondamentaux professionnels, l'analyse de données, Python et le machine learning.",
         "issued_by": "ALX Africa",
-        "credential_url": "#",
+        "credential_url": "https://savanna.alxafrica.com/certificates/SyMGmT28z7",
         "skills": [
           "Data Science",
           "Machine Learning",
@@ -436,9 +436,9 @@
       "bcs_generative_ai": {
         "platform": "BCS",
         "certification": "Foundation Certificate in Generative AI",
-        "description": "Demonstrates foundational knowledge of Generative AI principles, applications, and ethical considerations.",
+        "description": "Démontre une connaissance fondamentale des principes de l'IA générative, de ses applications et des considérations éthiques.",
         "issued_by": "BCS, The Chartered Institute for IT",
-        "credential_url": "#",
+        "credential_url": "https://somas.ouk.ac.ke/mod/customcert/verify_certificate.php?code=ICaIFl00uF&qrcode=1&contextid=236583",
         "skills": [
           "Generative AI",
           "AI Ethics",

@@ -24,7 +24,7 @@ const Badges: React.FC = () => {
     { id: 'aws_educate_genai', logo: '/badges/AWS Educate Introduction to Generative AI - Training Badge.png' },
     { id: 'aws_educate_ml', logo: '/badges/AWS Educate Machine Learning Foundations - Training Badge.png' },
     { id: 'ibm_granite', logo: '/badges/Code Generation and Optimization Using IBM Granite.png' },
-    { id: 'power_learn_csdp', logo: '/badges/power-learn.png' }
+    { id: 'power_learn_csdp', logo: '/badges/Power Learn Project Africa Certificate.png' }
   ];
 
   const platforms = badgeKeys.map(badge => {
