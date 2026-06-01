@@ -20,90 +20,89 @@
   },
   "projects": {
     "title": "Projets en Vedette",
-    "subtitle": "Une vitrine de nos derniers travaux démontrant notre expertise dans le développement web, l'IA/ML et les applications mobiles.",
+    "subtitle": "Plateformes IA, outils intelligents et applications full-stack construits avec des technologies modernes.",
     "viewProject": "Voir le Projet",
     "featured": "En Vedette",
     "comingSoon": "Bientôt Disponible",
     "items": {
+      "luminae": {
+        "name": "Luminae",
+        "shortDescription": "Plateforme d'analyse de recherche autonome avec essaim d'agents IA",
+        "description": "Téléchargez n'importe quel document et les 5 agents IA de Luminae fournissent une critique méthodologique, un audit de données, une conception d'expériences, une génération de subventions et une synthèse croisée. Utilise l'écosystème multimodal de Mistral AI pour une analyse approfondie des documents académiques à ~0,05$ par article.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
+        "tags": ["IA", "LLM", "Agents Autonomes"],
+        "url": "https://luminae.qzz.io/",
+        "featured": true
+      },
+      "aiHealth": {
+        "name": "AI Health Chat",
+        "shortDescription": "Plateforme de consultation médicale alimentée par l'IA",
+        "description": "Plateforme de consultation médicale alimentée par l'IA. Vérification des symptômes et conseils de santé utilisant des modèles d'IA sécurisés. A remporté la 1ère place dans un hackathon d'innovation.",
+        "technologies": ["Next.js", "TypeScript", "Supabase", "xAI", "Grok"],
+        "tags": ["IA", "Santé"],
+        "url": "https://aihealthchat.qzz.io/",
+        "featured": true
+      },
+      "liveInterviewer": {
+        "name": "Live Interviewer",
+        "shortDescription": "Générateur de questions d'entretien IA avec interface premium",
+        "description": "Génère des questions d'entretien contextuelles et basées sur des scénarios adaptées à n'importe quel poste. Interface utilisateur de style Google avec animations Framer Motion, moteur de récupération API résilient, support multi-modèles (Mistral, Groq, Llama, Qwen) et PWA installable.",
+        "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Mistral AI", "Groq", "PWA"],
+        "tags": ["IA", "Application Web"],
+        "url": "#",
+        "featured": true
+      },
+      "contentShapeshifterPro": {
+        "name": "Content Shapeshifter Pro",
+        "shortDescription": "Transformez tout contenu en posts optimisés pour les plateformes avec l'IA",
+        "description": "Scrape des URL ou articles et utilise Groq AI avec Llama 3 pour générer 4 variantes de plateforme : fils Twitter, posts LinkedIn, newsletters et légendes Instagram. Copie en un clic, feedback en temps réel et interface sombre élégante.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Groq", "Cheerio"],
+        "tags": ["IA", "Création de Contenu"],
+        "url": "#",
+        "featured": true
+      },
+      "serenityAI": {
+        "name": "SerenityAI",
+        "shortDescription": "Compagnon de bien-être mental alimenté par l'IA",
+        "description": "Un compagnon de bien-être mental alimenté par l'IA conçu pour aider les gens à mieux comprendre et prendre soin de leur bien-être mental. Fonctionnalités incluant des agents intelligents offrant un soutien émotionnel personnalisé, suivi de l'humeur, insights de journalisation et analyse des patterns.",
+        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "Architecture LLM", "Agents IA"],
+        "tags": ["IA", "Santé Mentale"],
+        "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
       "tutaLearn": {
         "name": "TutaLearn - Plateforme Éducative Africaine",
-        "description": "PWA éducative alimentée par l'IA pour les étudiants africains. Fonctionnalités incluant des parcours d'apprentissage personnalisés, intégration WhatsApp et évaluations adaptatives.",
-        "technologies": [
-          "Python",
-          "TypeScript",
-          "Groq API",
-          "PWA",
-          "WhatsApp API"
-        ],
+        "shortDescription": "PWA éducative alimentée par l'IA pour les étudiants africains",
+        "description": "Plateforme éducative alimentée par l'IA pour les étudiants africains. Fonctionnalités incluant des parcours d'apprentissage personnalisés, intégration WhatsApp pour un accès fluide et évaluations adaptatives.",
+        "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
+        "tags": ["Génie Logiciel", "EdTech"],
         "url": "https://www.tutalearn.study/",
         "featured": true
       },
       "codebaseGenius": {
         "name": "Codebase Genius - Système de Documentation IA",
-        "description": "Plateforme alimentée par l'IA pour la documentation automatique GitHub. Génère des docs complets à partir de l'analyse de code base utilisant des LLMs.",
-        "technologies": [
-          "Python",
-          "TypeScript",
-          "Google Gemini API",
-          "Streamlit",
-          "NetworkX",
-          "FastAPI"
-        ],
+        "shortDescription": "Plateforme de documentation GitHub automatique par IA",
+        "description": "Plateforme alimentée par l'IA pour la documentation automatique GitHub. Génère des docs complets à partir de l'analyse de code base utilisant des LLMs, avec visualisation de structure de code basée sur des graphes.",
+        "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
+        "tags": ["IA", "Outils Développeur"],
         "url": "https://geniuscodebase.streamlit.app/",
-        "featured": true
-      },
-      "aiHealth": {
-        "name": "AI Health Chat",
-        "description": "Plateforme de consultation médicale alimentée par l'IA. Vérification des symptômes et conseils de santé utilisant des modèles d'IA sécurisés.",
-        "technologies": [
-          "Next.js",
-          "Supabase",
-          "xAI",
-          "Grok",
-          "TypeScript"
-        ],
-        "url": "https://aihealthchat.qzz.io/",
-        "featured": true
-      },
-      "serenityAI": {
-        "name": "SerenityAI",
-        "description": "Un compagnon de bien-être mental alimenté par l'IA conçu pour aider les gens à mieux comprendre et prendre soin de leur bien-être mental. Fonctionnalités incluant des agents intelligents offrant un soutien émotionnel personnalisé, suivi de l'humeur, insights de journalisation et analyse des patterns—avec le bien-être avant la productivité comme principe directeur.",
-        "technologies": [
-          "React",
-          "TypeScript",
-          "JacLang",
-          "Groq API",
-          "Architecture LLM",
-          "Agents IA"
-        ],
-        "url": "https://serenityai.qzz.io/",
         "featured": true
       },
       "weruDigital": {
         "name": "Weru Digital",
-        "description": "Un site multimédia pour Weru TV et FM featuring streaming radio en direct, streaming TV en direct et programmation planifiée pour les deux. Optimisé SEO avec flux RSS de nouvelles auto-mise à jour, optimisation alimentée par l'IA, support PWA et compatibilité multiplateforme.",
-        "technologies": [
-          "WordPress",
-          "PWA",
-          "Streaming en Direct",
-          "IA",
-          "SEO",
-          "RSS",
-          "Multiplateforme"
-        ],
+        "shortDescription": "Site multimédia pour Weru TV et FM",
+        "description": "Un site multimédia pour Weru TV et FM avec streaming radio en direct, streaming TV en direct et programmation planifiée. Optimisé SEO avec flux RSS de nouvelles auto-mise à jour, optimisation IA, support PWA et compatibilité multiplateforme.",
+        "technologies": ["WordPress", "PWA", "Streaming en Direct", "IA", "SEO", "RSS", "Multiplateforme"],
+        "tags": ["Développement Web", "Média"],
         "url": "https://werudigital.co.ke/",
         "featured": true
       },
       "kaziConnect": {
         "name": "Kazi Connect",
-        "description": "Plateforme de mise en relation professionnelle alimentée par l'IA avec analyse de CV et suivi des candidatures",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Firebase",
-          "OpenAI",
-          "PWA"
-        ],
+        "shortDescription": "Plateforme de matching emploi par IA",
+        "description": "Plateforme de mise en relation professionnelle innovante qui utilise l'intelligence artificielle pour connecter les chercheurs d'emploi avec des opportunités adaptées. Analyse de CV, évaluation des compétences, suivi automatisé des candidatures et recommandations personnalisées.",
+        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
+        "tags": ["Génie Logiciel", "Marché de l'Emploi"],
         "url": "https://www.kaziconnect.work/",
         "featured": true
       }
@@ -551,18 +550,6 @@
     "sending": "Envoi en cours...",
     "success": "Message envoyé avec succès !",
     "error": "Échec de l'envoi. Veuillez réessayer."
-  },
-  "elevatorPitch": {
-    "title": "Mon Elevator Pitch",
-    "subtitle": "Pourquoi Travailler Avec Moi ?",
-    "description": "Découvrez ma playlist d'elevator pitch : https://youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G&si=3o8n9A67ZJLDlwIL",
-    "cta": "Travaillons Ensemble",
-    "paragraphs": {
-      "0": "Saviez-vous qu'en Afrique, le chômage des jeunes touche plus de 45 % des jeunes âgés de 15 à 34 ans—des millions de personnes talentueuses et qualifiées luttant pour trouver des opportunités significatives malgré leur potentiel ?",
-      "1": "Salut, je suis Raymond Klanderman, un ingénieur et développeur IA full-stack passionné par la construction de systèmes évolutifs et centrés sur l'humain qui résolvent des problèmes réels. Je me spécialise dans la transformation de données complexes et d'IA avancée en outils pratiques—en utilisant des technologies comme Python avec FastAPI et Streamlit, React/Next.js, Flutter, des bases de données vectorielles comme Pinecone et Weaviate, et des frameworks tels que LangChain, LlamaIndex et LangGraph. Je travaille avec des LLM de pointe d'OpenAI, Anthropic, Groq, Gemini, et plus encore pour créer des workflows intelligents, des agents autonomes et des systèmes de génération augmentée par récupération.",
-      "2": "Certains de mes projets remarquables incluent : Kazi Connect, une plateforme de mise en relation d'emplois alimentée par l'IA que j'ai construite et qui utilise une logique basée sur les compétences pour connecter les jeunes africains à des opportunités vérifiées et sans arnaque—attaquant directement le chômage. AI Health Chat, qui a remporté la 1ère place dans un hackathon d'innovation en utilisant Grok pour des insights de santé personnalisés et respectueux de la vie privée. GeminiQuest, une application d'apprentissage multimodale magique où les utilisateurs esquissent des idées de physique et obtiennent des simulations en temps réel, des citations de manuels et un tutorat IA en direct—construite avec Gemini Vision et React. Et AutoResearcher, un système multi-agent utilisant le kit d'agents Vertex AI de Google qui transforme une invite en un rapport de recherche entièrement cité de 20 pages avec des graphiques en moins de 10 minutes.",
-      "3": "Je transforme les insights en produits prêts pour la production qui autonomisent les gens—du prototypage rapide au déploiement d'agents autonomes qui apportent un impact réel. Je suis toujours enthousiaste à l'idée de collaborer avec des équipes motivées construisant la prochaine génération d'outils IA qui comprennent et élèvent les gens. Si vous travaillez sur des projets innovants en IA, données ou bien social, connectons-nous—j'aimerais explorer comment nous pouvons nous associer !"
-    }
   },
   "language": {
     "en": "Anglais",

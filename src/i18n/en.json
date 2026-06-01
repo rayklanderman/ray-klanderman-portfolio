@@ -14,76 +14,86 @@
     "message": "Check out Raymond Klanderman's Portfolio - Software Developer & AI Engineer",
     "copied": "Portfolio URL copied to clipboard!"
   },
-  "elevatorPitch": {
-    "title": "My Elevator Pitch",
-    "subtitle": "Why Work With Me?",
-    "description": "Check out my elevator pitch playlist: https://youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G&si=3o8n9A67ZJLDlwIL",
-    "cta": "Let's Work Together",
-    "paragraphs": {
-      "0": "Did you know that in many parts of Africa, youth unemployment affects over 45% of young people aged 15–34—millions of talented, skilled individuals struggling to find meaningful opportunities despite their potential?",
-      "1": "Hi, I'm Raymond Klanderman, a full-stack AI engineer and developer passionate about building scalable, human-centered systems that solve real problems. I specialize in turning complex data and advanced AI into practical tools—using technologies like Python with FastAPI and Streamlit, React/Next.js, Flutter, vector databases like Pinecone and Weaviate, and frameworks such as LangChain, LlamaIndex, and LangGraph. I work with leading LLMs from OpenAI, Anthropic, Groq, Gemini, and more to create intelligent workflows, autonomous agents, and Retrieval-Augmented Generation systems.",
-      "2": "Some of my standout projects include: Kazi Connect, an AI-powered job-matching platform I've built that uses skill-based logic to connect African youth with verified, scam-free opportunities—directly tackling unemployment head-on. AI Health Chat, which won 1st place in an innovation hackathon by leveraging Grok for personalized, privacy-focused health insights. GeminiQuest, a magical multimodal learning app where users sketch physics ideas and get real-time simulations, textbook citations, and live AI tutoring—built with Gemini Vision and React. And AutoResearcher, a multi-agent system using Google's Vertex AI Agent Kit that turns one prompt into a fully cited, 20-page research report with charts in under 10 minutes.",
-      "3": "I turn insights into production-ready products that empower people—from rapid prototyping to deploying autonomous agents that deliver real impact. I'm always excited to collaborate with mission-driven teams building the next generation of AI tools that understand and uplift people. If you're working on innovative projects in AI, data, or social good, let's connect—I'd love to explore how we can team up!"
-    }
-  },
   "profile": {
     "title": "Professional Profile",
     "description": "I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines.\n\nI design and ship production-ready applications using Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL, and Google Cloud. I specialize in intelligent workflows powered by APIs, autonomous agents, vector search, and Retrieval-Augmented Generation (RAG). My tooling includes Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph, and modern LLM providers like OpenAI, Anthropic, Gemini, Groq, and Ollama.\n\nBeyond engineering, I turn data into insights and insights into features that become products people rely on. I also create clear technical content—tutorials, docs, and demos—that helps teams adopt and extend complex systems with confidence.\n\nMy mission is simple: build tools that understand people, and empower people to build even better tools. Curiosity drives my work, from rapid ML prototyping to productionizing agents and automating end-to-end workflows.\n\nAlways open to collaborating with teams building the next generation of human-centered AI."
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "A showcase of our latest work demonstrating expertise across web development, AI/ML, and mobile applications.",
+    "subtitle": "AI-powered platforms, intelligent tools, and full-stack applications built with modern technologies.",
     "viewProject": "View Live",
     "featured": "Featured",
     "comingSoon": "Coming Soon",
     "items": {
-      "tutaLearn": {
-        "name": "TutaLearn - African Educational Platform",
-        "shortDescription": "AI-powered educational PWA for African students",
-        "description": "AI-powered educational PWA for African students. Features include personalized learning paths, WhatsApp integration, and adaptive assessments.",
+      "luminae": {
+        "name": "Luminae",
+        "shortDescription": "Autonomous research analysis platform with multi-agent AI swarm",
+        "description": "Upload any document and Luminae's 5 AI agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI's multimodal ecosystem for deep academic paper analysis at ~$0.05 per paper.",
         "technologies": [
-          "Python",
+          "Next.js",
           "TypeScript",
-          "Groq API",
-          "PWA",
-          "WhatsApp API"
-        ],
-        "url": "https://www.tutalearn.study/",
-        "featured": true
-      },
-      "codebaseGenius": {
-        "name": "Codebase Genius - AI Documentation System",
-        "shortDescription": "AI-powered platform for automatic GitHub documentation",
-        "description": "AI-powered platform for automatic GitHub documentation. Generates comprehensive docs from codebase analysis using LLMs.",
-        "technologies": [
+          "Tailwind CSS",
+          "Mistral AI",
+          "FastAPI",
           "Python",
-          "TypeScript",
-          "Google Gemini API",
-          "Streamlit",
-          "NetworkX",
-          "FastAPI"
+          "Supabase",
+          "Redis"
         ],
-        "url": "https://geniuscodebase.streamlit.app/",
+        "tags": ["AI Engineering", "LLM", "Autonomous Agents"],
+        "url": "https://luminae.qzz.io/",
         "featured": true
       },
       "aiHealth": {
         "name": "AI Health Chat",
         "shortDescription": "AI-powered healthcare consultation platform",
-        "description": "AI-powered healthcare consultation platform. Symptom checking and health advice using secure AI models.",
+        "description": "AI-powered healthcare consultation platform. Symptom checking and health advice using secure AI models. Won 1st place in an innovation hackathon.",
         "technologies": [
           "Next.js",
+          "TypeScript",
           "Supabase",
           "xAI",
-          "Grok",
-          "TypeScript"
+          "Grok"
         ],
+        "tags": ["AI Engineering", "Healthcare"],
         "url": "https://aihealthchat.qzz.io/",
+        "featured": true
+      },
+      "liveInterviewer": {
+        "name": "Live Interviewer",
+        "shortDescription": "AI-powered interview question generator with premium UI",
+        "description": "Generates context-rich, scenario-driven interview questions tailored to any job role. Features Google-style UI/UX with Framer Motion animations, resilient API recovery engine, multi-model support (Mistral, Groq, Llama, Qwen), and installable PWA.",
+        "technologies": [
+          "Next.js 16",
+          "TypeScript",
+          "Tailwind CSS v4",
+          "Framer Motion",
+          "Mistral AI",
+          "Groq",
+          "PWA"
+        ],
+        "tags": ["AI Engineering", "Web App"],
+        "url": "#",
+        "featured": true
+      },
+      "contentShapeshifterPro": {
+        "name": "Content Shapeshifter Pro",
+        "shortDescription": "Transform any content into platform-optimized posts with AI",
+        "description": "Scrapes URLs or articles and uses Groq AI with Llama 3 to generate 4 distinct platform variants: Twitter threads, LinkedIn posts, newsletters, and Instagram captions. Features one-click copy, real-time feedback, and elegant dark mode UI.",
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Groq",
+          "Cheerio"
+        ],
+        "tags": ["AI Engineering", "Content Creation"],
+        "url": "#",
         "featured": true
       },
       "serenityAI": {
         "name": "SerenityAI",
         "shortDescription": "AI-powered mental wellness companion",
-        "description": "An AI-powered mental wellness companion designed to help people better understand and care for their mental wellbeing. Features intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis—with wellness before productivity as the guiding principle.",
+        "description": "An AI-powered mental wellness companion designed to help people better understand and care for their mental wellbeing. Features intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis.",
         "technologies": [
           "React",
           "TypeScript",
@@ -92,13 +102,45 @@
           "LLM Architecture",
           "AI Agents"
         ],
+        "tags": ["AI Engineering", "Mental Health"],
         "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
+      "tutaLearn": {
+        "name": "TutaLearn - African Educational Platform",
+        "shortDescription": "AI-powered educational PWA for African students",
+        "description": "AI-powered educational platform for African students. Features include personalized learning paths, WhatsApp integration for seamless access, and adaptive assessments that adjust to each learner's pace.",
+        "technologies": [
+          "Python",
+          "TypeScript",
+          "Groq API",
+          "PWA",
+          "WhatsApp API"
+        ],
+        "tags": ["Software Engineering", "EdTech"],
+        "url": "https://www.tutalearn.study/",
+        "featured": true
+      },
+      "codebaseGenius": {
+        "name": "Codebase Genius - AI Documentation System",
+        "shortDescription": "AI-powered platform for automatic GitHub documentation",
+        "description": "AI-powered platform for automatic GitHub documentation. Generates comprehensive docs from codebase analysis using LLMs, with graph-based code structure visualization.",
+        "technologies": [
+          "Python",
+          "TypeScript",
+          "Google Gemini API",
+          "Streamlit",
+          "NetworkX",
+          "FastAPI"
+        ],
+        "tags": ["AI Engineering", "Developer Tools"],
+        "url": "https://geniuscodebase.streamlit.app/",
         "featured": true
       },
       "weruDigital": {
         "name": "Weru Digital",
         "shortDescription": "Multimedia site for Weru TV and FM",
-        "description": "A multimedia site for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming for both. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility.",
+        "description": "A multimedia site for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility.",
         "technologies": [
           "WordPress",
           "PWA",
@@ -108,13 +150,14 @@
           "RSS",
           "Cross-platform"
         ],
+        "tags": ["Web Development", "Media"],
         "url": "https://werudigital.co.ke/",
         "featured": true
       },
       "kaziConnect": {
         "name": "Kazi Connect",
         "shortDescription": "AI-powered job matching platform",
-        "description": "An innovative job marketplace that uses artificial intelligence to match job seekers with suitable opportunities. Features include CV analysis, skill assessment, automated application tracking, and personalized job recommendations based on user profile and preferences.",
+        "description": "An innovative job marketplace that uses artificial intelligence to match job seekers with suitable opportunities. Features include CV analysis, skill assessment, automated application tracking, and personalized job recommendations.",
         "technologies": [
           "Next.js",
           "TypeScript",
@@ -122,8 +165,8 @@
           "OpenAI",
           "PWA"
         ],
+        "tags": ["Software Engineering", "Job Market"],
         "url": "https://www.kaziconnect.work/",
-        "github": "https://github.com/rayklanderman/kazi-connect",
         "featured": true
       }
     }

@@ -18,104 +18,91 @@
     "title": "Professioneel Profiel",
     "description": "Ik bouw slimme, schaalbare software en AI-systemen die echte problemen oplossen. Mijn werk omvat full-stack engineering, machine learning, data-analyse, cloud-architectuur en geautomatiseerde deployment pipelines.\n\nIk ontwerp en lever productieklare applicaties met behulp van Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL en Google Cloud. Ik specialiseer me in intelligente workflows aangedreven door API's, autonome agenten, vector search en Retrieval-Augmented Generation (RAG). Mijn tooling omvat Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph en moderne LLM-providers zoals OpenAI, Anthropic, Gemini, Groq en Ollama.\n\nBuiten engineering om zet ik data om in inzichten en inzichten in functies die producten worden waar mensen op vertrouwen. Ik creëer ook duidelijke technische content—tutorials, docs en demos—die teams helpt complexe systemen met vertrouwen te adopteren en uit te breiden.\n\nMijn missie is eenvoudig: bouw tools die mensen begrijpen, en empower mensen om nog betere tools te bouwen. Nieuwsgierigheid drijft mijn werk, van snelle ML-prototyping tot het productioniseren van agenten en het automatiseren van end-to-end workflows.\n\nAltijd open voor samenwerking met teams die de volgende generatie mensgerichte AI bouwen."
   },
-  "elevatorPitch": {
-    "title": "Mijn Elevator Pitch",
-    "subtitle": "Waarom met mij samenwerken?",
-    "description": "Bekijk mijn elevator pitch playlist: https://youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G&si=3o8n9A67ZJLDlwIL",
-    "cta": "Laten we Samenwerken",
-    "paragraphs": {
-      "0": "Wist u dat in veel delen van Afrika de jeugdwerkloosheid meer dan 45% van de jongeren tussen 15 en 34 jaar treft—miljoenen getalenteerde, gekwalificeerde individuen die worstelen om betekenisvolle kansen te vinden ondanks hun potentieel?",
-      "1": "Hoi, ik ben Raymond Klanderman, een full-stack AI-ingenieur en ontwikkelaar gepassioneerd door het bouwen van schaalbare, mensgerichte systemen die echte problemen oplossen. Ik specialiseer me in het omzetten van complexe data en geavanceerde AI in praktische tools—met behulp van technologieën zoals Python met FastAPI en Streamlit, React/Next.js, Flutter, vector databases zoals Pinecone en Weaviate, en frameworks zoals LangChain, LlamaIndex en LangGraph. Ik werk met toonaangevende LLMs van OpenAI, Anthropic, Groq, Gemini, en meer om intelligente workflows, autonome agenten en Retrieval-Augmented Generation systemen te creëren.",
-      "2": "Enkele van mijn opvallende projecten omvatten: Kazi Connect, een door AI aangedreven vacatureplatform dat ik heb gebouwd en dat op vaardigheden gebaseerde logica gebruikt om Afrikaanse jongeren te verbinden met geverifieerde, scam-vrije kansen—rechtstreeks de werkloosheid aanpakken. AI Health Chat, dat de eerste plaats won in een innovatiehackathon door Grok te gebruiken voor gepersonaliseerde, privacygerichte gezondheidsinzichten. GeminiQuest, een magische multimodale leerapp waar gebruikers natuurkunde-ideeën schetsen en realtime simulaties, tekstboekcitaten en live AI-tutoring krijgen—gebouwd met Gemini Vision en React. En AutoResearcher, een multi-agent systeem met Google's Vertex AI Agent Kit dat één prompt omzet in een volledig geciteerd, 20-pagina onderzoekrapport met grafieken in minder dan 10 minuten.",
-      "3": "Ik zet inzichten om in productieklare producten die mensen empoweren—van snelle prototyping tot het deployen van autonome agenten die echte impact leveren. Ik ben altijd enthousiast om samen te werken met gemotiveerde teams die de volgende generatie AI-tools bouwen die mensen begrijpen en opheffen. Als je werkt aan innovatieve projecten in AI, data of sociaal goed, laten we connecten—ik zou graag verkennen hoe we kunnen samenwerken!"
-    }
-  },
   "projects": {
     "title": "Uitgelichte Projecten",
-    "subtitle": "Een showcase van ons laatste werk dat expertise demonstreert in webontwikkeling, AI/ML en mobiele applicaties.",
+    "subtitle": "AI-aangedreven platforms, intelligente tools en full-stack applicaties gebouwd met moderne technologieën.",
     "viewProject": "Bekijk Project",
     "featured": "Uitgelicht",
     "comingSoon": "Binnenkort Beschikbaar",
     "items": {
+      "luminae": {
+        "name": "Luminae",
+        "shortDescription": "Autonoom onderzoeksanalyseplatform met multi-agent AI-zwerm",
+        "description": "Upload elk document en de 5 AI-agenten van Luminae leveren methodologiekritiek, data-audit, experimentontwerp, subsidiegeneratie en kruisagentsynthese. Maakt gebruik van Mistral AI's multimodale ecosysteem voor diepgaande academische analyse tegen ~$0,05 per paper.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
+        "tags": ["AI", "LLM", "Autonome Agenten"],
+        "url": "https://luminae.qzz.io/",
+        "featured": true
+      },
+      "aiHealth": {
+        "name": "AI Health Chat",
+        "shortDescription": "AI-aangedreven gezondheidsconsultatieplatform",
+        "description": "AI-aangedreven gezondheidsconsultatieplatform. Symptoomcontrole en gezondheidsadvies met behulp van beveiligde AI-modellen. Won 1e plaats in een innovatiehackathon.",
+        "technologies": ["Next.js", "TypeScript", "Supabase", "xAI", "Grok"],
+        "tags": ["AI", "Gezondheid"],
+        "url": "https://aihealthchat.qzz.io/",
+        "featured": true
+      },
+      "liveInterviewer": {
+        "name": "Live Interviewer",
+        "shortDescription": "AI-aangedreven sollicitatievraag generator met premium UI",
+        "description": "Genereert contextrijke, scenariogestuurde sollicitatievragen op maat voor elke functie. Google-stijl UI/UX met Framer Motion-animaties, veerkrachtige API-herstelmotor, multi-model ondersteuning (Mistral, Groq, Llama, Qwen) en installeerbare PWA.",
+        "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Mistral AI", "Groq", "PWA"],
+        "tags": ["AI", "Web App"],
+        "url": "#",
+        "featured": true
+      },
+      "contentShapeshifterPro": {
+        "name": "Content Shapeshifter Pro",
+        "shortDescription": "Transformeer elke content in platform-geoptimaliseerde berichten met AI",
+        "description": "Schraapt URL's of artikelen en gebruikt Groq AI met Llama 3 om 4 verschillende platformvarianten te genereren: Twitter-draden, LinkedIn-berichten, nieuwsbrieven en Instagram-onderschriften. Eénkliks kopiëren, real-time feedback en elegante donkere modus UI.",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Groq", "Cheerio"],
+        "tags": ["AI", "Content Creatie"],
+        "url": "#",
+        "featured": true
+      },
+      "serenityAI": {
+        "name": "SerenityAI",
+        "shortDescription": "AI-aangedreven mentale wellness companion",
+        "description": "Een AI-aangedreven mentale wellness companion ontworpen om mensen te helpen hun mentale welzijn beter te begrijpen en te verzorgen. Functies omvatten intelligente agenten die gepersonaliseerde emotionele ondersteuning, humeur tracking, journaling inzichten en patroonanalyse bieden.",
+        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "LLM Architectuur", "AI Agenten"],
+        "tags": ["AI", "Mentale Gezondheid"],
+        "url": "https://serenityai.qzz.io/",
+        "featured": true
+      },
       "tutaLearn": {
         "name": "TutaLearn - Afrikaans Educatief Platform",
-        "description": "AI-aangedreven educatieve PWA voor Afrikaanse studenten. Functies omvatten gepersonaliseerde leerpaden, WhatsApp-integratie en adaptieve assessments.",
-        "technologies": [
-          "Python",
-          "TypeScript",
-          "Groq API",
-          "PWA",
-          "WhatsApp API"
-        ],
+        "shortDescription": "AI-aangedreven educatieve PWA voor Afrikaanse studenten",
+        "description": "AI-aangedreven educatief platform voor Afrikaanse studenten. Functies omvatten gepersonaliseerde leerpaden, WhatsApp-integratie voor naadloze toegang en adaptieve beoordelingen die zich aanpassen aan het tempo van elke leerling.",
+        "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
+        "tags": ["Software Engineering", "EdTech"],
         "url": "https://www.tutalearn.study/",
         "featured": true
       },
       "codebaseGenius": {
         "name": "Codebase Genius - AI Documentatiesysteem",
-        "description": "AI-aangedreven platform voor automatische GitHub-documentatie. Genereert uitgebreide docs van codebase-analyse met behulp van LLMs.",
-        "technologies": [
-          "Python",
-          "TypeScript",
-          "Google Gemini API",
-          "Streamlit",
-          "NetworkX",
-          "FastAPI"
-        ],
+        "shortDescription": "AI-aangedreven automatische GitHub-documentatieplatform",
+        "description": "AI-aangedreven platform voor automatische GitHub-documentatie. Genereert uitgebreide docs van codebase-analyse met behulp van LLMs, met grafische codestructuurvisualisatie.",
+        "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
+        "tags": ["AI", "Ontwikkelaarstools"],
         "url": "https://geniuscodebase.streamlit.app/",
-        "featured": true
-      },
-      "aiHealth": {
-        "name": "AI Health Chat",
-        "description": "AI-aangedreven gezondheidsconsultatieplatform. Symptoomcontrole en gezondheidsadvies met behulp van beveiligde AI-modellen.",
-        "technologies": [
-          "Next.js",
-          "Supabase",
-          "xAI",
-          "Grok",
-          "TypeScript"
-        ],
-        "url": "https://aihealthchat.qzz.io/",
-        "featured": true
-      },
-      "serenityAI": {
-        "name": "SerenityAI",
-        "description": "Een AI-aangedreven mentale wellness companion ontworpen om mensen te helpen hun mentale welzijn beter te begrijpen en te verzorgen. Functies omvatten intelligente agenten die gepersonaliseerde emotionele ondersteuning bieden, humeur tracking, journaling inzichten en patroonanalyse—met wellness voor productiviteit als leidende principe.",
-        "technologies": [
-          "React",
-          "TypeScript",
-          "JacLang",
-          "Groq API",
-          "LLM Architectuur",
-          "AI Agenten"
-        ],
-        "url": "https://serenityai.qzz.io/",
         "featured": true
       },
       "weruDigital": {
         "name": "Weru Digital",
-        "description": "Een multimediaplatform voor Weru TV en FM met live radio streaming, live TV streaming en geplande programmering voor beide. SEO-vriendelijk met automatisch bijwerkende RSS nieuwskanalen, AI-aangedreven optimalisatie, PWA-ondersteuning en cross-platform compatibiliteit.",
-        "technologies": [
-          "WordPress",
-          "PWA",
-          "Live Streaming",
-          "AI",
-          "SEO",
-          "RSS",
-          "Cross-platform"
-        ],
+        "shortDescription": "Multimediaplatform voor Weru TV en FM",
+        "description": "Een multimediaplatform voor Weru TV en FM met live radio streaming, live TV streaming en geplande programmering. SEO-vriendelijk met automatisch bijwerkende RSS nieuwskanalen, AI-optimalisatie, PWA-ondersteuning en cross-platform compatibiliteit.",
+        "technologies": ["WordPress", "PWA", "Live Streaming", "AI", "SEO", "RSS", "Cross-platform"],
+        "tags": ["Web Development", "Media"],
         "url": "https://werudigital.co.ke/",
         "featured": true
       },
       "kaziConnect": {
         "name": "Kazi Connect",
-        "description": "AI-aangedreven vacatureplatform met CV-analyse en sollicitatiebeheer",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Firebase",
-          "OpenAI",
-          "PWA"
-        ],
+        "shortDescription": "AI-aangedreven vacatureplatform",
+        "description": "Een innovatieve vacaturemarktplaats die kunstmatige intelligentie gebruikt om werkzoekenden te matchen met geschikte kansen. CV-analyse, vaardigheidsbeoordeling, geautomatiseerde sollicitatie tracking en gepersonaliseerde aanbevelingen.",
+        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
+        "tags": ["Software Engineering", "Arbeidsmarkt"],
         "url": "https://www.kaziconnect.work/",
         "featured": true
       }

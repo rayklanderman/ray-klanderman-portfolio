@@ -7,6 +7,7 @@ interface Project {
   name: string;
   description: string;
   technologies: string[];
+  tags?: string[];
   url?: string;
   featured?: boolean;
   image?: string;
@@ -20,6 +21,31 @@ const Projects: FC = () => {
 
   // Project URLs and images
   const projectData: Record<string, { image: string; github: string; url: string }> = {
+    luminae: {
+      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/luminae',
+      url: 'https://luminae.qzz.io/'
+    },
+    aiHealth: {
+      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/ai-health-chat',
+      url: 'https://aihealthchat.qzz.io/'
+    },
+    liveInterviewer: {
+      image: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/live-interviewer',
+      url: '#'
+    },
+    contentShapeshifterPro: {
+      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/content-shapeshifter-pro',
+      url: '#'
+    },
+    serenityAI: {
+      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/serenityai',
+      url: 'https://serenityai.qzz.io/'
+    },
     tutaLearn: {
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/tutalearn',
@@ -29,16 +55,6 @@ const Projects: FC = () => {
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/jaseci-proj',
       url: 'https://geniuscodebase.streamlit.app/'
-    },
-    aiHealth: {
-      image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/ai-health-chat',
-      url: 'https://aihealthchat.qzz.io/'
-    },
-    serenityAI: {
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/serenityai',
-      url: 'https://serenityai.qzz.io/'
     },
     weruDigital: {
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
@@ -128,6 +144,14 @@ const Projects: FC = () => {
                 </h3>
                 
                 <p className="project-description">{shortDescription}</p>
+                
+                {project.tags && project.tags.length > 0 && (
+                  <div className="project-tags">
+                    {project.tags.map((tag: string, idx: number) => (
+                      <span key={idx} className="project-tag">{tag}</span>
+                    ))}
+                  </div>
+                )}
                 
                 {project.technologies && project.technologies.length > 0 && (
                   <div className="project-technologies">
