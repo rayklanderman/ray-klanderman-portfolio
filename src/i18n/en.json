@@ -372,7 +372,7 @@
         "certification": "Applied Data Science Lab",
         "description": "Eight end-to-end data science projects covering the full ML pipeline: data exploration, ETL pipelines, supervised/unsupervised modeling, and visualization. Projects spanned housing, sales, air quality, disaster analysis, bankruptcy, customer segmentation, A/B testing, and volatility forecasting.",
         "issued_by": "WorldQuant University",
-        "credential_url": "https://www.credly.com/earner/earned/badge/cbb48521-41dd-48bc-aa53-78e0037762d2",
+        "credential_url": "https://www.credly.com/badges/cbb48521-41dd-48bc-aa53-78e0037762d2",
         "skills": [
           "API Design",
           "Data Science",
@@ -417,7 +417,7 @@
         "certification": "Kubernetes and Cloud Native Associate (KCNA)",
         "description": "Demonstrated basic knowledge of Kubernetes and cloud-native technologies, including deploying applications using kubectl commands, architecture (containers, pods, nodes, clusters), service mesh, and GitOps.",
         "issued_by": "Linux Foundation",
-        "credential_url": "https://www.credly.com/earner/earned/badge/565da7e7-3a27-4327-a1d8-af11b3e62362",
+        "credential_url": "https://www.credly.com/badges/565da7e7-3a27-4327-a1d8-af11b3e62362",
         "skills": [
           "Application Containers",
           "Cloud Native",
@@ -433,7 +433,7 @@
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
         "description": "Formulated real-world language model research problems; built a simple tokenizer; prepared datasets for training transformer language models; pretrained and fine-tuned LLMs.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.credly.com/earner/earned/badge/3495f598-449d-47c6-9321-6378f27f86a6",
+        "credential_url": "https://www.credly.com/badges/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
           "Agent Development Kit",
           "AI Agents",
@@ -448,7 +448,7 @@
         "certification": "Implement Cloud Security Fundamentals",
         "description": "Created and assigned roles with IAM; managed service accounts; enabled private connectivity and implemented cloud security best practices on Google Cloud.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.credly.com/earner/earned/badge/e1413ed3-f5e6-44c8-979e-426a1a0bc42f",
+        "credential_url": "https://www.credly.com/badges/e1413ed3-f5e6-44c8-979e-426a1a0bc42f",
         "skills": [
           "App Deployment",
           "Authentication",
@@ -466,7 +466,7 @@
         "certification": "Implement Load Balancing on Compute Engine",
         "description": "Wrote gcloud commands, created and deployed VMs, ran containerized applications on GKE, and configured network load balancing on Google Cloud.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.credly.com/earner/earned/badge/7457688a-1576-4065-9e49-e4506d94b40a",
+        "credential_url": "https://www.credly.com/badges/7457688a-1576-4065-9e49-e4506d94b40a",
         "skills": [
           "Cloud Computing",
           "Compute Engine",
@@ -480,7 +480,7 @@
         "certification": "Develop Serverless Applications on Cloud Run",
         "description": "Integrated Cloud Run with Cloud Storage, architected resilient asynchronous systems, and constructed REST API gateways using Cloud Run and Pub/Sub.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.credly.com/earner/earned/badge/73edee26-ef2f-43f0-af95-6dfdb2be093a",
+        "credential_url": "https://www.credly.com/badges/73edee26-ef2f-43f0-af95-6dfdb2be093a",
         "skills": [
           "Cloud Build",
           "Cloud Run",
@@ -527,7 +527,7 @@
         "certification": "Prompt Design in Vertex AI",
         "description": "Practical skills in designing and optimizing prompts for Large Language Models using Vertex AI.",
         "issued_by": "Google Cloud",
-        "credential_url": "#",
+        "credential_url": "https://www.credly.com/badges/c05f7979-d999-4b37-a1cd-9c566e2c0a40",
         "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
       },
       "aws_educate_genai": {
@@ -535,7 +535,7 @@
         "certification": "Introduction to Generative AI - Training Badge",
         "description": "Foundational understanding of generative AI concepts, including large language models, prompt engineering, and responsible AI principles for real-world cloud applications.",
         "issued_by": "Amazon Web Services (AWS)",
-        "credential_url": "https://www.credly.com/earner/earned/badge/d6a0ac7a-2275-4b4b-b2b7-66b1e2b2ee73",
+        "credential_url": "https://www.credly.com/badges/d6a0ac7a-2275-4b4b-b2b7-66b1e2b2ee73",
         "skills": ["Generative AI", "Large Language Models", "Prompt Engineering", "Responsible AI"]
       },
       "aws_educate_ml": {
@@ -543,7 +543,7 @@
         "certification": "Machine Learning Foundations - Training Badge",
         "description": "Introductory knowledge of machine learning concepts, including supervised and unsupervised learning, model training, evaluation, and deployment strategies on AWS.",
         "issued_by": "Amazon Web Services (AWS)",
-        "credential_url": "https://www.credly.com/earner/earned/badge/bcc32848-a45f-4aff-87f4-2aa53ace81e8",
+        "credential_url": "https://www.credly.com/badges/bcc32848-a45f-4aff-87f4-2aa53ace81e8",
         "skills": ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Model Training", "AWS"]
       },
       "ibm_granite": {
@@ -551,7 +551,7 @@
         "certification": "Code Generation and Optimization Using IBM Granite",
         "description": "Hands-on training in code generation, optimization, and AI-assisted software development using IBM Granite models. Covers prompt-based code synthesis and performance tuning.",
         "issued_by": "IBM",
-        "credential_url": "https://www.credly.com/earner/earned/badge/c5dcd4da-3757-4893-945b-50ca7d025ec2",
+        "credential_url": "https://www.credly.com/badges/c5dcd4da-3757-4893-945b-50ca7d025ec2",
         "skills": ["Code Generation", "IBM Granite", "AI-Assisted Development", "Prompt Engineering", "Code Optimization"]
       }
     }
