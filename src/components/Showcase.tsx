@@ -26,10 +26,11 @@ const Showcase: FC = () => {
         >
           <iframe 
             className="video-iframe"
-            src="https://www.youtube.com/embed/Jk6mjeeWHoA?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G" 
+            src="https://www.youtube.com/embed/videoseries?si=55iPflPwk5-WWJ2g&amp;list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G" 
             title="My Showcase Playlist" 
             frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin"
             loading="lazy"
             allowFullScreen
           ></iframe>
