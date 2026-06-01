@@ -9,6 +9,7 @@ const Education = React.lazy(() => import('./components/Education_new'));
 const Badges = React.lazy(() => import('./components/Badges'));
 import Footer from './components/Footer';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import AIChat from './components/AIChat';
 import SectionSkeleton from './components/SectionSkeleton';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
 import './i18n/config';
@@ -37,6 +38,7 @@ const AppContent: React.FC = () => {
         {/* Contact section is in the Footer component */}
       </main>
       <Footer />
+      <AIChat />
     </motion.div>
   );
 };
