@@ -8,6 +8,7 @@ const Education: React.FC = () => {
 
   const educationData = t('education.items', { returnObjects: true }) as Record<string, {
     name: string;
+    type: string;
     institution: string;
     period: string;
     status: string;
@@ -18,6 +19,7 @@ const Education: React.FC = () => {
   const educationItems = Object.keys(educationData).map(key => ({
     id: key,
     name: educationData[key].name,
+    type: educationData[key].type || 'completed',
     institution: educationData[key].institution,
     period: educationData[key].period,
     status: educationData[key].status,
@@ -40,16 +42,16 @@ const Education: React.FC = () => {
         {educationItems.map((edu, index) => (
           <motion.div
             key={edu.id}
-            className="education-card"
+            className={`education-card ${edu.type}`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 * index }}
           >
+            <span className={`status-badge ${edu.type}`}>{edu.status}</span>
             <h3 className="title">{edu.name}</h3>
             <div className="institution">{edu.institution}</div>
             <div className="status-period">
-              <span className={`status ${edu.status.toLowerCase()}`}>{edu.status}</span>
               <span className="period">{edu.period}</span>
             </div>
             <ul className="description">

@@ -123,9 +123,10 @@
     "items": {
       "bachelor_cs": {
         "name": "Bachelor of Computer Science",
+        "type": "ongoing",
         "institution": "University of the People (UoPeople)",
         "period": "2025 – 2028 (Projected)",
-        "status": "Terminé",
+        "status": "En cours",
         "description": [
           "Current Standing: SAP",
           "Cumulative GPA: 3.95",
@@ -136,6 +137,7 @@
       },
       "diploma_ict": {
         "name": "Diploma in Information Communication Technology",
+        "type": "completed",
         "institution": "Management University of Africa (MUA)",
         "period": "2021 – 2024",
         "status": "Terminé",
@@ -151,6 +153,7 @@
       },
       "alx_ds": {
         "name": "Data Science Program",
+        "type": "completed",
         "institution": "ALX",
         "period": "2025 – Present",
         "status": "Terminé",
@@ -173,6 +176,7 @@
       },
       "plp_africa": {
         "name": "Power Learn Project (PLP) Africa – Software Development Program",
+        "type": "completed",
         "institution": "Power Learn Project (PLP) Africa",
         "period": "Completed December 2024",
         "status": "Terminé",
@@ -192,9 +196,10 @@
       },
       "worldquant_cv": {
         "name": "Applied AI Lab: Deep Learning for Computer Vision",
+        "type": "ongoing",
         "institution": "WorldQuant University",
         "period": "2025 – Present",
-        "status": "Terminé",
+        "status": "En cours",
         "description": [
           "Mastering deep learning frameworks and computer vision techniques",
           "Building and deploying real-world AI applications"
@@ -207,6 +212,7 @@
       },
       "worldquant_ds": {
         "name": "Applied Data Science Lab",
+        "type": "completed",
         "institution": "WorldQuant University",
         "period": "2025 – Present",
         "status": "Terminé",
@@ -222,6 +228,7 @@
       },
       "code_in_place": {
         "name": "Code in Place: Introduction to Programming with Python",
+        "type": "completed",
         "institution": "Stanford University",
         "period": "2024",
         "status": "Terminé",

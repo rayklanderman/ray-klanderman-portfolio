@@ -68,41 +68,31 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
     
-    .education-header {
-      margin-bottom: 1rem;
+    .status-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      z-index: 2;
       
-      h3 {
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
-        color: var(--text-color) !important;
-        font-weight: 600;
+      &.completed {
+        background: rgba(96, 165, 250, 0.12);
+        color: #60a5fa;
+        border: 1px solid rgba(96, 165, 250, 0.3);
+        box-shadow: 0 0 12px rgba(96, 165, 250, 0.2);
       }
       
-      .institution {
-        display: block;
-        font-size: 0.95rem;
-        color: var(--text-color) !important;
-        opacity: 0.9;
-        margin-bottom: 0.25rem;
-      }
-      
-      .status {
-        display: inline-block;
-        padding: 0.25rem 0.75rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 500;
-        margin-top: 0.5rem;
-        
-        &.ongoing {
-          background-color: rgba(74, 222, 128, 0.15);
-          color: var(--text-color) !important;
-        }
-        
-        &.completed {
-          background-color: rgba(96, 165, 250, 0.15);
-          color: var(--text-color) !important;
-        }
+      &.ongoing {
+        background: rgba(74, 222, 128, 0.12);
+        color: #4ade80;
+        border: 1px solid rgba(74, 222, 128, 0.3);
+        box-shadow: 0 0 12px rgba(74, 222, 128, 0.2);
+        animation: pulse-glow 2s ease-in-out infinite;
       }
     }
     
@@ -263,5 +253,14 @@
         border: 1px solid rgba(139, 92, 246, 0.3);
       }
     }
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(74, 222, 128, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(74, 222, 128, 0.4);
   }
 }
