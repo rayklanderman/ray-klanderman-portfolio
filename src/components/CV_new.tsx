@@ -75,7 +75,7 @@ const CV: React.FC = () => {
 
             <div style={{ marginTop: '2rem' }}>
               <a 
-                href="https://www.linkedin.com/in/raymondklanderman/" 
+                href="https://www.linkedin.com/in/rayklanderman/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="glass-button"
