@@ -28,11 +28,11 @@ const Header = () => {
   const menuItems: MenuItem[] = useMemo(() => [
     { id: 'profile', label: t('menu.profile') },
     { id: 'projects', label: t('menu.projects') },
-    { id: 'showcase', label: 'Showcase' },
+    { id: 'showcase', label: t('menu.showcase') },
     { id: 'education', label: t('menu.education') },
     { id: 'badges', label: t('menu.badges') },
-    { id: 'contact-me', label: 'Contact Me' },
-    { id: 'services', label: 'Services', external: true, url: 'https://www.devray.site/' }
+    { id: 'contact-me', label: t('menu.contact') },
+    { id: 'services', label: t('menu.services'), external: true, url: 'https://www.devray.site/' }
   ], [t]);
 
   // Handle scroll effect for header

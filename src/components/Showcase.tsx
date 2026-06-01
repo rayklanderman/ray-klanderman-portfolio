@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import './Showcase.scss';
 
 const Showcase: FC = () => {
+  const { t } = useTranslation();
 
   return (
     <section id="showcase" className="showcase-section">
@@ -14,8 +16,18 @@ const Showcase: FC = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Showcase
+          {t('showcase.title')}
         </motion.h2>
+
+        <motion.p
+          className="section-subtitle"
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          {t('showcase.description')}
+        </motion.p>
         
         <motion.div 
           className="video-container"

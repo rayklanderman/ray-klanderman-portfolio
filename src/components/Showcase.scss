@@ -1,5 +1,5 @@
 .showcase-section {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   background: var(--bg-color);
 
   .container {
@@ -10,8 +10,8 @@
 
   .section-title {
     text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--text-color);
     position: relative;
@@ -51,14 +51,25 @@
   }
 
   @media (max-width: 768px) {
-    padding: 4rem 0;
+    padding: 2rem 0;
 
     .section-title {
       font-size: 1.8rem;
-      margin-bottom: 2rem;
+      margin-bottom: 0.5rem;
     }
 
-    .video-container {
+  .section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+
+  .video-container {
       max-width: 100%;
       aspect-ratio: 16 / 9;
     }

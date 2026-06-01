@@ -494,6 +494,16 @@
       }
     }
   },
+  "showcase": {
+    "title": "Vitrine",
+    "description": "Une playlist organisée de présentations de projets enregistrées, de démos en direct et de présentations techniques présentant des applications réelles que j'ai construites."
+  },
+  "skills": {
+    "aiData": "IA & Science des Données",
+    "frontendMobile": "Frontend & Mobile",
+    "backendCloud": "Backend & Cloud",
+    "viewLinkedIn": "Voir Mon Profil LinkedIn"
+  },
   "contact": {
     "title": "Me Contacter",
     "name": "Votre Nom",
@@ -512,7 +522,10 @@
   "menu": {
     "profile": "Profil",
     "projects": "Projets",
+    "showcase": "Vitrine",
     "education": "Éducation",
-    "badges": "Badges"
+    "badges": "Badges",
+    "contact": "Me Contacter",
+    "services": "Services"
   }
 }

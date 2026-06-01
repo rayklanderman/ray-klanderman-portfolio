@@ -494,6 +494,16 @@
       }
     }
   },
+  "showcase": {
+    "title": "Vitrine",
+    "description": "Een samengestelde afspeellijst van opgenomen projectpresentaties, live demo's en technische walkthroughs die real-world toepassingen tonen die ik heb gebouwd."
+  },
+  "skills": {
+    "aiData": "AI & Datawetenschap",
+    "frontendMobile": "Frontend & Mobiel",
+    "backendCloud": "Backend & Cloud",
+    "viewLinkedIn": "Bekijk Mijn LinkedIn Profiel"
+  },
   "contact": {
     "title": "Neem Contact Op",
     "name": "Uw Naam",
@@ -512,7 +522,10 @@
   "menu": {
     "profile": "Profiel",
     "projects": "Projecten",
+    "showcase": "Vitrine",
     "education": "Opleiding",
-    "badges": "Badges"
+    "badges": "Badges",
+    "contact": "Neem Contact Op",
+    "services": "Diensten"
   }
 }

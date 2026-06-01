@@ -1,6 +1,6 @@
 // CV Section Styling
 .cv-section {
-  padding: 4rem 0;
+  padding: 2.5rem 0;
   background-color: var(--bg-color);
   position: relative;
   overflow: hidden;
@@ -144,7 +144,7 @@
 // Responsive adjustments
 @media (max-width: 768px) {
   .cv-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
   
   .profile-section {

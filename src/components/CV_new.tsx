@@ -5,19 +5,20 @@ import { FaLinkedin, FaCode, FaServer, FaBrain } from 'react-icons/fa';
 import './CV_new.scss';
 
 const SkillsCloud = () => {
+  const { t } = useTranslation();
   const skillCategories = [
     {
-      title: "AI & Data Science",
+      title: t('skills.aiData'),
       icon: <FaBrain />,
       skills: ["Python", "FastAPI", "Streamlit", "Pandas", "Pinecone", "Weaviate", "LangChain", "LlamaIndex", "OpenAI", "Anthropic", "Groq"]
     },
     {
-      title: "Frontend & Mobile",
+      title: t('skills.frontendMobile'),
       icon: <FaCode />,
       skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Flutter", "Dart", "PWA"]
     },
     {
-      title: "Backend & Cloud",
+      title: t('skills.backendCloud'),
       icon: <FaServer />,
       skills: ["Node.js", "SQL", "NoSQL", "Firebase", "Supabase", "Google Cloud", "Docker", "REST APIs"]
     }
@@ -79,7 +80,7 @@ const CV: React.FC = () => {
                 rel="noopener noreferrer"
                 className="glass-button"
               >
-                <FaLinkedin /> View My LinkedIn Profile
+                <FaLinkedin /> {t('skills.viewLinkedIn')}
               </a>
             </div>
           </div>
