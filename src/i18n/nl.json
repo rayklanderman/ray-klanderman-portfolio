@@ -125,25 +125,25 @@
         "name": "Bachelor of Computer Science",
         "type": "ongoing",
         "institution": "University of the People (UoPeople)",
-        "period": "2025 – 2028 (Projected)",
+        "period": "2025 – 2028 (Verwacht)",
         "status": "Bezig",
         "description": [
-          "Current Standing: SAP",
-          "Cumulative GPA: 3.95",
-          "Credits Earned: 21 / 120 (As of April 2026)",
-          "Pursuing a comprehensive degree in Computer Science with a focus on software engineering, algorithms, and modern technologies."
+          "Huidige Status: SAP",
+          "Cumulatief GPA: 3.95",
+          "Behaalde Studiepunten: 21 / 120 (Vanaf april 2026)",
+          "Volgt een uitgebreide opleiding in Computer Science met focus op software-engineering, algoritmen en moderne technologieën."
         ],
         "skills": []
       },
       "diploma_ict": {
-        "name": "Diploma in Information Communication Technology",
+        "name": "Diploma in Informatie- en Communicatietechnologie",
         "type": "completed",
         "institution": "Management University of Africa (MUA)",
         "period": "2021 – 2024",
         "status": "Voltooid",
         "description": [
-          "Graduated with Distinction",
-          "Focus on modern software development and IT infrastructure"
+          "Afgestudeerd met Onderscheiding",
+          "Focus op moderne softwareontwikkeling en IT-infrastructuur"
         ],
         "skills": [
           "Software Development",
@@ -158,10 +158,10 @@
         "period": "2025 – Present",
         "status": "Voltooid",
         "description": [
-          "Advanced from completed Data Analytics Cohort 2025",
-          "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
-          "Mastery of Advanced Python, Machine Learning, AI, and predictive modeling",
-          "Applying Agile methodologies for collaborative, real-world problem-solving"
+          "Voortgekomen uit de voltooide Data Analytics Cohort 2025",
+          "Geavanceerde expertise in data-opschoning, visualisatie en interpretatie met SQL, Power BI en Tableau",
+          "Beheersing van geavanceerd Python, Machine Learning, AI en voorspellende modellering",
+          "Toepassen van Agile-methodologieën voor collaboratief, real-world probleemoplossing"
         ],
         "skills": [
           "SQL",
@@ -181,9 +181,9 @@
         "period": "Completed December 2024",
         "status": "Voltooid",
         "description": [
-          "Successfully completed a 16-week intensive program in Software Development",
-          "Specialized in Web Development, Python Development, and Database Development",
-          "Mastered Python, Web Technologies, Database Management, Dart with Flutter, and Soft Skills"
+          "Succesvol een 16-weeks intensief softwareontwikkelingsprogramma afgerond",
+          "Gespecialiseerd in webontwikkeling, Python-ontwikkeling en databaseontwikkeling",
+          "Beheersing van Python, webtechnologieën, databasebeheer, Dart met Flutter en soft skills"
         ],
         "skills": [
           "Python",
@@ -201,8 +201,8 @@
         "period": "2025 – Present",
         "status": "Bezig",
         "description": [
-          "Mastering deep learning frameworks and computer vision techniques",
-          "Building and deploying real-world AI applications"
+          "Beheersen van deep learning-frameworks en computer vision-technieken",
+          "Bouwen en implementeren van real-world AI-toepassingen"
         ],
         "skills": [
           "Deep Learning",
@@ -217,8 +217,8 @@
         "period": "2025 – Present",
         "status": "Voltooid",
         "description": [
-          "Advanced data analysis and machine learning techniques",
-          "Real-world data science project implementation"
+          "Geavanceerde data-analyse en machine learning-technieken",
+          "Real-world data science-projectimplementatie"
         ],
         "skills": [
           "Data Science",
@@ -233,8 +233,8 @@
         "period": "2024",
         "status": "Voltooid",
         "description": [
-          "Intensive Python programming course from Stanford University",
-          "Completed diagnostic assessment and final project with distinction"
+          "Intensieve Python-programmeercursus van Stanford University",
+          "Diagnostische beoordeling en eindproject met onderscheiding afgerond"
         ],
         "skills": [
           "Python",
@@ -255,7 +255,7 @@
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
         "certification": "2025 Certified AI Foundations Associate",
-        "description": "Certification introducing foundational AI/ML concepts and practical applications within Oracle Cloud Infrastructure, including generative AI, LLMs, and OCI AI services.",
+        "description": "Certificering die fundamentele AI/ML-concepten en praktische toepassingen binnen Oracle Cloud Infrastructure behandelt, inclusief generatieve AI, LLM's en OCI AI-services.",
         "issued_by": "Oracle",
         "expiration": "October 30, 2027",
         "badge_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7418DAC9DB558E4572B75960D015FF4F8AC815414D000F75011C3391E0103A33",
@@ -270,7 +270,7 @@
       "alx_data_analytics": {
         "platform": "ALX Africa",
         "certification": "Data Analytics Professional Certificate",
-        "description": "Completed a rigorous program in data analysis, visualization, and statistical foundations using Excel, SQL, Python (Pandas, Matplotlib, Seaborn), and Tableau/Power BI. Applied analytical techniques to real-world datasets delivering actionable business insights.",
+        "description": "Een rigoureus programma afgerond in data-analyse, visualisatie en statistische grondslagen met Excel, SQL, Python (Pandas, Matplotlib, Seaborn) en Tableau/Power BI. Analytische technieken toegepast op real-world datasets met bruikbare bedrijfsinzichten.",
         "issued_by": "ALX Africa",
         "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
         "skills": [
@@ -287,7 +287,7 @@
       "power_learn_csdp": {
         "platform": "Power Learn Project Africa",
         "certification": "Certified Software Development Professional (CSDP)",
-        "description": "Intensive software development program covering Python programming, web technologies, database management with SQL, and cross-platform mobile development with Dart/Flutter. Specialized in building scalable, real-world applications using industry best practices.",
+        "description": "Intensief softwareontwikkelingsprogramma met Python-programmering, webtechnologieën, databasebeheer met SQL en cross-platform mobiele ontwikkeling met Dart/Flutter. Gespecialiseerd in het bouwen van schaalbare real-world applicaties volgens industrienormen.",
         "issued_by": "Power Learn Project Africa",
         "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
         "skills": [
@@ -304,7 +304,7 @@
       "worldquant_data_science": {
         "platform": "WorldQuant University",
         "certification": "Applied Data Science Lab",
-        "description": "Eight end-to-end data science projects covering the full ML pipeline: data exploration, ETL pipelines, supervised/unsupervised modeling, and visualization. Projects spanned housing, sales, air quality, disaster analysis, bankruptcy, customer segmentation, A/B testing, and volatility forecasting.",
+        "description": "Acht end-to-end data science-projecten die de volledige ML-pipeline dekken: data-verkenning, ETL-pipelines, supervised/unsupervised modellering en visualisatie. Projecten omvatten huisvesting, verkoop, luchtkwaliteit, rampenanalyse, faillissement, klantsegmentatie, A/B-testen en volatiliteitsvoorspelling.",
         "issued_by": "WorldQuant University",
         "credential_url": "https://www.credly.com/earner/earned/badge/cbb48521-41dd-48bc-aa53-78e0037762d2",
         "skills": [
@@ -349,7 +349,7 @@
       "linux_kcna": {
         "platform": "Linux Foundation",
         "certification": "Kubernetes and Cloud Native Associate (KCNA)",
-        "description": "Demonstrated basic knowledge of Kubernetes and cloud-native technologies, including deploying applications using kubectl commands, architecture (containers, pods, nodes, clusters), service mesh, and GitOps.",
+        "description": "Basiskennis aangetoond van Kubernetes en cloud-native technologieën, inclusief het implementeren van applicaties met kubectl-commando's, architectuur (containers, pods, nodes, clusters), service mesh en GitOps.",
         "issued_by": "Linux Foundation",
         "credential_url": "https://www.credly.com/earner/earned/badge/565da7e7-3a27-4327-a1d8-af11b3e62362",
         "skills": [
@@ -365,7 +365,7 @@
       "google_adk": {
         "platform": "Google Cloud",
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
-        "description": "Formulated real-world language model research problems; built a simple tokenizer; prepared datasets for training transformer language models; pretrained and fine-tuned LLMs.",
+        "description": "Onderzoeksproblemen met taalmodellen geformuleerd; een eenvoudige tokenizer gebouwd; datasets voorbereid voor het trainen van transformer-taalmodellen; LLM's gepretraind en gefinetuned.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
@@ -380,7 +380,7 @@
       "google_security": {
         "platform": "Google Cloud",
         "certification": "Implement Cloud Security Fundamentals",
-        "description": "Created and assigned roles with IAM; managed service accounts; enabled private connectivity and implemented cloud security best practices on Google Cloud.",
+        "description": "Rollen aangemaakt en toegewezen met IAM; serviceaccounts beheerd; privéconnectiviteit ingeschakeld en cloudbeveiligingspraktijken geïmplementeerd op Google Cloud.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/e1413ed3-f5e6-44c8-979e-426a1a0bc42f",
         "skills": [
@@ -398,7 +398,7 @@
       "google_load_balancing": {
         "platform": "Google Cloud",
         "certification": "Implement Load Balancing on Compute Engine",
-        "description": "Wrote gcloud commands, created and deployed VMs, ran containerized applications on GKE, and configured network load balancing on Google Cloud.",
+        "description": "Gcloud-commando's geschreven, VMs aangemaakt en geïmplementeerd, containerized applicaties op GKE uitgevoerd en netwerkload balancing geconfigureerd op Google Cloud.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/7457688a-1576-4065-9e49-e4506d94b40a",
         "skills": [
@@ -412,7 +412,7 @@
       "google_serverless": {
         "platform": "Google Cloud",
         "certification": "Develop Serverless Applications on Cloud Run",
-        "description": "Integrated Cloud Run with Cloud Storage, architected resilient asynchronous systems, and constructed REST API gateways using Cloud Run and Pub/Sub.",
+        "description": "Cloud Run geïntegreerd met Cloud Storage, veerkrachtige asynchrone systemen ontworpen en REST API-gateways gebouwd met Cloud Run en Pub/Sub.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/73edee26-ef2f-43f0-af95-6dfdb2be093a",
         "skills": [
@@ -431,7 +431,7 @@
       "anthropic_fluency": {
         "platform": "Anthropic",
         "certification": "AI Fluency Framework & Foundations",
-        "description": "Completed the AI Fluency Framework & Foundations program from Anthropic, demonstrating a clear understanding of fundamental AI concepts.",
+        "description": "Het AI Fluency Framework & Foundations-programma van Anthropic voltooid, met aantoonbaar helder begrip van fundamentele AI-concepten.",
         "issued_by": "Anthropic",
         "credential_url": "https://verify.skilljar.com/c/3tkg8je2ykb9",
         "skills": [
@@ -463,7 +463,7 @@
       "google_prompt_design": {
         "platform": "Google Cloud",
         "certification": "Prompt Design in Vertex AI",
-        "description": "Practical skills in designing and optimizing prompts for Large Language Models using Vertex AI.",
+        "description": "Praktische vaardigheden in het ontwerpen en optimaliseren van prompts voor grote taalmodellen met Vertex AI.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/c05f7979-d999-4b37-a1cd-9c566e2c0a40",
         "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]

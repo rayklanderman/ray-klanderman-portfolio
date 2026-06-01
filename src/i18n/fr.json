@@ -125,25 +125,25 @@
         "name": "Bachelor of Computer Science",
         "type": "ongoing",
         "institution": "University of the People (UoPeople)",
-        "period": "2025 – 2028 (Projected)",
+        "period": "2025 – 2028 (Prévu)",
         "status": "En cours",
         "description": [
-          "Current Standing: SAP",
-          "Cumulative GPA: 3.95",
-          "Credits Earned: 21 / 120 (As of April 2026)",
-          "Pursuing a comprehensive degree in Computer Science with a focus on software engineering, algorithms, and modern technologies."
+          "Statut Actuel : SAP",
+          "Moyenne Cumulative : 3.95",
+          "Crédits Obtenus : 21 / 120 (En avril 2026)",
+          "Poursuite d'un diplôme complet en informatique avec une spécialisation en génie logiciel, algorithmes et technologies modernes."
         ],
         "skills": []
       },
       "diploma_ict": {
-        "name": "Diploma in Information Communication Technology",
+        "name": "Diplôme en Technologies de l'Information et de la Communication",
         "type": "completed",
         "institution": "Management University of Africa (MUA)",
         "period": "2021 – 2024",
         "status": "Terminé",
         "description": [
-          "Graduated with Distinction",
-          "Focus on modern software development and IT infrastructure"
+          "Diplômé avec Distinction",
+          "Accent sur le développement logiciel moderne et l'infrastructure IT"
         ],
         "skills": [
           "Software Development",
@@ -158,10 +158,10 @@
         "period": "2025 – Present",
         "status": "Terminé",
         "description": [
-          "Advanced from completed Data Analytics Cohort 2025",
-          "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
-          "Mastery of Advanced Python, Machine Learning, AI, and predictive modeling",
-          "Applying Agile methodologies for collaborative, real-world problem-solving"
+          "Progression depuis la cohorte Data Analytics 2025 terminée",
+          "Expertise avancée en nettoyage, visualisation et interprétation des données avec SQL, Power BI et Tableau",
+          "Maîtrise du Python avancé, du Machine Learning, de l'IA et de la modélisation prédictive",
+          "Application des méthodologies Agile pour la résolution collaborative de problèmes concrets"
         ],
         "skills": [
           "SQL",
@@ -181,9 +181,9 @@
         "period": "Completed December 2024",
         "status": "Terminé",
         "description": [
-          "Successfully completed a 16-week intensive program in Software Development",
-          "Specialized in Web Development, Python Development, and Database Development",
-          "Mastered Python, Web Technologies, Database Management, Dart with Flutter, and Soft Skills"
+          "Programme intensif de 16 semaines en développement logiciel terminé avec succès",
+          "Spécialisé en développement Web, développement Python et développement de bases de données",
+          "Maîtrise de Python, technologies Web, gestion de bases de données, Dart avec Flutter et compétences relationnelles"
         ],
         "skills": [
           "Python",
@@ -201,8 +201,8 @@
         "period": "2025 – Present",
         "status": "En cours",
         "description": [
-          "Mastering deep learning frameworks and computer vision techniques",
-          "Building and deploying real-world AI applications"
+          "Maîtrise des frameworks de deep learning et des techniques de vision par ordinateur",
+          "Construction et déploiement d'applications IA concrètes"
         ],
         "skills": [
           "Deep Learning",
@@ -217,8 +217,8 @@
         "period": "2025 – Present",
         "status": "Terminé",
         "description": [
-          "Advanced data analysis and machine learning techniques",
-          "Real-world data science project implementation"
+          "Techniques avancées d'analyse de données et de machine learning",
+          "Implémentation de projets réels en data science"
         ],
         "skills": [
           "Data Science",
@@ -233,8 +233,8 @@
         "period": "2024",
         "status": "Terminé",
         "description": [
-          "Intensive Python programming course from Stanford University",
-          "Completed diagnostic assessment and final project with distinction"
+          "Cours intensif de programmation Python de l'Université de Stanford",
+          "Évaluation diagnostique et projet final terminés avec distinction"
         ],
         "skills": [
           "Python",
@@ -255,7 +255,7 @@
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
         "certification": "2025 Certified AI Foundations Associate",
-        "description": "Certification introducing foundational AI/ML concepts and practical applications within Oracle Cloud Infrastructure, including generative AI, LLMs, and OCI AI services.",
+        "description": "Certification présentant les concepts fondamentaux de l'IA/ML et leurs applications pratiques dans Oracle Cloud Infrastructure, incluant l'IA générative, les LLM et les services OCI AI.",
         "issued_by": "Oracle",
         "expiration": "October 30, 2027",
         "badge_url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7418DAC9DB558E4572B75960D015FF4F8AC815414D000F75011C3391E0103A33",
@@ -270,7 +270,7 @@
       "alx_data_analytics": {
         "platform": "ALX Africa",
         "certification": "Data Analytics Professional Certificate",
-        "description": "Completed a rigorous program in data analysis, visualization, and statistical foundations using Excel, SQL, Python (Pandas, Matplotlib, Seaborn), and Tableau/Power BI. Applied analytical techniques to real-world datasets delivering actionable business insights.",
+        "description": "Programme rigoureux en analyse de données, visualisation et fondements statistiques utilisant Excel, SQL, Python (Pandas, Matplotlib, Seaborn) et Tableau/Power BI. Techniques analytiques appliquées à des ensembles de données réels pour fournir des insights commerciaux exploitables.",
         "issued_by": "ALX Africa",
         "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
         "skills": [
@@ -287,7 +287,7 @@
       "power_learn_csdp": {
         "platform": "Power Learn Project Africa",
         "certification": "Certified Software Development Professional (CSDP)",
-        "description": "Intensive software development program covering Python programming, web technologies, database management with SQL, and cross-platform mobile development with Dart/Flutter. Specialized in building scalable, real-world applications using industry best practices.",
+        "description": "Programme intensif de développement logiciel couvrant la programmation Python, les technologies web, la gestion de bases de données avec SQL et le développement mobile cross-platform avec Dart/Flutter. Spécialisé dans la création d'applications évolutives et concrètes selon les meilleures pratiques de l'industrie.",
         "issued_by": "Power Learn Project Africa",
         "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
         "skills": [
@@ -304,7 +304,7 @@
       "worldquant_data_science": {
         "platform": "WorldQuant University",
         "certification": "Applied Data Science Lab",
-        "description": "Eight end-to-end data science projects covering the full ML pipeline: data exploration, ETL pipelines, supervised/unsupervised modeling, and visualization. Projects spanned housing, sales, air quality, disaster analysis, bankruptcy, customer segmentation, A/B testing, and volatility forecasting.",
+        "description": "Huit projets de data science de bout en bout couvrant l'ensemble du pipeline ML : exploration de données, pipelines ETL, modélisation supervisée/non supervisée et visualisation. Projets couvrant le logement, les ventes, la qualité de l'air, l'analyse de catastrophes, la faillite, la segmentation client, les tests A/B et la prévision de volatilité.",
         "issued_by": "WorldQuant University",
         "credential_url": "https://www.credly.com/earner/earned/badge/cbb48521-41dd-48bc-aa53-78e0037762d2",
         "skills": [
@@ -349,7 +349,7 @@
       "linux_kcna": {
         "platform": "Linux Foundation",
         "certification": "Kubernetes and Cloud Native Associate (KCNA)",
-        "description": "Demonstrated basic knowledge of Kubernetes and cloud-native technologies, including deploying applications using kubectl commands, architecture (containers, pods, nodes, clusters), service mesh, and GitOps.",
+        "description": "Connaissances de base démontrées en Kubernetes et technologies cloud-native, incluant le déploiement d'applications avec des commandes kubectl, l'architecture (conteneurs, pods, nœuds, clusters), service mesh et GitOps.",
         "issued_by": "Linux Foundation",
         "credential_url": "https://www.credly.com/earner/earned/badge/565da7e7-3a27-4327-a1d8-af11b3e62362",
         "skills": [
@@ -365,7 +365,7 @@
       "google_adk": {
         "platform": "Google Cloud",
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
-        "description": "Formulated real-world language model research problems; built a simple tokenizer; prepared datasets for training transformer language models; pretrained and fine-tuned LLMs.",
+        "description": "Problèmes de recherche sur les modèles de langage formulés ; un tokeniseur simple construit ; des ensembles de données préparés pour l'entraînement de modèles de langage transformer ; des LLM prétrainés et finetunés.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
@@ -380,7 +380,7 @@
       "google_security": {
         "platform": "Google Cloud",
         "certification": "Implement Cloud Security Fundamentals",
-        "description": "Created and assigned roles with IAM; managed service accounts; enabled private connectivity and implemented cloud security best practices on Google Cloud.",
+        "description": "Rôles créés et attribués avec IAM ; comptes de service gérés ; connectivité privée activée et bonnes pratiques de sécurité cloud implémentées sur Google Cloud.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/e1413ed3-f5e6-44c8-979e-426a1a0bc42f",
         "skills": [
@@ -398,7 +398,7 @@
       "google_load_balancing": {
         "platform": "Google Cloud",
         "certification": "Implement Load Balancing on Compute Engine",
-        "description": "Wrote gcloud commands, created and deployed VMs, ran containerized applications on GKE, and configured network load balancing on Google Cloud.",
+        "description": "Commandes gcloud écrites, machines virtuelles créées et déployées, applications conteneurisées exécutées sur GKE et équilibrage de charge réseau configuré sur Google Cloud.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/7457688a-1576-4065-9e49-e4506d94b40a",
         "skills": [
@@ -412,7 +412,7 @@
       "google_serverless": {
         "platform": "Google Cloud",
         "certification": "Develop Serverless Applications on Cloud Run",
-        "description": "Integrated Cloud Run with Cloud Storage, architected resilient asynchronous systems, and constructed REST API gateways using Cloud Run and Pub/Sub.",
+        "description": "Cloud Run intégré avec Cloud Storage, systèmes asynchrones résilients architecturés et passerelles API REST construites avec Cloud Run et Pub/Sub.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/73edee26-ef2f-43f0-af95-6dfdb2be093a",
         "skills": [
@@ -431,7 +431,7 @@
       "anthropic_fluency": {
         "platform": "Anthropic",
         "certification": "AI Fluency Framework & Foundations",
-        "description": "Completed the AI Fluency Framework & Foundations program from Anthropic, demonstrating a clear understanding of fundamental AI concepts.",
+        "description": "Programme AI Fluency Framework & Foundations d'Anthropic terminé, démontrant une compréhension claire des concepts fondamentaux de l'IA.",
         "issued_by": "Anthropic",
         "credential_url": "https://verify.skilljar.com/c/3tkg8je2ykb9",
         "skills": [
@@ -463,7 +463,7 @@
       "google_prompt_design": {
         "platform": "Google Cloud",
         "certification": "Prompt Design in Vertex AI",
-        "description": "Practical skills in designing and optimizing prompts for Large Language Models using Vertex AI.",
+        "description": "Compétences pratiques en conception et optimisation de prompts pour les grands modèles de langage avec Vertex AI.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/earner/earned/badge/c05f7979-d999-4b37-a1cd-9c566e2c0a40",
         "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
