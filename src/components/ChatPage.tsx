@@ -1,7 +1,18 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import { FaRobot, FaSpinner, FaPaperPlane, FaArrowLeft, FaTrash } from 'react-icons/fa';
 import { sendMessage, buildSystemPrompt, ChatMessage } from '../services/groq';
 import './ChatPage.scss';
+
+const SUGGESTIONS = [
+  "What are Ray's top technical skills?",
+  "Tell me about Ray's professional experience",
+  "What projects showcase Ray's best work?",
+  "What certifications and education does Ray have?",
+  "Is Ray available for freelance or full-time work?",
+  "What AI/ML technologies does Ray work with?",
+  "How can I contact Ray?",
+  "What makes Ray stand out as a developer?",
+];
 
 const ChatPage = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([
@@ -17,17 +28,18 @@ const ChatPage = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const visibleMessages = messages.filter((m) => m.role !== 'system');
+  const hasUserMessages = useMemo(() => visibleMessages.some((m) => m.role === 'user'), [visibleMessages]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [visibleMessages, loading]);
 
-  const handleSend = async () => {
-    const text = input.trim();
-    if (!text || loading) return;
+  const handleSend = async (text?: string) => {
+    const msg = (text || input).trim();
+    if (!msg || loading) return;
     setInput('');
 
-    const userMsg: ChatMessage = { role: 'user', content: text };
+    const userMsg: ChatMessage = { role: 'user', content: msg };
     setMessages((prev) => [...prev, userMsg]);
     setLoading(true);
 
@@ -109,6 +121,25 @@ const ChatPage = () => {
               </div>
             </div>
           )}
+
+          {!hasUserMessages && (
+            <div className="suggestions-area">
+              <p className="suggestions-label">Try asking:</p>
+              <div className="suggestions-grid">
+                {SUGGESTIONS.map((s, i) => (
+                  <button
+                    key={i}
+                    className="suggestion-chip"
+                    onClick={() => handleSend(s)}
+                    disabled={loading}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div ref={messagesEndRef} />
         </div>
 
@@ -121,7 +152,7 @@ const ChatPage = () => {
               placeholder="Ask about Ray's skills, projects..."
               rows={1}
             />
-            <button className="send-btn" onClick={handleSend} disabled={loading || !input.trim()}>
+            <button className="send-btn" onClick={() => handleSend()} disabled={loading || !input.trim()}>
               <FaPaperPlane />
             </button>
           </div>
