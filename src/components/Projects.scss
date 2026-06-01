@@ -430,6 +430,11 @@
     margin-top: auto;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
   }
 
   .project-link-btn {

@@ -23,6 +23,10 @@
   padding: 0 2rem;
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 }
 
 .profile-section {
@@ -35,6 +39,7 @@
     line-height: 1.7;
     color: var(--text-color);
     margin-bottom: 2rem;
+    overflow-wrap: break-word;
   }
 }
 
@@ -154,6 +159,10 @@
   }
   
   .profile-content {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .glass-button {
+    width: 100%;
   }
 }

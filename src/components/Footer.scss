@@ -29,6 +29,10 @@ body .footer .social-links,
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: var(--text-color);
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
   
   .contact-form-container {
     display: flex;
@@ -89,6 +93,11 @@ body .footer .social-links,
     transition: all 0.3s ease;
     align-self: flex-start;
     margin-top: 1rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      align-self: center;
+    }
     
     &:hover:not(:disabled) {
       transform: translateY(-2px);
@@ -155,6 +164,10 @@ body .footer .social-links,
   background-color: var(--surface-2);
   color: var(--text-color);
   padding: 2.5rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
 
   .footer-content {
     max-width: 1200px;
