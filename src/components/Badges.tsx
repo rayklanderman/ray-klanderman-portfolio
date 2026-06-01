@@ -23,9 +23,6 @@ const Badges: React.FC = () => {
     { id: 'ibm_data', logo: '/badges/ibm-data.svg' },
     { id: 'google_mlops', logo: '/badges/mlops.svg' },
     { id: 'google_prompt_design', logo: '/badges/prompt-design.svg' },
-    { id: 'google_responsible_ai', logo: '/badges/responsible-ai.svg' },
-    { id: 'google_responsible_ai_privacy', logo: '/badges/responsible-ai-privacy.svg' },
-    { id: 'google_responsible_ai_transparency', logo: '/badges/responsible-ai-transparency.svg' },
     { id: 'google_stem', logo: '/badges/stem.svg' },
     { id: 'power_learn_csdp', logo: '/badges/power-learn.png' }
   ];

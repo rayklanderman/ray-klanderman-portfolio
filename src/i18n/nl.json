@@ -263,7 +263,7 @@
       "alx_data_analytics": {
         "platform": "ALX Africa",
         "certification": "Data Analytics Professional Certificate",
-        "description": "Completed a rigorous professional program in Data Analytics, designed for the digital age. Key competencies include: Data Analysis & Visualization: Using tools like Excel, SQL, Python (Pandas, Matplotlib, Seaborn), and Tableau/Power BI. Statistical Foundations: Descriptive & inferential statistics, hypothesis testing, and data interpretation. Professional Development: Communication, problem-solving, collaboration, and project management skills tailored for tech roles. Real-World Projects: Applied analytical techniques to clean, analyze, and visualize datasets — delivering actionable insights. This certification demonstrates my ability to transform raw data into strategic business intelligence — bridging technical analysis with professional execution.",
+        "description": "Completed a rigorous program in data analysis, visualization, and statistical foundations using Excel, SQL, Python (Pandas, Matplotlib, Seaborn), and Tableau/Power BI. Applied analytical techniques to real-world datasets delivering actionable business insights.",
         "issued_by": "ALX Africa",
         "credential_url": "https://savanna.alxafrica.com/certificates/pFP5Lfm3xY",
         "skills": [
@@ -280,7 +280,7 @@
       "power_learn_csdp": {
         "platform": "Power Learn Project Africa",
         "certification": "Certified Software Development Professional (CSDP)",
-        "description": "Successfully completed an intensive program in Software Development, covering: Python Programming: Core syntax, data structures, OOP, scripting, and application development. Web Technologies: Frontend and backend fundamentals using modern tools and frameworks. Database Management: Designing, querying, and managing relational databases with SQL. Dart with Flutter: Mobile app development for cross-platform deployment. Soft Skills: Problem-solving, collaboration, time management, and professional communication. Specialized in Web Development, Python Development, and Database Development — building scalable, real-world applications with industry best practices.",
+        "description": "Intensive software development program covering Python programming, web technologies, database management with SQL, and cross-platform mobile development with Dart/Flutter. Specialized in building scalable, real-world applications using industry best practices.",
         "issued_by": "Power Learn Project Africa",
         "credential_url": "https://academy.powerlearnprojectafrica.org/verify-cert/9eddc6f0-9948-4823-8be9-37f58b84615b",
         "skills": [
@@ -297,7 +297,7 @@
       "worldquant_data_science": {
         "platform": "WorldQuant University",
         "certification": "Applied Data Science Lab",
-        "description": "Earners of this badge have completed eight end-to-end, applied data science projects. Explored and cleaned data, created ETL pipelines, built machine learning models for supervised and unsupervised learning tasks, and created visualizations. Projects included Housing in Mexico, Apartment Sales in Buenos Aires, Air Quality in Nairobi, Earthquake Damage in Nepal, Bankruptcy in Poland, Customer Segmentation in the US, A/B Testing, and Volatility Forecasting in India.",
+        "description": "Eight end-to-end data science projects covering the full ML pipeline: data exploration, ETL pipelines, supervised/unsupervised modeling, and visualization. Projects spanned housing, sales, air quality, disaster analysis, bankruptcy, customer segmentation, A/B testing, and volatility forecasting.",
         "issued_by": "WorldQuant University",
         "credential_url": "https://www.wqu.edu/adsl",
         "skills": [
@@ -448,41 +448,26 @@
       "google_cybersecurity": {
         "platform": "Google",
         "certification": "Cybersecurity Certificate",
-        "description": "Foundational knowledge and skills in cybersecurity, including identifying risks, protecting networks, and responding to cyber threats.",
+        "description": "Hands-on cybersecurity training covering threat identification, network protection, SIEM tools, and incident response. Includes Python, Linux, and SQL for security analysis and automation.",
         "issued_by": "Google",
         "credential_url": "#",
-        "skills": [
-          "Cybersecurity",
-          "Network Security",
-          "Threat Intelligence",
-          "Security Protocols"
-        ]
+        "skills": ["Cybersecurity", "Network Security", "Threat Intelligence", "Security Protocols", "SIEM", "Python"]
       },
       "ibm_data": {
         "platform": "IBM",
-        "certification": "IBM Data Certification",
-        "description": "Demonstrates comprehensive skills and knowledge in data science, analytics, and business intelligence methodologies utilizing IBM tools.",
+        "certification": "IBM Data Science Professional Certificate",
+        "description": "Professional data science training covering Python, SQL, data analysis, visualization, statistical modeling, and machine learning. Hands-on projects using Pandas, NumPy, Scikit-learn, and Jupyter on real-world datasets.",
         "issued_by": "IBM",
         "credential_url": "#",
-        "skills": [
-          "Data Science",
-          "Data Analytics",
-          "IBM Tools",
-          "Business Intelligence"
-        ]
+        "skills": ["Data Science", "Data Analytics", "Python", "Machine Learning", "Statistical Modeling", "SQL"]
       },
       "google_mlops": {
         "platform": "Google Cloud",
         "certification": "Machine Learning Operations (MLOps)",
-        "description": "Skills in deploying, testing, monitoring, and automating ML systems in production environments.",
+        "description": "Hands-on skills in building MLOps pipelines using Vertex AI, covering automated deployment, model monitoring, Kubeflow, and production ML system lifecycle management on Google Cloud.",
         "issued_by": "Google Cloud",
         "credential_url": "#",
-        "skills": [
-          "MLOps",
-          "Model Deployment",
-          "Automation",
-          "CI/CD for ML"
-        ]
+        "skills": ["MLOps", "Model Deployment", "Automation", "CI/CD for ML", "Vertex AI", "Kubeflow"]
       },
       "google_prompt_design": {
         "platform": "Google Cloud",
@@ -490,48 +475,7 @@
         "description": "Practical skills in designing and optimizing prompts for Large Language Models using Vertex AI.",
         "issued_by": "Google Cloud",
         "credential_url": "#",
-        "skills": [
-          "Prompt Engineering",
-          "Large Language Models",
-          "Vertex AI",
-          "Generative AI"
-        ]
-      },
-      "google_responsible_ai": {
-        "platform": "Google Cloud",
-        "certification": "Responsible AI",
-        "description": "Understanding of the principles and practices for developing and deploying AI systems responsibly.",
-        "issued_by": "Google Cloud",
-        "credential_url": "#",
-        "skills": [
-          "AI Ethics",
-          "Fairness in AI",
-          "Responsible AI Practices"
-        ]
-      },
-      "google_responsible_ai_privacy": {
-        "platform": "Google Cloud",
-        "certification": "Responsible AI: Privacy",
-        "description": "Knowledge of privacy principles, techniques, and best practices in the context of artificial intelligence.",
-        "issued_by": "Google Cloud",
-        "credential_url": "#",
-        "skills": [
-          "Data Privacy",
-          "AI Ethics",
-          "Privacy-Preserving ML"
-        ]
-      },
-      "google_responsible_ai_transparency": {
-        "platform": "Google Cloud",
-        "certification": "Responsible AI: Transparency",
-        "description": "Understanding how to build transparent and explainable AI systems to foster trust.",
-        "issued_by": "Google Cloud",
-        "credential_url": "#",
-        "skills": [
-          "Explainable AI",
-          "Transparency",
-          "Model Interpretability"
-        ]
+        "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
       },
       "google_stem": {
         "platform": "STEM",
@@ -539,13 +483,7 @@
         "description": "Acknowledges foundational learning and continuous development in Science, Technology, Engineering, and Mathematics fields.",
         "issued_by": "Authorized issuer",
         "credential_url": "#",
-        "skills": [
-          "Science",
-          "Technology",
-          "Engineering",
-          "Mathematics",
-          "Problem Solving"
-        ]
+        "skills": ["Science", "Technology", "Engineering", "Mathematics", "Problem Solving"]
       }
     }
   },
