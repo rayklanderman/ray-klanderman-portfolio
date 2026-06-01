@@ -365,7 +365,7 @@
         "certification": "Applied Data Science Lab",
         "description": "Eight end-to-end data science projects covering the full ML pipeline: data exploration, ETL pipelines, supervised/unsupervised modeling, and visualization. Projects spanned housing, sales, air quality, disaster analysis, bankruptcy, customer segmentation, A/B testing, and volatility forecasting.",
         "issued_by": "WorldQuant University",
-        "credential_url": "https://www.wqu.edu/adsl",
+        "credential_url": "https://www.credly.com/earner/earned/badge/cbb48521-41dd-48bc-aa53-78e0037762d2",
         "skills": [
           "API Design",
           "Data Science",
@@ -410,7 +410,7 @@
         "certification": "Kubernetes and Cloud Native Associate (KCNA)",
         "description": "Demonstrated basic knowledge of Kubernetes and cloud-native technologies, including deploying applications using kubectl commands, architecture (containers, pods, nodes, clusters), service mesh, and GitOps.",
         "issued_by": "Linux Foundation",
-        "credential_url": "https://training.linuxfoundation.org/certification/kubernetes-cloud-native-associate/",
+        "credential_url": "https://www.credly.com/earner/earned/badge/565da7e7-3a27-4327-a1d8-af11b3e62362",
         "skills": [
           "Application Containers",
           "Cloud Native",
@@ -426,7 +426,7 @@
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
         "description": "Formulated real-world language model research problems; built a simple tokenizer; prepared datasets for training transformer language models; pretrained and fine-tuned LLMs.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.skills.google/course_templates/1596",
+        "credential_url": "https://www.credly.com/earner/earned/badge/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
           "Agent Development Kit",
           "AI Agents",
@@ -441,7 +441,7 @@
         "certification": "Implement Cloud Security Fundamentals",
         "description": "Created and assigned roles with IAM; managed service accounts; enabled private connectivity and implemented cloud security best practices on Google Cloud.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.cloudskillsboost.google/course_templates/645",
+        "credential_url": "https://www.credly.com/earner/earned/badge/e1413ed3-f5e6-44c8-979e-426a1a0bc42f",
         "skills": [
           "App Deployment",
           "Authentication",
@@ -459,7 +459,7 @@
         "certification": "Implement Load Balancing on Compute Engine",
         "description": "Wrote gcloud commands, created and deployed VMs, ran containerized applications on GKE, and configured network load balancing on Google Cloud.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.cloudskillsboost.google/course_templates/648",
+        "credential_url": "https://www.credly.com/earner/earned/badge/7457688a-1576-4065-9e49-e4506d94b40a",
         "skills": [
           "Cloud Computing",
           "Compute Engine",
@@ -473,7 +473,7 @@
         "certification": "Develop Serverless Applications on Cloud Run",
         "description": "Integrated Cloud Run with Cloud Storage, architected resilient asynchronous systems, and constructed REST API gateways using Cloud Run and Pub/Sub.",
         "issued_by": "Google Cloud",
-        "credential_url": "https://www.cloudskillsboost.google/course_templates/741",
+        "credential_url": "https://www.credly.com/earner/earned/badge/73edee26-ef2f-43f0-af95-6dfdb2be093a",
         "skills": [
           "Cloud Build",
           "Cloud Run",
