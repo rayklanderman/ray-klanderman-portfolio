@@ -234,45 +234,56 @@
 
   .hamburger {
     display: none;
+    position: relative;
     background: rgba(255,255,255,0.15);
     border: 1px solid rgba(255,255,255,0.3);
     border-radius: 6px;
-    padding: 0.5rem;
+    border: none;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     z-index: 1001;
-    backdrop-filter: blur(4px);
+    padding: 0;
+    margin: 0;
+    outline: none;
     
     @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      width: 36px;
-      height: 36px;
+      display: block;
     }
     
     .hamburger-line {
-      width: 22px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 24px;
       height: 3px;
-      background-color: white;
+      background: white;
       border-radius: 3px;
-      flex-shrink: 0;
       transition: all 0.3s ease;
+      
+      &:nth-child(1) {
+        top: 10px;
+      }
+      &:nth-child(2) {
+        top: 18px;
+      }
+      &:nth-child(3) {
+        top: 26px;
+      }
     }
     
     &.active {
-      gap: 0;
-      
       .hamburger-line {
         &:nth-child(1) {
-          transform: rotate(45deg) translate(4px, 4px);
+          top: 18px;
+          transform: translateX(-50%) rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:nth-child(3) {
-          transform: rotate(-45deg) translate(4px, -4px);
+          top: 18px;
+          transform: translateX(-50%) rotate(-45deg);
         }
       }
     }

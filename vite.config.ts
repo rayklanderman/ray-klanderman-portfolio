@@ -17,6 +17,12 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,png,jpg,ico}'],
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
+      },
       devOptions: {
         enabled: true
       },
