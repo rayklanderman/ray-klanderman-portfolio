@@ -117,9 +117,9 @@
     }
   },
   "education": {
-    "title": "Education",
-    "ongoing": "Ongoing",
-    "completed": "Completed",
+    "title": "Diplômes",
+    "ongoing": "En cours",
+    "completed": "Terminé",
     "items": {
       "bachelor_cs": {
         "name": "Bachelor of Computer Science",

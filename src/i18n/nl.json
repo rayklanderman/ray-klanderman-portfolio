@@ -21,7 +21,7 @@
   "projects": {
     "title": "Uitgelichte Projecten",
     "subtitle": "AI-aangedreven platforms, intelligente tools en full-stack applicaties gebouwd met moderne technologieën.",
-    "viewProject": "Bekijk Project",
+    "viewProject": "Bekijk Live",
     "featured": "Uitgelicht",
     "comingSoon": "Binnenkort Beschikbaar",
     "items": {
@@ -117,9 +117,9 @@
     }
   },
   "education": {
-    "title": "Education",
-    "ongoing": "Ongoing",
-    "completed": "Completed",
+    "title": "Opleiding",
+    "ongoing": "Bezig",
+    "completed": "Voltooid",
     "items": {
       "bachelor_cs": {
         "name": "Bachelor of Computer Science",
@@ -250,7 +250,7 @@
     "viewCertification": "Bekijk Certificaat"
   },
   "badges": {
-    "title": "Badges & Certifications",
+    "title": "Badges & Certificeringen",
     "platforms": {
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
