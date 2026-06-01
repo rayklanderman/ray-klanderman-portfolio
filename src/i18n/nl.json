@@ -527,5 +527,28 @@
     "badges": "Badges",
     "contact": "Neem Contact Op",
     "services": "Diensten"
+  },
+  "chat": {
+    "title": "AI Chat",
+    "newChat": "Nieuw Gesprek",
+    "sidebarInfo": "Vraag naar Ray's vaardigheden, projecten, ervaring en meer.",
+    "backToPortfolio": "Terug naar Portfolio",
+    "assistantName": "AI Assistent",
+    "you": "Jij",
+    "rayAi": "Ray AI",
+    "inputPlaceholder": "Vraag naar Ray's vaardigheden, projecten...",
+    "poweredBy": "Aangedreven door Groq Llama 3.3 70B",
+    "suggestionsLabel": "Probeer te vragen:",
+    "greeting": "Hoi! Ik ben Ray's AI-assistent. Vraag me naar zijn vaardigheden, projecten, ervaring, certificeringen of iets anders dat je wilt weten!",
+    "suggestions": [
+      "Wat zijn Ray's belangrijkste technische vaardigheden?",
+      "Vertel me over Ray's professionele ervaring",
+      "Welke projecten laten Ray's beste werk zien?",
+      "Welke certificeringen en opleiding heeft Ray?",
+      "Is Ray beschikbaar voor freelance of fulltime werk?",
+      "Met welke AI/ML-technologieën werkt Ray?",
+      "Hoe kan ik contact opnemen met Ray?",
+      "Wat maakt Ray bijzonder als ontwikkelaar?"
+    ]
   }
 }

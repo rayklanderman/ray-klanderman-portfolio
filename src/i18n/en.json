@@ -589,5 +589,28 @@
     "en": "English",
     "nl": "Dutch",
     "fr": "French"
+  },
+  "chat": {
+    "title": "AI Chat",
+    "newChat": "New Chat",
+    "sidebarInfo": "Ask about Ray's skills, projects, experience, and more.",
+    "backToPortfolio": "Back to Portfolio",
+    "assistantName": "AI Assistant",
+    "you": "You",
+    "rayAi": "Ray AI",
+    "inputPlaceholder": "Ask about Ray's skills, projects...",
+    "poweredBy": "Powered by Groq Llama 3.3 70B",
+    "suggestionsLabel": "Try asking:",
+    "greeting": "Hi! I'm Ray's AI assistant. Ask me about his skills, projects, experience, certifications, or anything else you'd like to know!",
+    "suggestions": [
+      "What are Ray's top technical skills?",
+      "Tell me about Ray's professional experience",
+      "What projects showcase Ray's best work?",
+      "What certifications and education does Ray have?",
+      "Is Ray available for freelance or full-time work?",
+      "What AI/ML technologies does Ray work with?",
+      "How can I contact Ray?",
+      "What makes Ray stand out as a developer?"
+    ]
   }
 }

@@ -1,26 +1,19 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { FaRobot, FaSpinner, FaPaperPlane, FaArrowLeft, FaTrash } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import { sendMessage, buildSystemPrompt, ChatMessage } from '../services/groq';
 import './ChatPage.scss';
 
-const SUGGESTIONS = [
-  "What are Ray's top technical skills?",
-  "Tell me about Ray's professional experience",
-  "What projects showcase Ray's best work?",
-  "What certifications and education does Ray have?",
-  "Is Ray available for freelance or full-time work?",
-  "What AI/ML technologies does Ray work with?",
-  "How can I contact Ray?",
-  "What makes Ray stand out as a developer?",
-];
-
 const ChatPage = () => {
+  const { t } = useTranslation();
+
+  const suggestions = t('chat.suggestions', { returnObjects: true }) as string[];
+
   const [messages, setMessages] = useState<ChatMessage[]>([
     { role: 'system', content: buildSystemPrompt() },
     {
       role: 'assistant',
-      content:
-        "Hi! I'm Ray's AI assistant. Ask me about his skills, projects, experience, certifications, or anything else you'd like to know!",
+      content: t('chat.greeting'),
     },
   ]);
   const [input, setInput] = useState('');
@@ -60,8 +53,7 @@ const ChatPage = () => {
       { role: 'system', content: buildSystemPrompt() },
       {
         role: 'assistant',
-        content:
-          "Hi! I'm Ray's AI assistant. Ask me about his skills, projects, experience, certifications, or anything else you'd like to know!",
+        content: t('chat.greeting'),
       },
     ]);
   };
@@ -70,17 +62,17 @@ const ChatPage = () => {
     <div className="chat-page">
       <div className="chat-sidebar">
         <div className="sidebar-header">
-          <span className="sidebar-title">AI Chat</span>
+          <span className="sidebar-title">{t('chat.title')}</span>
         </div>
         <button className="new-chat-btn" onClick={handleNewChat}>
-          <FaTrash /> New Chat
+          <FaTrash /> {t('chat.newChat')}
         </button>
         <div className="sidebar-info">
-          <p>Ask about Ray's skills, projects, experience, and more.</p>
+          <p>{t('chat.sidebarInfo')}</p>
         </div>
         <div className="sidebar-footer">
           <a href="#/" className="back-link">
-            <FaArrowLeft /> Back to Portfolio
+            <FaArrowLeft /> {t('chat.backToPortfolio')}
           </a>
         </div>
       </div>
@@ -91,7 +83,7 @@ const ChatPage = () => {
             <FaArrowLeft />
           </a>
           <FaRobot className="chat-main-icon" />
-          <span>AI Assistant</span>
+          <span>{t('chat.assistantName')}</span>
         </div>
 
         <div className="chat-messages-area">
@@ -103,7 +95,7 @@ const ChatPage = () => {
                 </div>
               )}
               <div className="msg-bubble-wrap">
-                <div className="msg-label">{msg.role === 'assistant' ? 'Ray AI' : 'You'}</div>
+                <div className="msg-label">{msg.role === 'assistant' ? t('chat.rayAi') : t('chat.you')}</div>
                 <div className="msg-bubble">{msg.content}</div>
               </div>
             </div>
@@ -114,7 +106,7 @@ const ChatPage = () => {
                 <FaRobot />
               </div>
               <div className="msg-bubble-wrap">
-                <div className="msg-label">Ray AI</div>
+                <div className="msg-label">{t('chat.rayAi')}</div>
                 <div className="msg-bubble loading-msg">
                   <FaSpinner className="spin" />
                 </div>
@@ -124,9 +116,9 @@ const ChatPage = () => {
 
           {!hasUserMessages && (
             <div className="suggestions-area">
-              <p className="suggestions-label">Try asking:</p>
+              <p className="suggestions-label">{t('chat.suggestionsLabel')}</p>
               <div className="suggestions-grid">
-                {SUGGESTIONS.map((s, i) => (
+                {suggestions.map((s: string, i: number) => (
                   <button
                     key={i}
                     className="suggestion-chip"
@@ -149,14 +141,14 @@ const ChatPage = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask about Ray's skills, projects..."
+              placeholder={t('chat.inputPlaceholder')}
               rows={1}
             />
             <button className="send-btn" onClick={() => handleSend()} disabled={loading || !input.trim()}>
               <FaPaperPlane />
             </button>
           </div>
-          <p className="chat-footer-note">Powered by Groq Llama 3.3 70B</p>
+          <p className="chat-footer-note">{t('chat.poweredBy')}</p>
         </div>
       </div>
     </div>

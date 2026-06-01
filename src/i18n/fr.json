@@ -527,5 +527,28 @@
     "badges": "Badges",
     "contact": "Me Contacter",
     "services": "Services"
+  },
+  "chat": {
+    "title": "Chat IA",
+    "newChat": "Nouvelle Conversation",
+    "sidebarInfo": "Demandez sur les compétences, projets, expérience de Ray et plus encore.",
+    "backToPortfolio": "Retour au Portfolio",
+    "assistantName": "Assistant IA",
+    "you": "Vous",
+    "rayAi": "Ray IA",
+    "inputPlaceholder": "Demandez sur les compétences, projets de Ray...",
+    "poweredBy": "Propulsé par Groq Llama 3.3 70B",
+    "suggestionsLabel": "Essayez de demander :",
+    "greeting": "Salut ! Je suis l'assistant IA de Ray. Demandez-moi sur ses compétences, projets, expérience, certifications ou tout ce que vous voulez savoir !",
+    "suggestions": [
+      "Quelles sont les principales compétences techniques de Ray ?",
+      "Parlez-moi de l'expérience professionnelle de Ray",
+      "Quels projets montrent le meilleur travail de Ray ?",
+      "Quelles certifications et formations Ray possède-t-il ?",
+      "Ray est-il disponible pour du freelance ou un emploi à temps plein ?",
+      "Avec quelles technologies IA/ML Ray travaille-t-il ?",
+      "Comment puis-je contacter Ray ?",
+      "Qu'est-ce qui distingue Ray en tant que développeur ?"
+    ]
   }
 }
