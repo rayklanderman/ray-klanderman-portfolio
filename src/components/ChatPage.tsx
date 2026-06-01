@@ -31,7 +31,7 @@ const ChatPage = () => {
     setMessages((prev) => [...prev, userMsg]);
     setLoading(true);
 
-    const reply = await sendMessage([...messages, userMsg].filter((m) => m.role !== 'system'));
+    const reply = await sendMessage([...messages, userMsg]);
     setMessages((prev) => [...prev, { role: 'assistant', content: reply }]);
     setLoading(false);
   };
