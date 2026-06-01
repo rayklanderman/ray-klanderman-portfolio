@@ -29,7 +29,10 @@ export default defineConfig({
       manifest: {
         name: 'Raymond Klanderman - Portfolio',
         short_name: 'Ray Portfolio',
+        description: 'AI Engineer & Full-Stack Developer Portfolio',
         theme_color: '#34C759',
+        background_color: '#0f172a',
+        display: 'standalone',
         icons: [
           {
             src: 'favicon.svg',
