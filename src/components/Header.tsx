@@ -173,7 +173,7 @@ const Header = () => {
     },
     {
       icon: <FaYoutube />,
-      url: 'https://www.youtube.com/@RayKlanderman',
+      url: 'https://www.youtube.com/@RealDevRay',
       label: 'YouTube',
       color: '#FF0000'
     },
