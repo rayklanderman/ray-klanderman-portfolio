@@ -13,6 +13,7 @@ interface Project {
   image?: string;
   github?: string;
   shortDescription?: string;
+  playstore?: string;
 }
 
 const Projects: FC = () => {
@@ -20,10 +21,10 @@ const Projects: FC = () => {
   const projects = t('projects.items', { returnObjects: true }) as Record<string, Project>;
 
   // Project URLs and images
-  const projectData: Record<string, { image: string; github: string; url: string }> = {
+  const projectData: Record<string, { image: string; github: string; url: string; playstore?: string }> = {
     luminae: {
       image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/luminae',
+      github: 'https://github.com/RealDevRay/luminae',
       url: 'https://luminae.qzz.io/'
     },
     aiHealth: {
@@ -34,16 +35,16 @@ const Projects: FC = () => {
     liveInterviewer: {
       image: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/live-interviewer',
-      url: '#'
+      url: 'https://live-interviewer-sepia.vercel.app/'
     },
     contentShapeshifterPro: {
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/content-shapeshifter-pro',
+      github: 'https://github.com/RealDevRay/Content-Shapeshifter-Pro',
       url: '#'
     },
     serenityAI: {
       image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/serenityai',
+      github: 'https://github.com/rayklanderman/Serenity-AI',
       url: 'https://serenityai.qzz.io/'
     },
     tutaLearn: {
@@ -58,13 +59,19 @@ const Projects: FC = () => {
     },
     weruDigital: {
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/weru-digital',
-      url: 'https://werudigital.co.ke/'
+      github: 'https://github.com/rayklanderman/weru_digital',
+      url: 'https://werudigital.co.ke/',
+      playstore: 'https://play.google.com/store/apps/details?id=com.werudigital.weru_digital&hl=en_US'
     },
     kaziConnect: {
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/kazi-connect',
       url: 'https://www.kaziconnect.work/'
+    },
+    mrp2026: {
+      image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/mrp-2026',
+      url: '#'
     }
   };
 
@@ -76,6 +83,11 @@ const Projects: FC = () => {
   // Get project URL
   const getProjectUrl = (project: Project, projectKey: string) => {
     return project.url || projectData[projectKey]?.url || '#';
+  };
+
+  // Get Play Store URL
+  const getPlayStoreUrl = (projectKey: string) => {
+    return projectData[projectKey]?.playstore || null;
   };
 
   // Get short description or truncate the main description
@@ -118,6 +130,7 @@ const Projects: FC = () => {
             const githubUrl = getGitHubUrl(key);
             const projectUrl = getProjectUrl(project, key);
             const shortDescription = getShortDescription(project);
+            const playstoreUrl = getPlayStoreUrl(key);
             
             return (
               <article 
@@ -197,6 +210,23 @@ const Projects: FC = () => {
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                       <span className="sr-only">GitHub</span>
+                    </a>
+                  )}
+
+                  {playstoreUrl && (
+                    <a
+                      href={playstoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link-btn secondary"
+                      onClick={(e) => e.stopPropagation()}
+                      aria-label={`Get ${project.name} on Google Play`}
+                      title="Get on Google Play"
+                    >
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.807 1.626a1 1 0 010 1.732l-2.807 1.626L15.206 12l2.492-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z" fill="currentColor"/>
+                      </svg>
+                      <span className="sr-only">Google Play</span>
                     </a>
                   )}
                 </div>

@@ -90,8 +90,8 @@
       },
       "weruDigital": {
         "name": "Weru Digital",
-        "shortDescription": "Multimediaplatform voor Weru TV en FM",
-        "description": "Een multimediaplatform voor Weru TV en FM met live radio streaming, live TV streaming en geplande programmering. SEO-vriendelijk met automatisch bijwerkende RSS nieuwskanalen, AI-optimalisatie, PWA-ondersteuning en cross-platform compatibiliteit.",
+        "shortDescription": "Android-app voor Weru TV en FM",
+        "description": "Een Android-app voor Weru TV en FM met live radio streaming, live TV streaming en geplande programmering. SEO-vriendelijk met automatisch bijwerkende RSS nieuwskanalen, AI-optimalisatie, PWA-ondersteuning en cross-platform compatibiliteit. Beschikbaar op Google Play.",
         "technologies": ["WordPress", "PWA", "Live Streaming", "AI", "SEO", "RSS", "Cross-platform"],
         "tags": ["Web Development", "Media"],
         "url": "https://werudigital.co.ke/",
@@ -104,6 +104,14 @@
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
         "tags": ["Software Engineering", "Arbeidsmarkt"],
         "url": "https://www.kaziconnect.work/",
+        "featured": true
+      },
+      "mrp2026": {
+        "name": "Movie Recommendation Project 2026",
+        "shortDescription": "ML-aangedreven filmwaardepredictor (RMSE ~0.92)",
+        "description": "Een machine learning-oplossing voor de Movie Recommendation Hackathon 2026 met behulp van een hybride ensemble-aanpak. Combineert collaboratieve filtering (SVD), content-gebaseerde kenmerken (Genome Tags PCA + NLP TF-IDF) en XGBoost om gebruikersbeoordelingen te voorspellen met ~0.92 RMSE.",
+        "technologies": ["Python", "XGBoost", "scikit-learn", "Pandas", "NumPy", "SciPy"],
+        "tags": ["Machine Learning", "Data Science"],
         "featured": true
       }
     }

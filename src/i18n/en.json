@@ -139,8 +139,8 @@
       },
       "weruDigital": {
         "name": "Weru Digital",
-        "shortDescription": "Multimedia site for Weru TV and FM",
-        "description": "A multimedia site for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility.",
+        "shortDescription": "Android app for Weru TV and FM streaming",
+        "description": "An Android app for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility. Available on Google Play.",
         "technologies": [
           "WordPress",
           "PWA",
@@ -167,6 +167,21 @@
         ],
         "tags": ["Software Engineering", "Job Market"],
         "url": "https://www.kaziconnect.work/",
+        "featured": true
+      },
+      "mrp2026": {
+        "name": "Movie Recommendation Project 2026",
+        "shortDescription": "ML-powered movie rating predictor (RMSE ~0.92)",
+        "description": "A machine learning solution for the Movie Recommendation Hackathon 2026 using a Hybrid Ensembler approach. Combines Collaborative Filtering (SVD), Content-Based Features (Genome Tags PCA + NLP TF-IDF), and XGBoost to predict user ratings with ~0.92 RMSE.",
+        "technologies": [
+          "Python",
+          "XGBoost",
+          "scikit-learn",
+          "Pandas",
+          "NumPy",
+          "SciPy"
+        ],
+        "tags": ["Machine Learning", "Data Science"],
         "featured": true
       }
     }

@@ -105,6 +105,10 @@
       border-left: 4px solid #d97706;
     }
 
+    &[data-key="mrp2026"] {
+      border-left: 4px solid #e11d48;
+    }
+
     &:hover {
       box-shadow: var(--shadow-lg);
       transform: translateY(-5px);
@@ -371,6 +375,26 @@
     &[data-tech*='xAI'] { 
       color: #000000; 
       border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    &[data-tech*='XGBoost'] { 
+      color: #d53e4f; 
+      border: 1px solid rgba(213, 62, 79, 0.3);
+    }
+    &[data-tech*='scikit'] { 
+      color: #f89939; 
+      border: 1px solid rgba(248, 153, 57, 0.3);
+    }
+    &[data-tech*='Pandas'] { 
+      color: #150458; 
+      border: 1px solid rgba(21, 4, 88, 0.3);
+    }
+    &[data-tech*='NumPy'] { 
+      color: #013243; 
+      border: 1px solid rgba(1, 50, 67, 0.3);
+    }
+    &[data-tech*='SciPy'] { 
+      color: #8cbe62; 
+      border: 1px solid rgba(140, 190, 98, 0.3);
     }
     &[data-tech*='JacLang'] { 
       color: #7c3aed; 
