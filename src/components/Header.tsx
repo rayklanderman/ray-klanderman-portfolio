@@ -13,6 +13,7 @@ interface MenuItem {
   label: string;
   external?: boolean;
   url?: string;
+  isChat?: boolean;
 }
 
 const Header = () => {
@@ -32,7 +33,8 @@ const Header = () => {
     { id: 'education', label: t('menu.education') },
     { id: 'badges', label: t('menu.badges') },
     { id: 'contact-me', label: t('menu.contact') },
-    { id: 'services', label: t('menu.services'), external: true, url: 'https://www.devray.site/' }
+    { id: 'services', label: t('menu.services'), external: true, url: 'https://www.devray.site/' },
+    { id: 'ai-chat', label: 'AI Chat', isChat: true }
   ], [t]);
 
   // Handle scroll effect for header
@@ -301,7 +303,7 @@ const Header = () => {
                   <motion.button
                     key={item.id}
                     className={`menu-button ${activeSection === item.id ? 'active' : ''}`}
-                    onClick={() => item.external ? window.open(item.url, '_blank') : handleMenuItemClick(item.id)}
+                    onClick={() => item.external ? window.open(item.url, '_blank') : item.isChat ? window.location.hash = '#/chat' : handleMenuItemClick(item.id)}
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
