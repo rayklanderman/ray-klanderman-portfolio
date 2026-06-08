@@ -25,6 +25,14 @@
     "featured": "En Vedette",
     "comingSoon": "Bientôt Disponible",
     "items": {
+      "mrp2026": {
+        "name": "Movie Recommendation Project 2026",
+        "shortDescription": "Prédicteur de notes de films par ML (RMSE ~0.82)",
+        "description": "Une solution de machine learning pour le hackathon de recommandation de films 2026 utilisant Hybrid LightGBM sur une factorisation matricielle SVD à 50 facteurs. A conçu 156 caractéristiques sur 10M de lignes sans échantillonnage — incluant signaux collaboratifs, encodages basés sur le contenu et dynamiques temporelles.",
+        "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
+        "tags": ["Machine Learning", "Data Science"],
+        "featured": true
+      },
       "luminae": {
         "name": "Luminae",
         "shortDescription": "Plateforme d'analyse de recherche autonome avec essaim d'agents IA",
@@ -104,14 +112,6 @@
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
         "tags": ["Génie Logiciel", "Marché de l'Emploi"],
         "url": "https://www.kaziconnect.work/",
-        "featured": true
-      },
-      "mrp2026": {
-        "name": "Movie Recommendation Project 2026",
-        "shortDescription": "Prédicteur de notes de films par ML (RMSE ~0.92)",
-        "description": "Une solution de machine learning pour le hackathon de recommandation de films 2026 utilisant une approche hybride. Combine le filtrage collaboratif (SVD), les caractéristiques basées sur le contenu (PCA des Genome Tags + NLP TF-IDF) et XGBoost pour prédire les notes des utilisateurs avec ~0.92 RMSE.",
-        "technologies": ["Python", "XGBoost", "scikit-learn", "Pandas", "NumPy", "SciPy"],
-        "tags": ["Machine Learning", "Data Science"],
         "featured": true
       }
     }

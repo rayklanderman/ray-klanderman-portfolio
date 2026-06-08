@@ -25,6 +25,14 @@
     "featured": "Uitgelicht",
     "comingSoon": "Binnenkort Beschikbaar",
     "items": {
+      "mrp2026": {
+        "name": "Movie Recommendation Project 2026",
+        "shortDescription": "ML-aangedreven filmwaardepredictor (RMSE ~0.82)",
+        "description": "Een machine learning-oplossing voor de Movie Recommendation Hackathon 2026 met behulp van Hybrid LightGBM op 50-factor SVD matrixfactorisatie. Ontwikkelde 156 features over 10M rijen zonder sampling — waaronder collaboratieve signalen, content-gebaseerde coderingen en temporele dynamiek.",
+        "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
+        "tags": ["Machine Learning", "Data Science"],
+        "featured": true
+      },
       "luminae": {
         "name": "Luminae",
         "shortDescription": "Autonoom onderzoeksanalyseplatform met multi-agent AI-zwerm",
@@ -104,14 +112,6 @@
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
         "tags": ["Software Engineering", "Arbeidsmarkt"],
         "url": "https://www.kaziconnect.work/",
-        "featured": true
-      },
-      "mrp2026": {
-        "name": "Movie Recommendation Project 2026",
-        "shortDescription": "ML-aangedreven filmwaardepredictor (RMSE ~0.92)",
-        "description": "Een machine learning-oplossing voor de Movie Recommendation Hackathon 2026 met behulp van een hybride ensemble-aanpak. Combineert collaboratieve filtering (SVD), content-gebaseerde kenmerken (Genome Tags PCA + NLP TF-IDF) en XGBoost om gebruikersbeoordelingen te voorspellen met ~0.92 RMSE.",
-        "technologies": ["Python", "XGBoost", "scikit-learn", "Pandas", "NumPy", "SciPy"],
-        "tags": ["Machine Learning", "Data Science"],
         "featured": true
       }
     }

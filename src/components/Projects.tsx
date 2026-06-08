@@ -22,6 +22,11 @@ const Projects: FC = () => {
 
   // Project URLs and images
   const projectData: Record<string, { image: string; github: string; url: string; playstore?: string }> = {
+    mrp2026: {
+      image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+      github: 'https://github.com/rayklanderman/mrp-2026',
+      url: '#'
+    },
     luminae: {
       image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/RealDevRay/luminae',
@@ -67,11 +72,6 @@ const Projects: FC = () => {
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       github: 'https://github.com/rayklanderman/kazi-connect',
       url: 'https://www.kaziconnect.work/'
-    },
-    mrp2026: {
-      image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
-      github: 'https://github.com/rayklanderman/mrp-2026',
-      url: '#'
     }
   };
 

@@ -25,6 +25,21 @@
     "featured": "Featured",
     "comingSoon": "Coming Soon",
     "items": {
+      "mrp2026": {
+        "name": "Movie Recommendation Project 2026",
+        "shortDescription": "ML-powered movie rating predictor (RMSE ~0.82)",
+        "description": "A machine learning solution for the Movie Recommendation Hackathon 2026 using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics.",
+        "technologies": [
+          "Python",
+          "LightGBM",
+          "scikit-learn",
+          "Pandas",
+          "NumPy",
+          "SciPy"
+        ],
+        "tags": ["Machine Learning", "Data Science"],
+        "featured": true
+      },
       "luminae": {
         "name": "Luminae",
         "shortDescription": "Autonomous research analysis platform with multi-agent AI swarm",
@@ -167,21 +182,6 @@
         ],
         "tags": ["Software Engineering", "Job Market"],
         "url": "https://www.kaziconnect.work/",
-        "featured": true
-      },
-      "mrp2026": {
-        "name": "Movie Recommendation Project 2026",
-        "shortDescription": "ML-powered movie rating predictor (RMSE ~0.92)",
-        "description": "A machine learning solution for the Movie Recommendation Hackathon 2026 using a Hybrid Ensembler approach. Combines Collaborative Filtering (SVD), Content-Based Features (Genome Tags PCA + NLP TF-IDF), and XGBoost to predict user ratings with ~0.92 RMSE.",
-        "technologies": [
-          "Python",
-          "XGBoost",
-          "scikit-learn",
-          "Pandas",
-          "NumPy",
-          "SciPy"
-        ],
-        "tags": ["Machine Learning", "Data Science"],
         "featured": true
       }
     }
