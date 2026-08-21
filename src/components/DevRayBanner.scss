@@ -1,0 +1,55 @@
+.devray-banner {
+  background: var(--surface-2);
+  border-top: 1px solid var(--accent-gold);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.9rem 1.5rem;
+  text-align: center;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    color: var(--text-color);
+    font-size: 0.98rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--accent-gold);
+
+      .devray-banner__arrow {
+        transform: translateX(4px);
+      }
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--accent-gold);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+  }
+
+  &__cta {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--accent-gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    white-space: nowrap;
+  }
+
+  &__arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.8rem 1rem;
+
+    &__text {
+      font-size: 0.9rem;
+    }
+  }
+}

@@ -7,39 +7,63 @@ export interface ChatMessage {
 }
 
 export async function sendMessage(messages: ChatMessage[]): Promise<string> {
-  const apiKey = import.meta.env.VITE_GROQ_API_KEY;
-
-  if (!apiKey || apiKey === 'your_groq_api_key_here') {
-    return "I'm currently unavailable — please set your Groq API key in the .env file.";
-  }
-
+  // Preferred path: Vercel serverless proxy (/api/chat) holds the Groq key server-side,
+  // so the API key never ships in the client bundle.
   try {
-    const res = await fetch(GROQ_API_URL, {
+    const res = await fetch('/api/chat', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        messages,
-        temperature: 0.7,
-        max_tokens: 1024,
-      }),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages }),
     });
 
-    if (!res.ok) {
-      const err = await res.text();
-      console.error('Groq API error:', res.status, err);
-      return 'Sorry, I encountered an error. Please try again later.';
+    if (res.ok) {
+      const data = await res.json();
+      return data.content || 'No response generated.';
     }
 
-    const data = await res.json();
-    return data.choices?.[0]?.message?.content || 'No response generated.';
-  } catch (err) {
-    console.error('Groq fetch error:', err);
-    return 'Sorry, I could not reach the AI service. Please try again.';
+    if (res.status === 429) {
+      return 'You are sending messages too quickly — please wait a moment and try again.';
+    }
+  } catch {
+    // proxy unavailable (e.g. `vite dev` without the Vercel runtime) — fall back below
   }
+
+  // Local-development fallback only: direct Groq call. Never used in production builds,
+  // so the key is kept out of the shipped bundle.
+  if (import.meta.env.DEV) {
+    const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+
+    if (apiKey && apiKey !== 'your_groq_api_key_here') {
+      try {
+        const res = await fetch(GROQ_API_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${apiKey}`,
+          },
+          body: JSON.stringify({
+            model: MODEL,
+            messages,
+            temperature: 0.7,
+            max_tokens: 1024,
+          }),
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          return data.choices?.[0]?.message?.content || 'No response generated.';
+        }
+        const err = await res.text();
+        console.error('Groq API error:', res.status, err);
+        return 'Sorry, I encountered an error. Please try again later.';
+      } catch (err) {
+        console.error('Groq fetch error:', err);
+        return 'Sorry, I could not reach the AI service. Please try again.';
+      }
+    }
+  }
+
+  return "I'm currently unavailable — please try again later.";
 }
 
 export function buildSystemPrompt(): string {
@@ -54,11 +78,11 @@ CORE IDENTITY:
 - LinkedIn: linkedin.com/in/rayklanderman
 - YouTube: youtube.com/@RealDevRay
 - X (Twitter): x.com/rayklanderman
-- Portfolio: rayklanderman.github.io/ray-klanderman-portfolio
-- Services Site: devray.site
+- Portfolio: https://rayklanderman.is-a.dev/
+- Services Site: https://devray.qzz.io/
 
 WORK PHILOSOPHY:
-"I build smart, scalable software and AI systems that solve real problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines. Always open to collaborating with teams building the next generation of human-centered AI."
+"I've spent the past two years building digital systems inside public institutions — the Pan-African Parliament and a Member of Parliament's office — while independently designing and shipping AI products. I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines. Always open to collaborating with teams building the next generation of human-centered AI."
 
 TECHNICAL SKILLS:
 - Frontend: React, TypeScript, Next.js, Tailwind CSS, Framer Motion, Emotion
@@ -79,7 +103,11 @@ FEATURED PROJECTS:
 7. Codebase Genius - AI-powered automatic GitHub documentation platform generating comprehensive docs from codebase analysis using LLMs, with graph-based code structure visualization. (Python, TypeScript, Google Gemini API, Streamlit, NetworkX, FastAPI)
 8. Weru Digital - Android app for Weru TV and FM with live radio/TV streaming, scheduled programming, SEO-friendly with auto-updating RSS news feeds, AI optimization, PWA support, cross-platform compatibility. Available on Google Play. (WordPress, PWA, Live Streaming, AI, SEO)
 9. Kazi Connect - AI-powered job matching marketplace using artificial intelligence to connect job seekers with suitable opportunities. CV analysis, skill assessment, automated application tracking, and personalized recommendations. (Next.js, TypeScript, Firebase, OpenAI, PWA)
-10. Movie Recommendation Project 2026 - ML solution using hybrid ensemble approach: collaborative filtering (SVD), content-based features (Genome Tags PCA + NLP TF-IDF), and XGBoost to predict user ratings with ~0.92 RMSE. (Python, XGBoost, scikit-learn, Pandas, NumPy)
+10. Movie Recommendation Project 2026 - ML solution for the Movie Recommendation Hackathon 2026 using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics. Predicts user ratings with ~0.82 RMSE. (Python, LightGBM, scikit-learn, Pandas, NumPy, SciPy)
+
+WRITING & INSIGHTS:
+- "Code Review Is the Firewall Against AI Slop" — LinkedIn Pulse, March 2026
+- "Code Utopia in 2026: The Four Pillars of Production-Ready Code" — LinkedIn Pulse, January 2026
 
 EDUCATION:
 1. BSc Computer Science - University of the People (2025-2028, ongoing). Current SAP status, cumulative GPA 3.95, 21/120 credits completed (as of April 2026).

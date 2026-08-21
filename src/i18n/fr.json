@@ -14,15 +14,23 @@
     "message": "Découvrez le Portfolio de Raymond Klanderman - Développeur Logiciel & Ingénieur en IA",
     "copied": "URL du portfolio copiée dans le presse-papiers !"
   },
+  "banner": {
+    "devray": {
+      "text": "Vous cherchez du développement logiciel sur mesure ou des services d'agence ?",
+      "cta": "Visitez DevRay",
+      "ariaLabel": "Services DevRay"
+    }
+  },
   "profile": {
     "title": "Profil Professionnel",
-    "description": "Je construis des logiciels intelligents et évolutifs et des systèmes d'IA qui résolvent des problèmes concrets. Mon travail couvre l'ingénierie full-stack, l'apprentissage automatique, l'analyse de données, l'architecture cloud et les pipelines de déploiement automatisés.\n\nJe conçois et déploie des applications prêtes pour la production en utilisant Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL et Google Cloud. Je me spécialise dans les workflows intelligents alimentés par des API, des agents autonomes, la recherche vectorielle et la génération augmentée par récupération (RAG). Mes outils incluent Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph et des fournisseurs modernes de LLM comme OpenAI, Anthropic, Gemini, Groq et Ollama.\n\nAu-delà de l'ingénierie, je transforme les données en insights et les insights en fonctionnalités qui deviennent des produits sur lesquels les gens comptent. Je crée également du contenu technique clair—tutoriels, docs et démos—qui aide les équipes à adopter et étendre des systèmes complexes avec confiance.\n\nMa mission est simple : construire des outils qui comprennent les gens, et permettre aux gens de construire des outils encore meilleurs. La curiosité motive mon travail, du prototypage ML rapide à la mise en production d'agents et à l'automatisation des workflows de bout en bout.\n\nToujours ouvert à collaborer avec des équipes construisant la prochaine génération d'IA centrée sur l'humain."
+    "description": "J'ai passé les deux dernières années à construire des systèmes numériques au sein d'institutions publiques — le Parlement panafricain et le bureau d'un député — tout en concevant et en lançant de manière indépendante des produits d'IA. Je construis des logiciels intelligents et évolutifs et des systèmes d'IA qui résolvent des problèmes concrets. Mon travail couvre l'ingénierie full-stack, l'apprentissage automatique, l'analyse de données, l'architecture cloud et les pipelines de déploiement automatisés.\n\nJe conçois et déploie des applications prêtes pour la production en utilisant Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL et Google Cloud. Je me spécialise dans les workflows intelligents alimentés par des API, des agents autonomes, la recherche vectorielle et la génération augmentée par récupération (RAG). Mes outils incluent Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph et des fournisseurs modernes de LLM comme OpenAI, Anthropic, Gemini, Groq et Ollama.\n\nAu-delà de l'ingénierie, je transforme les données en insights et les insights en fonctionnalités qui deviennent des produits sur lesquels les gens comptent. Je crée également du contenu technique clair—tutoriels, docs et démos—qui aide les équipes à adopter et étendre des systèmes complexes avec confiance.\n\nMa mission est simple : construire des outils qui comprennent les gens, et permettre aux gens de construire des outils encore meilleurs. La curiosité motive mon travail, du prototypage ML rapide à la mise en production d'agents et à l'automatisation des workflows de bout en bout.\n\nToujours ouvert à collaborer avec des équipes construisant la prochaine génération d'IA centrée sur l'humain."
   },
   "projects": {
     "title": "Projets en Vedette",
     "subtitle": "Plateformes IA, outils intelligents et applications full-stack construits avec des technologies modernes.",
     "viewProject": "Voir le Projet",
     "featured": "En Vedette",
+    "more": "Autres Projets",
     "comingSoon": "Bientôt Disponible",
     "items": {
       "mrp2026": {
@@ -31,7 +39,8 @@
         "description": "Une solution de machine learning pour le hackathon de recommandation de films 2026 utilisant Hybrid LightGBM sur une factorisation matricielle SVD à 50 facteurs. A conçu 156 caractéristiques sur 10M de lignes sans échantillonnage — incluant signaux collaboratifs, encodages basés sur le contenu et dynamiques temporelles.",
         "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
         "tags": ["Machine Learning", "Data Science"],
-        "featured": true
+        "tier": "secondary",
+        "category": "Ingénierie des données & Machine Learning"
       },
       "luminae": {
         "name": "Luminae",
@@ -40,7 +49,14 @@
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
         "tags": ["IA", "LLM", "Agents Autonomes"],
         "url": "https://luminae.qzz.io/",
-        "featured": true
+        "tier": "flagship",
+        "live": true,
+        "entered": "Participé — Mistral World Hackathon",
+        "metrics": [
+          { "label": "Orchestration", "value": "essaim de 5 agents" },
+          { "label": "Coût", "value": "~0,05 $ / article" },
+          { "label": "Délai", "value": "semaines → 3 minutes" }
+        ]
       },
       "aiHealth": {
         "name": "AI Health Chat",
@@ -49,7 +65,9 @@
         "technologies": ["Next.js", "TypeScript", "Supabase", "xAI", "Grok"],
         "tags": ["IA", "Santé"],
         "url": "https://aihealthchat.qzz.io/",
-        "featured": true
+        "tier": "flagship",
+        "live": true,
+        "award": "1ère place — PLP AI Innovation Hackathon"
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -57,8 +75,8 @@
         "description": "Génère des questions d'entretien contextuelles et basées sur des scénarios adaptées à n'importe quel poste. Interface utilisateur de style Google avec animations Framer Motion, moteur de récupération API résilient, support multi-modèles (Mistral, Groq, Llama, Qwen) et PWA installable.",
         "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Mistral AI", "Groq", "PWA"],
         "tags": ["IA", "Application Web"],
-        "url": "#",
-        "featured": true
+        "tier": "secondary",
+        "category": "Outils d'entretien IA"
       },
       "contentShapeshifterPro": {
         "name": "Content Shapeshifter Pro",
@@ -66,8 +84,8 @@
         "description": "Scrape des URL ou articles et utilise Groq AI avec Llama 3 pour générer 4 variantes de plateforme : fils Twitter, posts LinkedIn, newsletters et légendes Instagram. Copie en un clic, feedback en temps réel et interface sombre élégante.",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Groq", "Cheerio"],
         "tags": ["IA", "Création de Contenu"],
-        "url": "#",
-        "featured": true
+        "tier": "secondary",
+        "category": "Outils de contenu IA"
       },
       "serenityAI": {
         "name": "SerenityAI",
@@ -76,7 +94,8 @@
         "technologies": ["React", "TypeScript", "JacLang", "Groq API", "Architecture LLM", "Agents IA"],
         "tags": ["IA", "Santé Mentale"],
         "url": "https://serenityai.qzz.io/",
-        "featured": true
+        "tier": "secondary",
+        "category": "IA & Bien-être"
       },
       "tutaLearn": {
         "name": "TutaLearn - Plateforme Éducative Africaine",
@@ -85,7 +104,8 @@
         "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
         "tags": ["Génie Logiciel", "EdTech"],
         "url": "https://www.tutalearn.study/",
-        "featured": true
+        "tier": "secondary",
+        "category": "IA & EdTech"
       },
       "codebaseGenius": {
         "name": "Codebase Genius - Système de Documentation IA",
@@ -94,7 +114,8 @@
         "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
         "tags": ["IA", "Outils Développeur"],
         "url": "https://geniuscodebase.streamlit.app/",
-        "featured": true
+        "tier": "secondary",
+        "category": "Outils développeur IA"
       },
       "weruDigital": {
         "name": "Weru Digital",
@@ -103,7 +124,8 @@
         "technologies": ["WordPress", "PWA", "Streaming en Direct", "IA", "SEO", "RSS", "Multiplateforme"],
         "tags": ["Développement Web", "Média"],
         "url": "https://werudigital.co.ke/",
-        "featured": true
+        "tier": "secondary",
+        "category": "Média & Streaming"
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -112,7 +134,8 @@
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
         "tags": ["Génie Logiciel", "Marché de l'Emploi"],
         "url": "https://www.kaziconnect.work/",
-        "featured": true
+        "tier": "secondary",
+        "category": "IA & Marché de l'emploi"
       }
     }
   },
@@ -251,6 +274,13 @@
   },
   "badges": {
     "title": "Badges & Certifications",
+    "certified": "Certifié",
+    "showMore": "Afficher Plus de Certifications",
+    "showLess": "Afficher Moins",
+    "alx_summary": {
+      "certification": "Analyse de données • Machine Learning • Science des données",
+      "description": "Trois certificats ALX Africa couvrant l'ensemble du pipeline de données — analyse, machine learning et science des données."
+    },
     "platforms": {
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
@@ -498,6 +528,27 @@
     "title": "Vitrine",
     "description": "Une playlist organisée de présentations de projets enregistrées, de démos en direct et de présentations techniques présentant des applications réelles que j'ai construites."
   },
+  "writing": {
+    "title": "Écrits & Perspectives",
+    "subtitle": "Essais et notes de terrain sur l'ingénierie IA, la qualité du code et la livraison de logiciels durables.",
+    "readMore": "Lire sur LinkedIn",
+    "items": [
+      {
+        "title": "La revue de code est le pare-feu contre la médiocrité de l'IA",
+        "venue": "LinkedIn Pulse",
+        "date": "Mars 2026",
+        "teaser": "Le code généré par l'IA est partout — mais les erreurs générées par l'IA aussi. Un plaidoyer concret pour faire de la revue de code la dernière ligne de défense contre les sorties de mauvaise qualité et hallucinées.",
+        "url": "#"
+      },
+      {
+        "title": "Code Utopia en 2026 : Les quatre piliers d'un code prêt pour la production",
+        "venue": "LinkedIn Pulse",
+        "date": "Janvier 2026",
+        "teaser": "Livrer du code prêt pour la production n'est pas magique. Les tests, l'observabilité, la sécurité et une architecture propre séparent les démos impressionnantes des systèmes qui survivent.",
+        "url": "#"
+      }
+    ]
+  },
   "skills": {
     "aiData": "IA & Science des Données",
     "frontendMobile": "Frontend & Mobile",
@@ -524,6 +575,7 @@
     "projects": "Projets",
     "showcase": "Vitrine",
     "education": "Éducation",
+    "writing": "Écrits",
     "badges": "Badges",
     "contact": "Me Contacter",
     "services": "Services"

@@ -1,38 +1,32 @@
-// Variables - Kenyan (black, red, green, white) and Dutch (red, white, blue) flag colors
-$kenya-black: #000000;
-$kenya-red: #DE2910;
-$kenya-green: #006644;
-$kenya-white: #FFFFFF;
-$netherlands-red: #AE1C28;
-$netherlands-blue: #21468B;
+// Design tokens — Forest-Ink palette
+$ink: #10231C;
+$parchment: #F4F4F0;
+$gold: #C99A3B;
+$live: #00E599;
+$ink-raised: #17312A;
+$ink-surface-2: #1D3A31;
+$ink-border: #2A473D;
+$parchment-raised: #FFFFFF;
+$parchment-surface-2: #ECEBE4;
+$parchment-border: #DDDCD3;
+$text-muted-dark: #9DB4AA;
+$text-muted-light: #5B6660;
 
-// Theme colors
-$primary-color: $netherlands-blue;        // Dutch blue as primary
-$secondary-color: $kenya-green;           // Kenyan green as secondary
-$accent-color: $netherlands-red;          // Dutch red as accent
-$background-color: #FFFFFF;               // White background
-$text-color: #1e293b;                     // Dark text for readability
-$header-bg: $netherlands-blue;            // Solid Dutch blue
-$header-height: 100vh;
-
-// Theme color variations - using hex values instead of color functions
-$primary-light: #3060b3;    // Slightly lighter blue
-$primary-lighter: #4070c3;  // Even lighter blue
-$primary-dark: #193d78;     // Darker blue
-$secondary-light: #007a52;  // Slightly lighter green
-
-// Dark theme colors
-$dark-background-color: #0f172a;
-$dark-text-color: #f8fafc;
-$dark-header-bg: #0f172a;
-$dark-primary-color: #3b82f6;
-$dark-secondary-color: #10b981;
-$dark-accent-color: #ef4444;
+// Design tokens — "Say Briefly" (Brief) palette
+$forest-ink: #1a3300;      // Forest Ink — primary text/CTA
+$cream-paper: #fcfaf5;     // Cream Paper — page canvas
+$highlighter: #ffe95c;     // Highlighter Yellow — marker wash/tagline badge
+$pencil-gray: #b6b6b6;     // Pencil Gray — hairlines/borders
+$whisper-gray: #f1f1f1;    // Whisper Gray — muted helper text
+$sticky-note-teal: #a8e5e5; // Sticky Note Teal — pastel action
+$sticky-note-mint: #d5f5c2; // Sticky Note Mint — pastel card
+$sticky-note-blush: #f6d0ff; // Sticky Note Blush — decorative
+$terracotta: #cb5521;      // Terracotta — decorative card accent
 
 // Import section title styles
 @use 'section-title';
 
-// Spacing scale
+// Spacing scale + theme-independent tokens
 :root {
   --space-xs: 0.25rem;   // 4px
   --space-sm: 0.5rem;    // 8px
@@ -43,43 +37,81 @@ $dark-accent-color: #ef4444;
   --space-3xl: 4rem;     // 64px
   --space-4xl: 6rem;     // 96px
 
-  // Light theme (default)
-  --bg-color: #{$background-color};
-  --surface-1: #ffffff;
-  --surface-2: #f1f5f9;
-  --text-color: #{$text-color};
-  --text-muted: #64748b;
-  --header-bg: #{$header-bg};
-  --primary-color: #{$primary-color};
-  --secondary-color: #{$secondary-color};
-  --accent-color: #{$accent-color};
-  --card-bg: #ffffff;
-  --glass-bg: rgba(255, 255, 255, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --hover-overlay: rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  // Typography
+  // Say Briefly: Bricolage Grotesque (display), Inter (body), Roboto Mono (micro labels)
+  --font-display: 'Bricolage Grotesque', 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Roboto Mono', 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* ---- Brief design tokens ---- */
+  /* Forest Ink / Cream Paper / Highlighter Yellow */
+  --forest-ink: #{$forest-ink};
+  --cream-paper: #{$cream-paper};
+  --highlighter-yellow: #{$highlighter};
+
+  // Sticky notes (pastel accents)
+  --sticky-note-mint: #{$sticky-note-mint};
+  --sticky-note-teal: #{$sticky-note-teal};
+  --sticky-note-blush: #{$sticky-note-blush};
+  --terracotta: #{$terracotta};
+
+  // Pencil Gray / Whisper Gray
+  --pencil-gray: #{$pencil-gray};
+  --whisper-gray: #{$whisper-gray};
+
+  // Brand colors shared by both themes
+  --ink: #{$ink};
+  --parchment: #{$parchment};
+  --accent-gold: #{$gold};
+  --accent-live: #{$live};
+
+  // Semantic status colors (identical in both themes)
+  --success: #4ade80;
+  --danger: #ff5c5c;
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.12), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.16), 0 4px 6px -4px rgb(0 0 0 / 0.12);
+  --radius-btn: 6px;
+  --radius-card: 12px;
+  --radius-nav: 16px;
+  --radius-pill: 9999px;
 }
 
-// Dark theme
+// Forest-Ink (dark) — default theme (deep forest companion to the cream palette)
 [data-theme="dark"] {
-  --bg-color: #{$dark-background-color};
-  --surface-1: #1e293b;
-  --surface-2: #334155;
-  --text-color: #{$dark-text-color};
-  --text-muted: #94a3b8;
-  --header-bg: #{$dark-header-bg};
-  --primary-color: #{$dark-primary-color};
-  --secondary-color: #{$dark-secondary-color};
-  --accent-color: #{$dark-accent-color};
-  --card-bg: #1e293b;
-  --glass-bg: rgba(30, 41, 59, 0.8);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --hover-overlay: rgba(255, 255, 255, 0.05);
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --bg-color: #{$ink};
+  --text-color: #{$parchment};
+  --surface-1: #{$ink-raised};
+  --surface-2: #{$ink-surface-2};
+  --border-color: #{$ink-border};
+  --text-muted: #{$text-muted-dark};
+  --header-bg: #{$ink};
+  --primary-color: #{$highlighter};
+  --secondary-color: #{$highlighter};
+  --accent-color: #{$highlighter};
+  --card-bg: #{$ink-raised};
+  --glass-bg: rgba(16, 35, 28, 0.8);
+  --glass-border: rgba(42, 71, 61, 0.7);
+  --hover-overlay: rgba(244, 244, 240, 0.06);
+}
+
+// Light theme — Say Briefly Cream Paper canvas, Forest Ink text, Highlighter Yellow accent
+[data-theme="light"] {
+  --bg-color: #{$cream-paper};
+  --text-color: #{$forest-ink};
+  --surface-1: #FFFFFF;
+  --surface-2: #{$sticky-note-mint};
+  --border-color: #{$pencil-gray};
+  --text-muted: #6b7a66; // muted forest-tinted gray, readable on cream
+  --header-bg: #{$cream-paper};
+  --primary-color: #{$forest-ink};
+  --secondary-color: #{$forest-ink};
+  --accent-color: #{$highlighter};
+  --card-bg: #FFFFFF;
+  --glass-bg: rgba(252, 250, 245, 0.8);
+  --glass-border: rgba(182, 182, 182, 0.8);
+  --hover-overlay: rgba(26, 51, 0, 0.06);
 }
 
 // Global styles
@@ -94,7 +126,7 @@ html {
 }
 
 body {
-  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.7;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -102,7 +134,63 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .section-title {
-  font-family: 'Outfit', -apple-system, sans-serif;
+  font-family: var(--font-display);
+}
+
+// Mono utility for tags, dates, status lines
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
+}
+
+/* ---- Say Briefly utilities ---- */
+
+// Highlighter text wash — marker-pen effect behind keywords in headlines.
+// Reads as a yellow marker stroke, never as a CTA. Works on both themes
+// because it carries its own ink foreground.
+.highlight {
+  background: var(--highlighter-yellow);
+  color: var(--forest-ink);
+  padding: 0 0.15em;
+  border-radius: 3px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  line-height: inherit;
+}
+
+// Sticky-note card surface — base, then pastel variants.
+// No shadow: the color fill does the separation work. Forest Ink text + optional border.
+.sticky-note {
+  border-radius: 12px;
+  padding: 24px;
+  color: var(--forest-ink);
+  border: 1px solid color-mix(in srgb, var(--forest-ink) 12%, transparent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &--mint { background: var(--sticky-note-mint); }
+  &--teal { background: var(--sticky-note-teal); }
+  &--blush { background: var(--sticky-note-blush); }
+  &--terracotta { background: var(--terracotta); color: var(--cream-paper); }
+}
+
+// Tagline badge — small highlighter-yellow pill eyebrow above a headline
+.tagline-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--highlighter-yellow);
+  color: var(--forest-ink);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  text-transform: uppercase;
 }
 
 // Ensure no underlines on any links

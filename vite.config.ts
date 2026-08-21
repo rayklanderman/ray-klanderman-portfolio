@@ -30,14 +30,19 @@ export default defineConfig({
         name: 'Raymond Klanderman - Portfolio',
         short_name: 'Ray Portfolio',
         description: 'AI Engineer & Full-Stack Developer Portfolio',
-        theme_color: '#34C759',
-        background_color: '#0f172a',
+        theme_color: '#10231C',
+        background_color: '#10231C',
         display: 'standalone',
         icons: [
           {
-            src: 'favicon.svg',
+            src: '/logo-192.png',
             sizes: '192x192',
-            type: 'image/svg+xml'
+            type: 'image/png'
+          },
+          {
+            src: '/logo.png',
+            sizes: '512x512',
+            type: 'image/png'
           }
         ]
       }

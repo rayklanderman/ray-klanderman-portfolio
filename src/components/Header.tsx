@@ -7,6 +7,7 @@ import { useTheme } from './ThemeContext';
 import * as React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter, FaShareAlt, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 interface MenuItem {
   id: string;
@@ -23,6 +24,7 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const { t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
+  const navigate = useNavigate();
   const prevScrollY = useRef(false);
 
   // Define menu items
@@ -31,9 +33,10 @@ const Header = () => {
     { id: 'projects', label: t('menu.projects') },
     { id: 'showcase', label: t('menu.showcase') },
     { id: 'education', label: t('menu.education') },
+    { id: 'writing', label: t('menu.writing') },
     { id: 'badges', label: t('menu.badges') },
     { id: 'contact-me', label: t('menu.contact') },
-    { id: 'services', label: t('menu.services'), external: true, url: 'https://www.devray.site/' },
+    { id: 'services', label: t('menu.services'), external: true, url: 'https://devray.qzz.io/' },
     { id: 'ai-chat', label: 'AI Chat', isChat: true }
   ], [t]);
 
@@ -165,7 +168,7 @@ const Header = () => {
       icon: <FaGithub />,
       url: 'https://github.com/rayklanderman',
       label: 'GitHub',
-      color: '#333333'
+      color: '#58a6ff' // GitHub's light-gray mark, legible on Forest-Ink
     },
     {
       icon: <FaLinkedin />,
@@ -183,7 +186,7 @@ const Header = () => {
       icon: <FaTwitter />,
       url: 'https://x.com/rayklanderman',
       label: 'X (Twitter)',
-      color: '#000000'
+      color: '#e7e9ea' // X's dark-theme glyph gray, legible on Forest-Ink
     },
     {
       icon: <FaEnvelope />,
@@ -205,7 +208,7 @@ const Header = () => {
           />
         </div>
         <div className="text-content">
-          <h1>Raymond Klanderman</h1>
+          <h1><span className="highlight">Raymond</span> Klanderman</h1>
           <div className="job-titles">
             <motion.span 
               initial={{ opacity: 0, y: 10 }}
@@ -273,12 +276,11 @@ const Header = () => {
                 rel="noopener noreferrer"
                 aria-label={link.label}
                 className="social-link"
-                style={{ backgroundColor: link.color }}
+                style={{ '--brand-color': link.color } as React.CSSProperties}
               >
-                {React.cloneElement(link.icon, { 
+                {React.cloneElement(link.icon, {
                   className: 'social-icon',
-                  size: 24,
-                  style: { color: 'white', fill: 'white' }
+                  size: 24
                 })}
               </a>
             ))}
@@ -303,7 +305,7 @@ const Header = () => {
                   <motion.button
                     key={item.id}
                     className={`menu-button ${activeSection === item.id ? 'active' : ''}`}
-                    onClick={() => item.external ? window.open(item.url, '_blank') : item.isChat ? window.location.hash = '#/chat' : handleMenuItemClick(item.id)}
+                    onClick={() => item.external ? window.open(item.url, '_blank') : item.isChat ? navigate('/chat') : handleMenuItemClick(item.id)}
                     initial={{ scale: 1 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

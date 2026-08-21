@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { FaRobot, FaSpinner, FaPaperPlane, FaArrowLeft, FaTrash } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { sendMessage, buildSystemPrompt, ChatMessage } from '../services/groq';
 import './ChatPage.scss';
 
@@ -71,17 +72,17 @@ const ChatPage = () => {
           <p>{t('chat.sidebarInfo')}</p>
         </div>
         <div className="sidebar-footer">
-          <a href="#/" className="back-link">
+          <Link to="/" className="back-link">
             <FaArrowLeft /> {t('chat.backToPortfolio')}
-          </a>
+          </Link>
         </div>
       </div>
 
       <div className="chat-main">
         <div className="chat-main-header">
-          <a href="#/" className="back-link-mobile">
+          <Link to="/" className="back-link-mobile">
             <FaArrowLeft />
-          </a>
+          </Link>
           <FaRobot className="chat-main-icon" />
           <span>{t('chat.assistantName')}</span>
         </div>

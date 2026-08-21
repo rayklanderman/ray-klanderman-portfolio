@@ -72,7 +72,7 @@ body .footer .social-links,
     &.form-input-focus {
       outline: none;
       border-color: var(--primary-color);
-      box-shadow: 0 0 0 2px rgba(var(--primary-color), 0.2);
+      box-shadow: 0 0 0 2px color-mix(in srgb, var(--primary-color) 25%, transparent);
     }
   }
   
@@ -149,13 +149,13 @@ body .footer .social-links,
   }
   
   .success-message {
-    background-color: rgba(52, 199, 89, 0.1);
-    color: #34C759;
+    background-color: color-mix(in srgb, var(--success) 12%, transparent);
+    color: var(--success);
   }
   
   .error-message {
-    background-color: rgba(255, 59, 48, 0.1);
-    color: #FF3B30;
+    background-color: color-mix(in srgb, var(--danger) 12%, transparent);
+    color: var(--danger);
   }
 }
 
@@ -207,10 +207,10 @@ body .footer .social-links,
 
     a.social-link, .social-link {
       --icon-size: 24px;
-      --icon-color: white;
-      --bg-color: rgba(255, 255, 255, 0.1);
-      --hover-bg-color: rgba(255, 255, 255, 0.2);
-      --border-color: rgba(255, 255, 255, 0.2);
+      --icon-color: var(--text-muted);
+      --bg-color: var(--surface-2);
+      --hover-bg-color: var(--surface-2);
+      --border-color: var(--border-color);
       
       width: 52px;
       height: 52px;
@@ -242,7 +242,8 @@ body .footer .social-links,
 
       /* Hover state */
       &:hover {
-        background: var(--hover-overlay) !important;
+        background: var(--hover-bg-color) !important;
+        border-color: var(--accent-gold);
         transform: translateY(-3px) scale(1.05);
         box-shadow: var(--shadow-md);
         
@@ -274,7 +275,7 @@ body .footer .social-links,
 
   .copyright {
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     text-align: center;
   }
 }

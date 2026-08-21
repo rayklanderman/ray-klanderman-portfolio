@@ -9,6 +9,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+// eslint-disable-next-line react-refresh/only-export-components -- hook + provider in one context file is intentional
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {
@@ -22,7 +23,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>('light'); // Default to light theme initially
+  const [theme, setTheme] = useState<Theme>('dark'); // Forest-Ink is the brand-primary presentation; light remains a full-quality alternative
 
   // Initialize theme on mount
   useEffect(() => {

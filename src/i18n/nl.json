@@ -14,15 +14,23 @@
     "message": "Bekijk het Portfolio van Raymond Klanderman - Software Ontwikkelaar & AI Engineer",
     "copied": "Portfolio URL gekopieerd naar klembord!"
   },
+  "banner": {
+    "devray": {
+      "text": "Op zoek naar maatwerk softwareontwikkeling of agency-diensten?",
+      "cta": "Bezoek DevRay",
+      "ariaLabel": "DevRay-diensten"
+    }
+  },
   "profile": {
     "title": "Professioneel Profiel",
-    "description": "Ik bouw slimme, schaalbare software en AI-systemen die echte problemen oplossen. Mijn werk omvat full-stack engineering, machine learning, data-analyse, cloud-architectuur en geautomatiseerde deployment pipelines.\n\nIk ontwerp en lever productieklare applicaties met behulp van Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL en Google Cloud. Ik specialiseer me in intelligente workflows aangedreven door API's, autonome agenten, vector search en Retrieval-Augmented Generation (RAG). Mijn tooling omvat Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph en moderne LLM-providers zoals OpenAI, Anthropic, Gemini, Groq en Ollama.\n\nBuiten engineering om zet ik data om in inzichten en inzichten in functies die producten worden waar mensen op vertrouwen. Ik creëer ook duidelijke technische content—tutorials, docs en demos—die teams helpt complexe systemen met vertrouwen te adopteren en uit te breiden.\n\nMijn missie is eenvoudig: bouw tools die mensen begrijpen, en empower mensen om nog betere tools te bouwen. Nieuwsgierigheid drijft mijn werk, van snelle ML-prototyping tot het productioniseren van agenten en het automatiseren van end-to-end workflows.\n\nAltijd open voor samenwerking met teams die de volgende generatie mensgerichte AI bouwen."
+    "description": "Ik heb de afgelopen twee jaar digitale systemen gebouwd binnen publieke instellingen — het Pan-Afrikaanse Parlement en het kantoor van een parlementslid — terwijl ik onafhankelijk AI-producten ontwerp en lanceer. Ik bouw slimme, schaalbare software en AI-systemen die echte problemen oplossen. Mijn werk omvat full-stack engineering, machine learning, data-analyse, cloud-architectuur en geautomatiseerde deployment pipelines.\n\nIk ontwerp en lever productieklare applicaties met behulp van Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL en Google Cloud. Ik specialiseer me in intelligente workflows aangedreven door API's, autonome agenten, vector search en Retrieval-Augmented Generation (RAG). Mijn tooling omvat Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph en moderne LLM-providers zoals OpenAI, Anthropic, Gemini, Groq en Ollama.\n\nBuiten engineering om zet ik data om in inzichten en inzichten in functies die producten worden waar mensen op vertrouwen. Ik creëer ook duidelijke technische content—tutorials, docs en demos—die teams helpt complexe systemen met vertrouwen te adopteren en uit te breiden.\n\nMijn missie is eenvoudig: bouw tools die mensen begrijpen, en empower mensen om nog betere tools te bouwen. Nieuwsgierigheid drijft mijn werk, van snelle ML-prototyping tot het productioniseren van agenten en het automatiseren van end-to-end workflows.\n\nAltijd open voor samenwerking met teams die de volgende generatie mensgerichte AI bouwen."
   },
   "projects": {
     "title": "Uitgelichte Projecten",
     "subtitle": "AI-aangedreven platforms, intelligente tools en full-stack applicaties gebouwd met moderne technologieën.",
     "viewProject": "Bekijk Live",
     "featured": "Uitgelicht",
+    "more": "Meer Projecten",
     "comingSoon": "Binnenkort Beschikbaar",
     "items": {
       "mrp2026": {
@@ -31,7 +39,8 @@
         "description": "Een machine learning-oplossing voor de Movie Recommendation Hackathon 2026 met behulp van Hybrid LightGBM op 50-factor SVD matrixfactorisatie. Ontwikkelde 156 features over 10M rijen zonder sampling — waaronder collaboratieve signalen, content-gebaseerde coderingen en temporele dynamiek.",
         "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
         "tags": ["Machine Learning", "Data Science"],
-        "featured": true
+        "tier": "secondary",
+        "category": "Data-engineering & Machine Learning"
       },
       "luminae": {
         "name": "Luminae",
@@ -40,7 +49,14 @@
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
         "tags": ["AI", "LLM", "Autonome Agenten"],
         "url": "https://luminae.qzz.io/",
-        "featured": true
+        "tier": "flagship",
+        "live": true,
+        "entered": "Ingeschreven — Mistral World Hackathon",
+        "metrics": [
+          { "label": "Orchestratie", "value": "5-agenten zwerm" },
+          { "label": "Kosten", "value": "~$0,05 / paper" },
+          { "label": "Doorlooptijd", "value": "weken → 3 minuten" }
+        ]
       },
       "aiHealth": {
         "name": "AI Health Chat",
@@ -49,7 +65,9 @@
         "technologies": ["Next.js", "TypeScript", "Supabase", "xAI", "Grok"],
         "tags": ["AI", "Gezondheid"],
         "url": "https://aihealthchat.qzz.io/",
-        "featured": true
+        "tier": "flagship",
+        "live": true,
+        "award": "1e plaats — PLP AI Innovation Hackathon"
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -57,8 +75,8 @@
         "description": "Genereert contextrijke, scenariogestuurde sollicitatievragen op maat voor elke functie. Google-stijl UI/UX met Framer Motion-animaties, veerkrachtige API-herstelmotor, multi-model ondersteuning (Mistral, Groq, Llama, Qwen) en installeerbare PWA.",
         "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Mistral AI", "Groq", "PWA"],
         "tags": ["AI", "Web App"],
-        "url": "#",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI-interviewtools"
       },
       "contentShapeshifterPro": {
         "name": "Content Shapeshifter Pro",
@@ -66,8 +84,8 @@
         "description": "Schraapt URL's of artikelen en gebruikt Groq AI met Llama 3 om 4 verschillende platformvarianten te genereren: Twitter-draden, LinkedIn-berichten, nieuwsbrieven en Instagram-onderschriften. Eénkliks kopiëren, real-time feedback en elegante donkere modus UI.",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Groq", "Cheerio"],
         "tags": ["AI", "Content Creatie"],
-        "url": "#",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI-contenttools"
       },
       "serenityAI": {
         "name": "SerenityAI",
@@ -76,7 +94,8 @@
         "technologies": ["React", "TypeScript", "JacLang", "Groq API", "LLM Architectuur", "AI Agenten"],
         "tags": ["AI", "Mentale Gezondheid"],
         "url": "https://serenityai.qzz.io/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI & Welzijn"
       },
       "tutaLearn": {
         "name": "TutaLearn - Afrikaans Educatief Platform",
@@ -85,7 +104,8 @@
         "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
         "tags": ["Software Engineering", "EdTech"],
         "url": "https://www.tutalearn.study/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI & EdTech"
       },
       "codebaseGenius": {
         "name": "Codebase Genius - AI Documentatiesysteem",
@@ -94,7 +114,8 @@
         "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
         "tags": ["AI", "Ontwikkelaarstools"],
         "url": "https://geniuscodebase.streamlit.app/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI-ontwikkelaarstools"
       },
       "weruDigital": {
         "name": "Weru Digital",
@@ -103,7 +124,8 @@
         "technologies": ["WordPress", "PWA", "Live Streaming", "AI", "SEO", "RSS", "Cross-platform"],
         "tags": ["Web Development", "Media"],
         "url": "https://werudigital.co.ke/",
-        "featured": true
+        "tier": "secondary",
+        "category": "Media & Streaming"
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -112,7 +134,8 @@
         "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
         "tags": ["Software Engineering", "Arbeidsmarkt"],
         "url": "https://www.kaziconnect.work/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI & Arbeidsmarkt"
       }
     }
   },
@@ -251,6 +274,13 @@
   },
   "badges": {
     "title": "Badges & Certificeringen",
+    "certified": "Gecertificeerd",
+    "showMore": "Meer Certificeringen Tonen",
+    "showLess": "Minder Tonen",
+    "alx_summary": {
+      "certification": "Data-analyse • Machine Learning • Data Science",
+      "description": "Drie ALX Africa-certificaten die de volledige data-pipeline dekken — analyse, machine learning en data science."
+    },
     "platforms": {
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
@@ -498,6 +528,27 @@
     "title": "Vitrine",
     "description": "Een samengestelde afspeellijst van opgenomen projectpresentaties, live demo's en technische walkthroughs die real-world toepassingen tonen die ik heb gebouwd."
   },
+  "writing": {
+    "title": "Teksten & Inzichten",
+    "subtitle": "Essays en praktijknotities over AI-engineering, codekwaliteit en software die standhoudt.",
+    "readMore": "Lees op LinkedIn",
+    "items": [
+      {
+        "title": "Code Review is de firewall tegen AI-slordigheid",
+        "venue": "LinkedIn Pulse",
+        "date": "Maart 2026",
+        "teaser": "AI-gegenereerde code is overal — maar AI-gegenereerde fouten ook. Een praktisch pleidooi voor code review als laatste verdedigingslinie tegen slordige, gehallucineerde output.",
+        "url": "#"
+      },
+      {
+        "title": "Code Utopia in 2026: De vier pijlers van productieklare code",
+        "venue": "LinkedIn Pulse",
+        "date": "Januari 2026",
+        "teaser": "Productieklare code leveren is geen magie. Testen, observeerbaarheid, beveiliging en schone architectuur scheiden indrukwekkende demo's van systemen die overleven.",
+        "url": "#"
+      }
+    ]
+  },
   "skills": {
     "aiData": "AI & Datawetenschap",
     "frontendMobile": "Frontend & Mobiel",
@@ -524,6 +575,7 @@
     "projects": "Projecten",
     "showcase": "Vitrine",
     "education": "Opleiding",
+    "writing": "Teksten",
     "badges": "Badges",
     "contact": "Neem Contact Op",
     "services": "Diensten"

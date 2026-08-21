@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+dev-dist
 *.local
 
 # Editor directories and files
@@ -28,3 +29,6 @@ dist-ssr
 .env
 .env.local
 .env.*.local
+
+# Local tooling artifact (SQLite DB)
+.freebuff

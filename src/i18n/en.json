@@ -14,15 +14,23 @@
     "message": "Check out Raymond Klanderman's Portfolio - Software Developer & AI Engineer",
     "copied": "Portfolio URL copied to clipboard!"
   },
+  "banner": {
+    "devray": {
+      "text": "Looking for custom software development or agency services?",
+      "cta": "Visit DevRay",
+      "ariaLabel": "DevRay services"
+    }
+  },
   "profile": {
     "title": "Professional Profile",
-    "description": "I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines.\n\nI design and ship production-ready applications using Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL, and Google Cloud. I specialize in intelligent workflows powered by APIs, autonomous agents, vector search, and Retrieval-Augmented Generation (RAG). My tooling includes Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph, and modern LLM providers like OpenAI, Anthropic, Gemini, Groq, and Ollama.\n\nBeyond engineering, I turn data into insights and insights into features that become products people rely on. I also create clear technical content—tutorials, docs, and demos—that helps teams adopt and extend complex systems with confidence.\n\nMy mission is simple: build tools that understand people, and empower people to build even better tools. Curiosity drives my work, from rapid ML prototyping to productionizing agents and automating end-to-end workflows.\n\nAlways open to collaborating with teams building the next generation of human-centered AI."
+    "description": "I've spent the past two years building digital systems inside public institutions — the Pan-African Parliament and a Member of Parliament's office — while independently designing and shipping AI products. I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines.\n\nI design and ship production-ready applications using Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL, and Google Cloud. I specialize in intelligent workflows powered by APIs, autonomous agents, vector search, and Retrieval-Augmented Generation (RAG). My tooling includes Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph, and modern LLM providers like OpenAI, Anthropic, Gemini, Groq, and Ollama.\n\nBeyond engineering, I turn data into insights and insights into features that become products people rely on. I also create clear technical content—tutorials, docs, and demos—that helps teams adopt and extend complex systems with confidence.\n\nMy mission is simple: build tools that understand people, and empower people to build even better tools. Curiosity drives my work, from rapid ML prototyping to productionizing agents and automating end-to-end workflows.\n\nAlways open to collaborating with teams building the next generation of human-centered AI."
   },
   "projects": {
     "title": "Featured Projects",
     "subtitle": "AI-powered platforms, intelligent tools, and full-stack applications built with modern technologies.",
     "viewProject": "View Live",
     "featured": "Featured",
+    "more": "More Projects",
     "comingSoon": "Coming Soon",
     "items": {
       "mrp2026": {
@@ -38,7 +46,8 @@
           "SciPy"
         ],
         "tags": ["Machine Learning", "Data Science"],
-        "featured": true
+        "tier": "secondary",
+        "category": "Data Engineering & Machine Learning"
       },
       "luminae": {
         "name": "Luminae",
@@ -56,7 +65,14 @@
         ],
         "tags": ["AI Engineering", "LLM", "Autonomous Agents"],
         "url": "https://luminae.qzz.io/",
-        "featured": true
+        "tier": "flagship",
+        "live": true,
+        "entered": "Entered — Mistral World Hackathon",
+        "metrics": [
+          { "label": "Orchestration", "value": "5-agent swarm" },
+          { "label": "Cost", "value": "~$0.05 / paper" },
+          { "label": "Turnaround", "value": "weeks → 3 minutes" }
+        ]
       },
       "aiHealth": {
         "name": "AI Health Chat",
@@ -71,7 +87,9 @@
         ],
         "tags": ["AI Engineering", "Healthcare"],
         "url": "https://aihealthchat.qzz.io/",
-        "featured": true
+        "tier": "flagship",
+        "live": true,
+        "award": "1st Place — PLP AI Innovation Hackathon"
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -87,8 +105,8 @@
           "PWA"
         ],
         "tags": ["AI Engineering", "Web App"],
-        "url": "#",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI Interview Tools"
       },
       "contentShapeshifterPro": {
         "name": "Content Shapeshifter Pro",
@@ -102,8 +120,8 @@
           "Cheerio"
         ],
         "tags": ["AI Engineering", "Content Creation"],
-        "url": "#",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI Content Tools"
       },
       "serenityAI": {
         "name": "SerenityAI",
@@ -119,7 +137,8 @@
         ],
         "tags": ["AI Engineering", "Mental Health"],
         "url": "https://serenityai.qzz.io/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI & Wellness"
       },
       "tutaLearn": {
         "name": "TutaLearn - African Educational Platform",
@@ -134,7 +153,8 @@
         ],
         "tags": ["Software Engineering", "EdTech"],
         "url": "https://www.tutalearn.study/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI & EdTech"
       },
       "codebaseGenius": {
         "name": "Codebase Genius - AI Documentation System",
@@ -150,7 +170,8 @@
         ],
         "tags": ["AI Engineering", "Developer Tools"],
         "url": "https://geniuscodebase.streamlit.app/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI Developer Tools"
       },
       "weruDigital": {
         "name": "Weru Digital",
@@ -167,7 +188,8 @@
         ],
         "tags": ["Web Development", "Media"],
         "url": "https://werudigital.co.ke/",
-        "featured": true
+        "tier": "secondary",
+        "category": "Media & Streaming"
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -182,7 +204,8 @@
         ],
         "tags": ["Software Engineering", "Job Market"],
         "url": "https://www.kaziconnect.work/",
-        "featured": true
+        "tier": "secondary",
+        "category": "AI & Job Market"
       }
     }
   },
@@ -317,6 +340,13 @@
   },
   "badges": {
     "title": "Badges & Certifications",
+    "certified": "Certified",
+    "showMore": "Show More Certifications",
+    "showLess": "Show Fewer",
+    "alx_summary": {
+      "certification": "Data Analytics • Machine Learning • Data Science",
+      "description": "Three ALX Africa certificates covering the full data pipeline — analytics, machine learning, and data science."
+    },
     "platforms": {
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
@@ -570,6 +600,27 @@
     "title": "Showcase",
     "description": "A curated playlist of recorded project presentations, live demos, and technical walkthroughs showcasing real-world applications I've built."
   },
+  "writing": {
+    "title": "Writing & Insights",
+    "subtitle": "Essays and field notes on AI engineering, code quality, and shipping software that lasts.",
+    "readMore": "Read on LinkedIn",
+    "items": [
+      {
+        "title": "Code Review Is the Firewall Against AI Slop",
+        "venue": "LinkedIn Pulse",
+        "date": "March 2026",
+        "teaser": "AI-generated code is everywhere — but AI-generated mistakes are too. A practical case for treating code review as the last line of defense against low-quality, hallucinated output.",
+        "url": "#"
+      },
+      {
+        "title": "Code Utopia in 2026: The Four Pillars of Production-Ready Code",
+        "venue": "LinkedIn Pulse",
+        "date": "January 2026",
+        "teaser": "Shipping production-ready code isn't magic. Testing, observability, security, and clean architecture separate demos that impress from systems that survive.",
+        "url": "#"
+      }
+    ]
+  },
   "skills": {
     "aiData": "AI & Data Science",
     "frontendMobile": "Frontend & Mobile",
@@ -581,6 +632,7 @@
     "projects": "Projects",
     "showcase": "Showcase",
     "education": "Education",
+    "writing": "Writing",
     "badges": "Badges",
     "contact": "Contact Me",
     "services": "Services"

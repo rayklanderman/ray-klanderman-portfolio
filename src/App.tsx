@@ -1,14 +1,16 @@
 import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { ToastContainer } from 'react-toastify';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import CV from './components/CV_new';
 const Projects = React.lazy(() => import('./components/Projects'));
 const Showcase = React.lazy(() => import('./components/Showcase'));
 const Education = React.lazy(() => import('./components/Education_new'));
+const Writing = React.lazy(() => import('./components/Writing'));
 const Badges = React.lazy(() => import('./components/Badges'));
 import Footer from './components/Footer';
+import DevRayBanner from './components/DevRayBanner';
 import ChatPage from './components/ChatPage';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import SectionSkeleton from './components/SectionSkeleton';
@@ -32,22 +34,24 @@ const HomePage: React.FC = () => (
         <Projects />
         <Showcase />
         <Education />
+        <Writing />
         <Badges />
       </Suspense>
     </main>
+    <DevRayBanner />
     <Footer />
   </motion.div>
 );
 
 const AppContent: React.FC = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/chat" element={<ChatPage />} />
       </Routes>
       <ToastContainerWithTheme />
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
@@ -55,7 +59,6 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <AppContent />
-      <ToastContainerWithTheme />
     </ThemeProvider>
   );
 };

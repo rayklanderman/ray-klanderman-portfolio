@@ -1,0 +1,91 @@
+/* ── LiveBadge ─────────────────────────────────────────────── */
+.ui-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-live);
+  white-space: nowrap;
+
+  &__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-live);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--accent-live) 60%, transparent);
+    animation: ui-live-pulse 2s ease-in-out infinite;
+  }
+}
+
+@keyframes ui-live-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.82);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-live-badge__dot {
+    animation: none;
+  }
+}
+
+/* ── WaxSeal ───────────────────────────────────────────────── */
+.ui-wax-seal {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transform: rotate(-8deg);
+
+  &__svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &__label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.4em;
+    text-align: center;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.55em;
+    line-height: 1.15;
+    color: var(--parchment);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transform: rotate(8deg); /* counter-rotate the label inside the tilted seal */
+  }
+
+  &--md {
+    width: 96px;
+    height: 96px;
+
+    .ui-wax-seal__label {
+      font-size: 0.62em;
+    }
+  }
+
+  &--sm {
+    width: 64px;
+    height: 64px;
+
+    .ui-wax-seal__label {
+      font-size: 0.5em;
+    }
+  }
+}
