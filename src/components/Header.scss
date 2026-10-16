@@ -168,6 +168,16 @@
     @media (max-width: 768px) {
       padding: 0.5rem 1rem;
     }
+
+    // Reserve a gutter on the right so the fixed EN/NL/FR switcher
+    // never overlaps the last nav items (was covering "AI Chat").
+    @media (min-width: 769px) {
+      &,
+      &.scrolled {
+        padding-right: 12.5rem;
+        padding-left: 2rem;
+      }
+    }
   }
 
   .menu-content {
@@ -197,6 +207,12 @@
     gap: 0.25rem;
     align-items: center;
 
+    // Mid-width desktops: wrap instead of clipping the last items
+    @media (min-width: 769px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      min-width: 0;
+    }
     @media (max-width: 768px) {
       position: fixed;
       top: 0;

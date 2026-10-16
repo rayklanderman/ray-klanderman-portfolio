@@ -103,7 +103,7 @@ $terracotta: #cb5521;      // Terracotta — decorative card accent
   --surface-1: #FFFFFF;
   --surface-2: #{$sticky-note-mint};
   --border-color: #{$pencil-gray};
-  --text-muted: #6b7a66; // muted forest-tinted gray, readable on cream
+  --text-muted: #4f5c49; // muted forest-tinted gray, AA (>=7:1) on cream
   --header-bg: #{$cream-paper};
   --primary-color: #{$forest-ink};
   --secondary-color: #{$forest-ink};
@@ -135,6 +135,31 @@ body {
 
 h1, h2, h3, h4, h5, h6, .section-title {
   font-family: var(--font-display);
+}
+
+// Global layout container. Several components (e.g. Education) use
+// `class="container"` directly; without this they spanned the full viewport
+// and their grids bled off-screen.
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+
+  @media (max-width: 480px) {
+    padding-inline: 1rem;
+  }
+}
+
+// Never allow horizontal page scroll from overflowing children
+html, body {
+  overflow-x: clip;
+}
+
+// Shared section subtitle: readable measure + contrast on both themes
+.section-subtitle {
+  color: var(--text-muted);
+  text-wrap: pretty;
 }
 
 // Mono utility for tags, dates, status lines

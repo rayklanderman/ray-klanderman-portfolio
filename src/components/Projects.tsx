@@ -105,9 +105,13 @@ const FlagshipDossier: FC<FlagshipDossierProps> = ({ project, projectKey, t }) =
             {project.entered && <span className="dossier__entered">{project.entered}</span>}
           </div>
           <h3 className="dossier__title">
-            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-              {project.name}
-            </a>
+            {projectUrl !== '#' ? (
+              <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+                {project.name}
+              </a>
+            ) : (
+              project.name
+            )}
           </h3>
           <p className="dossier__description">{project.description}</p>
 
@@ -193,9 +197,13 @@ const SecondaryCard: FC<SecondaryCardProps> = ({ project, projectKey, t }) => {
       <div className="secondary-card__body">
         <span className="secondary-card__category mono">{project.category}</span>
         <h4 className="secondary-card__title">
-          <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-            {project.name}
-          </a>
+          {projectUrl !== '#' ? (
+            <a href={projectUrl} target="_blank" rel="noopener noreferrer">
+              {project.name}
+            </a>
+          ) : (
+            project.name
+          )}
         </h4>
         <p className="secondary-card__description">{shortDescription}</p>
       </div>
