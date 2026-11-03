@@ -35,8 +35,8 @@
     "items": {
       "mrp2026": {
         "name": "Movie Recommendation Project 2026",
-        "shortDescription": "ML-powered movie rating predictor (RMSE ~0.82)",
-        "description": "A machine learning solution for the Movie Recommendation Hackathon 2026 using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics.",
+        "shortDescription": "ML-powered movie rating predictor (public-leaderboard RMSE 0.82)",
+        "description": "An entry in a private ExploreAI Academy community prediction competition on Kaggle (ALX final project), using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics. Public-leaderboard RMSE improved from 1.21 (baseline) to 0.82 across eight submissions; the final private result is pending.",
         "technologies": [
           "Python",
           "LightGBM",
@@ -52,7 +52,7 @@
       "luminae": {
         "name": "Luminae",
         "shortDescription": "Autonomous research analysis platform with multi-agent AI swarm",
-        "description": "Upload any document and Luminae's 5 AI agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI's multimodal ecosystem for deep academic paper analysis at ~$0.05 per paper.",
+        "description": "Upload any document and Luminae's 5 AI agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI's multimodal ecosystem for deep academic paper analysis.",
         "technologies": [
           "Next.js",
           "TypeScript",
@@ -69,27 +69,27 @@
         "live": true,
         "entered": "Entered — Mistral World Hackathon",
         "metrics": [
-          { "label": "Orchestration", "value": "5-agent swarm" },
-          { "label": "Cost", "value": "~$0.05 / paper" },
-          { "label": "Turnaround", "value": "weeks → 3 minutes" }
+          { "label": "Orchestration", "value": "5-agent swarm" }
         ]
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "shortDescription": "AI-powered healthcare consultation platform",
-        "description": "AI-powered healthcare consultation platform. Symptom checking and health advice using secure AI models. Won 1st place in an innovation hackathon.",
+        "shortDescription": "AI health guidance on web and WhatsApp (live public beta)",
+        "description": "Live public beta. AI health triage and general guidance in five languages (English, Kiswahili, French, Spanish, Dutch) on an installable web app and WhatsApp, with photo triage, a health tracker and SOAP visit summaries. Educational guidance, not a diagnosis. First place at the Power Learn Project Class of 2024 graduate hackathon.",
         "technologies": [
-          "Next.js",
-          "TypeScript",
+          "React 19",
+          "Vite",
+          "Vercel",
           "Supabase",
-          "xAI",
-          "Grok"
+          "Groq",
+          "OpenRouter",
+          "Mistral"
         ],
         "tags": ["AI Engineering", "Healthcare"],
         "url": "https://aihealthchat.qzz.io/",
         "tier": "flagship",
         "live": true,
-        "award": "1st Place — PLP AI Innovation Hackathon"
+        "award": "1st Place — PLP Class of 2024 Graduate Hackathon"
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -142,13 +142,15 @@
       },
       "tutaLearn": {
         "name": "TutaLearn - African Educational Platform",
-        "shortDescription": "AI-powered educational PWA for African students",
-        "description": "AI-powered educational platform for African students. Features include personalized learning paths, WhatsApp integration for seamless access, and adaptive assessments that adjust to each learner's pace.",
+        "shortDescription": "AI learning platform for Kenya's CBC curriculum",
+        "description": "AI-powered learning platform for Kenya's CBC curriculum on WhatsApp and web, in English and Kiswahili, usable without a smartphone. Live and in active development with early testers.",
         "technologies": [
-          "Python",
+          "Next.js",
+          "React",
           "TypeScript",
-          "Groq API",
-          "PWA",
+          "Supabase",
+          "OpenRouter",
+          "M-Pesa (Daraja)",
           "WhatsApp API"
         ],
         "tags": ["Software Engineering", "EdTech"],
@@ -172,24 +174,6 @@
         "url": "https://geniuscodebase.streamlit.app/",
         "tier": "secondary",
         "category": "AI Developer Tools"
-      },
-      "weruDigital": {
-        "name": "Weru Digital",
-        "shortDescription": "Android app for Weru TV and FM streaming",
-        "description": "An Android app for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility. Available on Google Play.",
-        "technologies": [
-          "WordPress",
-          "PWA",
-          "Live Streaming",
-          "AI",
-          "SEO",
-          "RSS",
-          "Cross-platform"
-        ],
-        "tags": ["Web Development", "Media"],
-        "url": "https://werudigital.co.ke/",
-        "tier": "secondary",
-        "category": "Media & Streaming"
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -221,9 +205,9 @@
         "period": "2025 – 2028 (Projected)",
         "status": "In Progress",
         "description": [
-          "Current Standing: SAP",
-          "Cumulative GPA: 3.95",
-          "Credits Earned: 21 / 120 (As of April 2026)",
+          "Honors: President's List, Term 5 of 2025-2026",
+          "Cumulative GPA: 3.98",
+          "Credits Earned: 45 / 120 (As of September 2026)",
           "Pursuing a comprehensive degree in Computer Science with a focus on software engineering, algorithms, and modern technologies."
         ],
         "skills": []
@@ -248,7 +232,7 @@
         "name": "Data Science Program",
         "type": "completed",
         "institution": "ALX",
-        "period": "2025 – Present",
+        "period": "2025 – Apr 2026",
         "status": "Completed",
         "description": [
           "Advanced from completed Data Analytics Cohort 2025",
@@ -307,7 +291,7 @@
         "name": "Applied Data Science Lab",
         "type": "completed",
         "institution": "WorldQuant University",
-        "period": "2025 – Present",
+        "period": "Jan 2026",
         "status": "Completed",
         "description": [
           "Advanced data analysis and machine learning techniques",
@@ -341,6 +325,12 @@
   "badges": {
     "title": "Badges & Certifications",
     "certified": "Certified",
+    "issuedBy": "Issued by",
+    "expires": "Expires",
+    "viewCertification": "View Certification",
+    "viewProfile": "View Profile",
+    "badgesEarned": "badges earned",
+    "moreSkills": "more",
     "showMore": "Show More Certifications",
     "showLess": "Show Fewer",
     "alx_summary": {
@@ -348,6 +338,24 @@
       "description": "Three ALX Africa certificates covering the full data pipeline — analytics, machine learning, and data science."
     },
     "platforms": {
+      "google_pca": {
+        "platform": "Google Cloud",
+        "certification": "Professional Cloud Architect",
+        "description": "Professional Cloud Architects enable organizations to leverage Google Cloud technologies. They design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives.",
+        "issued_by": "Google Cloud",
+        "expiration": "July 15, 2028",
+        "credential_url": "https://www.credly.com/badges/1eb3782a-a4cf-42b9-859c-80ab36498448",
+        "skills": [
+          "Cloud Architecture",
+          "Cloud Security",
+          "Google Cloud Platform (GCP)",
+          "GKE",
+          "Identity And Access Management (IAM)",
+          "Networking",
+          "Scalability",
+          "Workload Migration"
+        ]
+      },
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
         "certification": "2025 Certified AI Foundations Associate",

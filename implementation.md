@@ -177,7 +177,7 @@ This is the largest phase. The current state: **all 11 projects are `featured: t
 2. Add optional fields: `award` (string, e.g. "1st Place — PLP AI Innovation Hackathon"), `entered` (string, e.g. "Entered — Mistral World Hackathon"), `live` (boolean), `metrics` (array of `{ label, value }` mono-rendered stat lines), `category` (for the secondary grid, e.g. "Data Engineering & Machine Learning").
 3. Tier assignment:
    - **Flagship:** `aiHealth`, `luminae`.
-   - **Secondary:** `liveInterviewer`, `contentShapeshifterPro`, `serenityAI`, `kaziConnect`, `codebaseGenius`, `tutaLearn`, `weruDigital`, `mrp2026` (category: *Data Engineering & Machine Learning*). *(WeatherWise Planner is in the suggestion list but has no data in the codebase — add it only if Ray supplies name/URL/stack, as a secondary card.)*
+   - **Secondary:** `liveInterviewer`, `contentShapeshifterPro`, `serenityAI`, `kaziConnect`, `codebaseGenius`, `tutaLearn`, `mrp2026` (category: *Data Engineering & Machine Learning*). *(WeatherWise Planner is in the suggestion list but has no data in the codebase — add it only if Ray supplies name/URL/stack, as a secondary card.)*
 4. Flagship content:
    - **AI Health Chat:** `award: "1st Place — PLP AI Innovation Hackathon"`, `live: true`, metrics for multilingual support and WHO/CDC/Mayo Clinic sourcing **only if Ray confirms them** (see content table); otherwise ship award + live + existing description.
    - **Luminae:** `live: true`, `entered: "Entered — Mistral World Hackathon"`, metrics: `5-agent orchestration`, `~$0.05 / paper`, `weeks → 3 minutes`.

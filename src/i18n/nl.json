@@ -35,8 +35,8 @@
     "items": {
       "mrp2026": {
         "name": "Movie Recommendation Project 2026",
-        "shortDescription": "ML-aangedreven filmwaardepredictor (RMSE ~0.82)",
-        "description": "Een machine learning-oplossing voor de Movie Recommendation Hackathon 2026 met behulp van Hybrid LightGBM op 50-factor SVD matrixfactorisatie. Ontwikkelde 156 features over 10M rijen zonder sampling — waaronder collaboratieve signalen, content-gebaseerde coderingen en temporele dynamiek.",
+        "shortDescription": "ML-aangedreven filmwaardepredictor (public-leaderboard RMSE 0.82)",
+        "description": "Een inzending voor een besloten voorspellingswedstrijd van de ExploreAI Academy-community op Kaggle (ALX-eindproject), met Hybrid LightGBM op 50-factor SVD matrixfactorisatie. Ontwikkelde 156 features over 10M rijen zonder sampling — waaronder collaboratieve signalen, content-gebaseerde coderingen en temporele dynamiek. De public-leaderboard RMSE verbeterde van 1.21 (baseline) naar 0.82 over acht inzendingen; het uiteindelijke private resultaat is nog in afwachting.",
         "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
         "tags": ["Machine Learning", "Data Science"],
         "tier": "secondary",
@@ -45,7 +45,7 @@
       "luminae": {
         "name": "Luminae",
         "shortDescription": "Autonoom onderzoeksanalyseplatform met multi-agent AI-zwerm",
-        "description": "Upload elk document en de 5 AI-agenten van Luminae leveren methodologiekritiek, data-audit, experimentontwerp, subsidiegeneratie en kruisagentsynthese. Maakt gebruik van Mistral AI's multimodale ecosysteem voor diepgaande academische analyse tegen ~$0,05 per paper.",
+        "description": "Upload elk document en de 5 AI-agenten van Luminae leveren methodologiekritiek, data-audit, experimentontwerp, subsidiegeneratie en kruisagentsynthese. Maakt gebruik van Mistral AI's multimodale ecosysteem voor diepgaande academische analyse.",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
         "tags": ["AI", "LLM", "Autonome Agenten"],
         "url": "https://luminae.qzz.io/",
@@ -53,21 +53,19 @@
         "live": true,
         "entered": "Ingeschreven — Mistral World Hackathon",
         "metrics": [
-          { "label": "Orchestratie", "value": "5-agenten zwerm" },
-          { "label": "Kosten", "value": "~$0,05 / paper" },
-          { "label": "Doorlooptijd", "value": "weken → 3 minuten" }
+          { "label": "Orchestratie", "value": "5-agenten zwerm" }
         ]
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "shortDescription": "AI-aangedreven gezondheidsconsultatieplatform",
-        "description": "AI-aangedreven gezondheidsconsultatieplatform. Symptoomcontrole en gezondheidsadvies met behulp van beveiligde AI-modellen. Won 1e plaats in een innovatiehackathon.",
-        "technologies": ["Next.js", "TypeScript", "Supabase", "xAI", "Grok"],
+        "shortDescription": "AI-gezondheidsadvies via web en WhatsApp (openbare bèta)",
+        "description": "Openbare bèta. AI-triage en algemeen gezondheidsadvies in vijf talen (Engels, Swahili, Frans, Spaans, Nederlands) via een installeerbare webapp en WhatsApp, met fototriage, een gezondheidstracker en SOAP-bezoeksamenvattingen. Educatief advies, geen diagnose. Eerste plaats bij de afstudeerhackathon van de Power Learn Project Class of 2024.",
+        "technologies": ["React 19", "Vite", "Vercel", "Supabase", "Groq", "OpenRouter", "Mistral"],
         "tags": ["AI", "Gezondheid"],
         "url": "https://aihealthchat.qzz.io/",
         "tier": "flagship",
         "live": true,
-        "award": "1e plaats — PLP AI Innovation Hackathon"
+        "award": "1e plaats — PLP Class of 2024 afstudeerhackathon"
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -99,9 +97,9 @@
       },
       "tutaLearn": {
         "name": "TutaLearn - Afrikaans Educatief Platform",
-        "shortDescription": "AI-aangedreven educatieve PWA voor Afrikaanse studenten",
-        "description": "AI-aangedreven educatief platform voor Afrikaanse studenten. Functies omvatten gepersonaliseerde leerpaden, WhatsApp-integratie voor naadloze toegang en adaptieve beoordelingen die zich aanpassen aan het tempo van elke leerling.",
-        "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
+        "shortDescription": "AI-leerplatform voor het Keniaanse CBC-curriculum",
+        "description": "AI-leerplatform voor het Keniaanse CBC-curriculum via WhatsApp en web, in het Engels en Swahili, te gebruiken zonder smartphone. Live en in actieve ontwikkeling met vroege testers.",
+        "technologies": ["Next.js", "React", "TypeScript", "Supabase", "OpenRouter", "M-Pesa (Daraja)", "WhatsApp API"],
         "tags": ["Software Engineering", "EdTech"],
         "url": "https://www.tutalearn.study/",
         "tier": "secondary",
@@ -116,16 +114,6 @@
         "url": "https://geniuscodebase.streamlit.app/",
         "tier": "secondary",
         "category": "AI-ontwikkelaarstools"
-      },
-      "weruDigital": {
-        "name": "Weru Digital",
-        "shortDescription": "Android-app voor Weru TV en FM",
-        "description": "Een Android-app voor Weru TV en FM met live radio streaming, live TV streaming en geplande programmering. SEO-vriendelijk met automatisch bijwerkende RSS nieuwskanalen, AI-optimalisatie, PWA-ondersteuning en cross-platform compatibiliteit. Beschikbaar op Google Play.",
-        "technologies": ["WordPress", "PWA", "Live Streaming", "AI", "SEO", "RSS", "Cross-platform"],
-        "tags": ["Web Development", "Media"],
-        "url": "https://werudigital.co.ke/",
-        "tier": "secondary",
-        "category": "Media & Streaming"
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -151,9 +139,9 @@
         "period": "2025 – 2028 (Verwacht)",
         "status": "Bezig",
         "description": [
-          "Huidige Status: SAP",
-          "Cumulatief GPA: 3.95",
-          "Behaalde Studiepunten: 21 / 120 (Vanaf april 2026)",
+          "Eervolle vermelding: President's List, term 5 van 2025-2026",
+          "Cumulatief GPA: 3.98",
+          "Behaalde Studiepunten: 45 / 120 (Vanaf september 2026)",
           "Volgt een uitgebreide opleiding in Computer Science met focus op software-engineering, algoritmen en moderne technologieën."
         ],
         "skills": []
@@ -178,7 +166,7 @@
         "name": "Data Science Program",
         "type": "completed",
         "institution": "ALX",
-        "period": "2025 – Present",
+        "period": "2025 – apr. 2026",
         "status": "Voltooid",
         "description": [
           "Voortgekomen uit de voltooide Data Analytics Cohort 2025",
@@ -237,7 +225,7 @@
         "name": "Applied Data Science Lab",
         "type": "completed",
         "institution": "WorldQuant University",
-        "period": "2025 – Present",
+        "period": "Jan 2026",
         "status": "Voltooid",
         "description": [
           "Geavanceerde data-analyse en machine learning-technieken",
@@ -275,6 +263,12 @@
   "badges": {
     "title": "Badges & Certificeringen",
     "certified": "Gecertificeerd",
+    "issuedBy": "Uitgegeven door",
+    "expires": "Verloopt op",
+    "viewCertification": "Certificering bekijken",
+    "viewProfile": "Profiel bekijken",
+    "badgesEarned": "badges behaald",
+    "moreSkills": "meer",
     "showMore": "Meer Certificeringen Tonen",
     "showLess": "Minder Tonen",
     "alx_summary": {
@@ -282,6 +276,24 @@
       "description": "Drie ALX Africa-certificaten die de volledige data-pipeline dekken — analyse, machine learning en data science."
     },
     "platforms": {
+      "google_pca": {
+        "platform": "Google Cloud",
+        "certification": "Professional Cloud Architect",
+        "description": "Professional Cloud Architects helpen organisaties profiteren van Google Cloud-technologieën. Ze ontwerpen, ontwikkelen en beheren robuuste, veilige, schaalbare, zeer beschikbare en dynamische oplossingen die bedrijfsdoelen ondersteunen.",
+        "issued_by": "Google Cloud",
+        "expiration": "July 15, 2028",
+        "credential_url": "https://www.credly.com/badges/1eb3782a-a4cf-42b9-859c-80ab36498448",
+        "skills": [
+          "Cloud Architecture",
+          "Cloud Security",
+          "Google Cloud Platform (GCP)",
+          "GKE",
+          "Identity And Access Management (IAM)",
+          "Networking",
+          "Scalability",
+          "Workload Migration"
+        ]
+      },
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
         "certification": "2025 Certified AI Foundations Associate",

@@ -6,7 +6,10 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import { WaxSeal } from './ui';
 import './Badges.scss';
 
-type BadgeTier = 'primary' | 'more';
+// 'grouped' badges are summarised inside another card (e.g. ALX) and not listed on their own.
+type BadgeTier = 'primary' | 'more' | 'grouped';
+
+const MAX_SKILLS = 4;
 
 interface BadgeEntry {
   id: string;
@@ -15,10 +18,11 @@ interface BadgeEntry {
 }
 
 const badgeKeys: BadgeEntry[] = [
+  { id: 'google_pca', logo: '/badges/Professional Cloud Architect Certification.png', tier: 'primary' },
   { id: 'oracle_cloud', logo: '/badges/Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate.png', tier: 'primary' },
+  { id: 'linux_kcna', logo: '/badges/KCNA-Kubernetes and Cloud Native Associate.png', tier: 'primary' },
   { id: 'worldquant_data_science', logo: '/badges/Applied Data Science Lab.png', tier: 'primary' },
   { id: 'google_adk', logo: '/badges/Engineer AI Agents with Agent Development Kit (ADK).png', tier: 'primary' },
-  { id: 'linux_kcna', logo: '/badges/KCNA-Kubernetes and Cloud Native Associate.png', tier: 'primary' },
   { id: 'google_skills', logo: '/badges/Google skills.gif', tier: 'more' },
   { id: 'aws_educate_genai', logo: '/badges/AWS Educate Introduction to Generative AI - Training Badge.png', tier: 'more' },
   { id: 'aws_educate_ml', logo: '/badges/AWS Educate Machine Learning Foundations - Training Badge.png', tier: 'more' },
@@ -30,9 +34,9 @@ const badgeKeys: BadgeEntry[] = [
   { id: 'google_load_balancing', logo: '/badges/Implement Load Balancing on Compute Engine Skill Badge.png', tier: 'more' },
   { id: 'google_serverless', logo: '/badges/Develop Serverless Applications on Cloud Run Skill Badge.png', tier: 'more' },
   { id: 'google_prompt_design', logo: '/badges/Prompt Design in Vertex AI Skill Badge.png', tier: 'more' },
-  { id: 'alx_data_analytics', logo: '/badges/Data-analytics-certificate-raymond-klanderman(ALX).png', tier: 'more' },
-  { id: 'alx_machine_learning', logo: '/badges/Machine-learning-certificate-raymond-klanderman(ALX).png', tier: 'more' },
-  { id: 'alx_data_science', logo: '/badges/Data-science-certificate-raymond-klanderman(ALX).png', tier: 'more' }
+  { id: 'alx_data_analytics', logo: '/badges/Data-analytics-certificate-raymond-klanderman(ALX).png', tier: 'grouped' },
+  { id: 'alx_machine_learning', logo: '/badges/Machine-learning-certificate-raymond-klanderman(ALX).png', tier: 'grouped' },
+  { id: 'alx_data_science', logo: '/badges/Data-science-certificate-raymond-klanderman(ALX).png', tier: 'grouped' }
 ];
 
 interface Platform {
@@ -67,20 +71,26 @@ const resolvePlatform = (badge: BadgeEntry, t: TFunction): Platform => ({
   tier: badge.tier
 });
 
-const renderLogo = (platform: Platform) => (
-  <img
-    src={platform.logo}
-    alt={platform.platform}
-    className="platform-logo"
-    onError={(e) => {
-      const target = e.target as HTMLImageElement;
-      target.style.display = 'none';
-      const fallback = document.createElement('div');
-      fallback.className = 'platform-fallback';
-      fallback.textContent = platform.platform.charAt(0).toUpperCase();
-      target.parentNode?.insertBefore(fallback, target.nextSibling);
-    }}
-  />
+const targetUrl = (platform: Platform) =>
+  platform.badgeUrl || platform.credentialUrl || platform.profileUrl;
+
+const renderLogo = (platform: Pick<Platform, 'platform' | 'logo'>) => (
+  <span className="logo-box">
+    <img
+      src={platform.logo}
+      alt={platform.platform}
+      className="platform-logo"
+      loading="lazy"
+      onError={(e) => {
+        const target = e.target as HTMLImageElement;
+        target.style.display = 'none';
+        const fallback = document.createElement('span');
+        fallback.className = 'platform-fallback';
+        fallback.textContent = platform.platform.charAt(0).toUpperCase();
+        target.parentNode?.appendChild(fallback);
+      }}
+    />
+  </span>
 );
 
 const ALXSummaryCard: React.FC<{ t: TFunction }> = ({ t }) => {
@@ -91,18 +101,17 @@ const ALXSummaryCard: React.FC<{ t: TFunction }> = ({ t }) => {
   ];
 
   return (
-    <div className="platform-card platform-card--alx">
-      <div className="platform-header">
+    <>
+      <header className="card-head">
         {renderLogo({
-          id: 'alx',
           platform: 'ALX Africa',
           logo: badgeKeys.find((b) => b.id === 'alx_data_analytics')?.logo || ''
-        } as Platform)}
-        <h3>ALX Africa</h3>
-        <div className="platform-certification">
-          {t('badges.alx_summary.certification')}
+        })}
+        <div className="card-titles">
+          <span className="card-eyebrow">ALX Africa</span>
+          <h3>{t('badges.alx_summary.certification')}</h3>
         </div>
-      </div>
+      </header>
       <p className="platform-description">{t('badges.alx_summary.description')}</p>
       <ul className="alx-links">
         {links.map((link) => {
@@ -111,13 +120,14 @@ const ALXSummaryCard: React.FC<{ t: TFunction }> = ({ t }) => {
           return (
             <li key={link.id}>
               <a href={url} target="_blank" rel="noopener noreferrer">
-                {link.name} <FaExternalLinkAlt />
+                <span>{link.name}</span>
+                <FaExternalLinkAlt aria-hidden="true" />
               </a>
             </li>
           );
         })}
       </ul>
-    </div>
+    </>
   );
 };
 
@@ -133,28 +143,40 @@ const Badges: React.FC = () => {
 
   const toggle = () => setIsExpanded((prev) => !prev);
 
+  const cardMotion = (index: number) => ({
+    initial: { opacity: 0, y: 30 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, margin: '-50px' },
+    transition: { duration: 0.5, delay: 0.05 * index }
+  });
+
   const moreGrid = (
     <div id="more-certs" className="platforms-grid platforms-grid--dense">
-      {more.map((platform) => (
-        <div key={platform.id} className="platform-card platform-card--dense">
-          <div className="platform-header">
-            {renderLogo(platform)}
-            <div className="dense-info">
-              <h3>{platform.platform}</h3>
-              {platform.issuedBy && <div className="dense-issuer">{platform.issuedBy}</div>}
-            </div>
-          </div>
+      {more.map((platform) => {
+        const title = platform.certification || platform.platform;
+        const subtitle = platform.certification
+          ? platform.platform
+          : platform.badgesCount
+            ? `${platform.badgesCount} ${t('badges.badgesEarned', { defaultValue: 'badges earned' })}`
+            : '';
+        return (
           <a
-            href={platform.badgeUrl || platform.credentialUrl || platform.profileUrl}
+            key={platform.id}
+            href={targetUrl(platform)}
             target="_blank"
             rel="noopener noreferrer"
-            className="dense-link"
-            aria-label={`View ${platform.platform} credential`}
+            className="platform-card platform-card--dense"
+            aria-label={`${title} — ${platform.platform}`}
           >
-            <FaExternalLinkAlt />
+            {renderLogo(platform)}
+            <div className="dense-info">
+              <h3>{title}</h3>
+              {subtitle && <div className="dense-issuer">{subtitle}</div>}
+            </div>
+            <FaExternalLinkAlt className="dense-icon" aria-hidden="true" />
           </a>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 
@@ -172,69 +194,82 @@ const Badges: React.FC = () => {
         </motion.h2>
 
         <div className="platforms-grid">
-          <ALXSummaryCard t={t} />
-          {primary.map((platform, index) => (
-            <motion.div
-              key={platform.id}
-              className="platform-card"
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{ duration: 0.5, delay: 0.05 * index }}
-            >
-              <WaxSeal size="sm" title={platform.certification} className="platform-card__seal">
-                {t('badges.certified')}
-              </WaxSeal>
-              <div className="platform-header">
-                {renderLogo(platform)}
-                <h3>{platform.platform}</h3>
-              </div>
-
-              {platform.certification && (
-                <div className="platform-certification">{platform.certification}</div>
-              )}
-
-              <p className="platform-description">{platform.description}</p>
-
-              {platform.badgesCount && (
-                <div className="badges-count">
-                  <span className="count">{platform.badgesCount}</span> badges earned
-                </div>
-              )}
-
-              {platform.certification && platform.expiration && (
-                <div className="certification-details">
-                  <div className="issued-by">Issued by: {platform.issuedBy}</div>
-                  <div className="expiration">Expires: {platform.expiration}</div>
-                </div>
-              )}
-
-              {platform.certification && platform.issuedBy && !platform.expiration && (
-                <div className="certification-details">
-                  <div className="issued-by">Issued by: {platform.issuedBy}</div>
-                </div>
-              )}
-
-              {platform.skills && platform.skills.length > 0 && (
-                <div className="platform-skills">
-                  {platform.skills.map((skill, i) => (
-                    <span key={i} className="skill-tag">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              )}
-
-              <a
-                href={platform.badgeUrl || platform.credentialUrl || platform.profileUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="platform-link"
+          {primary.map((platform, index) => {
+            const title = platform.certification || platform.platform;
+            const visibleSkills = platform.skills.slice(0, MAX_SKILLS);
+            const hiddenSkills = platform.skills.slice(MAX_SKILLS);
+            return (
+              <motion.article
+                key={platform.id}
+                className="platform-card"
+                {...cardMotion(index)}
               >
-                {platform.certification ? 'View Certification' : 'View Profile'} →
-              </a>
-            </motion.div>
-          ))}
+                <header className="card-head">
+                  {renderLogo(platform)}
+                  <div className="card-titles">
+                    <span className="card-eyebrow">{platform.platform}</span>
+                    <h3>{title}</h3>
+                  </div>
+                </header>
+
+                <p className="platform-description">{platform.description}</p>
+
+                {visibleSkills.length > 0 && (
+                  <ul className="platform-skills" aria-label="Skills">
+                    {visibleSkills.map((skill) => (
+                      <li key={skill} className="skill-tag">
+                        {skill}
+                      </li>
+                    ))}
+                    {hiddenSkills.length > 0 && (
+                      <li
+                        className="skill-tag skill-tag--more"
+                        title={hiddenSkills.join(', ')}
+                      >
+                        +{hiddenSkills.length} {t('badges.moreSkills', { defaultValue: 'more' })}
+                      </li>
+                    )}
+                  </ul>
+                )}
+
+                <div className="card-footer">
+                  <dl className="card-meta">
+                    {platform.issuedBy && (
+                      <div>
+                        <dt>{t('badges.issuedBy', { defaultValue: 'Issued by' })}</dt>
+                        <dd>{platform.issuedBy}</dd>
+                      </div>
+                    )}
+                    {platform.expiration && (
+                      <div>
+                        <dt>{t('badges.expires', { defaultValue: 'Expires' })}</dt>
+                        <dd>{platform.expiration}</dd>
+                      </div>
+                    )}
+                  </dl>
+                  <WaxSeal size="sm" title={title} className="card-footer__seal">
+                    {t('badges.certified')}
+                  </WaxSeal>
+                </div>
+
+                <a
+                  href={targetUrl(platform)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="platform-link"
+                >
+                  {platform.certification
+                    ? t('badges.viewCertification', { defaultValue: 'View Certification' })
+                    : t('badges.viewProfile', { defaultValue: 'View Profile' })}{' '}
+                  →
+                </a>
+              </motion.article>
+            );
+          })}
+
+          <motion.article className="platform-card platform-card--alx" {...cardMotion(primary.length)}>
+            <ALXSummaryCard t={t} />
+          </motion.article>
         </div>
 
         {moreCount > 0 && (

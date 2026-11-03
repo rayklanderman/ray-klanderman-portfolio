@@ -62,11 +62,6 @@ const projectData: Record<string, { github: string; url: string; playstore?: str
     github: 'https://github.com/rayklanderman/jaseci-proj',
     url: 'https://geniuscodebase.streamlit.app/'
   },
-  weruDigital: {
-    github: 'https://github.com/rayklanderman/weru_digital',
-    url: 'https://werudigital.co.ke/',
-    playstore: 'https://play.google.com/store/apps/details?id=com.werudigital.weru_digital&hl=en_US'
-  },
   kaziConnect: {
     github: 'https://github.com/rayklanderman/kazi-connect',
     url: 'https://www.kaziconnect.work/'

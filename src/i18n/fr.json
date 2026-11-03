@@ -35,8 +35,8 @@
     "items": {
       "mrp2026": {
         "name": "Movie Recommendation Project 2026",
-        "shortDescription": "Prédicteur de notes de films par ML (RMSE ~0.82)",
-        "description": "Une solution de machine learning pour le hackathon de recommandation de films 2026 utilisant Hybrid LightGBM sur une factorisation matricielle SVD à 50 facteurs. A conçu 156 caractéristiques sur 10M de lignes sans échantillonnage — incluant signaux collaboratifs, encodages basés sur le contenu et dynamiques temporelles.",
+        "shortDescription": "Prédicteur de notes de films par ML (RMSE sur classement public 0.82)",
+        "description": "Participation à une compétition de prédiction privée de la communauté ExploreAI Academy sur Kaggle (projet final ALX), utilisant Hybrid LightGBM sur une factorisation matricielle SVD à 50 facteurs. A conçu 156 caractéristiques sur 10M de lignes sans échantillonnage — incluant signaux collaboratifs, encodages basés sur le contenu et dynamiques temporelles. Le RMSE sur le classement public est passé de 1.21 (référence) à 0.82 en huit soumissions ; le résultat privé final est en attente.",
         "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
         "tags": ["Machine Learning", "Data Science"],
         "tier": "secondary",
@@ -45,7 +45,7 @@
       "luminae": {
         "name": "Luminae",
         "shortDescription": "Plateforme d'analyse de recherche autonome avec essaim d'agents IA",
-        "description": "Téléchargez n'importe quel document et les 5 agents IA de Luminae fournissent une critique méthodologique, un audit de données, une conception d'expériences, une génération de subventions et une synthèse croisée. Utilise l'écosystème multimodal de Mistral AI pour une analyse approfondie des documents académiques à ~0,05$ par article.",
+        "description": "Téléchargez n'importe quel document et les 5 agents IA de Luminae fournissent une critique méthodologique, un audit de données, une conception d'expériences, une génération de subventions et une synthèse croisée. Utilise l'écosystème multimodal de Mistral AI pour une analyse approfondie des documents académiques.",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
         "tags": ["IA", "LLM", "Agents Autonomes"],
         "url": "https://luminae.qzz.io/",
@@ -53,21 +53,19 @@
         "live": true,
         "entered": "Participé — Mistral World Hackathon",
         "metrics": [
-          { "label": "Orchestration", "value": "essaim de 5 agents" },
-          { "label": "Coût", "value": "~0,05 $ / article" },
-          { "label": "Délai", "value": "semaines → 3 minutes" }
+          { "label": "Orchestration", "value": "essaim de 5 agents" }
         ]
       },
       "aiHealth": {
         "name": "AI Health Chat",
-        "shortDescription": "Plateforme de consultation médicale alimentée par l'IA",
-        "description": "Plateforme de consultation médicale alimentée par l'IA. Vérification des symptômes et conseils de santé utilisant des modèles d'IA sécurisés. A remporté la 1ère place dans un hackathon d'innovation.",
-        "technologies": ["Next.js", "TypeScript", "Supabase", "xAI", "Grok"],
+        "shortDescription": "Conseils de santé par IA sur le web et WhatsApp (bêta publique)",
+        "description": "Bêta publique. Triage et conseils de santé généraux par IA en cinq langues (anglais, swahili, français, espagnol, néerlandais) sur une application web installable et WhatsApp, avec triage par photo, suivi de santé et résumés de visite SOAP. Conseils éducatifs, pas un diagnostic. 1ère place au hackathon des diplômés de la promotion 2024 du Power Learn Project.",
+        "technologies": ["React 19", "Vite", "Vercel", "Supabase", "Groq", "OpenRouter", "Mistral"],
         "tags": ["IA", "Santé"],
         "url": "https://aihealthchat.qzz.io/",
         "tier": "flagship",
         "live": true,
-        "award": "1ère place — PLP AI Innovation Hackathon"
+        "award": "1ère place — PLP Hackathon des diplômés 2024"
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -99,9 +97,9 @@
       },
       "tutaLearn": {
         "name": "TutaLearn - Plateforme Éducative Africaine",
-        "shortDescription": "PWA éducative alimentée par l'IA pour les étudiants africains",
-        "description": "Plateforme éducative alimentée par l'IA pour les étudiants africains. Fonctionnalités incluant des parcours d'apprentissage personnalisés, intégration WhatsApp pour un accès fluide et évaluations adaptatives.",
-        "technologies": ["Python", "TypeScript", "Groq API", "PWA", "WhatsApp API"],
+        "shortDescription": "Plateforme d'apprentissage par IA pour le programme CBC du Kenya",
+        "description": "Plateforme d'apprentissage alimentée par l'IA pour le programme CBC du Kenya, sur WhatsApp et le web, en anglais et en swahili, utilisable sans smartphone. En ligne et en développement actif avec des testeurs précoces.",
+        "technologies": ["Next.js", "React", "TypeScript", "Supabase", "OpenRouter", "M-Pesa (Daraja)", "WhatsApp API"],
         "tags": ["Génie Logiciel", "EdTech"],
         "url": "https://www.tutalearn.study/",
         "tier": "secondary",
@@ -116,16 +114,6 @@
         "url": "https://geniuscodebase.streamlit.app/",
         "tier": "secondary",
         "category": "Outils développeur IA"
-      },
-      "weruDigital": {
-        "name": "Weru Digital",
-        "shortDescription": "Application Android pour Weru TV et FM",
-        "description": "Une application Android pour Weru TV et FM avec streaming radio en direct, streaming TV en direct et programmation planifiée. Optimisé SEO avec flux RSS de nouvelles auto-mise à jour, optimisation IA, support PWA et compatibilité multiplateforme. Disponible sur Google Play.",
-        "technologies": ["WordPress", "PWA", "Streaming en Direct", "IA", "SEO", "RSS", "Multiplateforme"],
-        "tags": ["Développement Web", "Média"],
-        "url": "https://werudigital.co.ke/",
-        "tier": "secondary",
-        "category": "Média & Streaming"
       },
       "kaziConnect": {
         "name": "Kazi Connect",
@@ -151,9 +139,9 @@
         "period": "2025 – 2028 (Prévu)",
         "status": "En cours",
         "description": [
-          "Statut Actuel : SAP",
-          "Moyenne Cumulative : 3.95",
-          "Crédits Obtenus : 21 / 120 (En avril 2026)",
+          "Tableau d'honneur : President's List, trimestre 5 de 2025-2026",
+          "Moyenne Cumulative : 3.98",
+          "Crédits Obtenus : 45 / 120 (En septembre 2026)",
           "Poursuite d'un diplôme complet en informatique avec une spécialisation en génie logiciel, algorithmes et technologies modernes."
         ],
         "skills": []
@@ -178,7 +166,7 @@
         "name": "Data Science Program",
         "type": "completed",
         "institution": "ALX",
-        "period": "2025 – Present",
+        "period": "2025 – avr. 2026",
         "status": "Terminé",
         "description": [
           "Progression depuis la cohorte Data Analytics 2025 terminée",
@@ -237,7 +225,7 @@
         "name": "Applied Data Science Lab",
         "type": "completed",
         "institution": "WorldQuant University",
-        "period": "2025 – Present",
+        "period": "Jan 2026",
         "status": "Terminé",
         "description": [
           "Techniques avancées d'analyse de données et de machine learning",
@@ -275,6 +263,12 @@
   "badges": {
     "title": "Badges & Certifications",
     "certified": "Certifié",
+    "issuedBy": "Délivré par",
+    "expires": "Expire le",
+    "viewCertification": "Voir la certification",
+    "viewProfile": "Voir le profil",
+    "badgesEarned": "badges obtenus",
+    "moreSkills": "de plus",
     "showMore": "Afficher Plus de Certifications",
     "showLess": "Afficher Moins",
     "alx_summary": {
@@ -282,6 +276,24 @@
       "description": "Trois certificats ALX Africa couvrant l'ensemble du pipeline de données — analyse, machine learning et science des données."
     },
     "platforms": {
+      "google_pca": {
+        "platform": "Google Cloud",
+        "certification": "Professional Cloud Architect",
+        "description": "Les Professional Cloud Architects aident les organisations à tirer parti des technologies Google Cloud. Ils conçoivent, développent et gèrent des solutions robustes, sécurisées, évolutives, hautement disponibles et dynamiques au service des objectifs métier.",
+        "issued_by": "Google Cloud",
+        "expiration": "July 15, 2028",
+        "credential_url": "https://www.credly.com/badges/1eb3782a-a4cf-42b9-859c-80ab36498448",
+        "skills": [
+          "Cloud Architecture",
+          "Cloud Security",
+          "Google Cloud Platform (GCP)",
+          "GKE",
+          "Identity And Access Management (IAM)",
+          "Networking",
+          "Scalability",
+          "Workload Migration"
+        ]
+      },
       "oracle_cloud": {
         "platform": "Oracle Cloud Infrastructure",
         "certification": "2025 Certified AI Foundations Associate",

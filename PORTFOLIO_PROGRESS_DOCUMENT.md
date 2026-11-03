@@ -39,12 +39,6 @@ This document outlines all the additions and modifications made to the portfolio
 - **Live Demo:** https://serenityai.qzz.io/
 - **Status:** Featured with purple gradient background
 
-#### 5. **Weru Digital**
-- **Description:** A multimedia site for Weru TV and FM featuring live radio streaming, live TV streaming, and scheduled programming for both. SEO-friendly with auto-updating RSS news feeds, AI-powered optimization, PWA support, and cross-platform compatibility.
-- **Technologies:** WordPress, PWA, Live Streaming, AI, SEO, RSS, Cross-platform
-- **Live Demo:** https://werudigital.co.ke/
-- **Status:** Featured with green gradient background
-
 ### ✅ Existing Project Updates
 
 #### **Kazi Connect**

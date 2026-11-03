@@ -94,23 +94,22 @@ TECHNICAL SKILLS:
 - Other: Git, CI/CD, Agile, Scrum, WordPress
 
 FEATURED PROJECTS:
-1. Luminae - Autonomous research analysis platform with 5-agent AI swarm for academic paper analysis. Upload any document and agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI multimodal ecosystem at ~$0.05 per paper. (Next.js, TypeScript, Mistral AI, FastAPI, Python, Supabase, Redis)
-2. AI Health Chat - AI-powered healthcare consultation platform with symptom checking and health advice using secure AI models. Won 1st place in an innovation hackathon. (Next.js, TypeScript, Supabase, xAI/Grok)
+1. Luminae - Autonomous research analysis platform with 5-agent AI swarm for academic paper analysis. Upload any document and agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI multimodal ecosystem. Entry in the Mistral World Hackathon (not a winner). (Next.js, TypeScript, Mistral AI, FastAPI, Python, Supabase, Redis)
+2. AI Health Chat - Live public beta of an AI health triage and general guidance assistant in five languages (English, Kiswahili, French, Spanish, Dutch) on web (installable PWA) and WhatsApp, with photo triage, a health tracker and SOAP visit summaries. Educational, not a diagnosis. Won first place (USD 500) at the Power Learn Project Class of 2024 graduate hackathon. (React 19, Vite, Vercel, Supabase, Groq, OpenRouter, Mistral)
 3. Live Interviewer - AI-powered interview question generator with Google-style UI/UX, Framer Motion animations, resilient API recovery engine, multi-model support (Mistral, Groq, Llama, Qwen), and installable PWA. (Next.js 16, TypeScript, Tailwind CSS v4, Framer Motion, PWA)
 4. Content Shapeshifter Pro - Scrapes URLs/articles and uses Groq AI with Llama 3 to generate 4 platform variants: Twitter threads, LinkedIn posts, newsletters, and Instagram captions. One-click copy, real-time feedback, elegant dark mode UI. (Next.js, TypeScript, Tailwind CSS, Groq, Cheerio)
 5. SerenityAI - AI-powered mental wellness companion with intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis. (React, TypeScript, Groq API, LLM Architecture)
-6. TutaLearn - AI-powered educational PWA for African students with personalized learning paths, WhatsApp integration for seamless access, and adaptive assessments. (Python, TypeScript, Groq API, PWA, WhatsApp API)
+6. TutaLearn - AI-powered learning platform for Kenya's CBC curriculum on WhatsApp and web, in English and Kiswahili, usable without a smartphone. Live and in active development with early testers. (Next.js, React, TypeScript, Supabase, OpenRouter, M-Pesa Daraja, WhatsApp API)
 7. Codebase Genius - AI-powered automatic GitHub documentation platform generating comprehensive docs from codebase analysis using LLMs, with graph-based code structure visualization. (Python, TypeScript, Google Gemini API, Streamlit, NetworkX, FastAPI)
-8. Weru Digital - Android app for Weru TV and FM with live radio/TV streaming, scheduled programming, SEO-friendly with auto-updating RSS news feeds, AI optimization, PWA support, cross-platform compatibility. Available on Google Play. (WordPress, PWA, Live Streaming, AI, SEO)
-9. Kazi Connect - AI-powered job matching marketplace using artificial intelligence to connect job seekers with suitable opportunities. CV analysis, skill assessment, automated application tracking, and personalized recommendations. (Next.js, TypeScript, Firebase, OpenAI, PWA)
-10. Movie Recommendation Project 2026 - ML solution for the Movie Recommendation Hackathon 2026 using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics. Predicts user ratings with ~0.82 RMSE. (Python, LightGBM, scikit-learn, Pandas, NumPy, SciPy)
+8. Kazi Connect - AI-powered job matching marketplace using artificial intelligence to connect job seekers with suitable opportunities. CV analysis, skill assessment, automated application tracking, and personalized recommendations. (Next.js, TypeScript, Firebase, OpenAI, PWA)
+9. Movie Recommendation Project 2026 - Entry in a private ExploreAI Academy community prediction competition on Kaggle (ALX final project), using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics. Public-leaderboard RMSE improved from 1.21 (baseline) to 0.82; the final private result is pending. (Python, LightGBM, scikit-learn, Pandas, NumPy, SciPy)
 
 WRITING & INSIGHTS:
 - "Code Review Is the Firewall Against AI Slop" — LinkedIn Pulse, March 2026
 - "Code Utopia in 2026: The Four Pillars of Production-Ready Code" — LinkedIn Pulse, January 2026
 
 EDUCATION:
-1. BSc Computer Science - University of the People (2025-2028, ongoing). Current SAP status, cumulative GPA 3.95, 21/120 credits completed (as of April 2026).
+1. BSc Computer Science - University of the People (2025-2028, ongoing). President's List for Term 5 of 2025-2026, cumulative GPA 3.98, 45/120 credits completed (as of September 2026).
 2. Diploma in ICT - Management University of Africa, MUA (2021-2024). Graduated with distinction. Focus on modern software development and IT infrastructure.
 3. Data Science Program - ALX (completed). Advanced expertise in data cleaning, visualization, and interpretation with SQL, Power BI, and Tableau. Mastery of Advanced Python, Machine Learning, AI, and predictive modeling.
 4. Power Learn Project (PLP) Africa - Software Development Program (completed Dec 2024). 16-week intensive program covering web development, Python, database management, Dart with Flutter, and soft skills.
