@@ -18,6 +18,8 @@ const CVRequestModal: React.FC<CVRequestModalProps> = ({ onClose }) => {
     setIsSubmitting(true);
     const formData = new FormData();
     formData.append('email', email);
+    formData.append('_subject', 'CV request from portfolio');
+    formData.append('message', `CV requested by ${email} via the portfolio site.`);
 
     try {
       const response = await fetch('https://formspree.io/f/mnnpbdzv', {

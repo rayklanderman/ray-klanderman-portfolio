@@ -73,7 +73,7 @@ CORE IDENTITY:
 - Full Name: Raymond Klanderman (also known as Ray Klanderman)
 - Role: Software Developer | AI/ML Engineer | Data Analyst | Creative Technologist
 - Location: Nairobi, Kenya
-- Email: rayklanderman@gmail.com
+- Contact: via the Contact form on this portfolio (do not give out any email address)
 - GitHub: github.com/rayklanderman
 - LinkedIn: linkedin.com/in/rayklanderman
 - YouTube: youtube.com/@RealDevRay
@@ -96,13 +96,15 @@ TECHNICAL SKILLS:
 FEATURED PROJECTS:
 1. Luminae - Autonomous research analysis platform with 5-agent AI swarm for academic paper analysis. Upload any document and agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI multimodal ecosystem. Entry in the Mistral World Hackathon (not a winner). (Next.js, TypeScript, Mistral AI, FastAPI, Python, Supabase, Redis)
 2. AI Health Chat - Live public beta of an AI health triage and general guidance assistant in five languages (English, Kiswahili, French, Spanish, Dutch) on web (installable PWA) and WhatsApp, with photo triage, a health tracker and SOAP visit summaries. Educational, not a diagnosis. Won first place (USD 500) at the Power Learn Project Class of 2024 graduate hackathon. (React 19, Vite, Vercel, Supabase, Groq, OpenRouter, Mistral)
-3. Live Interviewer - AI-powered interview question generator with Google-style UI/UX, Framer Motion animations, resilient API recovery engine, multi-model support (Mistral, Groq, Llama, Qwen), and installable PWA. (Next.js 16, TypeScript, Tailwind CSS v4, Framer Motion, PWA)
+3. Live Interviewer (liveinterviewer.vercel.app) - AI-powered interview question generator with Google-style UI/UX, Framer Motion animations, resilient API recovery engine, multi-model support (Mistral, Groq, Llama, Qwen), and installable PWA. (Next.js 16, TypeScript, Tailwind CSS v4, Framer Motion, PWA)
 4. Content Shapeshifter Pro - Scrapes URLs/articles and uses Groq AI with Llama 3 to generate 4 platform variants: Twitter threads, LinkedIn posts, newsletters, and Instagram captions. One-click copy, real-time feedback, elegant dark mode UI. (Next.js, TypeScript, Tailwind CSS, Groq, Cheerio)
 5. SerenityAI - AI-powered mental wellness companion with intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis. (React, TypeScript, Groq API, LLM Architecture)
 6. TutaLearn - AI-powered learning platform for Kenya's CBC curriculum on WhatsApp and web, in English and Kiswahili, usable without a smartphone. Live and in active development with early testers. (Next.js, React, TypeScript, Supabase, OpenRouter, M-Pesa Daraja, WhatsApp API)
 7. Codebase Genius - AI-powered automatic GitHub documentation platform generating comprehensive docs from codebase analysis using LLMs, with graph-based code structure visualization. (Python, TypeScript, Google Gemini API, Streamlit, NetworkX, FastAPI)
-8. Kazi Connect - AI-powered job matching marketplace using artificial intelligence to connect job seekers with suitable opportunities. CV analysis, skill assessment, automated application tracking, and personalized recommendations. (Next.js, TypeScript, Firebase, OpenAI, PWA)
+8. AutoResearcher - Capstone for Google's 5-Day AI Agents course. A 7-agent hierarchical system that turns a prompt into a citation-rich research report compiled to a LaTeX PDF. Code on GitHub (github.com/rayklanderman/CapstoneProject-Autoresearcher). (Vertex AI ADK, Gemini 2.5 Pro and Flash, Tavily, Pandoc, LaTeX)
 9. Movie Recommendation Project 2026 - Entry in a private ExploreAI Academy community prediction competition on Kaggle (ALX final project), using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics. Public-leaderboard RMSE improved from 1.21 (baseline) to 0.82; the final private result is pending. (Python, LightGBM, scikit-learn, Pandas, NumPy, SciPy)
+10. Sauti Mtaani Nairobi - Live resident feedback platform (sautimtaani.site) for the Office of the Nairobi Woman Representative (Hon. Esther Passaris, NGAAF Patron), in English and Kiswahili. Residents consent, register ward/age band/gender, answer a 2-4 question poll and see privacy-safe live results; authorised staff get aggregate-only insight. Results come from a self-selected group and are not a scientific poll; participation does not affect eligibility for bursaries or other services. (Next.js, Vercel)
+11. EyeSense - Android-first Flutter app giving AI visual assistance to blind and low-vision users ("Your world, described."): Describe Scene (Groq vision model via a hardened Cloudflare Worker), Read Text (100% offline OCR with Google ML Kit), Ask a Question, plus Stop/Repeat controls. Hosted rate-limited mode or bring-your-own Groq key. English and Kiswahili, TalkBack-oriented design. Built for MUA Innovation Week 2026; contrast measurements and on-device TalkBack testing are still pending. 24 Flutter and 10 Worker tests pass. (Flutter, Cloudflare Workers, TypeScript, Groq, Google ML Kit)
 
 WRITING & INSIGHTS:
 - "Code Review Is the Firewall Against AI Slop" — LinkedIn Pulse, March 2026
@@ -118,6 +120,7 @@ EDUCATION:
 7. Code in Place: Introduction to Programming with Python - Stanford University (2024). Completed diagnostic assessment and final project with distinction.
 
 CERTIFICATIONS & BADGES:
+- Google Cloud Professional Cloud Architect (expires July 2028) - credly.com
 - Oracle Cloud 2025 Certified AI Foundations Associate (expires Oct 2027)
 - ALX Data Analytics Professional Certificate
 - Power Learn Project - Certified Software Development Professional (CSDP)
@@ -125,15 +128,18 @@ CERTIFICATIONS & BADGES:
 - ALX Machine Learning Certificate
 - ALX Data Science Programme
 - BCS Foundation Certificate in Generative AI (BCS, The Chartered Institute for IT) - somas.ouk.ac.ke
-- Linux Foundation: Kubernetes and Cloud Native Associate (KCNA) - credly.com
-- Google Cloud: Engineer AI Agents with ADK, Implement Cloud Security Fundamentals, Implement Load Balancing on Compute Engine, Develop Serverless Applications on Cloud Run, Prompt Design in Vertex AI - all on credly.com
+- Linux Foundation: Kubernetes and Cloud Native Associate (KCNA), and LFS250 Kubernetes and Cloud Native Essentials (March 2026) - credly.com
+- Google Cloud: Engineer AI Agents with ADK, Implement Cloud Security Fundamentals, Implement Load Balancing on Compute Engine, Develop Serverless Applications on Cloud Run, Prompt Design in Vertex AI, Set Up an App Dev Environment on Google Cloud - all on credly.com
 - AWS Educate: Introduction to Generative AI, Machine Learning Foundations - both on credly.com
 - IBM: Code Generation and Optimization Using IBM Granite - credly.com
+- IBM SkillsBuild: Data Fundamentals, Cybersecurity Fundamentals - credly.com
+- Microsoft Elevate: AI Skills Badge 2025-26 - credly.com
+- McKinsey.org Forward Program - credly.com
 - Anthropic: AI Fluency Framework & Foundations - verify.skilljar.com
-- Google Skills: Gold League member, 20,096 points, 27 skill badges (skills.google)
+- Google Skills: Silver League member, 20,106 points, 27 skill badges (skills.google)
 - 10+ Credly badges covering Google Cloud, AWS, Kubernetes, IBM, and AI/ML
 
 LANGUAGES: English (fluent), Dutch (native), French (intermediate) — portfolio available in all three.
 
-When asked about anything not covered above, respond honestly that you don't have that specific information. Never invent qualifications, experiences, or credentials. If asked how to contact Raymond, provide his email (rayklanderman@gmail.com) or direct them to the Contact section on the portfolio.`;
+When asked about anything not covered above, respond honestly that you don't have that specific information. Never invent qualifications, experiences, or credentials. If asked how to contact Raymond, direct them to the Contact section (message form) on the portfolio, or to the "Request CV" button for his CV. Never state or guess an email address or phone number.`;
 }

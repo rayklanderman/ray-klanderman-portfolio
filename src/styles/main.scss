@@ -64,6 +64,7 @@ $terracotta: #cb5521;      // Terracotta — decorative card accent
   --parchment: #{$parchment};
   --accent-gold: #{$gold};
   --accent-live: #{$live};
+  --on-gold: #{$ink};
 
   // Semantic status colors (identical in both themes)
   --success: #4ade80;
@@ -88,6 +89,7 @@ $terracotta: #cb5521;      // Terracotta — decorative card accent
   --text-muted: #{$text-muted-dark};
   --header-bg: #{$ink};
   --primary-color: #{$highlighter};
+  --on-primary: #{$ink};
   --secondary-color: #{$highlighter};
   --accent-color: #{$highlighter};
   --card-bg: #{$ink-raised};
@@ -106,6 +108,11 @@ $terracotta: #cb5521;      // Terracotta — decorative card accent
   --text-muted: #4f5c49; // muted forest-tinted gray, AA (>=7:1) on cream
   --header-bg: #{$cream-paper};
   --primary-color: #{$forest-ink};
+  --on-primary: #FFFFFF;
+  // Darker accent variants: the dark-theme gold/green are ~2:1 and ~1.4:1 on white, too faint for text
+  --accent-gold: #8A6414;
+  --accent-live: #00774F;
+  --on-gold: #FFFFFF;
   --secondary-color: #{$forest-ink};
   --accent-color: #{$highlighter};
   --card-bg: #FFFFFF;

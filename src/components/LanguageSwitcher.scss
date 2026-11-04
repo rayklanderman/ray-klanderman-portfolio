@@ -93,7 +93,7 @@
 
     &.active {
       background: var(--accent-gold);
-      color: var(--ink);
+      color: var(--on-gold);
       box-shadow: 0 2px 8px color-mix(in srgb, var(--accent-gold) 30%, transparent);
     }
 

@@ -1,7 +1,7 @@
 {
   "header": {
     "subtitle": "Développeur Logiciel | IA - ML | Créatif",
-    "downloadCV": "Télécharger CV",
+    "downloadCV": "Demander mon CV",
     "share": "Partager le Profil",
     "jobTitles": {
       "softwareEngineer": "Ingénieur Logiciel",
@@ -23,6 +23,16 @@
   },
   "profile": {
     "title": "Profil Professionnel",
+    "strengthsTitle": "Points forts",
+    "openTo": "Ouvert aux postes en ingénierie logicielle, IA/ML et données, ainsi qu’aux collaborations autour d’une IA centrée sur l’humain.",
+    "strengths": [
+      {"title":"Livre des produits IA de bout en bout","text":"Produits en ligne sur le web et WhatsApp : AI Health Chat (bêta publique), TutaLearn et Sauti Mtaani Nairobi."},
+      {"title":"Réalisations dans le secteur public","text":"Deux ans à construire des systèmes numériques au sein du Parlement panafricain et du bureau d’un député."},
+      {"title":"Ingénierie cloud et agents","text":"Google Cloud Professional Cloud Architect, avec une pratique de Vertex AI ADK, Cloud Run et Kubernetes (KCNA)."},
+      {"title":"Données et machine learning","text":"ML de bout en bout sur 10 M de lignes sans échantillonnage ; RMSE du classement public passé de 1,21 à 0,82."},
+      {"title":"Conception accessible et multilingue","text":"EyeSense pour les personnes aveugles et malvoyantes ; produits en anglais et en swahili, AI Health Chat en cinq langues."},
+      {"title":"Efficace sous pression","text":"1re place au hackathon des diplômés 2024 du PLP ; Liste du Président à University of the People."}
+    ],
     "description": "J'ai passé les deux dernières années à construire des systèmes numériques au sein d'institutions publiques — le Parlement panafricain et le bureau d'un député — tout en concevant et en lançant de manière indépendante des produits d'IA. Je construis des logiciels intelligents et évolutifs et des systèmes d'IA qui résolvent des problèmes concrets. Mon travail couvre l'ingénierie full-stack, l'apprentissage automatique, l'analyse de données, l'architecture cloud et les pipelines de déploiement automatisés.\n\nJe conçois et déploie des applications prêtes pour la production en utilisant Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL et Google Cloud. Je me spécialise dans les workflows intelligents alimentés par des API, des agents autonomes, la recherche vectorielle et la génération augmentée par récupération (RAG). Mes outils incluent Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph et des fournisseurs modernes de LLM comme OpenAI, Anthropic, Gemini, Groq et Ollama.\n\nAu-delà de l'ingénierie, je transforme les données en insights et les insights en fonctionnalités qui deviennent des produits sur lesquels les gens comptent. Je crée également du contenu technique clair—tutoriels, docs et démos—qui aide les équipes à adopter et étendre des systèmes complexes avec confiance.\n\nMa mission est simple : construire des outils qui comprennent les gens, et permettre aux gens de construire des outils encore meilleurs. La curiosité motive mon travail, du prototypage ML rapide à la mise en production d'agents et à l'automatisation des workflows de bout en bout.\n\nToujours ouvert à collaborer avec des équipes construisant la prochaine génération d'IA centrée sur l'humain."
   },
   "projects": {
@@ -66,6 +76,49 @@
         "tier": "flagship",
         "live": true,
         "award": "1ère place — PLP Hackathon des diplômés 2024"
+      },
+      "sautiMtaani": {
+        "name": "Sauti Mtaani Nairobi",
+        "shortDescription": "Plateforme de retours des habitants pour le Bureau de la Représentante des femmes de Nairobi",
+        "description": "Plateforme officielle de retours des habitants pour le Bureau de la Représentante des femmes de Nairobi (Hon. Esther Passaris, patronne du NGAAF, comté de Nairobi), en anglais et en swahili. Les habitants donnent leur consentement, indiquent leur quartier (ward), leur tranche d'âge et leur genre, répondent à un court sondage de 2 à 4 questions et voient des résultats en direct protégeant la vie privée, tandis que le personnel autorisé reçoit uniquement des analyses agrégées sur la représentation, la réactivité du bureau, les programmes du NGAAF et les priorités des wards. Les résultats proviennent d'un groupe auto-sélectionné et ne constituent pas un sondage scientifique ; la participation n'a aucun effet sur l'éligibilité aux bourses ou à d'autres services.",
+        "technologies": ["Next.js", "Vercel"],
+        "tags": ["Civic Tech", "Full-Stack"],
+        "url": "https://www.sautimtaani.site/",
+        "tier": "flagship",
+        "live": true,
+        "entered": "Conçu pour le Bureau de la Représentante des femmes de Nairobi",
+        "metrics": [
+          { "label": "Langues", "value": "Anglais · Swahili" },
+          { "label": "Sondage", "value": "2 à 4 questions" }
+        ]
+      },
+      "eyeSense": {
+        "name": "EyeSense",
+        "shortDescription": "Assistance visuelle par IA pour les personnes aveugles et malvoyantes",
+        "description": "« Votre monde, décrit. » Application Flutter pensée d'abord pour Android qui aide les personnes aveugles et malvoyantes à comprendre leur environnement. Describe Scene utilise un modèle de vision Groq derrière un Cloudflare Worker sécurisé, Read Text fonctionne à 100 % hors ligne avec Google ML Kit, et Ask a Question permet de poser des questions de suivi, avec des commandes Stop et Repeat partout. Des agents (AgentCoordinator, SceneAgent, ConversationAgent) travaillent avec une couche OutputPolicy pour ce qui est prononcé. Mode hébergé à débit limité, ou clé Groq personnelle stockée dans un stockage sécurisé. Anglais et swahili, police Atkinson Hyperlegible, thème à contraste maximal et conception orientée TalkBack. Conçu pour MUA Innovation Week 2026 ; les mesures de contraste et les tests TalkBack sur appareil restent à faire.",
+        "technologies": ["Flutter", "Cloudflare Workers", "TypeScript", "Groq", "Google ML Kit", "Vitest"],
+        "tags": ["IA", "Accessibilité"],
+        "url": "#",
+        "tier": "flagship",
+        "entered": "Conçu pour MUA Innovation Week 2026",
+        "metrics": [
+          { "label": "Read Text", "value": "100 % hors ligne" },
+          { "label": "Tests", "value": "24 Flutter · 10 Worker" }
+        ]
+      },
+      "autoResearcher": {
+        "name": "AutoResearcher",
+        "shortDescription": "Équipe d'agents qui transforme un prompt en rapport de recherche sourcé",
+        "description": "Projet de fin du cours « 5-Day AI Agents » de Google. Un système hiérarchique de 7 agents qui transforme un simple prompt en rapport de recherche riche en citations, compilé en PDF LaTeX. Conçu avec le Vertex AI Agent Development Kit, Gemini 2.5 Pro et Flash, Tavily pour la recherche web, et Pandoc avec LaTeX pour le document final.",
+        "technologies": ["Vertex AI ADK", "Gemini 2.5 Pro", "Gemini 2.5 Flash", "Tavily", "Pandoc", "LaTeX", "Jupyter Notebook"],
+        "tags": ["IA", "Multi-agents"],
+        "url": "#",
+        "tier": "flagship",
+        "entered": "Projet de fin de cours — Google 5-Day AI Agents",
+        "metrics": [
+          { "label": "Architecture", "value": "Hiérarchie de 7 agents" },
+          { "label": "Résultat", "value": "PDF LaTeX sourcé" }
+        ]
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -114,16 +167,6 @@
         "url": "https://geniuscodebase.streamlit.app/",
         "tier": "secondary",
         "category": "Outils développeur IA"
-      },
-      "kaziConnect": {
-        "name": "Kazi Connect",
-        "shortDescription": "Plateforme de matching emploi par IA",
-        "description": "Plateforme de mise en relation professionnelle innovante qui utilise l'intelligence artificielle pour connecter les chercheurs d'emploi avec des opportunités adaptées. Analyse de CV, évaluation des compétences, suivi automatisé des candidatures et recommandations personnalisées.",
-        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
-        "tags": ["Génie Logiciel", "Marché de l'Emploi"],
-        "url": "https://www.kaziconnect.work/",
-        "tier": "secondary",
-        "category": "IA & Marché de l'emploi"
       }
     }
   },
@@ -496,7 +539,7 @@
       },
       "google_skills": {
         "platform": "Google Skills",
-        "description": "Profil Google Skills présentant les cours complétés et les badges de compétences obtenus dans les domaines Google Cloud, IA/ML, sécurité et serverless. Membre Gold League avec 20 096 points et 27 badges de compétences depuis 2023.",
+        "description": "Profil Google Skills présentant les cours complétés et les badges de compétences obtenus dans les domaines Google Cloud, IA/ML, sécurité et serverless. Membre Silver League avec 20 106 points et 27 badges de compétences depuis 2023.",
         "issued_by": "Google",
         "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
         "badges_count": "27",
@@ -533,6 +576,54 @@
         "issued_by": "IBM",
         "credential_url": "https://www.credly.com/badges/c5dcd4da-3757-4893-945b-50ca7d025ec2",
         "skills": ["Génération de Code", "IBM Granite", "Développement Assisté par IA", "Prompt Engineering", "Optimisation de Code"]
+      },
+      "linux_lfs250": {
+        "platform": "The Linux Foundation",
+        "certification": "LFS250: Kubernetes and Cloud Native Essentials",
+        "description": "Compréhension de l'architecture cloud native et de l'orchestration de conteneurs, de l'architecture de haut niveau de Kubernetes, ainsi que de l'observabilité cloud native et de la livraison d'applications avec des outils CI/CD et GitOps.",
+        "issued_by": "The Linux Foundation",
+        "credential_url": "https://www.credly.com/badges/e266ef63-cdbe-42c5-bdeb-aec0b47bb523",
+        "skills": ["Kubernetes", "Architecture Cloud Native", "Conteneurs", "GitOps", "CI/CD", "Observabilité"]
+      },
+      "mckinsey_forward": {
+        "platform": "McKinsey.org",
+        "certification": "McKinsey.org Forward Program",
+        "description": "Programme d'apprentissage en ligne McKinsey.org Forward terminé : l'approche McKinsey de la résolution de problèmes, la communication efficace, les états d'esprit et habitudes adaptables, et une boîte à outils numérique de base.",
+        "issued_by": "McKinsey.org",
+        "credential_url": "https://www.credly.com/badges/446ab0ba-2de5-49c4-9434-3930ab276aaf",
+        "skills": ["Résolution de Problèmes", "Communication", "Adaptabilité", "Outils Numériques"]
+      },
+      "google_app_dev_env": {
+        "platform": "Google Cloud",
+        "certification": "Set Up an App Dev Environment on Google Cloud",
+        "description": "Badge de compétences pour construire et connecter une infrastructure cloud centrée sur le stockage avec Cloud Storage, Identity and Access Management, Cloud Functions et Pub/Sub.",
+        "issued_by": "Google Cloud",
+        "credential_url": "https://www.credly.com/badges/80fb5417-b117-4789-878f-c154e6685892",
+        "skills": ["Cloud Storage", "IAM", "Cloud Functions", "Pub/Sub", "Monitoring"]
+      },
+      "microsoft_ai_skills": {
+        "platform": "Microsoft Elevate",
+        "certification": "AI Skills Badge 2025-26",
+        "description": "Reconnaît l'ensemble des acquis dans plusieurs parcours d'apprentissage de l'IA avec des outils de l'écosystème Microsoft, comme Microsoft Copilot et Copilot Studio.",
+        "issued_by": "Microsoft Elevate",
+        "credential_url": "https://www.credly.com/badges/26b4ec5b-a305-4ab4-ba6b-8be05e7d1856",
+        "skills": ["IA Générative", "Prompting", "Usage Responsable de l'IA", "Innovation"]
+      },
+      "ibm_data_fundamentals": {
+        "platform": "IBM SkillsBuild",
+        "certification": "Data Fundamentals",
+        "description": "Connaissance des concepts d'analyse de données, de la méthodologie de la data science et des outils de l'écosystème des données, avec une compréhension conceptuelle du nettoyage, de l'affinage et de la visualisation des données avec IBM Watson Studio.",
+        "issued_by": "IBM SkillsBuild",
+        "credential_url": "https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483",
+        "skills": ["Analyse de Données", "Data Science", "Visualisation de Données", "Watson Studio", "Nettoyage de Données"]
+      },
+      "ibm_cybersecurity_fundamentals": {
+        "platform": "IBM SkillsBuild",
+        "certification": "Cybersecurity Fundamentals",
+        "description": "Compréhension de base des concepts et pratiques de cybersécurité : groupes de menaces, types d'attaques, ingénierie sociale, cryptographie, et la manière dont les organisations préviennent, détectent et répondent aux cyberattaques.",
+        "issued_by": "IBM SkillsBuild",
+        "credential_url": "https://www.credly.com/badges/1b491137-814a-4f22-b67e-c4ea05586626",
+        "skills": ["Cybersécurité", "Cryptographie", "Ingénierie Sociale", "Réponse aux Incidents", "Analyse des Menaces"]
       }
     }
   },

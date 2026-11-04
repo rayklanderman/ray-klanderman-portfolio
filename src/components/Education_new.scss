@@ -24,22 +24,31 @@
   }
 
   .education-timeline {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-    gap: var(--space-2xl);
+    --edu-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // a short last row stays centred instead of leaving an orphan on the left
+    gap: var(--edu-gap);
     margin-top: var(--space-2xl);
 
     @media (max-width: 768px) {
-      gap: 1.5rem;
+      --edu-gap: 1.25rem;
       margin-top: 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
     }
   }
 
   .education-card {
+    flex: 0 1 100%;
+    min-width: 0;
+
+    @media (min-width: 700px) {
+      flex-basis: calc((100% - var(--edu-gap)) / 2);
+    }
+
+    @media (min-width: 1040px) {
+      flex-basis: calc((100% - 2 * var(--edu-gap)) / 3);
+    }
+
     background: var(--card-bg);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
@@ -49,7 +58,7 @@
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    margin-bottom: var(--space-lg);
+    margin-bottom: 0;
     border: 1px solid var(--border-color);
 
     @media (max-width: 768px) {
@@ -80,9 +89,8 @@
     }
 
     .status-badge {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+      display: inline-block;
+      margin-bottom: 0.75rem;
       padding: 0.3rem 0.9rem;
       border-radius: 20px;
       font-family: var(--font-mono);
@@ -111,9 +119,6 @@
       font-weight: 700;
       color: var(--text-color);
       margin-bottom: 0.35rem;
-      // keep long degree names clear of the absolutely-positioned status badge
-      padding-right: 6.5rem;
-      margin-top: 0.25rem;
       overflow-wrap: anywhere;
     }
 

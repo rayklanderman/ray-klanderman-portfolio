@@ -461,6 +461,17 @@
   }
 }
 
+// The filled Forest-Ink fill matches the page canvas in dark mode, so give the CTA a visible outline there
+[data-theme="dark"] .download-cv {
+  background: color-mix(in srgb, var(--accent-gold) 12%, transparent);
+  color: var(--text-color);
+  border: 1px solid var(--accent-gold);
+
+  &:hover {
+    background: color-mix(in srgb, var(--accent-gold) 22%, transparent);
+  }
+}
+
 .theme-toggle {
   display: inline-flex;
   align-items: center;

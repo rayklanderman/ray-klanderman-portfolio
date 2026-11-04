@@ -22,20 +22,16 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>('dark'); // Forest-Ink is the brand-primary presentation; light remains a full-quality alternative
+const getInitialTheme = (): Theme => {
+  if (typeof window === 'undefined') return 'dark';
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+  // No saved choice: Forest-Ink dark is the brand-primary presentation; follow the system if it asks for light
+  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+};
 
-  // Initialize theme on mount
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme;
-    if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
-      setTheme(savedTheme);
-    } else {
-      // Check system preference
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setTheme(prefersDark ? 'dark' : 'light');
-    }
-  }, []);
+export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+  const [theme, setTheme] = useState<Theme>(getInitialTheme);
 
   useEffect(() => {
     // Apply theme to document

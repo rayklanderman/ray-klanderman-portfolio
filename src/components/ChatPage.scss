@@ -144,7 +144,7 @@
 
       .msg-bubble {
         background: var(--accent-gold);
-        color: var(--ink);
+        color: var(--on-gold);
         border-radius: 18px 18px 4px 18px;
       }
     }
@@ -163,7 +163,7 @@
     height: 32px;
     border-radius: 50%;
     background: var(--accent-gold);
-    color: var(--ink);
+    color: var(--on-gold);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -238,7 +238,7 @@
 
     &:hover:not(:disabled) {
       background: var(--accent-gold);
-      color: var(--ink);
+      color: var(--on-gold);
       border-color: var(--accent-gold);
     }
 
@@ -291,7 +291,7 @@
     height: 38px;
     border-radius: 50%;
     background: var(--accent-gold);
-    color: var(--ink);
+    color: var(--on-gold);
     border: none;
     cursor: pointer;
     display: flex;

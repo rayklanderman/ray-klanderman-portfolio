@@ -34,6 +34,12 @@ const badgeKeys: BadgeEntry[] = [
   { id: 'google_load_balancing', logo: '/badges/Implement Load Balancing on Compute Engine Skill Badge.png', tier: 'more' },
   { id: 'google_serverless', logo: '/badges/Develop Serverless Applications on Cloud Run Skill Badge.png', tier: 'more' },
   { id: 'google_prompt_design', logo: '/badges/Prompt Design in Vertex AI Skill Badge.png', tier: 'more' },
+  { id: 'google_app_dev_env', logo: '/badges/Set Up an App Dev Environment on Google Cloud Skill Badge.png', tier: 'more' },
+  { id: 'linux_lfs250', logo: '/badges/LFS250 Kubernetes and Cloud Native Essentials.png', tier: 'more' },
+  { id: 'microsoft_ai_skills', logo: '/badges/Microsoft Elevate AI Skills Badge 2025-26.png', tier: 'more' },
+  { id: 'mckinsey_forward', logo: '/badges/McKinsey.org Forward Program.png', tier: 'more' },
+  { id: 'ibm_data_fundamentals', logo: '/badges/IBM SkillsBuild Data Fundamentals.png', tier: 'more' },
+  { id: 'ibm_cybersecurity_fundamentals', logo: '/badges/IBM SkillsBuild Cybersecurity Fundamentals.png', tier: 'more' },
   { id: 'alx_data_analytics', logo: '/badges/Data-analytics-certificate-raymond-klanderman(ALX).png', tier: 'grouped' },
   { id: 'alx_machine_learning', logo: '/badges/Machine-learning-certificate-raymond-klanderman(ALX).png', tier: 'grouped' },
   { id: 'alx_data_science', logo: '/badges/Data-science-certificate-raymond-klanderman(ALX).png', tier: 'grouped' }

@@ -155,3 +155,79 @@
     width: 100%;
   }
 }
+
+// Recruiter-facing strengths block
+.strengths {
+  text-align: left;
+  margin: 0 0 2rem;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    margin: 0 0 1rem;
+    text-align: center;
+  }
+
+  &__grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  &__open {
+    margin: 1.25rem 0 0 !important;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color) !important;
+  }
+}
+
+.strength-card {
+  background: var(--surface-2);
+  border: 1px solid var(--glass-border);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-gold);
+  }
+
+  &__icon {
+    display: inline-flex;
+    font-size: 1.25rem;
+    color: var(--accent-gold);
+    margin-bottom: 0.4rem;
+  }
+
+  &__title {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+
+  &__text {
+    margin: 0 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.5 !important;
+    color: var(--text-color);
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .strength-card {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}

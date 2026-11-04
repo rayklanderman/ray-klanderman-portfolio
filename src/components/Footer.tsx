@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
 import './Footer.scss';
 
 const Footer: React.FC = () => {
@@ -25,7 +25,10 @@ const Footer: React.FC = () => {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({
+          ...formData,
+          _subject: `Portfolio contact message from ${formData.name}`
+        })
       });
 
       if (response.ok) {
@@ -71,12 +74,6 @@ const Footer: React.FC = () => {
       icon: <FaTwitter />,
       url: 'https://x.com/rayklanderman',
       label: 'X (Twitter)',
-      color: 'transparent'
-    },
-    {
-      icon: <FaEnvelope />,
-      url: 'mailto:rayklanderman@gmail.com',
-      label: 'Email',
       color: 'transparent'
     }
   ];

@@ -32,3 +32,6 @@ dev-dist
 
 # Local tooling artifact (SQLite DB)
 .freebuff
+
+# Private files that must never be served (CV contains contact details)
+private/

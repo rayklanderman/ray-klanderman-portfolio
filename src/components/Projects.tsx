@@ -44,7 +44,7 @@ const projectData: Record<string, { github: string; url: string; playstore?: str
   },
   liveInterviewer: {
     github: 'https://github.com/rayklanderman/live-interviewer',
-    url: 'https://live-interviewer-sepia.vercel.app/'
+    url: 'https://liveinterviewer.vercel.app/'
   },
   contentShapeshifterPro: {
     github: 'https://github.com/RealDevRay/Content-Shapeshifter-Pro',
@@ -62,9 +62,17 @@ const projectData: Record<string, { github: string; url: string; playstore?: str
     github: 'https://github.com/rayklanderman/jaseci-proj',
     url: 'https://geniuscodebase.streamlit.app/'
   },
-  kaziConnect: {
-    github: 'https://github.com/rayklanderman/kazi-connect',
-    url: 'https://www.kaziconnect.work/'
+  autoResearcher: {
+    github: 'https://github.com/rayklanderman/CapstoneProject-Autoresearcher',
+    url: '#'
+  },
+  sautiMtaani: {
+    github: '',
+    url: 'https://www.sautimtaani.site/'
+  },
+  eyeSense: {
+    github: 'https://github.com/RealDevRay/eyesense',
+    url: '#'
   }
 };
 

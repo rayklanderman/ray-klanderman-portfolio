@@ -10,15 +10,11 @@
   ],
   "headers": [
     {
-      "source": "/logo.png",
+      "source": "/(favicon.svg|favicon.ico|icon-192.png|icon-512.png|icon-maskable-512.png|apple-touch-icon.png|og-image.png)",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "image/png"
-        },
-        {
           "key": "Cache-Control",
-          "value": "public, max-age=31536000"
+          "value": "public, max-age=86400"
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "header": {
     "subtitle": "Software Ontwikkelaar | AI - ML | Creatief",
-    "downloadCV": "Download CV",
+    "downloadCV": "CV aanvragen",
     "share": "Profiel Delen",
     "jobTitles": {
       "softwareEngineer": "Software Engineer",
@@ -23,6 +23,16 @@
   },
   "profile": {
     "title": "Professioneel Profiel",
+    "strengthsTitle": "Kernkwaliteiten",
+    "openTo": "Open voor functies in software engineering, AI/ML en data, en voor samenwerking aan mensgerichte AI.",
+    "strengths": [
+      {"title":"Levert AI-producten van begin tot eind","text":"Live producten op web en WhatsApp: AI Health Chat (publieke bèta), TutaLearn en Sauti Mtaani Nairobi."},
+      {"title":"Resultaten in de publieke sector","text":"Twee jaar digitale systemen gebouwd binnen het Pan-Afrikaanse Parlement en het kantoor van een parlementslid."},
+      {"title":"Cloud- en agent-engineering","text":"Google Cloud Professional Cloud Architect, met praktijkervaring in Vertex AI ADK, Cloud Run en Kubernetes (KCNA)."},
+      {"title":"Data en machine learning","text":"End-to-end ML op 10 mln rijen zonder sampling; RMSE op het publieke klassement verbeterd van 1,21 naar 0,82."},
+      {"title":"Toegankelijk, meertalig ontwerp","text":"EyeSense voor blinde en slechtziende gebruikers; producten in het Engels en Swahili, AI Health Chat in vijf talen."},
+      {"title":"Presteert onder druk","text":"1e plaats op de PLP Class of 2024 graduate hackathon; President’s List aan University of the People."}
+    ],
     "description": "Ik heb de afgelopen twee jaar digitale systemen gebouwd binnen publieke instellingen — het Pan-Afrikaanse Parlement en het kantoor van een parlementslid — terwijl ik onafhankelijk AI-producten ontwerp en lanceer. Ik bouw slimme, schaalbare software en AI-systemen die echte problemen oplossen. Mijn werk omvat full-stack engineering, machine learning, data-analyse, cloud-architectuur en geautomatiseerde deployment pipelines.\n\nIk ontwerp en lever productieklare applicaties met behulp van Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL en Google Cloud. Ik specialiseer me in intelligente workflows aangedreven door API's, autonome agenten, vector search en Retrieval-Augmented Generation (RAG). Mijn tooling omvat Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph en moderne LLM-providers zoals OpenAI, Anthropic, Gemini, Groq en Ollama.\n\nBuiten engineering om zet ik data om in inzichten en inzichten in functies die producten worden waar mensen op vertrouwen. Ik creëer ook duidelijke technische content—tutorials, docs en demos—die teams helpt complexe systemen met vertrouwen te adopteren en uit te breiden.\n\nMijn missie is eenvoudig: bouw tools die mensen begrijpen, en empower mensen om nog betere tools te bouwen. Nieuwsgierigheid drijft mijn werk, van snelle ML-prototyping tot het productioniseren van agenten en het automatiseren van end-to-end workflows.\n\nAltijd open voor samenwerking met teams die de volgende generatie mensgerichte AI bouwen."
   },
   "projects": {
@@ -66,6 +76,49 @@
         "tier": "flagship",
         "live": true,
         "award": "1e plaats — PLP Class of 2024 afstudeerhackathon"
+      },
+      "sautiMtaani": {
+        "name": "Sauti Mtaani Nairobi",
+        "shortDescription": "Feedbackplatform voor inwoners van het Office of the Nairobi Woman Representative",
+        "description": "Officiële feedbackplatform voor inwoners van het Office of the Nairobi Woman Representative (Hon. Esther Passaris, NGAAF Patron, Nairobi County), in het Engels en Swahili. Inwoners geven toestemming, registreren hun ward, leeftijdscategorie en geslacht, beantwoorden een korte peiling van 2 tot 4 vragen en zien privacyvriendelijke live-resultaten, terwijl bevoegd personeel uitsluitend geïnaggregeerde inzichten krijgt over vertegenwoordiging, responsiviteit van het kantoor, NGAAF-programma's en prioriteiten per ward. De resultaten komen van een zelfgeselecteerde groep en vormen geen wetenschappelijke peiling; deelname heeft geen invloed op het in aanmerking komen voor beurzen of andere diensten.",
+        "technologies": ["Next.js", "Vercel"],
+        "tags": ["Civic Tech", "Full-Stack"],
+        "url": "https://www.sautimtaani.site/",
+        "tier": "flagship",
+        "live": true,
+        "entered": "Gebouwd voor het Office of the Nairobi Woman Representative",
+        "metrics": [
+          { "label": "Talen", "value": "Engels · Swahili" },
+          { "label": "Peiling", "value": "2–4 vragen" }
+        ]
+      },
+      "eyeSense": {
+        "name": "EyeSense",
+        "shortDescription": "AI-visuele ondersteuning voor blinde en slechtziende gebruikers",
+        "description": "“Jouw wereld, beschreven.” Een Flutter-app met Android als eerste doel die blinde en slechtziende gebruikers helpt hun omgeving te begrijpen. Describe Scene gebruikt een Groq-visiemodel achter een beveiligde Cloudflare Worker, Read Text werkt 100% offline met Google ML Kit, en Ask a Question ondersteunt vervolgvragen, met overal Stop- en Repeat-knoppen. Agents (AgentCoordinator, SceneAgent, ConversationAgent) werken samen met een OutputPolicy-laag voor wat er wordt uitgesproken. Gebruik de gehoste modus met limieten of een eigen Groq-sleutel in beveiligde opslag. Engels en Swahili, het lettertype Atkinson Hyperlegible, een thema met maximaal contrast en een op TalkBack gericht ontwerp. Gebouwd voor MUA Innovation Week 2026; contrastmetingen en TalkBack-tests op een toestel moeten nog gebeuren.",
+        "technologies": ["Flutter", "Cloudflare Workers", "TypeScript", "Groq", "Google ML Kit", "Vitest"],
+        "tags": ["AI", "Toegankelijkheid"],
+        "url": "#",
+        "tier": "flagship",
+        "entered": "Gebouwd voor MUA Innovation Week 2026",
+        "metrics": [
+          { "label": "Read Text", "value": "100% offline" },
+          { "label": "Tests", "value": "24 Flutter · 10 Worker" }
+        ]
+      },
+      "autoResearcher": {
+        "name": "AutoResearcher",
+        "shortDescription": "Multi-agent team dat een prompt omzet in een onderbouwd onderzoeksrapport",
+        "description": "Afsluitend project van Google's cursus 5-Day AI Agents. Een hiërarchisch systeem van 7 agents dat één prompt omzet in een onderzoeksrapport vol bronverwijzingen, gecompileerd tot een LaTeX-pdf. Gebouwd met de Vertex AI Agent Development Kit, Gemini 2.5 Pro en Flash, Tavily voor webonderzoek en Pandoc met LaTeX voor het einddocument.",
+        "technologies": ["Vertex AI ADK", "Gemini 2.5 Pro", "Gemini 2.5 Flash", "Tavily", "Pandoc", "LaTeX", "Jupyter Notebook"],
+        "tags": ["AI", "Multi-agent"],
+        "url": "#",
+        "tier": "flagship",
+        "entered": "Cursusproject — Google 5-Day AI Agents",
+        "metrics": [
+          { "label": "Architectuur", "value": "Hiërarchie van 7 agents" },
+          { "label": "Resultaat", "value": "LaTeX-pdf met bronnen" }
+        ]
       },
       "liveInterviewer": {
         "name": "Live Interviewer",
@@ -114,16 +167,6 @@
         "url": "https://geniuscodebase.streamlit.app/",
         "tier": "secondary",
         "category": "AI-ontwikkelaarstools"
-      },
-      "kaziConnect": {
-        "name": "Kazi Connect",
-        "shortDescription": "AI-aangedreven vacatureplatform",
-        "description": "Een innovatieve vacaturemarktplaats die kunstmatige intelligentie gebruikt om werkzoekenden te matchen met geschikte kansen. CV-analyse, vaardigheidsbeoordeling, geautomatiseerde sollicitatie tracking en gepersonaliseerde aanbevelingen.",
-        "technologies": ["Next.js", "TypeScript", "Firebase", "OpenAI", "PWA"],
-        "tags": ["Software Engineering", "Arbeidsmarkt"],
-        "url": "https://www.kaziconnect.work/",
-        "tier": "secondary",
-        "category": "AI & Arbeidsmarkt"
       }
     }
   },
@@ -496,7 +539,7 @@
       },
       "google_skills": {
         "platform": "Google Skills",
-        "description": "Google Skills-profiel met voltooide cursussen en behaalde vaardigheidsbadges op het gebied van Google Cloud, AI/ML, beveiliging en serverless. Gold League-lid met 20.096 punten en 27 vaardigheidsbadges sinds 2023.",
+        "description": "Google Skills-profiel met voltooide cursussen en behaalde vaardigheidsbadges op het gebied van Google Cloud, AI/ML, beveiliging en serverless. Silver League-lid met 20.106 punten en 27 vaardigheidsbadges sinds 2023.",
         "issued_by": "Google",
         "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
         "badges_count": "27",
@@ -533,6 +576,54 @@
         "issued_by": "IBM",
         "credential_url": "https://www.credly.com/badges/c5dcd4da-3757-4893-945b-50ca7d025ec2",
         "skills": ["Codegeneratie", "IBM Granite", "AI-Ondersteunde Ontwikkeling", "Prompt Engineering", "Code Optimalisatie"]
+      },
+      "linux_lfs250": {
+        "platform": "The Linux Foundation",
+        "certification": "LFS250: Kubernetes and Cloud Native Essentials",
+        "description": "Begrip van cloud-native architectuur en containerorkestratie, de hoofdlijnen van de Kubernetes-architectuur, en cloud-native observability en applicatielevering met CI/CD- en GitOps-tools.",
+        "issued_by": "The Linux Foundation",
+        "credential_url": "https://www.credly.com/badges/e266ef63-cdbe-42c5-bdeb-aec0b47bb523",
+        "skills": ["Kubernetes", "Cloud-Native Architectuur", "Containers", "GitOps", "CI/CD", "Observability"]
+      },
+      "mckinsey_forward": {
+        "platform": "McKinsey.org",
+        "certification": "McKinsey.org Forward Program",
+        "description": "Het online leerprogramma McKinsey.org Forward voltooid: de McKinsey-aanpak voor probleemoplossing, effectieve communicatie, aanpasbare denkwijzen en gewoonten, en een digitale basistoolkit.",
+        "issued_by": "McKinsey.org",
+        "credential_url": "https://www.credly.com/badges/446ab0ba-2de5-49c4-9434-3930ab276aaf",
+        "skills": ["Probleemoplossing", "Communicatie", "Aanpassingsvermogen", "Digitale Toolkit"]
+      },
+      "google_app_dev_env": {
+        "platform": "Google Cloud",
+        "certification": "Set Up an App Dev Environment on Google Cloud",
+        "description": "Skill badge voor het bouwen en verbinden van opslaggerichte cloudinfrastructuur met Cloud Storage, Identity and Access Management, Cloud Functions en Pub/Sub.",
+        "issued_by": "Google Cloud",
+        "credential_url": "https://www.credly.com/badges/80fb5417-b117-4789-878f-c154e6685892",
+        "skills": ["Cloud Storage", "IAM", "Cloud Functions", "Pub/Sub", "Monitoring"]
+      },
+      "microsoft_ai_skills": {
+        "platform": "Microsoft Elevate",
+        "certification": "AI Skills Badge 2025-26",
+        "description": "Erkent de cumulatieve prestaties in diverse AI-leertrajecten met tools uit het Microsoft-ecosysteem, zoals Microsoft Copilot en Copilot Studio.",
+        "issued_by": "Microsoft Elevate",
+        "credential_url": "https://www.credly.com/badges/26b4ec5b-a305-4ab4-ba6b-8be05e7d1856",
+        "skills": ["Generatieve AI", "Prompting", "Verantwoord AI-gebruik", "Innovatie"]
+      },
+      "ibm_data_fundamentals": {
+        "platform": "IBM SkillsBuild",
+        "certification": "Data Fundamentals",
+        "description": "Kennis van dataanalyseconcepten, data science-methodologie en de tools in het data-ecosysteem, met een conceptueel begrip van het opschonen, verfijnen en visualiseren van data met IBM Watson Studio.",
+        "issued_by": "IBM SkillsBuild",
+        "credential_url": "https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483",
+        "skills": ["Data-analyse", "Data Science", "Datavisualisatie", "Watson Studio", "Data opschonen"]
+      },
+      "ibm_cybersecurity_fundamentals": {
+        "platform": "IBM SkillsBuild",
+        "certification": "Cybersecurity Fundamentals",
+        "description": "Basisbegrip van cybersecurityconcepten en -praktijken, waaronder dreigingsgroepen, aanvalstypen, social engineering, cryptografie, en hoe organisaties cyberaanvallen voorkomen, detecteren en erop reageren.",
+        "issued_by": "IBM SkillsBuild",
+        "credential_url": "https://www.credly.com/badges/1b491137-814a-4f22-b67e-c4ea05586626",
+        "skills": ["Cybersecurity", "Cryptografie", "Social Engineering", "Incidentrespons", "Dreigingsanalyse"]
       }
     }
   },

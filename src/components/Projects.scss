@@ -48,7 +48,7 @@
     gap: 3.25rem; // extra room so the overhanging wax seal never covers the card above
     margin: 0 auto 3rem;
     padding-top: 1.5rem;
-    max-width: 1000px;
+    max-width: 1100px;
   }
 
   .dossier {
@@ -252,11 +252,26 @@
   }
 
   .secondary-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 1rem;
+    --card-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; // a short last row stays centred instead of leaving an orphan on the left
+    gap: var(--card-gap);
     margin: 0 auto;
     max-width: 1100px;
+
+    > .secondary-card {
+      flex: 0 1 100%;
+      min-width: 0;
+
+      @media (min-width: 640px) {
+        flex-basis: calc((100% - var(--card-gap)) / 2);
+      }
+
+      @media (min-width: 960px) {
+        flex-basis: calc((100% - 2 * var(--card-gap)) / 3);
+      }
+    }
   }
 
   .secondary-card {

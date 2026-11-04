@@ -86,7 +86,7 @@ body .footer .social-links,
     border-radius: 8px;
     border: none;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--on-primary);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -180,7 +180,7 @@ body .footer .social-links,
     .contact-form {
       form {
         button {
-          color: white !important;
+          color: var(--on-primary) !important;
         }
       }
     }

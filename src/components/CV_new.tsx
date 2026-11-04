@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FaLinkedin, FaCode, FaServer, FaBrain } from 'react-icons/fa';
+import { FaLinkedin, FaCode, FaServer, FaBrain, FaRocket, FaLandmark, FaCloud, FaChartLine, FaUniversalAccess, FaTrophy } from 'react-icons/fa';
 import './CV_new.scss';
 
 const SkillsCloud = () => {
@@ -49,6 +49,37 @@ const SkillsCloud = () => {
   );
 };
 
+const strengthIcons = [<FaRocket />, <FaLandmark />, <FaCloud />, <FaChartLine />, <FaUniversalAccess />, <FaTrophy />];
+
+interface Strength {
+  title: string;
+  text: string;
+}
+
+const Strengths = () => {
+  const { t } = useTranslation();
+  const strengths = t('profile.strengths', { returnObjects: true }) as Strength[];
+  if (!Array.isArray(strengths)) return null;
+
+  return (
+    <div className="strengths">
+      <h3 className="strengths__title">{t('profile.strengthsTitle')}</h3>
+      <ul className="strengths__grid">
+        {strengths.map((item, idx) => (
+          <li key={idx} className="strength-card">
+            <span className="strength-card__icon" aria-hidden="true">
+              {strengthIcons[idx % strengthIcons.length]}
+            </span>
+            <h4 className="strength-card__title">{item.title}</h4>
+            <p className="strength-card__text">{item.text}</p>
+          </li>
+        ))}
+      </ul>
+      <p className="strengths__open">{t('profile.openTo')}</p>
+    </div>
+  );
+};
+
 const CV: React.FC = () => {
   const { t } = useTranslation();
 
@@ -69,7 +100,13 @@ const CV: React.FC = () => {
         >
           <h2 className="section-title">{t('profile.title')}</h2>
           <div className="profile-content">
-            <p>{t('profile.description')}</p>
+            <Strengths />
+
+            {t('profile.description')
+              .split(/\n\s*\n/)
+              .map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
             
             <SkillsCloud />
 

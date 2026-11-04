@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import CVRequestModal from './CVRequestModal';
 import { useTheme } from './ThemeContext';
 import * as React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaYoutube, FaTwitter, FaShareAlt, FaMoon, FaSun } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaTwitter, FaShareAlt, FaMoon, FaSun } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
@@ -187,12 +187,6 @@ const Header = () => {
       url: 'https://x.com/rayklanderman',
       label: 'X (Twitter)',
       color: '#e7e9ea' // X's dark-theme glyph gray, legible on Forest-Ink
-    },
-    {
-      icon: <FaEnvelope />,
-      url: 'mailto:rayklanderman@gmail.com',
-      label: 'Email',
-      color: '#EA4335'
     }
   ];
 
