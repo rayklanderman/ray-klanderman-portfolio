@@ -16,7 +16,7 @@
   },
   "projects": {
     "title": "Projets",
-    "subtitle": "Produits d’IA appliquée, systèmes de ML et applications web et mobiles, avec des études de cas sur les choix techniques.",
+    "subtitle": "Produits d’IA appliquée, systèmes de ML et applications web et mobiles que je construis de bout en bout comme ingénieur full-stack et IA, avec des études de cas sur les choix techniques.",
     "featured": "Études de cas principales",
     "more": "Autres projets",
     "filterLabel": "Filtrer les projets par catégorie",
@@ -43,8 +43,9 @@
         "period": "2025 – fin prévue en 2028",
         "status": "En cours",
         "description": [
+          "Moyenne cumulative (GPA) 3,98 ; 57 crédits sur 120 obtenus (en septembre 2026)",
           "Tableau d’honneur : President’s List, trimestre 5 de 2025–2026",
-          "Diplôme en cours, axé sur le génie logiciel et l’algorithmique."
+          "Trimestre de novembre 2026 : Software Engineering 1, Data Structures, Globalization et World Literature"
         ],
         "skills": []
       },
@@ -552,7 +553,7 @@
   },
   "writing": {
     "title": "Articles et démos",
-    "subtitle": "Articles sur l’ingénierie assistée par l’IA et la mise en production, ainsi que des démos enregistrées.",
+    "subtitle": "Articles et publications sur l’ingénierie assistée par l’IA, l’IA open source et la mise en production, sur LinkedIn, Medium et X, ainsi que des démos enregistrées.",
     "readMore": "Plus d’articles sur LinkedIn",
     "items": [
       {
@@ -560,7 +561,28 @@
         "venue": "LinkedIn Pulse",
         "date": "Mars 2026",
         "teaser": "Le code généré par l'IA est partout — mais les erreurs générées par l'IA aussi. Un plaidoyer concret pour faire de la revue de code la dernière ligne de défense contre les sorties de mauvaise qualité et hallucinées.",
-        "url": "#"
+        "url": "https://www.linkedin.com/pulse/code-review-firewall-against-ai-slop-raymond-klanderman-gpemc/"
+      },
+      {
+        "title": "The Irreplaceable Role of Human Developers in the Age of AI",
+        "venue": "Medium",
+        "date": "",
+        "teaser": "Pourquoi le jugement humain, le contexte et la responsabilité restent au cœur du développement logiciel alors que les outils de code IA entrent dans le quotidien.",
+        "url": "https://medium.com/@raymondklanderman/the-irreplaceable-role-of-human-developers-in-the-age-of-ai-d2a3356db2a5"
+      },
+      {
+        "title": "Open-source LLMs aren’t just chasing — they’ve arrived",
+        "venue": "X",
+        "date": "Février 2026",
+        "teaser": "Un bref point de vue sur les LLM open source qui comblent l’écart avec les modèles propriétaires.",
+        "url": "https://x.com/rayklanderman/status/2018610898332528928"
+      },
+      {
+        "title": "Open-Source Frontier AI Models: Why They’re Essential Amid the Intensifying 2026 AI Race",
+        "venue": "X",
+        "date": "Janvier 2026",
+        "teaser": "Pourquoi les modèles de pointe open source comptent pour l’accès, la transparence et la concurrence alors que la course à l’IA s’intensifie en 2026.",
+        "url": "https://x.com/rayklanderman/status/2013686550744248642"
       },
       {
         "title": "Code Utopia en 2026 : Les quatre piliers d'un code prêt pour la production",
@@ -659,15 +681,15 @@
   },
   "about": {
     "title": "À propos",
-    "summary": "Je suis ingénieur logiciel et IA et je construis des systèmes concrets pour la santé, l’éducation, l’accessibilité et la participation citoyenne. Mon travail associe applications LLM, apprentissage automatique, workflows agentiques, développement web et mobile moderne et infrastructure cloud. À travers des produits indépendants et des projets de compétition, j’ai travaillé sur l’évaluation de modèles, les garde-fous de sécurité, les sorties structurées, la protection des données et le déploiement fiable. Mon objectif : rendre les technologies émergentes utiles aux personnes et aux communautés.",
+    "summary": "Je suis ingénieur logiciel et IA et je construis des systèmes concrets pour la santé, l’éducation, l’accessibilité et la participation citoyenne. Sur mes projets, je travaille de bout en bout à la fois comme ingénieur full-stack et comme ingénieur IA : modèles de données, API, interfaces, tests et déploiement, mais aussi choix des modèles, conception des prompts et des agents, évaluation et garde-fous. Mon travail associe applications LLM, apprentissage automatique, workflows agentiques, développement web et mobile et infrastructure cloud, avec une attention particulière à la protection des données et au déploiement fiable. Mon objectif : rendre les technologies émergentes utiles aux personnes et aux communautés.",
     "openTo": "Ouvert aux postes en génie logiciel, IA/ML et données, ainsi qu’aux collaborations autour d’une IA centrée sur l’humain.",
     "backgroundTitle": "Parcours",
     "background": "En parallèle de l’ingénierie, j’ai un parcours dans les médias numériques : spécialiste des médias numériques au Bureau de la représentante des femmes de Nairobi (2017–2024) et spécialiste des médias sous contrat au Parlement panafricain (2025). Je me suis formé avec Power Learn Project (2024) et le programme Data Science d’ALX (2025–2026), et je prépare une licence (BSc) en informatique à l’University of the People.",
     "highlightsTitle": "En bref",
     "highlights": [
       {
-        "title": "Produits IA en ligne",
-        "text": "AI Health Chat (bêta publique), TutaLearn, Sauti Mtaani Nairobi et Luminae sont en ligne."
+        "title": "Full-stack + IA, de bout en bout",
+        "text": "Je construis le produit entier : base de données, API, interface et déploiement, ainsi que le choix des modèles, les prompts, les agents, l’évaluation et les garde-fous. AI Health Chat, TutaLearn, Sauti Mtaani Nairobi et Luminae sont en ligne."
       },
       {
         "title": "Sécurité et confidentialité",
@@ -687,7 +709,7 @@
       },
       {
         "title": "Distinctions",
-        "text": "1re place au hackathon des diplômés de la promotion 2024 de Power Learn Project ; President’s List à l’University of the People."
+        "text": "1re place au hackathon des diplômés de la promotion 2024 de Power Learn Project ; President’s List et moyenne cumulative (GPA) de 3,98 à l’University of the People."
       }
     ]
   },

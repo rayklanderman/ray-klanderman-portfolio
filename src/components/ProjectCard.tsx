@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaExternalLinkAlt, FaGithub, FaLock, FaTrophy } from 'react-icons/fa';
+import { FaCode, FaExternalLinkAlt, FaGithub, FaLock, FaTrophy } from 'react-icons/fa';
 import { Project, projectPath, publicRepoUrl } from '../data/projects';
 
 interface ProjectLinksProps {
@@ -79,6 +79,13 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, variant, headingLevel = 'h
         <Link to={projectPath(project.slug)}>{project.name}</Link>
       </Heading>
       <p className="project-card__tagline">{project.tagline}</p>
+      <p className="project-card__role">
+        <FaCode aria-hidden="true" />
+        <span>
+          <span className="visually-hidden">{t('caseStudy.role')}: </span>
+          {project.role}
+        </span>
+      </p>
       {project.award && (
         <p className="project-card__award">
           <FaTrophy aria-hidden="true" /> {project.award}

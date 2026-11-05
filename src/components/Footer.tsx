@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { LINKS, PERSON } from '../data/site';
 import './Footer.scss';
 
@@ -10,6 +10,7 @@ const SOCIAL = [
   { icon: <FaLinkedin aria-hidden="true" />, url: LINKS.linkedin, label: 'LinkedIn' },
   { icon: <FaYoutube aria-hidden="true" />, url: LINKS.youtube, label: 'YouTube' },
   { icon: <FaTwitter aria-hidden="true" />, url: LINKS.x, label: 'X (Twitter)' },
+  { icon: <FaMedium aria-hidden="true" />, url: LINKS.medium, label: 'Medium' },
 ];
 
 const Footer: FC = () => {

@@ -7,7 +7,8 @@ import './Writing.scss';
 interface WritingItem {
   title: string;
   venue: string;
-  date: string;
+  /** Optional: leave empty when the publication date is not known. */
+  date?: string;
   teaser: string;
   url: string;
 }
@@ -33,7 +34,7 @@ const Writing: FC = () => {
                   &ldquo;
                 </span>
                 <p className="writing-card__meta mono">
-                  {item.venue} · {item.date}
+                  {item.date ? `${item.venue} · ${item.date}` : item.venue}
                 </p>
                 <h3 className="writing-card__title">
                   {item.url && item.url !== '#' ? (

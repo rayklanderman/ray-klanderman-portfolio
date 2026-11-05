@@ -16,7 +16,7 @@
   },
   "projects": {
     "title": "Projecten",
-    "subtitle": "Toegepaste AI-producten, ML-systemen en web- en mobiele apps, met casestudy’s over de technische keuzes.",
+    "subtitle": "Toegepaste AI-producten, ML-systemen en web- en mobiele apps die ik van begin tot eind bouw als full-stack- en AI-engineer, met casestudy’s over de technische keuzes.",
     "featured": "Uitgelichte casestudy’s",
     "more": "Meer projecten",
     "filterLabel": "Projecten filteren op categorie",
@@ -43,8 +43,9 @@
         "period": "2025 – verwacht 2028",
         "status": "Bezig",
         "description": [
+          "Cumulatieve GPA 3,98; 57 van de 120 studiepunten behaald (stand september 2026)",
           "Eervolle vermelding: President’s List, term 5 van 2025–2026",
-          "Opleiding loopt nog, met focus op software-engineering en algoritmen."
+          "Term november 2026: Software Engineering 1, Data Structures, Globalization en World Literature"
         ],
         "skills": []
       },
@@ -552,7 +553,7 @@
   },
   "writing": {
     "title": "Artikelen en demo’s",
-    "subtitle": "Artikelen over AI-ondersteunde engineering en productierijpheid, plus opgenomen demo’s.",
+    "subtitle": "Artikelen en posts over AI-ondersteunde engineering, open-source AI en productieklare software, op LinkedIn, Medium en X, plus opgenomen demo’s.",
     "readMore": "Meer artikelen op LinkedIn",
     "items": [
       {
@@ -560,7 +561,28 @@
         "venue": "LinkedIn Pulse",
         "date": "Maart 2026",
         "teaser": "AI-gegenereerde code is overal — maar AI-gegenereerde fouten ook. Een praktisch pleidooi voor code review als laatste verdedigingslinie tegen slordige, gehallucineerde output.",
-        "url": "#"
+        "url": "https://www.linkedin.com/pulse/code-review-firewall-against-ai-slop-raymond-klanderman-gpemc/"
+      },
+      {
+        "title": "The Irreplaceable Role of Human Developers in the Age of AI",
+        "venue": "Medium",
+        "date": "",
+        "teaser": "Waarom menselijk oordeel, context en verantwoordelijkheid centraal blijven in softwareontwikkeling nu AI-programmeertools dagelijkse kost worden.",
+        "url": "https://medium.com/@raymondklanderman/the-irreplaceable-role-of-human-developers-in-the-age-of-ai-d2a3356db2a5"
+      },
+      {
+        "title": "Open-source LLMs aren’t just chasing — they’ve arrived",
+        "venue": "X",
+        "date": "Februari 2026",
+        "teaser": "Een korte visie op open-source LLM’s die de achterstand op gesloten modellen inhalen.",
+        "url": "https://x.com/rayklanderman/status/2018610898332528928"
+      },
+      {
+        "title": "Open-Source Frontier AI Models: Why They’re Essential Amid the Intensifying 2026 AI Race",
+        "venue": "X",
+        "date": "Januari 2026",
+        "teaser": "Waarom open frontier-modellen belangrijk zijn voor toegang, transparantie en concurrentie nu de AI-race van 2026 heviger wordt.",
+        "url": "https://x.com/rayklanderman/status/2013686550744248642"
       },
       {
         "title": "Code Utopia in 2026: De vier pijlers van productieklare code",
@@ -659,15 +681,15 @@
   },
   "about": {
     "title": "Over mij",
-    "summary": "Ik ben software- en AI-engineer en bouw praktische systemen voor de zorg, het onderwijs, toegankelijkheid en publieke participatie. Mijn werk combineert LLM-toepassingen, machine learning, agentische workflows, moderne web- en mobiele ontwikkeling en cloudinfrastructuur. In eigen producten en challengeprojecten heb ik gewerkt aan modelevaluatie, veiligheidsmaatregelen, gestructureerde output, gegevensbescherming en betrouwbare uitrol. Mijn doel is nieuwe technologie nuttig te maken voor mensen en gemeenschappen.",
+    "summary": "Ik ben software- en AI-engineer en bouw praktische systemen voor de zorg, het onderwijs, toegankelijkheid en publieke participatie. Bij mijn projecten werk ik van begin tot eind als full-stack engineer én als AI-engineer: datamodellen, API’s, interfaces, tests en uitrol, maar ook modelkeuze, prompt- en agentontwerp, evaluatie en veiligheidsmaatregelen. Mijn werk combineert LLM-toepassingen, machine learning, agentische workflows, web- en mobiele ontwikkeling en cloudinfrastructuur, met veel aandacht voor gegevensbescherming en betrouwbare uitrol. Mijn doel is nieuwe technologie nuttig te maken voor mensen en gemeenschappen.",
     "openTo": "Open voor functies in software-engineering, AI/ML en data, en voor samenwerkingen rond mensgerichte AI.",
     "backgroundTitle": "Achtergrond",
     "background": "Naast engineering heb ik een achtergrond in digitale media: Digital Media Specialist bij het kantoor van de Nairobi Woman Representative (2017–2024) en Media Specialist op contractbasis bij het Pan-Afrikaans Parlement (2025). Ik volgde opleidingen bij Power Learn Project (2024) en het ALX Data Science-programma (2025–2026), en ik studeer voor een BSc Computer Science aan de University of the People.",
     "highlightsTitle": "In het kort",
     "highlights": [
       {
-        "title": "Live AI-producten",
-        "text": "AI Health Chat (publieke bèta), TutaLearn, Sauti Mtaani Nairobi en Luminae staan live op het web."
+        "title": "Full-stack + AI, van begin tot eind",
+        "text": "Ik bouw het hele product: database, API’s, interface en uitrol, plus modelkeuze, prompts, agents, evaluatie en veiligheidsmaatregelen. AI Health Chat, TutaLearn, Sauti Mtaani Nairobi en Luminae staan live."
       },
       {
         "title": "Veiligheid en privacy",
@@ -687,7 +709,7 @@
       },
       {
         "title": "Erkenning",
-        "text": "1e plaats bij de afstudeerhackathon van Power Learn Project, lichting 2024; President’s List aan de University of the People."
+        "text": "1e plaats bij de afstudeerhackathon van Power Learn Project, lichting 2024; President’s List en een cumulatieve GPA van 3,98 aan de University of the People."
       }
     ]
   },

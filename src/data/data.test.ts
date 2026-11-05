@@ -24,6 +24,10 @@ const OWNER_LIVE_URLS: Record<string, string> = {
 };
 
 const PRIVATE_REPO_NAMES = ['ai-health-chat', 'tutalearn', 'Serenity-AI', 'live-interviewer', 'kazi-connect', 'UrbanSpark'];
+const PRIVATE_REPO_PATHS = [
+  ...PRIVATE_REPO_NAMES.map((name) => `github.com/rayklanderman/${name}`),
+  'github.com/RealDevRay/Sauti-Mtaani-Nairobi',
+];
 
 describe('project registry', () => {
   it('has unique, URL-safe slugs', () => {
@@ -65,9 +69,15 @@ describe('project registry', () => {
         expect(publicRepoUrl(p)).toBeUndefined();
       }
       const serialised = JSON.stringify(p);
-      for (const name of PRIVATE_REPO_NAMES) {
-        expect(serialised).not.toContain(`github.com/rayklanderman/${name}`);
+      for (const repoPath of PRIVATE_REPO_PATHS) {
+        expect(serialised).not.toContain(repoPath);
       }
+    }
+  });
+
+  it('gives every project an explicit role', () => {
+    for (const p of PROJECTS) {
+      expect(p.role, p.slug).toMatch(/engineer/i);
     }
   });
 

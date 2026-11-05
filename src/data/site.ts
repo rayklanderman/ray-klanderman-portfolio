@@ -20,6 +20,7 @@ export const LINKS = {
   linkedin: 'https://www.linkedin.com/in/raymondklanderman/',
   youtube: 'https://www.youtube.com/@RealDevRay',
   x: 'https://x.com/rayklanderman',
+  medium: 'https://medium.com/@raymondklanderman',
   googleSkills: 'https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
   services: 'https://devray.qzz.io/',
   showcasePlaylist: 'https://www.youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G',
@@ -41,4 +42,5 @@ export const SOCIAL_PROFILES = [
   { label: 'LinkedIn', url: LINKS.linkedin },
   { label: 'YouTube', url: LINKS.youtube },
   { label: 'X (Twitter)', url: LINKS.x },
+  { label: 'Medium', url: LINKS.medium },
 ] as const;

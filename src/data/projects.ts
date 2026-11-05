@@ -71,7 +71,8 @@ export interface Project {
   status: string;
   /** Nature of the work: independent product, hackathon entry, course capstone, etc. */
   projectType: string;
-  role?: string;
+  /** My role on the project, shown on cards and case studies. */
+  role: string;
   years?: string;
   event?: string;
   award?: string;
@@ -98,7 +99,7 @@ export const PROJECTS: Project[] = [
     order: 1,
     status: 'Public beta',
     projectType: 'Independent product',
-    role: 'Founder and lead engineer',
+    role: 'Founder · full-stack & AI engineer',
     years: '2024 – present',
     award: '1st place, Power Learn Project Class of 2024 graduate hackathon (December 2024)',
     liveUrl: 'https://aihealthchat.qzz.io/',
@@ -185,6 +186,7 @@ export const PROJECTS: Project[] = [
     order: 2,
     status: 'Mobile prototype',
     projectType: 'Innovation showcase project',
+    role: 'Full-stack & AI engineer',
     event: 'MUA Innovation Week 2026',
     years: '2026',
     repo: { visibility: 'public', url: 'https://github.com/RealDevRay/eyesense' },
@@ -261,6 +263,7 @@ export const PROJECTS: Project[] = [
     order: 3,
     status: 'Competition entry',
     projectType: 'Programme final project (optional)',
+    role: 'Machine learning & AI engineer',
     event: 'ALX Data Science · ExploreAI Academy community competition on Kaggle',
     years: '2026',
     repo: { visibility: 'public', url: 'https://github.com/rayklanderman/mrp-2026' },
@@ -321,9 +324,10 @@ export const PROJECTS: Project[] = [
     order: 4,
     status: 'Live web app',
     projectType: 'Civic platform',
+    role: 'Full-stack & AI engineer',
     event: 'Built for the Office of the Nairobi Woman Representative',
     liveUrl: 'https://www.sautimtaani.site/',
-    repo: { visibility: 'unknown' },
+    repo: { visibility: 'private' },
     techStack: ['Next.js', 'TypeScript', 'Supabase (PostgreSQL, RLS)', 'Groq', 'Vitest'],
     highlights: [
       'Consent-first ward polls in English and Kiswahili, with aggregate-only staff dashboards',
@@ -387,6 +391,7 @@ export const PROJECTS: Project[] = [
     order: 5,
     status: 'Live web app · active development',
     projectType: 'Independent product',
+    role: 'Full-stack & AI engineer',
     liveUrl: 'https://tutalearn.qzz.io/',
     repo: { visibility: 'private' },
     techStack: ['Next.js', 'React', 'TypeScript', 'Supabase (Auth, PostgreSQL, RLS)', 'OpenRouter'],
@@ -445,6 +450,7 @@ export const PROJECTS: Project[] = [
     order: 6,
     status: 'Live web app',
     projectType: 'Hackathon entry',
+    role: 'Full-stack & AI engineer',
     event: 'Mistral Worldwide Hackathon',
     liveUrl: 'https://luminae.qzz.io/',
     videoUrl: 'https://youtu.be/ODygWunOA6Y',
@@ -511,6 +517,7 @@ export const PROJECTS: Project[] = [
     order: 7,
     status: 'In development',
     projectType: 'Independent project',
+    role: 'Full-stack & AI engineer',
     repo: { visibility: 'private' },
     techStack: ['Flutter', 'Dart', 'Riverpod', 'Supabase', 'Groq (multimodal)', 'Hive (offline cache)'],
     highlights: [
@@ -540,6 +547,7 @@ export const PROJECTS: Project[] = [
     order: 8,
     status: 'Course capstone',
     projectType: 'Course capstone',
+    role: 'Full-stack & AI engineer',
     event: 'Google 5-Day AI Agents course',
     repo: { visibility: 'public', url: 'https://github.com/rayklanderman/CapstoneProject-Autoresearcher' },
     techStack: ['Vertex AI ADK', 'Gemini 2.5 Pro', 'Gemini 2.5 Flash', 'Tavily', 'Pandoc', 'LaTeX', 'Jupyter'],
@@ -566,6 +574,7 @@ export const PROJECTS: Project[] = [
     order: 9,
     status: 'Live web app',
     projectType: 'Independent project',
+    role: 'Full-stack & AI engineer',
     liveUrl: 'https://postshifterpro.qzz.io/',
     repo: { visibility: 'unknown' },
     techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Groq', 'Cheerio'],
@@ -592,6 +601,7 @@ export const PROJECTS: Project[] = [
     order: 10,
     status: 'Live web app',
     projectType: 'Independent project',
+    role: 'Full-stack & AI engineer',
     liveUrl: 'https://liveinterviewer.vercel.app/',
     repo: { visibility: 'private' },
     techStack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Mistral', 'Groq', 'PWA'],
@@ -618,6 +628,7 @@ export const PROJECTS: Project[] = [
     order: 11,
     status: 'Live web app',
     projectType: 'Independent project',
+    role: 'Full-stack & AI engineer',
     liveUrl: 'https://serenityai.qzz.io/',
     repo: { visibility: 'private' },
     techStack: ['React', 'TypeScript', 'JacLang', 'Groq'],
@@ -644,6 +655,7 @@ export const PROJECTS: Project[] = [
     order: 12,
     status: 'Live demo',
     projectType: 'Independent project',
+    role: 'Full-stack & AI engineer',
     liveUrl: 'https://geniuscodebase.streamlit.app/',
     liveNote: 'Hosted on Streamlit Community Cloud; the app may need a moment to wake up.',
     repo: { visibility: 'public', url: 'https://github.com/rayklanderman/jaseci-proj' },
@@ -671,6 +683,7 @@ export const PROJECTS: Project[] = [
     order: 13,
     status: 'Live web app',
     projectType: 'Independent project',
+    role: 'Full-stack & AI engineer',
     liveUrl: 'https://kazi-connect.vercel.app/',
     repo: { visibility: 'private' },
     techStack: ['Next.js', 'TypeScript', 'Firebase', 'OpenAI', 'PWA'],

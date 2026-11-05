@@ -19,13 +19,19 @@ describe('prerendered HTML', () => {
     }
   });
 
-  it('never publishes contact details, GPA or credit counts', () => {
+  it('never publishes contact details or outdated academic figures', () => {
     for (const route of PRERENDER_ROUTES) {
       const html = render(route) + head(route);
       expect(html, route).not.toMatch(/mailto:|tel:/);
       expect(html, route).not.toMatch(/[\w.+-]+@[\w-]+\.(com|org|net|ke|io|dev)\b/);
-      expect(html, route).not.toMatch(/GPA|3\.98|3\.95|\/\s*120/);
+      expect(html, route).not.toMatch(/3\.95|\b(21|45)\s*(\/|of)\s*120/);
     }
+  });
+
+  it('shows the current University of the People record on the home page', () => {
+    const html = render('/');
+    expect(html).toContain('Cumulative GPA 3.98; 57 of 120 credits earned (as of September 2026)');
+    expect(html).toContain('President’s List');
   });
 
   it('opens external links safely', () => {

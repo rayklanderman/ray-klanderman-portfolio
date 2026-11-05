@@ -121,6 +121,22 @@
     font-size: 0.97rem;
   }
 
+  &__role {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+
+    svg {
+      flex-shrink: 0;
+      color: var(--accent-live);
+    }
+  }
+
   &__award {
     display: flex;
     align-items: flex-start;

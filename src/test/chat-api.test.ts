@@ -60,8 +60,9 @@ describe('chat API message sanitising', () => {
 });
 
 describe('chat system prompt', () => {
-  it('contains no GPA, credit counts or contact details', () => {
-    expect(SYSTEM_PROMPT).not.toMatch(/3\.9[58]|\d+\s*\/\s*120/);
+  it('contains only current academic figures and no contact details', () => {
+    expect(SYSTEM_PROMPT).toContain('Cumulative GPA 3.98 with 57 of 120 credits');
+    expect(SYSTEM_PROMPT).not.toMatch(/3\.95|\b(21|45)\s*(\/|of)\s*120/);
     expect(SYSTEM_PROMPT).not.toMatch(/[\w.+-]+@[\w-]+\.[\w.]+/);
     expect(SYSTEM_PROMPT).not.toMatch(/\+?\d[\d\s-]{8,}\d/);
   });

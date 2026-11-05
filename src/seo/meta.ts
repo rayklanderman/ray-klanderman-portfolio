@@ -21,7 +21,7 @@ const NOINDEX = 'noindex, follow';
 
 const HOME_TITLE = 'Raymond (DevRay) Klanderman | Software & AI Engineer';
 const HOME_DESCRIPTION =
-  'Software & AI engineer in Nairobi building applied AI for healthcare, education, accessibility and civic participation. Projects, case studies and credentials.';
+  'Software & AI engineer in Nairobi building applied AI end to end, full stack to models, for healthcare, education, accessibility and civic participation.';
 
 export const NOT_FOUND_PATH = '/404';
 
@@ -55,9 +55,9 @@ const personSchema = (): Record<string, unknown> => ({
   image: `${SITE_URL}/images/profile1.png`,
   jobTitle: PERSON.title,
   description:
-    'Software and AI engineer building applied AI systems for healthcare, education, accessibility and civic participation.',
+    'Software and AI engineer who builds applied AI products end to end, as both full-stack and AI engineer, for healthcare, education, accessibility and civic participation.',
   address: { '@type': 'PostalAddress', addressLocality: 'Nairobi', addressCountry: 'KE' },
-  sameAs: [LINKS.github, LINKS.linkedin, LINKS.youtube, LINKS.x, LINKS.googleSkills],
+  sameAs: [LINKS.github, LINKS.linkedin, LINKS.youtube, LINKS.x, LINKS.medium, LINKS.googleSkills],
   alumniOf: [{ '@type': 'CollegeOrUniversity', name: 'Management University of Africa' }],
   knowsAbout: [
     'Applied artificial intelligence',
