@@ -11,8 +11,8 @@ export default defineConfig(({ isSsrBuild }) => ({
         registerType: 'autoUpdate',
         workbox: {
           globPatterns: ['**/*.{js,css,html,svg,png,jpg,webp,ico}'],
-          // Large badge artwork and stray local folders are not worth precaching.
-          globIgnores: ['**/node_modules/**', 'badges/**'],
+          // Large badge artwork, video posters and stray local folders are not worth precaching.
+          globIgnores: ['**/node_modules/**', 'badges/**', 'images/showcase/**'],
           skipWaiting: true,
           clientsClaim: true,
           cleanupOutdatedCaches: true,

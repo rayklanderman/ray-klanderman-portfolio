@@ -103,6 +103,7 @@ export const PROJECTS: Project[] = [
     years: '2024 – present',
     award: '1st place, Power Learn Project Class of 2024 graduate hackathon (December 2024)',
     liveUrl: 'https://aihealthchat.qzz.io/',
+    videoUrl: 'https://youtu.be/Ic3GXYO-cS0',
     repo: { visibility: 'private' },
     techStack: [
       'React',
@@ -327,6 +328,7 @@ export const PROJECTS: Project[] = [
     role: 'Full-stack & AI engineer',
     event: 'Built for the Office of the Nairobi Woman Representative',
     liveUrl: 'https://www.sautimtaani.site/',
+    videoUrl: 'https://youtu.be/xKE3hNbTLGs',
     repo: { visibility: 'private' },
     techStack: ['Next.js', 'TypeScript', 'Supabase (PostgreSQL, RLS)', 'Groq', 'Vitest'],
     highlights: [
@@ -549,6 +551,7 @@ export const PROJECTS: Project[] = [
     projectType: 'Course capstone',
     role: 'Full-stack & AI engineer',
     event: 'Google 5-Day AI Agents course',
+    videoUrl: 'https://youtu.be/s5Sktg34uC0',
     repo: { visibility: 'public', url: 'https://github.com/rayklanderman/CapstoneProject-Autoresearcher' },
     techStack: ['Vertex AI ADK', 'Gemini 2.5 Pro', 'Gemini 2.5 Flash', 'Tavily', 'Pandoc', 'LaTeX', 'Jupyter'],
     highlights: ['Seven-agent hierarchy with web retrieval and citations', 'Report compiled to a LaTeX PDF'],

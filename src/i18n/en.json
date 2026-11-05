@@ -561,7 +561,11 @@
   "showcase": {
     "title": "Demo videos",
     "description": "Recorded project presentations, demos and technical walkthroughs.",
-    "load": "Load the demo playlist",
+    "play": "Play “{{title}}”",
+    "videoCount": "{{count}} videos",
+    "listLabel": "Videos in the playlist",
+    "nowPlaying": "Now playing",
+    "caseStudy": "Case study",
     "privacy": "Loads the YouTube player (youtube-nocookie.com).",
     "iframeTitle": "Project demo playlist on YouTube",
     "openOnYoutube": "Open the playlist on YouTube"

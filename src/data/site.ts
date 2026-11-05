@@ -23,10 +23,27 @@ export const LINKS = {
   medium: 'https://medium.com/@raymondklanderman',
   googleSkills: 'https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504',
   services: 'https://devray.qzz.io/',
-  showcasePlaylist: 'https://www.youtube.com/playlist?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G',
-  showcaseEmbed:
-    'https://www.youtube-nocookie.com/embed/videoseries?list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G',
+  showcasePlaylist: 'https://www.youtube.com/playlist?list=PLJa0i7fpyLmA',
 } as const;
+
+/**
+ * "My Projects in Action" playlist (owner-supplied, November 2026). Order and video IDs match
+ * the playlist on YouTube. Thumbnails are self-hosted under /images/showcase so no Google
+ * request is made until a visitor presses play.
+ */
+export const SHOWCASE = {
+  playlistId: 'PLJa0i7fpyLmA',
+  playlistTitle: 'My Projects in Action',
+  videos: [
+    { id: 'Ic3GXYO-cS0', title: 'AI Health Chat', project: 'ai-health-chat' },
+    { id: 'xKE3hNbTLGs', title: 'Sauti Mtaani Nairobi', project: 'sauti-mtaani-nairobi' },
+    { id: 'ODygWunOA6Y', title: 'Luminae', project: 'luminae' },
+    { id: 's5Sktg34uC0', title: 'AutoResearcher', project: 'autoresearcher' },
+  ],
+} as const;
+
+export const showcaseEmbedUrl = (videoId: string): string =>
+  `https://www.youtube-nocookie.com/embed/${videoId}?list=${SHOWCASE.playlistId}&autoplay=1&rel=0&playsinline=1`;
 
 export const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mnnpbdzv';
 

@@ -11,7 +11,26 @@ import {
 } from './projects';
 import { ROLES, TRAINING } from './experience';
 import { EXPERTISE } from './expertise';
-import { CV_PUBLIC_URL, LINKS } from './site';
+import { CV_PUBLIC_URL, LINKS, SHOWCASE, showcaseEmbedUrl } from './site';
+import { existsSync } from 'node:fs';
+
+describe('demo video showcase', () => {
+  it('uses the "My Projects in Action" playlist', () => {
+    expect(LINKS.showcasePlaylist).toBe('https://www.youtube.com/playlist?list=PLJa0i7fpyLmA');
+    expect(showcaseEmbedUrl('abc')).toMatch(/^https:\/\/www\.youtube-nocookie\.com\/embed\/abc\?list=PLJa0i7fpyLmA&/);
+  });
+
+  it('links every video to its case study, with self-hosted thumbnails', () => {
+    for (const video of SHOWCASE.videos) {
+      const project = getProjectBySlug(video.project);
+      expect(project, video.id).toBeDefined();
+      expect(project!.videoUrl).toBe(`https://youtu.be/${video.id}`);
+      for (const suffix of ['', '-sm']) {
+        expect(existsSync(`public/images/showcase/${video.id}${suffix}.jpg`), `${video.id}${suffix}`).toBe(true);
+      }
+    }
+  });
+});
 
 const OWNER_LIVE_URLS: Record<string, string> = {
   'ai-health-chat': 'https://aihealthchat.qzz.io/',

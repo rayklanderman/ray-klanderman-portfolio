@@ -546,7 +546,11 @@
   "showcase": {
     "title": "Vidéos de démonstration",
     "description": "Présentations de projets, démonstrations et explications techniques enregistrées.",
-    "load": "Charger la playlist de démos",
+    "play": "Lire « {{title}} »",
+    "videoCount": "{{count}} vidéos",
+    "listLabel": "Vidéos de la playlist",
+    "nowPlaying": "En lecture",
+    "caseStudy": "Étude de cas",
     "privacy": "Charge le lecteur YouTube (youtube-nocookie.com).",
     "iframeTitle": "Playlist YouTube de démonstrations de projets",
     "openOnYoutube": "Ouvrir la playlist sur YouTube"

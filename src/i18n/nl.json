@@ -546,7 +546,11 @@
   "showcase": {
     "title": "Demovideo’s",
     "description": "Opgenomen projectpresentaties, demo’s en technische uitleg.",
-    "load": "Demoplaylist laden",
+    "play": "„{{title}}” afspelen",
+    "videoCount": "{{count}} video’s",
+    "listLabel": "Video’s in de playlist",
+    "nowPlaying": "Speelt nu",
+    "caseStudy": "Casestudy",
     "privacy": "Laadt de YouTube-speler (youtube-nocookie.com).",
     "iframeTitle": "YouTube-playlist met projectdemo’s",
     "openOnYoutube": "Playlist openen op YouTube"
