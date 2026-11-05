@@ -313,11 +313,38 @@
   }
 }
 
-.chat-footer-note {
-  text-align: center;
-  font-size: 11px;
-  color: var(--text-muted);
-  margin-top: 6px;
+.chat-markdown {
+  white-space: normal;
+
+  p,
+  ul,
+  ol {
+    margin: 0;
+  }
+
+  > * + * {
+    margin-top: 0.6em;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.25em;
+  }
+
+  li + li {
+    margin-top: 0.3em;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+  }
 }
 
 @keyframes spin {

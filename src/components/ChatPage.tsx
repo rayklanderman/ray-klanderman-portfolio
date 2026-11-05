@@ -3,6 +3,7 @@ import { FaRobot, FaSpinner, FaPaperPlane, FaArrowLeft, FaTrash } from 'react-ic
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { sendMessage, ChatMessage } from '../services/groq';
+import ChatMarkdown from './ChatMarkdown';
 import './ChatPage.scss';
 
 const ChatPage = () => {
@@ -96,7 +97,9 @@ const ChatPage = () => {
               )}
               <div className="msg-bubble-wrap">
                 <div className="msg-label">{msg.role === 'assistant' ? t('chat.rayAi') : t('chat.you')}</div>
-                <div className="msg-bubble">{msg.content}</div>
+                <div className="msg-bubble">
+                  {msg.role === 'assistant' ? <ChatMarkdown text={msg.content} /> : msg.content}
+                </div>
               </div>
             </div>
           ))}
@@ -161,7 +164,6 @@ const ChatPage = () => {
               <FaPaperPlane aria-hidden="true" />
             </button>
           </div>
-          <p className="chat-footer-note">{t('chat.poweredBy')}</p>
         </div>
       </div>
     </div>
