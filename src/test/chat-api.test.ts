@@ -1,6 +1,8 @@
 // @vitest-environment node
 import { describe, expect, it } from 'vitest';
 import { GROQ_MODELS, LIMITS, SYSTEM_PROMPT, groqRequestBody, modelOrder, sanitizeMessages } from '../../api/chat';
+import { PROJECTS } from '../data/projects';
+import en from '../i18n/en.json';
 
 describe('chat API message sanitising', () => {
   it('rejects non-arrays and empty conversations', () => {
@@ -86,6 +88,16 @@ describe('chat system prompt', () => {
     }
     expect(SYSTEM_PROMPT).toMatch(/Movie Recommendation Project[^\n]*Role: sole ML engineer/);
     expect(SYSTEM_PROMPT).toContain('Never collapse several projects into one generic phrase');
+  });
+
+  it('knows every tool in the project stacks and every credential on the site', () => {
+    const tools = PROJECTS.flatMap((p) => p.techStack).map((t) => t.replace(/\s*\(.*\)$/, ''));
+    for (const tool of new Set(tools)) expect(SYSTEM_PROMPT, tool).toContain(tool);
+    const platforms = en.badges.platforms as Record<string, { certification?: string }>;
+    for (const { certification } of Object.values(platforms)) {
+      if (certification) expect(SYSTEM_PROMPT, certification).toContain(certification);
+    }
+    expect(SYSTEM_PROMPT).not.toContain('use only the ones named above');
   });
 });
 
