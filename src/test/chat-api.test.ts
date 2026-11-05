@@ -79,6 +79,14 @@ describe('chat system prompt', () => {
     expect(SYSTEM_PROMPT).not.toMatch(/answer[^.]*in the first person/i);
     expect(SYSTEM_PROMPT).toContain("Raymond's only competition award is 1st place");
   });
+
+  it('gives every project its own role and forbids blanket summaries', () => {
+    for (const name of ['UrbanSpark AI', 'AutoResearcher', 'PostShifterPro', 'Live Interviewer', 'SerenityAI', 'Codebase Genius', 'Kazi Connect']) {
+      expect(SYSTEM_PROMPT).toMatch(new RegExp(`\\d+\\. ${name}[^\\n]*Role: full-stack and AI engineer`));
+    }
+    expect(SYSTEM_PROMPT).toMatch(/Movie Recommendation Project[^\n]*Role: sole ML engineer/);
+    expect(SYSTEM_PROMPT).toContain('Never collapse several projects into one generic phrase');
+  });
 });
 
 describe('Groq model selection', () => {
