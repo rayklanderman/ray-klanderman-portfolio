@@ -73,6 +73,12 @@ describe('chat system prompt', () => {
     expect(SYSTEM_PROMPT).not.toMatch(/two years building digital systems/i);
     expect(SYSTEM_PROMPT).toContain('2017 – 2024');
   });
+
+  it('speaks about Raymond in the third person and limits award claims', () => {
+    expect(SYSTEM_PROMPT).toContain('talk about him in the third person');
+    expect(SYSTEM_PROMPT).not.toMatch(/answer[^.]*in the first person/i);
+    expect(SYSTEM_PROMPT).toContain("Raymond's only competition award is 1st place");
+  });
 });
 
 describe('Groq model selection', () => {
