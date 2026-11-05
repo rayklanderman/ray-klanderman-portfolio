@@ -1,6 +1,3 @@
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'llama-3.3-70b-versatile';
-
 export interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
@@ -26,6 +23,9 @@ export async function sendMessage(messages: ChatMessage[]): Promise<string> {
     if (res.status === 429) {
       return 'You are sending messages too quickly. Please wait a moment and try again.';
     }
+    if (res.status === 503) {
+      return 'The assistant is busy right now. Please try again in a minute.';
+    }
     if (res.status === 400 || res.status === 413) {
       return 'That message could not be sent. Please try a shorter question.';
     }
@@ -39,23 +39,9 @@ export async function sendMessage(messages: ChatMessage[]): Promise<string> {
     const apiKey = import.meta.env.VITE_GROQ_API_KEY;
     if (apiKey && apiKey !== 'your_groq_api_key_here') {
       try {
-        const { SYSTEM_PROMPT, sanitizeMessages } = await import('../../api/chat');
-        const safe = sanitizeMessages(messages) ?? [];
-        const res = await fetch(GROQ_API_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
-          body: JSON.stringify({
-            model: MODEL,
-            messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...safe],
-            temperature: 0.5,
-            max_tokens: 600,
-          }),
-        });
-        if (res.ok) {
-          const data = await res.json();
-          return data.choices?.[0]?.message?.content || 'No response generated.';
-        }
-        console.error('Groq API error:', res.status);
+        const { completeChat, sanitizeMessages } = await import('../../api/chat');
+        const result = await completeChat(apiKey, sanitizeMessages(messages) ?? []);
+        if (result.ok) return result.content;
         return 'Sorry, I encountered an error. Please try again later.';
       } catch (err) {
         console.error('Groq fetch error:', err);

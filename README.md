@@ -77,8 +77,9 @@ Search engines and link previews therefore receive full content without running 
 
 | Variable | Where | Purpose |
 | --- | --- | --- |
-| `GROQ_API_KEY` | Vercel project settings | Used by `api/chat.ts` on the server. Required for the AI assistant. |
-| `VITE_GROQ_API_KEY` | `.env.local`, local development only | Lets `npm run dev` call Groq directly without the serverless function. Never set this in production; `VITE_` variables are visible to the browser. |
+| `GROQ_API_KEY` | Vercel project settings | Used by `api/chat.ts` on the server. Required for the AI assistant. `VITE_GROQ_API_KEY` is accepted as a fallback, so an existing Vercel variable with that name also works. |
+| `GROQ_MODEL` | Vercel project settings, optional | Puts a different Groq model first. The defaults are `openai/gpt-oss-120b`, then `openai/gpt-oss-20b` (free-tier production models). The next model is tried when one is rate-limited or retired. |
+| `VITE_GROQ_API_KEY` | `.env.local` for local development; Vercel (works, but `GROQ_API_KEY` is preferred) | Lets `npm run dev` call Groq directly without the serverless function. The browser code reads it only in dev mode, so production builds do not include it. |
 
 No other secrets are needed to build the site.
 

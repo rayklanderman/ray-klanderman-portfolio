@@ -1,6 +1,6 @@
 // @vitest-environment node
 import { describe, expect, it } from 'vitest';
-import { LIMITS, SYSTEM_PROMPT, sanitizeMessages } from '../../api/chat';
+import { GROQ_MODELS, LIMITS, SYSTEM_PROMPT, groqRequestBody, modelOrder, sanitizeMessages } from '../../api/chat';
 
 describe('chat API message sanitising', () => {
   it('rejects non-arrays and empty conversations', () => {
@@ -72,5 +72,27 @@ describe('chat system prompt', () => {
     expect(SYSTEM_PROMPT).not.toContain('linkedin.com/in/rayklanderman');
     expect(SYSTEM_PROMPT).not.toMatch(/two years building digital systems/i);
     expect(SYSTEM_PROMPT).toContain('2017 – 2024');
+  });
+});
+
+describe('Groq model selection', () => {
+  it('defaults to free-tier production models, largest first', () => {
+    expect(GROQ_MODELS).toEqual(['openai/gpt-oss-120b', 'openai/gpt-oss-20b']);
+    expect(modelOrder()).toEqual([...GROQ_MODELS]);
+    expect(modelOrder('  ')).toEqual([...GROQ_MODELS]);
+  });
+
+  it('puts a GROQ_MODEL override first without duplicating it', () => {
+    expect(modelOrder('openai/gpt-oss-20b')).toEqual(['openai/gpt-oss-20b', 'openai/gpt-oss-120b']);
+    expect(modelOrder('qwen/qwen3.8-27b')).toEqual(['qwen/qwen3.8-27b', ...GROQ_MODELS]);
+  });
+
+  it('keeps reasoning hidden and cheap for GPT-OSS only', () => {
+    const msgs = [{ role: 'user' as const, content: 'hi' }];
+    const oss = groqRequestBody('openai/gpt-oss-120b', msgs);
+    expect(oss).toMatchObject({ reasoning_effort: 'low', include_reasoning: false });
+    expect(oss.max_completion_tokens).toBe(LIMITS.maxTokens);
+    expect(oss.messages[0]).toEqual({ role: 'system', content: SYSTEM_PROMPT });
+    expect(groqRequestBody('qwen/qwen3.8-27b', msgs)).not.toHaveProperty('reasoning_effort');
   });
 });

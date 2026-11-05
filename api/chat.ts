@@ -1,7 +1,14 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'llama-3.3-70b-versatile';
+
+/**
+ * Production models available on Groq's free tier (console.groq.com/docs/models, checked
+ * November 2026). Llama 3.x moved to Enterprise-only. Tried in order: if one is rate-limited
+ * or retired, the next one answers. Set GROQ_MODEL in Vercel to put a different model first
+ * without a code change.
+ */
+export const GROQ_MODELS = ['openai/gpt-oss-120b', 'openai/gpt-oss-20b'] as const;
 
 // Simple in-memory per-IP rate limiting (resets on cold start; adequate for a portfolio)
 const WINDOW_MS = 60_000;
@@ -14,7 +21,8 @@ export const LIMITS = {
   maxMessages: 12,
   maxMessageChars: 2_000,
   maxTotalChars: 8_000,
-  maxTokens: 600,
+  // GPT-OSS models reason before answering; this leaves room for both at low effort.
+  maxTokens: 1024,
 } as const;
 
 export interface ChatMessage {
@@ -49,7 +57,7 @@ TRAINING (programmes, not employment)
 PROJECTS
 1. AI Health Chat (aihealthchat.qzz.io): public beta; founder and lead engineer. Health-information and triage-support assistant in English, Kiswahili, French, Spanish and Dutch on a web PWA and WhatsApp. Case state across turns, Medium/High detail modes, safety escalation, Mistral/Pixtral image analysis, biometric tracking, SOAP-style reports with vitals provenance, Supabase RLS, server-side keys, consent and retention purging, provider fallback (Groq, OpenRouter, Mistral). The README reports 144 passing tests. 1st place at the Power Learn Project Class of 2024 graduate hackathon. It gives educational guidance, not diagnoses, and is not clinically validated.
 2. EyeSense: Flutter Android prototype for blind and low-vision users, built for MUA Innovation Week 2026. Offline OCR with Google ML Kit, scene description and image Q&A via a Groq vision model behind a Cloudflare Worker (auth, rate limits, budget caps), consent before cloud processing, TalkBack support, no navigation guidance. The README reports 24 Flutter and 10 Worker tests passing. On-device TalkBack testing and a contrast audit are pending; no public APK.
-3. Movie Recommendation Project: optional ALX Data Science final project in an ExploreAI Academy Kaggle competition. Hybrid 50-factor SVD + LightGBM on about 10 million ratings; public-leaderboard RMSE improved from 1.21 to 0.82 over eight submissions (public leaderboard, not a production metric).
+3. Movie Recommendation Project: optional ALX Data Science final project in an ExploreAI Academy Kaggle competition. Hybrid 50-factor SVD + LightGBM on about 10 million ratings; public-leaderboard RMSE improved from 1.21 to 0.82 over eight submissions (public leaderboard, not a production metric). I was the sole ML engineer: I did the data preparation, feature engineering, model training and evaluation myself.
 4. Sauti Mtaani Nairobi (sautimtaani.site): resident-feedback platform built for the Office of the Nairobi Woman Representative. English and Kiswahili, consent-first ward polls, aggregate-only dashboards with suppression thresholds, PII scrubbing before AI, staff approval for all AI suggestions. Not a scientific poll; participation does not affect eligibility for any services. Source code is private.
 5. TutaLearn (tutalearn.qzz.io): CBC learning platform. Syllabus content for each grade, quizzes and exams are complete; it also has progress tracking, report cards, grade-aware AI tutoring and a reviewed content pipeline. Next.js, Supabase. Automated tests and CI/CD are in place. WhatsApp and M-Pesa features are coming soon (not live yet).
 6. Luminae (luminae.qzz.io): Mistral Worldwide Hackathon entry. Five agents (Methodology Critic, Dataset Auditor, Experiment Designer, Synthesis Agent, Grant Generator) over Mistral OCR output; FastAPI, Next.js, Supabase, Redis, budget middleware. Outputs are decision support. No award claimed.
@@ -59,7 +67,7 @@ SKILLS
 Python, TypeScript, JavaScript, Dart; React, Next.js, FastAPI, Flutter; SQL, PostgreSQL, Supabase, Redis, Pandas, NumPy, Power BI, Tableau; Google Cloud, Vercel, Cloudflare Workers; LLM APIs (Groq, Mistral, OpenRouter, Gemini), multi-agent systems, recommender systems, LightGBM, model evaluation; automated testing, CI, Row Level Security, consent and privacy controls.
 
 EDUCATION
-- BSc Computer Science, University of the People: in progress, 2025 – expected 2028. Cumulative GPA 3.98 with 57 of 120 credits earned (as of September 2026). President's List, Term 5 of 2025–2026. November 2026 term courses: Software Engineering 1, Data Structures, Globalization, World Literature.
+- BSc Computer Science, University of the People: in progress, 2025 – expected 2028. Cumulative GPA 3.98 with 57 of 120 credits earned (as of September 2026). President's List, Term 6. November 2026 term courses: Software Engineering 1, Data Structures, Globalization, World Literature.
 - Diploma in ICT, Management University of Africa: 2021 – 2024, Distinction.
 - Programmes: ALX Data Science (with Data Analytics and Machine Learning certificates), Power Learn Project Software Development, WorldQuant University Applied Data Science Lab (completed) and Applied AI Lab (in progress), Stanford Code in Place (2024).
 
@@ -109,6 +117,54 @@ export function sanitizeMessages(input: unknown): ChatMessage[] | null {
 
   if (recent.length === 0 || recent[recent.length - 1].role !== 'user') return null;
   return recent;
+}
+
+export function modelOrder(preferred?: string): string[] {
+  const first = preferred?.trim();
+  return first ? [first, ...GROQ_MODELS.filter((m) => m !== first)] : [...GROQ_MODELS];
+}
+
+export function groqRequestBody(model: string, messages: ChatMessage[]) {
+  return {
+    model,
+    messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
+    temperature: 0.5,
+    max_completion_tokens: LIMITS.maxTokens,
+    // Only GPT-OSS accepts these; other models reject unknown reasoning parameters.
+    ...(model.startsWith('openai/gpt-oss') ? { reasoning_effort: 'low', include_reasoning: false } : {}),
+  };
+}
+
+export type ChatResult = { ok: true; content: string } | { ok: false; status: number };
+
+/**
+ * Calls Groq, falling back through the model list. Stops early on auth errors, because
+ * another model will not fix a bad key.
+ */
+export async function completeChat(
+  apiKey: string,
+  messages: ChatMessage[],
+  preferredModel?: string,
+): Promise<ChatResult> {
+  let lastStatus = 502;
+  for (const model of modelOrder(preferredModel)) {
+    const res = await fetch(GROQ_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify(groqRequestBody(model, messages)),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      const content = data.choices?.[0]?.message?.content?.trim();
+      if (content) return { ok: true, content };
+      lastStatus = 502;
+      continue;
+    }
+    lastStatus = res.status;
+    console.error(`Groq API error (${model}):`, res.status);
+    if (res.status === 401 || res.status === 403) break;
+  }
+  return { ok: false, status: lastStatus };
 }
 
 function send(res: ServerResponse, status: number, payload: unknown) {
@@ -170,7 +226,9 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
     }
   }
 
-  const apiKey = process.env.GROQ_API_KEY;
+  // Vercel exposes every project variable to functions at runtime, so the existing
+  // VITE_GROQ_API_KEY works here too. GROQ_API_KEY wins if both are set.
+  const apiKey = process.env.GROQ_API_KEY || process.env.VITE_GROQ_API_KEY;
   if (!apiKey) {
     return send(res, 500, { error: 'Chat service is not configured.' });
   }
@@ -185,28 +243,12 @@ export default async function handler(req: IncomingMessage, res: ServerResponse)
   }
 
   try {
-    const groqRes = await fetch(GROQ_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        model: MODEL,
-        messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
-        temperature: 0.5,
-        max_tokens: LIMITS.maxTokens,
-      }),
-    });
-
-    if (!groqRes.ok) {
-      console.error('Groq API error:', groqRes.status);
-      return send(res, 502, { error: 'Upstream AI service error.' });
+    const result = await completeChat(apiKey, messages, process.env.GROQ_MODEL);
+    if (result.ok) return send(res, 200, { content: result.content });
+    if (result.status === 429) {
+      return send(res, 503, { error: 'The assistant is busy. Please try again in a minute.' });
     }
-
-    const data = await groqRes.json();
-    const content = data.choices?.[0]?.message?.content;
-    return send(res, 200, { content: content || 'No response generated.' });
+    return send(res, 502, { error: 'Upstream AI service error.' });
   } catch (err) {
     console.error('Groq proxy error:', err);
     return send(res, 500, { error: 'Could not reach the AI service.' });

@@ -60,7 +60,9 @@ export const TRAINING: ExperienceEntry[] = [
     period: '2025 – 2026',
     summary:
       'Practical training and project work in Python, SQL, machine learning, analytics and model evaluation.',
-    highlights: ['Optional final project: the Movie Recommendation Project (public-leaderboard RMSE 1.21 → 0.82).'],
+    highlights: [
+      'Programme highlight: built a hybrid recommender (LightGBM on SVD matrix factorisation, 10M ratings) reaching a public-leaderboard RMSE of 0.82 in a community prediction competition.',
+    ],
     relatedProjects: ['movie-recommendation'],
   },
   {

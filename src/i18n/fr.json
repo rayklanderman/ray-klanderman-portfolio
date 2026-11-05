@@ -44,7 +44,7 @@
         "status": "En cours",
         "description": [
           "Moyenne cumulative (GPA) 3,98 ; 57 crédits sur 120 obtenus (en septembre 2026)",
-          "Tableau d’honneur : President’s List, trimestre 5 de 2025–2026",
+          "Tableau d’honneur : President’s List, trimestre 6",
           "Trimestre de novembre 2026 : Software Engineering 1, Data Structures, Globalization et World Literature"
         ],
         "skills": []
@@ -589,7 +589,7 @@
         "venue": "LinkedIn Pulse",
         "date": "Janvier 2026",
         "teaser": "Livrer du code prêt pour la production n'est pas magique. Les tests, l'observabilité, la sécurité et une architecture propre séparent les démos impressionnantes des systèmes qui survivent.",
-        "url": "#"
+        "url": "https://www.linkedin.com/pulse/code-utopia-2026-four-pillars-production-ready-raymond-klanderman-mctef/"
       }
     ]
   },

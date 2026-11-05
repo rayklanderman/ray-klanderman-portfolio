@@ -44,7 +44,7 @@
         "status": "In progress",
         "description": [
           "Cumulative GPA 3.98; 57 of 120 credits earned (as of September 2026)",
-          "Honours: President’s List, Term 5 of 2025–2026",
+          "Honours: President’s List, Term 6",
           "November 2026 term: Software Engineering 1, Data Structures, Globalization and World Literature"
         ],
         "skills": []
@@ -75,7 +75,7 @@
           "Follows the completed ALX Data Analytics programme (2025)",
           "Python, SQL, Power BI and Tableau for analysis and visualisation",
           "Machine learning, predictive modelling and model evaluation",
-          "Optional final project: the Movie Recommendation Project"
+          "Programme highlight: built a hybrid recommender (LightGBM on SVD matrix factorisation, 10M ratings) reaching a public-leaderboard RMSE of 0.82 in a community prediction competition"
         ],
         "skills": [
           "Python",
@@ -604,7 +604,7 @@
         "venue": "LinkedIn Pulse",
         "date": "January 2026",
         "teaser": "Shipping production-ready code isn't magic. Testing, observability, security, and clean architecture separate demos that impress from systems that survive.",
-        "url": "#"
+        "url": "https://www.linkedin.com/pulse/code-utopia-2026-four-pillars-production-ready-raymond-klanderman-mctef/"
       }
     ]
   },
