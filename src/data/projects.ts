@@ -36,6 +36,14 @@ export interface ProjectResult {
   source: string;
 }
 
+/** The single strongest piece of evidence, shown prominently on cards and case studies. */
+export interface ProjectProof {
+  /** Short and scannable, e.g. "RMSE 0.82". */
+  value: string;
+  /** Context and source, e.g. "Down from 1.21 · Kaggle public leaderboard". */
+  label: string;
+}
+
 export interface ArchitectureStep {
   step: string;
   detail: string;
@@ -82,7 +90,11 @@ export interface Project {
   videoUrl?: string;
   repo: ProjectRepo;
   techStack: string[];
-  /** Two or three engineering highlights for cards. */
+  /** Up to four tags for the featured card; defaults to the first entries of techStack. */
+  cardTags?: string[];
+  /** Required for featured projects. Must restate a fact documented elsewhere in the entry. */
+  proof?: ProjectProof;
+  /** Engineering highlights, listed on the case-study page. */
   highlights: string[];
   caseStudy: CaseStudy;
 }
@@ -116,6 +128,8 @@ export const PROJECTS: Project[] = [
       'Mistral / Pixtral',
       'Meta WhatsApp integration',
     ],
+    cardTags: ['React', 'TypeScript', 'Supabase', 'Multimodal AI'],
+    proof: { value: '5 languages', label: 'Web PWA and WhatsApp · 144 tests passing (README-reported)' },
     highlights: [
       'Five languages (English, Kiswahili, French, Spanish, Dutch) across a web PWA and WhatsApp',
       'Multi-turn case state, Medium/High detail modes and consistent safety escalation',
@@ -200,6 +214,8 @@ export const PROJECTS: Project[] = [
       'Groq (vision)',
       'Vitest',
     ],
+    cardTags: ['Flutter', 'On-device OCR', 'Cloudflare Workers', 'Vision AI'],
+    proof: { value: 'Offline OCR', label: 'TalkBack-first Android design · consent before any image leaves the phone' },
     highlights: [
       'Offline OCR with Google ML Kit; scene description and image Q&A through a Groq vision model',
       'TalkBack semantics, interruptible text-to-speech, speech commands, high contrast and 200% text scale',
@@ -269,6 +285,8 @@ export const PROJECTS: Project[] = [
     years: '2026',
     repo: { visibility: 'public', url: 'https://github.com/rayklanderman/mrp-2026' },
     techStack: ['Python', 'LightGBM', 'SVD (matrix factorisation)', 'scikit-learn', 'Pandas', 'NumPy', 'SciPy'],
+    cardTags: ['Python', 'LightGBM', 'SVD', 'scikit-learn'],
+    proof: { value: 'RMSE 0.82', label: 'Down from 1.21 · Kaggle public leaderboard, 8 submissions, ~10M ratings' },
     highlights: [
       'Hybrid model: 50-factor SVD collaborative filtering feeding a LightGBM regressor',
       'Trained on about 10 million ratings with no sampling; 156 reported features',
@@ -331,6 +349,8 @@ export const PROJECTS: Project[] = [
     videoUrl: 'https://youtu.be/xKE3hNbTLGs',
     repo: { visibility: 'private' },
     techStack: ['Next.js', 'TypeScript', 'Supabase (PostgreSQL, RLS)', 'Groq', 'Vitest'],
+    cardTags: ['Next.js', 'TypeScript', 'Supabase', 'Groq'],
+    proof: { value: 'Human-reviewed AI', label: 'Staff approve every AI suggestion · PII scrubbed before any AI call' },
     highlights: [
       'Consent-first ward polls in English and Kiswahili, with aggregate-only staff dashboards',
       'Suppression thresholds, digest-based anti-abuse and local PII scrubbing before any AI call',
@@ -397,6 +417,8 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://tutalearn.qzz.io/',
     repo: { visibility: 'private' },
     techStack: ['Next.js', 'React', 'TypeScript', 'Supabase (Auth, PostgreSQL, RLS)', 'OpenRouter'],
+    cardTags: ['Next.js', 'TypeScript', 'Supabase', 'AI tutoring'],
+    proof: { value: 'Every CBC grade', label: 'Syllabus, quizzes and exams in place · grade-aware AI tutor' },
     highlights: [
       'Grade syllabus content, quizzes and exams in place, with progress tracking, report cards and parent views',
       'Grade- and subject-aware AI tutoring',
@@ -458,6 +480,8 @@ export const PROJECTS: Project[] = [
     videoUrl: 'https://youtu.be/ODygWunOA6Y',
     repo: { visibility: 'public', url: 'https://github.com/RealDevRay/luminae' },
     techStack: ['Mistral OCR', 'Mistral models', 'FastAPI', 'Python', 'Next.js', 'TypeScript', 'Supabase', 'Redis (Upstash)'],
+    cardTags: ['Mistral OCR', 'Multi-agent', 'FastAPI', 'Next.js'],
+    proof: { value: '5 AI agents', label: '≈ $0.05 per paper (README estimate) · budget middleware caps spend' },
     highlights: [
       'Five agents: Methodology Critic, Dataset Auditor, Experiment Designer, Synthesis Agent, Grant Generator',
       'Mistral OCR and figure understanding for multi-format document ingestion',

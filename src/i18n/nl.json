@@ -29,7 +29,8 @@
     "sourcePrivate": "Broncode privé",
     "sourcePublic": "Publieke repository",
     "sourceNotListed": "Niet vermeld",
-    "techLabel": "Technologieën"
+    "techLabel": "Technologieën",
+    "keyResult": "Belangrijkste resultaat"
   },
   "education": {
     "title": "Opleiding",
@@ -673,8 +674,9 @@
   "hero": {
     "location": "Nairobi, Kenia",
     "title": "Software- en AI-engineer",
+    "headline": "Ik bouw AI-systemen die echte problemen oplossen.",
     "supporting": "Toegepaste AI · Machine learning · Agentische systemen · Cloud en full-stack",
-    "intro": "Ik ontwerp en bouw intelligente software voor praktische uitdagingen in de zorg, het onderwijs, toegankelijkheid en burgerparticipatie. Sinds 2024 omvat mijn werk in toegepaste AI machine learning, multimodale modellen, agent-workflows en full-stack applicaties. Ik let op betrouwbaarheid, een doordachte gebruikerservaring, privacy, toegankelijkheid, testen en verantwoorde uitrol, niet alleen op prototypes.",
+    "intro": "Ik werk in de zorg, het onderwijs, toegankelijkheid, civic tech en machine learning. Bij elk product ben ik zowel de full-stack- als de AI-engineer, van data en modellen tot interface en uitrol, met testen, privacy en toegankelijkheid vanaf het begin ingebouwd.",
     "portraitAlt": "Portret van Raymond Klanderman",
     "ctaProjects": "Bekijk projecten",
     "ctaGithub": "Bekijk GitHub",
@@ -743,7 +745,8 @@
     "moreProjects": "Meer projecten",
     "previous": "Vorige",
     "next": "Volgende",
-    "allProjects": "Alle projecten"
+    "allProjects": "Alle projecten",
+    "highlights": "Technische hoogtepunten"
   },
   "experience": {
     "title": "Ervaring",

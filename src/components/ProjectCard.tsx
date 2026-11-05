@@ -67,7 +67,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, variant, headingLevel = 'h
   const { t } = useTranslation();
   const Heading = headingLevel;
   const titleId = `project-${project.slug}-title`;
-  const techLimit = variant === 'featured' ? 6 : 4;
+  const isFeatured = variant === 'featured';
+  const tags = isFeatured && project.cardTags ? project.cardTags : project.techStack.slice(0, 4);
+  const hiddenTech = isFeatured && project.cardTags ? 0 : project.techStack.length - tags.length;
 
   return (
     <article className={`project-card project-card--${variant}`} aria-labelledby={titleId}>
@@ -79,6 +81,18 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, variant, headingLevel = 'h
         <Link to={projectPath(project.slug)}>{project.name}</Link>
       </Heading>
       <p className="project-card__tagline">{project.tagline}</p>
+      {isFeatured && project.proof && (
+        <p className="project-proof">
+          <span className="visually-hidden">{t('projects.keyResult')}: </span>
+          <strong className="project-proof__value">{project.proof.value}</strong>
+          <span className="project-proof__label">{project.proof.label}</span>
+        </p>
+      )}
+      {project.award && (
+        <p className="project-card__award">
+          <FaTrophy aria-hidden="true" /> {project.award}
+        </p>
+      )}
       <p className="project-card__role">
         <FaCode aria-hidden="true" />
         <span>
@@ -86,29 +100,15 @@ const ProjectCard: FC<ProjectCardProps> = ({ project, variant, headingLevel = 'h
           {project.role}
         </span>
       </p>
-      {project.award && (
-        <p className="project-card__award">
-          <FaTrophy aria-hidden="true" /> {project.award}
-        </p>
-      )}
-      {variant === 'featured' && (
-        <ul className="project-card__highlights">
-          {project.highlights.map((h) => (
-            <li key={h}>{h}</li>
-          ))}
-        </ul>
-      )}
       <ul className="tag-list project-card__tech" role="list" aria-label={t('projects.techLabel')}>
-        {project.techStack.slice(0, techLimit).map((tech) => (
+        {tags.map((tech) => (
           <li key={tech} className="tag">
             {tech}
           </li>
         ))}
-        {project.techStack.length > techLimit && (
-          <li className="tag tag--more">+{project.techStack.length - techLimit}</li>
-        )}
+        {hiddenTech > 0 && <li className="tag tag--more">+{hiddenTech}</li>}
       </ul>
-      <ProjectLinks project={project} size={variant === 'compact' ? 'small' : 'regular'} />
+      <ProjectLinks project={project} size={isFeatured ? 'regular' : 'small'} />
     </article>
   );
 };

@@ -40,4 +40,14 @@ describe('prerendered HTML', () => {
     expect(targets.length).toBeGreaterThan(0);
     for (const tag of targets) expect(tag).toMatch(/rel="noopener noreferrer"/);
   });
+
+  it('puts the headline and key results in the crawlable HTML', () => {
+    const home = render('/');
+    expect(home).toContain('Building AI systems that solve real-world problems.');
+    expect(home).toContain('RMSE 0.82');
+    expect(home).toContain('Human-reviewed AI');
+    const caseStudy = render('/projects/eyesense');
+    expect(caseStudy).toContain('Offline OCR');
+    expect(caseStudy).toContain('Engineering highlights');
+  });
 });

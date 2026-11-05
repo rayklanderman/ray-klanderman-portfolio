@@ -53,6 +53,7 @@ const Hero: FC = () => {
             <span className="highlight">Raymond</span> (DevRay) Klanderman
           </h1>
           <p className="hero__role">{t('hero.title')}</p>
+          <p className="hero__headline">{t('hero.headline')}</p>
           <p className="hero__supporting mono">{t('hero.supporting')}</p>
           <p className="hero__intro">{t('hero.intro')}</p>
 

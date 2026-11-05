@@ -91,6 +91,13 @@ const ProjectPage: FC = () => {
           </div>
           <h1 id="case-study-title">{project.name}</h1>
           <p className="case-study__tagline">{project.tagline}</p>
+          {project.proof && (
+            <p className="project-proof project-proof--large">
+              <span className="visually-hidden">{t('projects.keyResult')}: </span>
+              <strong className="project-proof__value">{project.proof.value}</strong>
+              <span className="project-proof__label">{project.proof.label}</span>
+            </p>
+          )}
           {project.award && (
             <p className="project-card__award">
               <FaTrophy aria-hidden="true" /> {project.award}
@@ -112,6 +119,16 @@ const ProjectPage: FC = () => {
         <section className="case-study__section" aria-labelledby="cs-glance">
           <h2 id="cs-glance">{t('caseStudy.atAGlance')}</h2>
           <Glance project={project} />
+          {project.highlights.length > 0 && (
+            <>
+              <h3 className="case-study__subhead">{t('caseStudy.highlights')}</h3>
+              <ul className="case-study__list">
+                {project.highlights.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
+            </>
+          )}
           <h3 className="case-study__subhead">{t('caseStudy.techStack')}</h3>
           <ul className="tag-list" role="list">
             {project.techStack.map((tech) => (

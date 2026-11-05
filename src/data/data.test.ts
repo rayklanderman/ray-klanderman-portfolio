@@ -118,6 +118,17 @@ describe('project registry', () => {
     expect(rmse.source).toMatch(/public leaderboard/i);
   });
 
+  it('gives every featured card one sourced key result and at most four tags', () => {
+    for (const p of featuredProjects()) {
+      expect(p.proof, p.slug).toBeDefined();
+      expect(p.proof!.value.length, p.slug).toBeLessThanOrEqual(20);
+      expect(p.cardTags?.length, p.slug).toBeGreaterThan(0);
+      expect(p.cardTags!.length, p.slug).toBeLessThanOrEqual(4);
+    }
+    expect(getProjectBySlug('movie-recommendation')!.proof!.label).toMatch(/public leaderboard/i);
+    expect(getProjectBySlug('luminae')!.proof!.label).toMatch(/estimate/i);
+  });
+
   it('avoids banned or unsupported claims', () => {
     const text = JSON.stringify(PROJECTS).toLowerCase();
     for (const phrase of ['clinically validated diagnostic', 'enterprise-grade', 'secure by design', 'hallucination-free', 'no automated test']) {

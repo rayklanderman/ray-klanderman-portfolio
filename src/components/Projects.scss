@@ -117,8 +117,9 @@
   }
 
   &__tagline {
-    color: var(--text-muted);
-    font-size: 0.97rem;
+    color: var(--text-color);
+    font-size: 1.02rem;
+    line-height: 1.55;
   }
 
   &__role {
@@ -165,12 +166,55 @@
     padding-top: 0.4rem;
   }
 
+  &--featured {
+    gap: 0.75rem;
+    padding: 1.6rem;
+  }
+
   &--compact {
     padding: 1.15rem;
 
     .project-card__title {
       font-size: 1.12rem;
     }
+
+    .project-card__tagline {
+      font-size: 0.97rem;
+      color: var(--text-muted);
+    }
+  }
+}
+
+// Key result: the strongest piece of evidence, readable at a glance
+.project-proof {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 4px solid var(--accent-live);
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+  background: color-mix(in srgb, var(--accent-live) 7%, var(--surface-1));
+
+  &__value {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--text-color);
+  }
+
+  &__label {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+  }
+
+  &--large &__value {
+    font-size: clamp(1.6rem, 4vw, 2.1rem);
+  }
+
+  &--large &__label {
+    font-size: 0.95rem;
   }
 }
 

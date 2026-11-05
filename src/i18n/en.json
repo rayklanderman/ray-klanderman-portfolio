@@ -29,7 +29,8 @@
     "sourcePrivate": "Source private",
     "sourcePublic": "Public repository",
     "sourceNotListed": "Not listed",
-    "techLabel": "Technologies"
+    "techLabel": "Technologies",
+    "keyResult": "Key result"
   },
   "education": {
     "title": "Education",
@@ -671,8 +672,9 @@
   "hero": {
     "location": "Nairobi, Kenya",
     "title": "Software & AI Engineer",
+    "headline": "Building AI systems that solve real-world problems.",
     "supporting": "Applied AI · Machine Learning · Agentic Systems · Cloud & Full-Stack Engineering",
-    "intro": "I design and build intelligent software that addresses practical challenges in healthcare, education, accessibility and civic participation. Since 2024, my applied AI work has spanned machine learning, multimodal models, agent workflows and full-stack applications. I focus on reliability, thoughtful user experience, privacy, accessibility, testing and responsible deployment, not just prototypes.",
+    "intro": "I work across healthcare, education, accessibility, civic technology and machine learning. On every product I am both the full-stack and the AI engineer, from data and models to interface and deployment, with testing, privacy and accessibility built in from the start.",
     "portraitAlt": "Portrait of Raymond Klanderman",
     "ctaProjects": "Explore projects",
     "ctaGithub": "View GitHub",
@@ -741,7 +743,8 @@
     "moreProjects": "More projects",
     "previous": "Previous",
     "next": "Next",
-    "allProjects": "All projects"
+    "allProjects": "All projects",
+    "highlights": "Engineering highlights"
   },
   "experience": {
     "title": "Experience",

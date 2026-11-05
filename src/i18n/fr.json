@@ -29,7 +29,8 @@
     "sourcePrivate": "Code source privé",
     "sourcePublic": "Dépôt public",
     "sourceNotListed": "Non indiqué",
-    "techLabel": "Technologies"
+    "techLabel": "Technologies",
+    "keyResult": "Résultat clé"
   },
   "education": {
     "title": "Diplômes",
@@ -673,8 +674,9 @@
   "hero": {
     "location": "Nairobi, Kenya",
     "title": "Ingénieur logiciel et IA",
+    "headline": "Je construis des systèmes d’IA qui résolvent des problèmes concrets.",
     "supporting": "IA appliquée · Apprentissage automatique · Systèmes agentiques · Cloud et full-stack",
-    "intro": "Je conçois et développe des logiciels intelligents qui répondent à des problèmes concrets dans la santé, l’éducation, l’accessibilité et la participation citoyenne. Depuis 2024, mon travail en IA appliquée couvre l’apprentissage automatique, les modèles multimodaux, les workflows d’agents et les applications full-stack. Je privilégie la fiabilité, une expérience utilisateur soignée, la confidentialité, l’accessibilité, les tests et un déploiement responsable, pas seulement des prototypes.",
+    "intro": "Je travaille dans la santé, l’éducation, l’accessibilité, la technologie civique et l’apprentissage automatique. Sur chaque produit, je suis à la fois l’ingénieur full-stack et l’ingénieur IA, des données et des modèles jusqu’à l’interface et au déploiement, avec les tests, la confidentialité et l’accessibilité intégrés dès le départ.",
     "portraitAlt": "Portrait de Raymond Klanderman",
     "ctaProjects": "Voir les projets",
     "ctaGithub": "Voir GitHub",
@@ -743,7 +745,8 @@
     "moreProjects": "Autres projets",
     "previous": "Précédent",
     "next": "Suivant",
-    "allProjects": "Tous les projets"
+    "allProjects": "Tous les projets",
+    "highlights": "Points forts techniques"
   },
   "experience": {
     "title": "Expérience",
