@@ -17,7 +17,7 @@ export const PERSON = {
 
 export const LINKS = {
   github: 'https://github.com/rayklanderman',
-  linkedin: 'https://www.linkedin.com/in/raymondklanderman/',
+  linkedin: 'https://www.linkedin.com/in/rayklanderman/',
   youtube: 'https://www.youtube.com/@RealDevRay',
   x: 'https://x.com/rayklanderman',
   medium: 'https://medium.com/@raymondklanderman',

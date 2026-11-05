@@ -70,8 +70,8 @@ describe('chat system prompt', () => {
   });
 
   it('uses the correct LinkedIn handle and current experience', () => {
-    expect(SYSTEM_PROMPT).toContain('linkedin.com/in/raymondklanderman');
-    expect(SYSTEM_PROMPT).not.toContain('linkedin.com/in/rayklanderman');
+    expect(SYSTEM_PROMPT).toContain('linkedin.com/in/rayklanderman');
+    expect(SYSTEM_PROMPT).not.toContain('linkedin.com/in/raymondklanderman');
     expect(SYSTEM_PROMPT).not.toMatch(/two years building digital systems/i);
     expect(SYSTEM_PROMPT).toContain('2017 – 2024');
   });

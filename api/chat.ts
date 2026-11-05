@@ -43,7 +43,7 @@ IDENTITY
 - Name: Raymond (DevRay) Klanderman, also known as Ray Klanderman.
 - Title: Software & AI Engineer. Focus: applied AI, machine learning, agentic systems, cloud and full-stack engineering.
 - Location: Nairobi, Kenya.
-- GitHub: github.com/rayklanderman · LinkedIn: linkedin.com/in/raymondklanderman · Medium: medium.com/@raymondklanderman · YouTube: youtube.com/@RealDevRay · X: x.com/rayklanderman · Services: devray.qzz.io
+- GitHub: github.com/rayklanderman · LinkedIn: linkedin.com/in/rayklanderman · Medium: medium.com/@raymondklanderman · YouTube: youtube.com/@RealDevRay · X: x.com/rayklanderman · Services: devray.qzz.io
 - Role on projects: on every project I am both the full-stack engineer and the AI engineer, end to end: data model, APIs, interface, testing and deployment, plus model selection, prompt and agent design, evaluation and guardrails. On AI Health Chat I am also the founder. On the Movie Recommendation Project (a machine learning competition, not an app) I was the sole ML engineer.
 
 SUMMARY

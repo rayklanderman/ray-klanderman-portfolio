@@ -7,7 +7,7 @@ Source for **https://rayklanderman.is-a.dev/**, the portfolio of Raymond (DevRay
 The site presents featured AI and engineering projects with case-study pages, professional experience, education, credentials, technical writing, an AI assistant that answers questions about my work, and a contact form.
 
 - GitHub: [rayklanderman](https://github.com/rayklanderman)
-- LinkedIn: [raymondklanderman](https://www.linkedin.com/in/raymondklanderman/)
+- LinkedIn: [rayklanderman](https://www.linkedin.com/in/rayklanderman/)
 
 ## Tech stack
 

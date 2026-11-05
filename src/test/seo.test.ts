@@ -27,7 +27,7 @@ describe('route metadata', () => {
   it('describes the person truthfully in JSON-LD', () => {
     const person = getRouteMeta('/').jsonLd.find((n) => n['@type'] === 'Person')!;
     expect(person.jobTitle).toBe('Software & AI Engineer');
-    expect(JSON.stringify(person)).toContain('linkedin.com/in/raymondklanderman');
+    expect(JSON.stringify(person)).toContain('linkedin.com/in/rayklanderman');
     expect(JSON.stringify(person)).not.toContain('Stanford');
     expect(JSON.stringify(person)).not.toMatch(/email|telephone/i);
   });

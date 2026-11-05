@@ -165,7 +165,7 @@ describe('profile data', () => {
   });
 
   it('uses the correct LinkedIn profile and no public CV until one is approved', () => {
-    expect(LINKS.linkedin).toBe('https://www.linkedin.com/in/raymondklanderman/');
+    expect(LINKS.linkedin).toBe('https://www.linkedin.com/in/rayklanderman/');
     expect(CV_PUBLIC_URL).toBeNull();
   });
 });
