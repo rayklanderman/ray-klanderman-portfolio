@@ -1,18 +1,11 @@
 {
   "header": {
-    "subtitle": "Software Ontwikkelaar | AI - ML | Creatief",
     "downloadCV": "CV aanvragen",
-    "share": "Profiel Delen",
-    "jobTitles": {
-      "softwareEngineer": "Software Engineer",
-      "dataAnalyst": "Data Analist",
-      "promptEngineer": "AI - ML",
-      "creative": "Creatief"
-    }
+    "share": "Profiel delen"
   },
   "share": {
-    "message": "Bekijk het Portfolio van Raymond Klanderman - Software Ontwikkelaar & AI Engineer",
-    "copied": "Portfolio URL gekopieerd naar klembord!"
+    "copied": "Portfoliolink gekopieerd naar het klembord.",
+    "failed": "Delen is mislukt. Kopieer het adres uit je browser."
   },
   "banner": {
     "devray": {
@@ -21,154 +14,22 @@
       "ariaLabel": "DevRay-diensten"
     }
   },
-  "profile": {
-    "title": "Professioneel Profiel",
-    "strengthsTitle": "Kernkwaliteiten",
-    "openTo": "Open voor functies in software engineering, AI/ML en data, en voor samenwerking aan mensgerichte AI.",
-    "strengths": [
-      {"title":"Levert AI-producten van begin tot eind","text":"Live producten op web en WhatsApp: AI Health Chat (publieke bèta), TutaLearn en Sauti Mtaani Nairobi."},
-      {"title":"Resultaten in de publieke sector","text":"Twee jaar digitale systemen gebouwd binnen het Pan-Afrikaanse Parlement en het kantoor van een parlementslid."},
-      {"title":"Cloud- en agent-engineering","text":"Google Cloud Professional Cloud Architect, met praktijkervaring in Vertex AI ADK, Cloud Run en Kubernetes (KCNA)."},
-      {"title":"Data en machine learning","text":"End-to-end ML op 10 mln rijen zonder sampling; RMSE op het publieke klassement verbeterd van 1,21 naar 0,82."},
-      {"title":"Toegankelijk, meertalig ontwerp","text":"EyeSense voor blinde en slechtziende gebruikers; producten in het Engels en Swahili, AI Health Chat in vijf talen."},
-      {"title":"Presteert onder druk","text":"1e plaats op de PLP Class of 2024 graduate hackathon; President’s List aan University of the People."}
-    ],
-    "description": "Ik heb de afgelopen twee jaar digitale systemen gebouwd binnen publieke instellingen — het Pan-Afrikaanse Parlement en het kantoor van een parlementslid — terwijl ik onafhankelijk AI-producten ontwerp en lanceer. Ik bouw slimme, schaalbare software en AI-systemen die echte problemen oplossen. Mijn werk omvat full-stack engineering, machine learning, data-analyse, cloud-architectuur en geautomatiseerde deployment pipelines.\n\nIk ontwerp en lever productieklare applicaties met behulp van Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL en Google Cloud. Ik specialiseer me in intelligente workflows aangedreven door API's, autonome agenten, vector search en Retrieval-Augmented Generation (RAG). Mijn tooling omvat Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph en moderne LLM-providers zoals OpenAI, Anthropic, Gemini, Groq en Ollama.\n\nBuiten engineering om zet ik data om in inzichten en inzichten in functies die producten worden waar mensen op vertrouwen. Ik creëer ook duidelijke technische content—tutorials, docs en demos—die teams helpt complexe systemen met vertrouwen te adopteren en uit te breiden.\n\nMijn missie is eenvoudig: bouw tools die mensen begrijpen, en empower mensen om nog betere tools te bouwen. Nieuwsgierigheid drijft mijn werk, van snelle ML-prototyping tot het productioniseren van agenten en het automatiseren van end-to-end workflows.\n\nAltijd open voor samenwerking met teams die de volgende generatie mensgerichte AI bouwen."
-  },
   "projects": {
-    "title": "Uitgelichte Projecten",
-    "subtitle": "AI-aangedreven platforms, intelligente tools en full-stack applicaties gebouwd met moderne technologieën.",
-    "viewProject": "Bekijk Live",
-    "featured": "Uitgelicht",
-    "more": "Meer Projecten",
-    "comingSoon": "Binnenkort Beschikbaar",
-    "items": {
-      "mrp2026": {
-        "name": "Movie Recommendation Project 2026",
-        "shortDescription": "ML-aangedreven filmwaardepredictor (public-leaderboard RMSE 0.82)",
-        "description": "Een inzending voor een besloten voorspellingswedstrijd van de ExploreAI Academy-community op Kaggle (ALX-eindproject), met Hybrid LightGBM op 50-factor SVD matrixfactorisatie. Ontwikkelde 156 features over 10M rijen zonder sampling — waaronder collaboratieve signalen, content-gebaseerde coderingen en temporele dynamiek. De public-leaderboard RMSE verbeterde van 1.21 (baseline) naar 0.82 over acht inzendingen; het uiteindelijke private resultaat is nog in afwachting.",
-        "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
-        "tags": ["Machine Learning", "Data Science"],
-        "tier": "secondary",
-        "category": "Data-engineering & Machine Learning"
-      },
-      "luminae": {
-        "name": "Luminae",
-        "shortDescription": "Autonoom onderzoeksanalyseplatform met multi-agent AI-zwerm",
-        "description": "Upload elk document en de 5 AI-agenten van Luminae leveren methodologiekritiek, data-audit, experimentontwerp, subsidiegeneratie en kruisagentsynthese. Maakt gebruik van Mistral AI's multimodale ecosysteem voor diepgaande academische analyse.",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
-        "tags": ["AI", "LLM", "Autonome Agenten"],
-        "url": "https://luminae.qzz.io/",
-        "tier": "flagship",
-        "live": true,
-        "entered": "Ingeschreven — Mistral World Hackathon",
-        "metrics": [
-          { "label": "Orchestratie", "value": "5-agenten zwerm" }
-        ]
-      },
-      "aiHealth": {
-        "name": "AI Health Chat",
-        "shortDescription": "AI-gezondheidsadvies via web en WhatsApp (openbare bèta)",
-        "description": "Openbare bèta. AI-triage en algemeen gezondheidsadvies in vijf talen (Engels, Swahili, Frans, Spaans, Nederlands) via een installeerbare webapp en WhatsApp, met fototriage, een gezondheidstracker en SOAP-bezoeksamenvattingen. Educatief advies, geen diagnose. Eerste plaats bij de afstudeerhackathon van de Power Learn Project Class of 2024.",
-        "technologies": ["React 19", "Vite", "Vercel", "Supabase", "Groq", "OpenRouter", "Mistral"],
-        "tags": ["AI", "Gezondheid"],
-        "url": "https://aihealthchat.qzz.io/",
-        "tier": "flagship",
-        "live": true,
-        "award": "1e plaats — PLP Class of 2024 afstudeerhackathon"
-      },
-      "sautiMtaani": {
-        "name": "Sauti Mtaani Nairobi",
-        "shortDescription": "Feedbackplatform voor inwoners van het Office of the Nairobi Woman Representative",
-        "description": "Officiële feedbackplatform voor inwoners van het Office of the Nairobi Woman Representative (Hon. Esther Passaris, NGAAF Patron, Nairobi County), in het Engels en Swahili. Inwoners geven toestemming, registreren hun ward, leeftijdscategorie en geslacht, beantwoorden een korte peiling van 2 tot 4 vragen en zien privacyvriendelijke live-resultaten, terwijl bevoegd personeel uitsluitend geïnaggregeerde inzichten krijgt over vertegenwoordiging, responsiviteit van het kantoor, NGAAF-programma's en prioriteiten per ward. De resultaten komen van een zelfgeselecteerde groep en vormen geen wetenschappelijke peiling; deelname heeft geen invloed op het in aanmerking komen voor beurzen of andere diensten.",
-        "technologies": ["Next.js", "Vercel"],
-        "tags": ["Civic Tech", "Full-Stack"],
-        "url": "https://www.sautimtaani.site/",
-        "tier": "flagship",
-        "live": true,
-        "entered": "Gebouwd voor het Office of the Nairobi Woman Representative",
-        "metrics": [
-          { "label": "Talen", "value": "Engels · Swahili" },
-          { "label": "Peiling", "value": "2–4 vragen" }
-        ]
-      },
-      "eyeSense": {
-        "name": "EyeSense",
-        "shortDescription": "AI-visuele ondersteuning voor blinde en slechtziende gebruikers",
-        "description": "“Jouw wereld, beschreven.” Een Flutter-app met Android als eerste doel die blinde en slechtziende gebruikers helpt hun omgeving te begrijpen. Describe Scene gebruikt een Groq-visiemodel achter een beveiligde Cloudflare Worker, Read Text werkt 100% offline met Google ML Kit, en Ask a Question ondersteunt vervolgvragen, met overal Stop- en Repeat-knoppen. Agents (AgentCoordinator, SceneAgent, ConversationAgent) werken samen met een OutputPolicy-laag voor wat er wordt uitgesproken. Gebruik de gehoste modus met limieten of een eigen Groq-sleutel in beveiligde opslag. Engels en Swahili, het lettertype Atkinson Hyperlegible, een thema met maximaal contrast en een op TalkBack gericht ontwerp. Gebouwd voor MUA Innovation Week 2026; contrastmetingen en TalkBack-tests op een toestel moeten nog gebeuren.",
-        "technologies": ["Flutter", "Cloudflare Workers", "TypeScript", "Groq", "Google ML Kit", "Vitest"],
-        "tags": ["AI", "Toegankelijkheid"],
-        "url": "#",
-        "tier": "flagship",
-        "entered": "Gebouwd voor MUA Innovation Week 2026",
-        "metrics": [
-          { "label": "Read Text", "value": "100% offline" },
-          { "label": "Tests", "value": "24 Flutter · 10 Worker" }
-        ]
-      },
-      "autoResearcher": {
-        "name": "AutoResearcher",
-        "shortDescription": "Multi-agent team dat een prompt omzet in een onderbouwd onderzoeksrapport",
-        "description": "Afsluitend project van Google's cursus 5-Day AI Agents. Een hiërarchisch systeem van 7 agents dat één prompt omzet in een onderzoeksrapport vol bronverwijzingen, gecompileerd tot een LaTeX-pdf. Gebouwd met de Vertex AI Agent Development Kit, Gemini 2.5 Pro en Flash, Tavily voor webonderzoek en Pandoc met LaTeX voor het einddocument.",
-        "technologies": ["Vertex AI ADK", "Gemini 2.5 Pro", "Gemini 2.5 Flash", "Tavily", "Pandoc", "LaTeX", "Jupyter Notebook"],
-        "tags": ["AI", "Multi-agent"],
-        "url": "#",
-        "tier": "flagship",
-        "entered": "Cursusproject — Google 5-Day AI Agents",
-        "metrics": [
-          { "label": "Architectuur", "value": "Hiërarchie van 7 agents" },
-          { "label": "Resultaat", "value": "LaTeX-pdf met bronnen" }
-        ]
-      },
-      "liveInterviewer": {
-        "name": "Live Interviewer",
-        "shortDescription": "AI-aangedreven sollicitatievraag generator met premium UI",
-        "description": "Genereert contextrijke, scenariogestuurde sollicitatievragen op maat voor elke functie. Google-stijl UI/UX met Framer Motion-animaties, veerkrachtige API-herstelmotor, multi-model ondersteuning (Mistral, Groq, Llama, Qwen) en installeerbare PWA.",
-        "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Mistral AI", "Groq", "PWA"],
-        "tags": ["AI", "Web App"],
-        "tier": "secondary",
-        "category": "AI-interviewtools"
-      },
-      "contentShapeshifterPro": {
-        "name": "Content Shapeshifter Pro",
-        "shortDescription": "Transformeer elke content in platform-geoptimaliseerde berichten met AI",
-        "description": "Schraapt URL's of artikelen en gebruikt Groq AI met Llama 3 om 4 verschillende platformvarianten te genereren: Twitter-draden, LinkedIn-berichten, nieuwsbrieven en Instagram-onderschriften. Eénkliks kopiëren, real-time feedback en elegante donkere modus UI.",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Groq", "Cheerio"],
-        "tags": ["AI", "Content Creatie"],
-        "tier": "secondary",
-        "category": "AI-contenttools"
-      },
-      "serenityAI": {
-        "name": "SerenityAI",
-        "shortDescription": "AI-aangedreven mentale wellness companion",
-        "description": "Een AI-aangedreven mentale wellness companion ontworpen om mensen te helpen hun mentale welzijn beter te begrijpen en te verzorgen. Functies omvatten intelligente agenten die gepersonaliseerde emotionele ondersteuning, humeur tracking, journaling inzichten en patroonanalyse bieden.",
-        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "LLM Architectuur", "AI Agenten"],
-        "tags": ["AI", "Mentale Gezondheid"],
-        "url": "https://serenityai.qzz.io/",
-        "tier": "secondary",
-        "category": "AI & Welzijn"
-      },
-      "tutaLearn": {
-        "name": "TutaLearn - Afrikaans Educatief Platform",
-        "shortDescription": "AI-leerplatform voor het Keniaanse CBC-curriculum",
-        "description": "AI-leerplatform voor het Keniaanse CBC-curriculum via WhatsApp en web, in het Engels en Swahili, te gebruiken zonder smartphone. Live en in actieve ontwikkeling met vroege testers.",
-        "technologies": ["Next.js", "React", "TypeScript", "Supabase", "OpenRouter", "M-Pesa (Daraja)", "WhatsApp API"],
-        "tags": ["Software Engineering", "EdTech"],
-        "url": "https://www.tutalearn.study/",
-        "tier": "secondary",
-        "category": "AI & EdTech"
-      },
-      "codebaseGenius": {
-        "name": "Codebase Genius - AI Documentatiesysteem",
-        "shortDescription": "AI-aangedreven automatische GitHub-documentatieplatform",
-        "description": "AI-aangedreven platform voor automatische GitHub-documentatie. Genereert uitgebreide docs van codebase-analyse met behulp van LLMs, met grafische codestructuurvisualisatie.",
-        "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
-        "tags": ["AI", "Ontwikkelaarstools"],
-        "url": "https://geniuscodebase.streamlit.app/",
-        "tier": "secondary",
-        "category": "AI-ontwikkelaarstools"
-      }
-    }
+    "title": "Projecten",
+    "subtitle": "Toegepaste AI-producten, ML-systemen en web- en mobiele apps, met casestudy’s over de technische keuzes.",
+    "featured": "Uitgelichte casestudy’s",
+    "more": "Meer projecten",
+    "filterLabel": "Projecten filteren op categorie",
+    "filterAll": "Alle",
+    "showing_one": "{{count}} project zichtbaar",
+    "showing_other": "{{count}} projecten zichtbaar",
+    "caseStudy": "Casestudy",
+    "liveApp": "Live app",
+    "viewSource": "Broncode",
+    "sourcePrivate": "Broncode privé",
+    "sourcePublic": "Publieke repository",
+    "sourceNotListed": "Niet vermeld",
+    "techLabel": "Technologieën"
   },
   "education": {
     "title": "Opleiding",
@@ -176,16 +37,14 @@
     "completed": "Voltooid",
     "items": {
       "bachelor_cs": {
-        "name": "Bachelor of Computer Science",
+        "name": "Bachelor of Science in Computer Science",
         "type": "ongoing",
         "institution": "University of the People (UoPeople)",
-        "period": "2025 – 2028 (Verwacht)",
+        "period": "2025 – verwacht 2028",
         "status": "Bezig",
         "description": [
-          "Eervolle vermelding: President's List, term 5 van 2025-2026",
-          "Cumulatief GPA: 3.98",
-          "Behaalde Studiepunten: 45 / 120 (Vanaf september 2026)",
-          "Volgt een uitgebreide opleiding in Computer Science met focus op software-engineering, algoritmen en moderne technologieën."
+          "Eervolle vermelding: President’s List, term 5 van 2025–2026",
+          "Opleiding loopt nog, met focus op software-engineering en algoritmen."
         ],
         "skills": []
       },
@@ -287,37 +146,28 @@
         "period": "2024",
         "status": "Voltooid",
         "description": [
-          "Intensieve Python-programmeercursus van Stanford University",
-          "Diagnostische beoordeling en eindproject met onderscheiding afgerond"
+          "Inleidende Python-programmeercursus van Stanford University",
+          "Diagnostische beoordeling en eindproject afgerond"
         ],
         "skills": [
           "Python",
-          "Programming Fundamentals",
-          "Diagnostic Badge",
-          "Final Project Badge"
+          "Basisprincipes van programmeren"
         ]
       }
-    }
-  },
-  "certifications": {
-    "title": "Certificeringen & Badges",
-    "viewCertification": "Bekijk Certificaat"
+    },
+    "degrees": "Diploma’s",
+    "programmes": "Programma’s en cursussen"
   },
   "badges": {
-    "title": "Badges & Certificeringen",
+    "title": "Certificaten en leren",
     "certified": "Gecertificeerd",
     "issuedBy": "Uitgegeven door",
     "expires": "Verloopt op",
     "viewCertification": "Certificering bekijken",
-    "viewProfile": "Profiel bekijken",
     "badgesEarned": "badges behaald",
     "moreSkills": "meer",
-    "showMore": "Meer Certificeringen Tonen",
-    "showLess": "Minder Tonen",
-    "alx_summary": {
-      "certification": "Data-analyse • Machine Learning • Data Science",
-      "description": "Drie ALX Africa-certificaten die de volledige data-pipeline dekken — analyse, machine learning en data science."
-    },
+    "showMore": "Digitale badges tonen",
+    "showLess": "Digitale badges verbergen",
     "platforms": {
       "google_pca": {
         "platform": "Google Cloud",
@@ -450,16 +300,12 @@
       "google_adk": {
         "platform": "Google Cloud",
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
-        "description": "Onderzoeksproblemen met taalmodellen geformuleerd; een eenvoudige tokenizer gebouwd; datasets voorbereid voor het trainen van transformer-taalmodellen; LLM's gepretraind en gefinetuned.",
+        "description": "Google Cloud-vaardigheidsbadge voor het bouwen van AI-agents met de Agent Development Kit (ADK).",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
           "Agent Development Kit",
-          "AI Agents",
-          "LLM Fine-Tuning",
-          "Model Training",
-          "Pretraining LLMs",
-          "Tokenization"
+          "AI-agents"
         ]
       },
       "google_security": {
@@ -543,7 +389,14 @@
         "issued_by": "Google",
         "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
         "badges_count": "27",
-        "skills": ["Google Cloud", "AI/ML", "Cloud Beveiliging", "Serverless", "Prompt Design", "MLOps"]
+        "skills": [
+          "Google Cloud",
+          "AI/ML",
+          "Cloud Beveiliging",
+          "Serverless",
+          "Prompt Design",
+          "MLOps"
+        ]
       },
       "google_prompt_design": {
         "platform": "Google Cloud",
@@ -551,7 +404,12 @@
         "description": "Praktische vaardigheden in het ontwerpen en optimaliseren van prompts voor grote taalmodellen met Vertex AI.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/c05f7979-d999-4b37-a1cd-9c566e2c0a40",
-        "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
+        "skills": [
+          "Prompt Engineering",
+          "Large Language Models",
+          "Vertex AI",
+          "Generative AI"
+        ]
       },
       "aws_educate_genai": {
         "platform": "AWS Educate",
@@ -559,7 +417,12 @@
         "description": "Fundamenteel begrip van generatieve AI-concepten, waaronder grote taalmodellen, prompt engineering en verantwoorde AI-principes voor cloudtoepassingen.",
         "issued_by": "Amazon Web Services (AWS)",
         "credential_url": "https://www.credly.com/badges/d6a0ac7a-2275-4b4b-b2b7-66b1e2b2ee73",
-        "skills": ["Generatieve AI", "Grote Taalmodellen", "Prompt Engineering", "Verantwoorde AI"]
+        "skills": [
+          "Generatieve AI",
+          "Grote Taalmodellen",
+          "Prompt Engineering",
+          "Verantwoorde AI"
+        ]
       },
       "aws_educate_ml": {
         "platform": "AWS Educate",
@@ -567,7 +430,13 @@
         "description": "Inleidende kennis van machine learning-concepten, waaronder supervised en unsupervised learning, modeltraining, evaluatie en implementatiestrategieën op AWS.",
         "issued_by": "Amazon Web Services (AWS)",
         "credential_url": "https://www.credly.com/badges/bcc32848-a45f-4aff-87f4-2aa53ace81e8",
-        "skills": ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Modeltraining", "AWS"]
+        "skills": [
+          "Machine Learning",
+          "Supervised Learning",
+          "Unsupervised Learning",
+          "Modeltraining",
+          "AWS"
+        ]
       },
       "ibm_granite": {
         "platform": "IBM",
@@ -575,7 +444,13 @@
         "description": "Praktische training in codegeneratie, optimalisatie en AI-ondersteunde softwareontwikkeling met IBM Granite-modellen. Behandelt prompt-gebaseerde codesynthese en prestatieoptimalisatie.",
         "issued_by": "IBM",
         "credential_url": "https://www.credly.com/badges/c5dcd4da-3757-4893-945b-50ca7d025ec2",
-        "skills": ["Codegeneratie", "IBM Granite", "AI-Ondersteunde Ontwikkeling", "Prompt Engineering", "Code Optimalisatie"]
+        "skills": [
+          "Codegeneratie",
+          "IBM Granite",
+          "AI-Ondersteunde Ontwikkeling",
+          "Prompt Engineering",
+          "Code Optimalisatie"
+        ]
       },
       "linux_lfs250": {
         "platform": "The Linux Foundation",
@@ -583,7 +458,14 @@
         "description": "Begrip van cloud-native architectuur en containerorkestratie, de hoofdlijnen van de Kubernetes-architectuur, en cloud-native observability en applicatielevering met CI/CD- en GitOps-tools.",
         "issued_by": "The Linux Foundation",
         "credential_url": "https://www.credly.com/badges/e266ef63-cdbe-42c5-bdeb-aec0b47bb523",
-        "skills": ["Kubernetes", "Cloud-Native Architectuur", "Containers", "GitOps", "CI/CD", "Observability"]
+        "skills": [
+          "Kubernetes",
+          "Cloud-Native Architectuur",
+          "Containers",
+          "GitOps",
+          "CI/CD",
+          "Observability"
+        ]
       },
       "mckinsey_forward": {
         "platform": "McKinsey.org",
@@ -591,7 +473,12 @@
         "description": "Het online leerprogramma McKinsey.org Forward voltooid: de McKinsey-aanpak voor probleemoplossing, effectieve communicatie, aanpasbare denkwijzen en gewoonten, en een digitale basistoolkit.",
         "issued_by": "McKinsey.org",
         "credential_url": "https://www.credly.com/badges/446ab0ba-2de5-49c4-9434-3930ab276aaf",
-        "skills": ["Probleemoplossing", "Communicatie", "Aanpassingsvermogen", "Digitale Toolkit"]
+        "skills": [
+          "Probleemoplossing",
+          "Communicatie",
+          "Aanpassingsvermogen",
+          "Digitale Toolkit"
+        ]
       },
       "google_app_dev_env": {
         "platform": "Google Cloud",
@@ -599,7 +486,13 @@
         "description": "Skill badge voor het bouwen en verbinden van opslaggerichte cloudinfrastructuur met Cloud Storage, Identity and Access Management, Cloud Functions en Pub/Sub.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/80fb5417-b117-4789-878f-c154e6685892",
-        "skills": ["Cloud Storage", "IAM", "Cloud Functions", "Pub/Sub", "Monitoring"]
+        "skills": [
+          "Cloud Storage",
+          "IAM",
+          "Cloud Functions",
+          "Pub/Sub",
+          "Monitoring"
+        ]
       },
       "microsoft_ai_skills": {
         "platform": "Microsoft Elevate",
@@ -607,7 +500,12 @@
         "description": "Erkent de cumulatieve prestaties in diverse AI-leertrajecten met tools uit het Microsoft-ecosysteem, zoals Microsoft Copilot en Copilot Studio.",
         "issued_by": "Microsoft Elevate",
         "credential_url": "https://www.credly.com/badges/26b4ec5b-a305-4ab4-ba6b-8be05e7d1856",
-        "skills": ["Generatieve AI", "Prompting", "Verantwoord AI-gebruik", "Innovatie"]
+        "skills": [
+          "Generatieve AI",
+          "Prompting",
+          "Verantwoord AI-gebruik",
+          "Innovatie"
+        ]
       },
       "ibm_data_fundamentals": {
         "platform": "IBM SkillsBuild",
@@ -615,7 +513,13 @@
         "description": "Kennis van dataanalyseconcepten, data science-methodologie en de tools in het data-ecosysteem, met een conceptueel begrip van het opschonen, verfijnen en visualiseren van data met IBM Watson Studio.",
         "issued_by": "IBM SkillsBuild",
         "credential_url": "https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483",
-        "skills": ["Data-analyse", "Data Science", "Datavisualisatie", "Watson Studio", "Data opschonen"]
+        "skills": [
+          "Data-analyse",
+          "Data Science",
+          "Datavisualisatie",
+          "Watson Studio",
+          "Data opschonen"
+        ]
       },
       "ibm_cybersecurity_fundamentals": {
         "platform": "IBM SkillsBuild",
@@ -623,18 +527,33 @@
         "description": "Basisbegrip van cybersecurityconcepten en -praktijken, waaronder dreigingsgroepen, aanvalstypen, social engineering, cryptografie, en hoe organisaties cyberaanvallen voorkomen, detecteren en erop reageren.",
         "issued_by": "IBM SkillsBuild",
         "credential_url": "https://www.credly.com/badges/1b491137-814a-4f22-b67e-c4ea05586626",
-        "skills": ["Cybersecurity", "Cryptografie", "Social Engineering", "Incidentrespons", "Dreigingsanalyse"]
+        "skills": [
+          "Cybersecurity",
+          "Cryptografie",
+          "Social Engineering",
+          "Incidentrespons",
+          "Dreigingsanalyse"
+        ]
       }
-    }
+    },
+    "subtitle": "Professionele certificeringen, programmacertificaten en digitale badges staan apart vermeld.",
+    "professional": "Professionele certificeringen",
+    "programmes": "Programmacertificaten",
+    "digital": "Digitale badges en cursussen",
+    "skills": "Vaardigheden"
   },
   "showcase": {
-    "title": "Vitrine",
-    "description": "Een samengestelde afspeellijst van opgenomen projectpresentaties, live demo's en technische walkthroughs die real-world toepassingen tonen die ik heb gebouwd."
+    "title": "Demovideo’s",
+    "description": "Opgenomen projectpresentaties, demo’s en technische uitleg.",
+    "load": "Demoplaylist laden",
+    "privacy": "Laadt de YouTube-speler (youtube-nocookie.com).",
+    "iframeTitle": "YouTube-playlist met projectdemo’s",
+    "openOnYoutube": "Playlist openen op YouTube"
   },
   "writing": {
-    "title": "Teksten & Inzichten",
-    "subtitle": "Essays en praktijknotities over AI-engineering, codekwaliteit en software die standhoudt.",
-    "readMore": "Lees op LinkedIn",
+    "title": "Artikelen en demo’s",
+    "subtitle": "Artikelen over AI-ondersteunde engineering en productierijpheid, plus opgenomen demo’s.",
+    "readMore": "Meer artikelen op LinkedIn",
     "items": [
       {
         "title": "Code Review is de firewall tegen AI-slordigheid",
@@ -652,36 +571,27 @@
       }
     ]
   },
-  "skills": {
-    "aiData": "AI & Datawetenschap",
-    "frontendMobile": "Frontend & Mobiel",
-    "backendCloud": "Backend & Cloud",
-    "viewLinkedIn": "Bekijk Mijn LinkedIn Profiel"
-  },
   "contact": {
-    "title": "Neem Contact Op",
-    "name": "Uw Naam",
-    "email": "Uw Email",
-    "message": "Uw Bericht",
+    "title": "Contact",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Bericht",
     "send": "Verstuur Bericht",
     "sending": "Versturen...",
-    "success": "Bericht succesvol verzonden!",
-    "error": "Verzenden mislukt. Probeer het opnieuw."
+    "success": "Bedankt, je bericht is verzonden. Ik neem snel contact op.",
+    "error": "Verzenden mislukt. Probeer het opnieuw.",
+    "subtitle": "Een vraag over een functie, samenwerking of project? Stuur een bericht, dan antwoord ik per e-mail.",
+    "messageHint": "Maximaal {{max}} tekens.",
+    "errorRequired": "Vul je naam, e-mailadres en bericht in.",
+    "otherTitle": "Liever via LinkedIn?",
+    "otherText": "Je kunt me ook bereiken via LinkedIn-berichten.",
+    "linkedin": "Stuur een bericht via LinkedIn",
+    "privacy": "Berichten worden via Formspree bezorgd en alleen gebruikt om je te antwoorden."
   },
   "language": {
     "en": "Engels",
     "nl": "Nederlands",
     "fr": "Frans"
-  },
-  "menu": {
-    "profile": "Profiel",
-    "projects": "Projecten",
-    "showcase": "Vitrine",
-    "education": "Opleiding",
-    "writing": "Teksten",
-    "badges": "Badges",
-    "contact": "Neem Contact Op",
-    "services": "Diensten"
   },
   "chat": {
     "title": "AI Chat",
@@ -704,6 +614,142 @@
       "Met welke AI/ML-technologieën werkt Ray?",
       "Hoe kan ik contact opnemen met Ray?",
       "Wat maakt Ray bijzonder als ontwikkelaar?"
+    ],
+    "pageTitle": "AI-chat over het werk van Raymond",
+    "conversation": "Gesprek",
+    "thinking": "Bezig met nadenken…",
+    "inputLabel": "Je vraag",
+    "send": "Bericht versturen"
+  },
+  "common": {
+    "newTab": "opent in een nieuw tabblad",
+    "close": "Sluiten",
+    "cancel": "Annuleren"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "Over mij",
+    "projects": "Projecten",
+    "experience": "Ervaring",
+    "expertise": "Vaardigheden",
+    "education": "Opleiding",
+    "credentials": "Certificaten",
+    "writing": "Artikelen",
+    "contact": "Contact",
+    "chat": "AI-chat",
+    "services": "Diensten",
+    "mainNav": "Hoofdmenu",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "darkMode": "Donkere modus",
+    "language": "Taal",
+    "skipToContent": "Naar de hoofdinhoud"
+  },
+  "hero": {
+    "location": "Nairobi, Kenia",
+    "title": "Software- en AI-engineer",
+    "supporting": "Toegepaste AI · Machine learning · Agentische systemen · Cloud en full-stack",
+    "intro": "Ik ontwerp en bouw intelligente software voor praktische uitdagingen in de zorg, het onderwijs, toegankelijkheid en burgerparticipatie. Sinds 2024 omvat mijn werk in toegepaste AI machine learning, multimodale modellen, agent-workflows en full-stack applicaties. Ik let op betrouwbaarheid, een doordachte gebruikerservaring, privacy, toegankelijkheid, testen en verantwoorde uitrol, niet alleen op prototypes.",
+    "portraitAlt": "Portret van Raymond Klanderman",
+    "ctaProjects": "Bekijk projecten",
+    "ctaGithub": "Bekijk GitHub",
+    "ctaDownloadCv": "CV downloaden",
+    "ctaContact": "Neem contact op",
+    "liveWork": "Nu live"
+  },
+  "about": {
+    "title": "Over mij",
+    "summary": "Ik ben software- en AI-engineer en bouw praktische systemen voor de zorg, het onderwijs, toegankelijkheid en publieke participatie. Mijn werk combineert LLM-toepassingen, machine learning, agentische workflows, moderne web- en mobiele ontwikkeling en cloudinfrastructuur. In eigen producten en challengeprojecten heb ik gewerkt aan modelevaluatie, veiligheidsmaatregelen, gestructureerde output, gegevensbescherming en betrouwbare uitrol. Mijn doel is nieuwe technologie nuttig te maken voor mensen en gemeenschappen.",
+    "openTo": "Open voor functies in software-engineering, AI/ML en data, en voor samenwerkingen rond mensgerichte AI.",
+    "backgroundTitle": "Achtergrond",
+    "background": "Naast engineering heb ik een achtergrond in digitale media: Digital Media Specialist bij het kantoor van de Nairobi Woman Representative (2017–2024) en Media Specialist op contractbasis bij het Pan-Afrikaans Parlement (2025). Ik volgde opleidingen bij Power Learn Project (2024) en het ALX Data Science-programma (2025–2026), en ik studeer voor een BSc Computer Science aan de University of the People.",
+    "highlightsTitle": "In het kort",
+    "highlights": [
+      {
+        "title": "Live AI-producten",
+        "text": "AI Health Chat (publieke bèta), TutaLearn, Sauti Mtaani Nairobi en Luminae staan live op het web."
+      },
+      {
+        "title": "Veiligheid en privacy",
+        "text": "Row Level Security, toestemmingsflows, verwijdering van persoonsgegevens, budgetlimieten en menselijke goedkeuring van AI-suggesties."
+      },
+      {
+        "title": "Meetbare ML-resultaten",
+        "text": "Hybride SVD + LightGBM-aanbevelingsmodel op ~10 mln. beoordelingen: publieke-leaderboard-RMSE van 1,21 naar 0,82."
+      },
+      {
+        "title": "Toegankelijk en meertalig",
+        "text": "EyeSense voor blinde en slechtziende gebruikers; producten in het Engels en Kiswahili, en AI Health Chat in vijf talen."
+      },
+      {
+        "title": "Cloud en agents",
+        "text": "Google Cloud Professional Cloud Architect; Luminae met vijf agents en een eindproject met zeven agents in Vertex AI ADK."
+      },
+      {
+        "title": "Erkenning",
+        "text": "1e plaats bij de afstudeerhackathon van Power Learn Project, lichting 2024; President’s List aan de University of the People."
+      }
     ]
+  },
+  "caseStudy": {
+    "breadcrumb": "Kruimelpad",
+    "atAGlance": "In het kort",
+    "role": "Rol",
+    "status": "Status",
+    "type": "Soort project",
+    "context": "Context",
+    "years": "Jaren",
+    "categories": "Categorieën",
+    "source": "Broncode",
+    "techStack": "Technologie",
+    "problem": "Probleem",
+    "users": "Voor wie",
+    "built": "Wat ik heb gebouwd",
+    "architecture": "Architectuur",
+    "challenges": "Technische uitdagingen",
+    "quality": "Kwaliteit en vertrouwen",
+    "results": "Resultaten",
+    "resultsCaption": "Resultaten voor {{name}} met hun bron",
+    "measure": "Maatstaf",
+    "value": "Waarde",
+    "evidence": "Bron",
+    "limitations": "Beperkingen",
+    "watchDemo": "Bekijk de demovideo",
+    "moreProjects": "Meer projecten",
+    "previous": "Vorige",
+    "next": "Volgende",
+    "allProjects": "Alle projecten"
+  },
+  "experience": {
+    "title": "Ervaring",
+    "subtitle": "Professionele functies en de opleidingen achter mijn engineeringwerk.",
+    "roles": "Professionele functies",
+    "training": "Opleidingen en leertrajecten",
+    "related": "Gerelateerde projecten"
+  },
+  "expertise": {
+    "title": "Technische expertise",
+    "subtitle": "Gegroepeerd per vakgebied, en beperkt tot tools die ik heb gebruikt in de projecten en opleidingen op deze site."
+  },
+  "cvModal": {
+    "title": "Mijn cv aanvragen",
+    "description": "Laat je e-mailadres achter, dan stuur ik je mijn actuele cv.",
+    "emailLabel": "Je e-mailadres",
+    "noteLabel": "Functie of organisatie (optioneel)",
+    "submit": "Aanvraag versturen",
+    "success": "Aanvraag verzonden. Raymond antwoordt per e-mail.",
+    "error": "De aanvraag kon niet worden verzonden. Probeer het opnieuw.",
+    "errorEmail": "Vul je e-mailadres in."
+  },
+  "footer": {
+    "social": "Sociale profielen"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "projectTitle": "Project niet gevonden",
+    "text": "De pagina die je zoekt bestaat niet of is verplaatst.",
+    "home": "Naar de homepage",
+    "projects": "Bekijk projecten",
+    "featured": "Uitgelichte casestudy’s"
   }
 }

@@ -1,84 +1,43 @@
-import React, { Suspense } from 'react';
-import { motion } from 'framer-motion';
+import { FC, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import CV from './components/CV_new';
-const Projects = React.lazy(() => import('./components/Projects'));
-const Showcase = React.lazy(() => import('./components/Showcase'));
-const Education = React.lazy(() => import('./components/Education_new'));
-const Writing = React.lazy(() => import('./components/Writing'));
-const Badges = React.lazy(() => import('./components/Badges'));
-import Footer from './components/Footer';
-import DevRayBanner from './components/DevRayBanner';
+import SiteLayout from './components/SiteLayout';
+import ScrollManager from './components/ScrollManager';
 import ChatPage from './components/ChatPage';
-import LanguageSwitcher from './components/LanguageSwitcher';
-import SectionSkeleton from './components/SectionSkeleton';
+import HomePage from './pages/HomePage';
+import ProjectPage from './pages/ProjectPage';
+import NotFoundPage from './pages/NotFoundPage';
+import DocumentMeta from './seo/DocumentMeta';
 import { ThemeProvider, useTheme } from './components/ThemeContext';
-import './i18n/config';
+import { restoreLanguagePreference } from './i18n/config';
 import './styles/main.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
-const HomePage: React.FC = () => (
-  <motion.div
-    className="app"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.5 }}
-  >
-    <LanguageSwitcher />
-    <Header />
-    <main>
-      <CV />
-      <Suspense fallback={<SectionSkeleton />}>
-        <Projects />
-        <Showcase />
-        <Education />
-        <Writing />
-        <Badges />
-      </Suspense>
-    </main>
-    <DevRayBanner />
-    <Footer />
-  </motion.div>
-);
+const ToastContainerWithTheme: FC = () => {
+  const { theme } = useTheme();
+  return <ToastContainer position="bottom-right" autoClose={5000} newestOnTop={false} theme={theme} />;
+};
 
-const AppContent: React.FC = () => {
+/** Routes only. The router itself is supplied by main.tsx (browser) or entry-server.tsx (prerender). */
+const App: FC = () => {
+  useEffect(() => {
+    restoreLanguagePreference();
+  }, []);
+
   return (
-    <BrowserRouter>
+    <ThemeProvider>
+      <ScrollManager />
+      <DocumentMeta />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route element={<SiteLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/:slug" element={<ProjectPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
         <Route path="/chat" element={<ChatPage />} />
       </Routes>
       <ToastContainerWithTheme />
-    </BrowserRouter>
-  );
-};
-
-const App: React.FC = () => {
-  return (
-    <ThemeProvider>
-      <AppContent />
     </ThemeProvider>
-  );
-};
-
-const ToastContainerWithTheme: React.FC = () => {
-  const { theme } = useTheme();
-  
-  return (
-    <ToastContainer
-      position="bottom-right"
-      autoClose={5000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      theme={theme === 'dark' ? 'dark' : 'light'}
-    />
   );
 };
 

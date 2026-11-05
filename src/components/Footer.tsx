@@ -1,211 +1,53 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { FaGithub, FaLinkedin, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { LINKS, PERSON } from '../data/site';
 import './Footer.scss';
 
-const Footer: React.FC = () => {
+const SOCIAL = [
+  { icon: <FaGithub aria-hidden="true" />, url: LINKS.github, label: 'GitHub' },
+  { icon: <FaLinkedin aria-hidden="true" />, url: LINKS.linkedin, label: 'LinkedIn' },
+  { icon: <FaYoutube aria-hidden="true" />, url: LINKS.youtube, label: 'YouTube' },
+  { icon: <FaTwitter aria-hidden="true" />, url: LINKS.x, label: 'X (Twitter)' },
+];
+
+const Footer: FC = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-    
-    try {
-      const response = await fetch('https://formspree.io/f/mnnpbdzv', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          ...formData,
-          _subject: `Portfolio contact message from ${formData.name}`
-        })
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  interface SocialLink {
-    icon: React.ReactElement;
-    url: string;
-    label: string;
-    color: string;
-  }
-
-  const socialLinks: SocialLink[] = [
-    {
-      icon: <FaGithub />,
-      url: 'https://github.com/rayklanderman',
-      label: 'GitHub',
-      color: 'transparent'
-    },
-    {
-      icon: <FaLinkedin />,
-      url: 'https://www.linkedin.com/in/rayklanderman/',
-      label: 'LinkedIn',
-      color: 'transparent'
-    },
-    {
-      icon: <FaYoutube />,
-      url: 'https://www.youtube.com/@RealDevRay',
-      label: 'YouTube',
-      color: 'transparent'
-    },
-    {
-      icon: <FaTwitter />,
-      url: 'https://x.com/rayklanderman',
-      label: 'X (Twitter)',
-      color: 'transparent'
-    }
-  ];
-
   return (
-    <motion.footer
-      id="contact-me"
-      className="footer contact-section"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <div className="footer-content">
-        <motion.div
-          className="contact-form"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
-          <h2 className="section-title">
-            {t('contact.title')}
-          </h2>
-          <form onSubmit={handleSubmit} className="contact-form-container">
-            <div className="form-group">
-              <input
-                type="text"
-                placeholder={t('contact.name')}
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                required
-                className="form-input"
-                onFocus={(e) => {
-                  e.target.classList.add('form-input-focus');
-                }}
-                onBlur={(e) => {
-                  e.target.classList.remove('form-input-focus');
-                }}
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                placeholder={t('contact.email')}
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                required
-                className="form-input"
-                onFocus={(e) => {
-                  e.target.classList.add('form-input-focus');
-                }}
-                onBlur={(e) => {
-                  e.target.classList.remove('form-input-focus');
-                }}
-              />
-            </div>
-            <div className="form-group">
-              <textarea
-                placeholder={t('contact.message')}
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                required
-                rows={5}
-                className="form-textarea"
-                onFocus={(e) => {
-                  e.target.classList.add('form-input-focus');
-                }}
-                onBlur={(e) => {
-                  e.target.classList.remove('form-input-focus');
-                }}
-              />
-            </div>
-            <motion.button 
-              type="submit" 
-              disabled={isSubmitting}
-              whileHover={!isSubmitting ? { scale: 1.05 } : {}}
-              whileTap={!isSubmitting ? { scale: 0.95 } : {}}
-              className={`submit-button ${isSubmitting ? 'submitting' : ''}`}
-            >
-              {isSubmitting ? t('contact.sending') : t('contact.send')}
-            </motion.button>
-          </form>
-          {submitStatus === 'success' && (
-            <motion.p
-              className="success-message"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              {t('contact.success')}
-            </motion.p>
-          )}
-          {submitStatus === 'error' && (
-            <motion.p
-              className="error-message"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-            >
-              {t('contact.error')}
-            </motion.p>
-          )}
-        </motion.div>
-
-        <motion.div
-          className="social-links"
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        >
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={link.label}
-              className="social-link"
-              style={{ 
-                backgroundColor: link.color,
-                transition: 'all 0.3s ease'
-              }}
-            >
-              {React.cloneElement(link.icon, { 
-                className: 'social-icon',
-                size: 24,
-                style: { 
-                  transition: 'all 0.3s ease'
-                }
-              })}
-            </a>
+    <footer className="site-footer">
+      <div className="container site-footer__inner">
+        <div>
+          <p className="site-footer__name">{PERSON.displayName}</p>
+          <p className="site-footer__role">
+            {PERSON.title} · {PERSON.location}
+          </p>
+        </div>
+        <ul className="site-footer__social" role="list" aria-label={t('footer.social')}>
+          {SOCIAL.map((s) => (
+            <li key={s.label}>
+              <a href={s.url} target="_blank" rel="noopener noreferrer" className="icon-button" title={s.label}>
+                {s.icon}
+                <span className="visually-hidden">
+                  {s.label} ({t('common.newTab')})
+                </span>
+              </a>
+            </li>
           ))}
-        </motion.div>
+        </ul>
+        <p className="site-footer__meta">
+          © {new Date().getFullYear()} {PERSON.name} ·{' '}
+          <Link to="/chat" className="text-link">
+            {t('menu.chat')}
+          </Link>{' '}
+          ·{' '}
+          <a href={LINKS.services} className="text-link" target="_blank" rel="noopener noreferrer">
+            DevRay {t('menu.services')}
+            <span className="visually-hidden"> ({t('common.newTab')})</span>
+          </a>
+        </p>
       </div>
-    </motion.footer>
+    </footer>
   );
 };
 

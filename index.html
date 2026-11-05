@@ -1,97 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#10231C" />
-    <meta name="color-scheme" content="dark light" />
-
-    <!-- Primary Meta Tags -->
-    <title>Raymond Klanderman | Software &amp; AI/ML Engineer in Nairobi</title>
-    <meta name="title" content="Raymond Klanderman | Software &amp; AI/ML Engineer in Nairobi" />
-    <meta name="description" content="Software and AI/ML engineer in Nairobi. Ships AI products end to end, builds digital systems inside public institutions, and holds the Google Cloud Professional Cloud Architect certification." />
-    <meta name="keywords" content="Raymond Klanderman, Software Engineer, AI Engineer, ML Engineer, Data Analyst, Full-Stack Developer, Google Cloud Professional Cloud Architect, Nairobi, Kenya, Portfolio" />
+    <meta name="theme-color" content="#fcfaf5" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#10231C" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="author" content="Raymond Klanderman" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-    <link rel="canonical" href="https://rayklanderman.is-a.dev/" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://rayklanderman.is-a.dev/" />
-    <meta property="og:title" content="Raymond Klanderman | Software &amp; AI/ML Engineer" />
-    <meta property="og:description" content="Ships AI products end to end, builds digital systems inside public institutions, and holds the Google Cloud Professional Cloud Architect certification." />
-    <meta property="og:image" content="https://rayklanderman.is-a.dev/og-image.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Raymond Klanderman, Software Engineer, AI/ML Engineer and Data, with a gold RK monogram" />
-    <meta property="og:site_name" content="Raymond Klanderman" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://rayklanderman.is-a.dev/" />
-    <meta name="twitter:title" content="Raymond Klanderman | Software &amp; AI/ML Engineer" />
-    <meta name="twitter:description" content="Ships AI products end to end, builds digital systems inside public institutions, and holds the Google Cloud Professional Cloud Architect certification." />
-    <meta name="twitter:image" content="https://rayklanderman.is-a.dev/og-image.png" />
-    <meta name="twitter:image:alt" content="Raymond Klanderman, Software Engineer, AI/ML Engineer and Data, with a gold RK monogram" />
-
-    <!-- Structured Data: Person + WebSite (no contact details; enquiries go through the on-site forms) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://rayklanderman.is-a.dev/#person",
-          "name": "Raymond Klanderman",
-          "url": "https://rayklanderman.is-a.dev/",
-          "image": "https://rayklanderman.is-a.dev/images/profile1.png",
-          "jobTitle": "Software Engineer & AI/ML Engineer",
-          "description": "Software and AI/ML engineer who ships AI products end to end and builds digital systems inside public institutions.",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-          },
-          "sameAs": [
-            "https://github.com/rayklanderman",
-            "https://www.linkedin.com/in/rayklanderman/",
-            "https://www.youtube.com/@RealDevRay",
-            "https://x.com/rayklanderman",
-            "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504"
-          ],
-          "alumniOf": [
-            { "@type": "CollegeOrUniversity", "name": "University of the People" },
-            { "@type": "CollegeOrUniversity", "name": "Management University of Africa" },
-            { "@type": "EducationalOrganization", "name": "ALX" },
-            { "@type": "EducationalOrganization", "name": "Stanford University" }
-          ],
-          "knowsAbout": [
-            "Full-Stack Engineering",
-            "Machine Learning",
-            "Data Analytics",
-            "Cloud Architecture",
-            "Google Cloud",
-            "Artificial Intelligence",
-            "LLM Engineering",
-            "AI Agents",
-            "Flutter"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://rayklanderman.is-a.dev/#website",
-          "url": "https://rayklanderman.is-a.dev/",
-          "name": "Raymond Klanderman",
-          "inLanguage": ["en", "fr", "nl"],
-          "publisher": { "@id": "https://rayklanderman.is-a.dev/#person" }
-        }
-      ]
-    }
+    <script>
+      // Apply a saved colour theme before first paint (light is the default).
+      (function () {
+        try {
+          var t = localStorage.getItem('colorTheme');
+          if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
     </script>
 
-    <!-- Favicon and App Icons (gold monogram; fixed colours so it stays gold in light and dark browser themes) -->
+    <!--seo:start-->
+    <title>Raymond (DevRay) Klanderman | Software &amp; AI Engineer</title>
+    <meta name="description" content="Software &amp; AI engineer in Nairobi building applied AI for healthcare, education, accessibility and civic participation. Projects, case studies and credentials." />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://rayklanderman.is-a.dev/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Raymond Klanderman" />
+    <meta property="og:url" content="https://rayklanderman.is-a.dev/" />
+    <meta property="og:title" content="Raymond (DevRay) Klanderman | Software &amp; AI Engineer" />
+    <meta property="og:description" content="Software &amp; AI engineer in Nairobi building applied AI for healthcare, education, accessibility and civic participation. Projects, case studies and credentials." />
+    <meta property="og:image" content="https://rayklanderman.is-a.dev/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!--seo:end-->
+
+    <!-- Favicon and app icons (gold monogram) -->
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
@@ -99,18 +39,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Fonts: Bricolage Grotesque (display), Inter (body), Roboto Mono (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="root"></div>
-    <noscript>
-      <h1>Raymond Klanderman</h1>
-      <p>Software and AI/ML engineer in Nairobi. Ships AI products end to end, builds digital systems inside public institutions, and holds the Google Cloud Professional Cloud Architect certification.</p>
-      <p>Please enable JavaScript to view the full portfolio. Find me on <a href="https://www.linkedin.com/in/rayklanderman/">LinkedIn</a> and <a href="https://github.com/rayklanderman">GitHub</a>.</p>
-    </noscript>
+    <div id="root"><!--app-html--></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

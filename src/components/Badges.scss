@@ -1,73 +1,24 @@
 .badges-section {
-  padding: 2.5rem 0;
-  background: var(--bg-color);
-
-  @media (max-width: 768px) {
-    padding: 2rem 0;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  .section-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-color);
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: var(--accent-gold);
-      border-radius: 2px;
-    }
+  .credential-group-title {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 1rem;
   }
 
   .platforms-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
-    margin-top: 2.5rem;
-
-    @media (max-width: 992px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    @media (max-width: 640px) {
-      grid-template-columns: minmax(0, 1fr);
-      gap: 1rem;
-    }
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 1.25rem;
+    list-style: none;
 
     &--dense {
-      --dense-gap: 0.85rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; // a short last row stays centred
-      gap: var(--dense-gap);
-      // room for the hover lift so the collapsing wrapper doesn't clip it
-      padding: 0.5rem 0.25rem 0.25rem;
-      margin-top: 1rem;
+      gap: 0.85rem;
 
-      > .platform-card {
-        flex: 0 1 100%;
+      > li {
+        display: flex;
         min-width: 0;
 
-        @media (min-width: 641px) {
-          flex-basis: calc((100% - var(--dense-gap)) / 2);
-        }
-
-        @media (min-width: 993px) {
-          flex-basis: calc((100% - 2 * var(--dense-gap)) / 3);
+        > .platform-card {
+          width: 100%;
         }
       }
     }
@@ -91,8 +42,7 @@
     }
 
     &:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-lg);
+      box-shadow: var(--shadow-md);
       border-color: var(--accent-gold);
     }
 
@@ -145,7 +95,7 @@
       color: var(--accent-gold);
     }
 
-    h3 {
+    h4 {
       margin: 0;
       font-size: 1.05rem;
       font-weight: 600;
@@ -350,16 +300,16 @@
       .dense-info {
         flex: 1;
         min-width: 0;
+        display: flex;
+        flex-direction: column;
       }
 
-      h3 {
-        font-size: 0.9rem;
+      .dense-title {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 0.92rem;
         line-height: 1.3;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        line-clamp: 2;
-        overflow: hidden;
+        overflow-wrap: anywhere;
       }
 
       .dense-issuer {
@@ -389,19 +339,20 @@
   /* ── Accordion toggle ────────────────────────────────── */
   .badges-toggle-wrap {
     display: flex;
-    justify-content: center;
-    margin-top: 1.75rem;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
   }
 
   .badges-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    min-height: 44px;
     padding: 0.6rem 1.4rem;
-    background: transparent;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    color: var(--text-muted);
+    background: var(--surface-1);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-btn);
+    color: var(--text-color);
     font-family: var(--font-mono);
     font-size: 0.8rem;
     font-weight: 500;

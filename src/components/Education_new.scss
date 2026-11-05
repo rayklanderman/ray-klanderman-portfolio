@@ -1,40 +1,17 @@
 .education-section {
-  padding-block: 2.5rem;
   overflow-x: clip;
 
-  .section-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--text-color);
-    position: relative;
-
-    &:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 4px;
-      background: var(--accent-gold);
-      border-radius: 2px;
-    }
+  .education-group-title {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 1rem;
   }
 
   .education-timeline {
-    --edu-gap: 2rem;
+    --edu-gap: 1.25rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; // a short last row stays centred instead of leaving an orphan on the left
     gap: var(--edu-gap);
-    margin-top: var(--space-2xl);
-
-    @media (max-width: 768px) {
-      --edu-gap: 1.25rem;
-      margin-top: 1.5rem;
-    }
+    list-style: none;
   }
 
   .education-card {
@@ -84,7 +61,6 @@
     }
 
     &:hover {
-      transform: translateY(-5px);
       box-shadow: var(--shadow-md);
     }
 
@@ -110,12 +86,11 @@
         background: color-mix(in srgb, var(--accent-live) 12%, transparent);
         color: var(--accent-live);
         border: 1px solid color-mix(in srgb, var(--accent-live) 30%, transparent);
-        animation: pulse-glow 2s ease-in-out infinite;
       }
     }
 
     .title {
-      font-size: 1.25rem;
+      font-size: 1.15rem;
       font-weight: 700;
       color: var(--text-color);
       margin-bottom: 0.35rem;
@@ -140,13 +115,13 @@
     .description {
       margin: 1rem 0;
       padding-left: 1.25rem;
+      list-style: none;
 
       li {
         margin-bottom: 0.5rem;
         font-size: 0.95rem;
         line-height: 1.5;
-        color: var(--text-color) !important;
-        opacity: 0.9;
+        color: var(--text-color);
         position: relative;
 
         &:before {
@@ -163,7 +138,7 @@
       flex-wrap: wrap;
       gap: 0.5rem;
       margin-top: 1rem;
-      margin-bottom: 1rem;
+      list-style: none;
     }
 
     .skill-tag {
@@ -175,26 +150,8 @@
       font-weight: 500;
       letter-spacing: 0.02em;
       background-color: var(--surface-2);
-      color: var(--text-muted) !important;
-      transition: all 0.2s ease;
+      color: var(--text-muted);
       border: 1px solid var(--border-color);
-      margin-right: 0.25rem;
-      margin-bottom: 0.25rem;
-
-      &:hover {
-        transform: translateY(-2px);
-        border-color: var(--accent-gold);
-        color: var(--accent-gold) !important;
-      }
     }
-  }
-}
-
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 8px color-mix(in srgb, var(--accent-live) 15%, transparent);
-  }
-  50% {
-    box-shadow: 0 0 18px color-mix(in srgb, var(--accent-live) 40%, transparent);
   }
 }

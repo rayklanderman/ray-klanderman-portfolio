@@ -1,40 +1,34 @@
-import './LanguageSwitcher.scss';
+import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
+import { setLanguage, SupportedLanguage } from '../i18n/config';
+import './LanguageSwitcher.scss';
 
-const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
+const LANGUAGES: { code: SupportedLanguage; label: string; name: string }[] = [
+  { code: 'en', label: 'EN', name: 'English' },
+  { code: 'nl', label: 'NL', name: 'Nederlands' },
+  { code: 'fr', label: 'FR', name: 'Français' },
+];
 
-  const languages = [
-    { code: 'en', label: 'EN', country: 'English' },
-    { code: 'nl', label: 'NL', country: 'Nederlands' },
-    { code: 'fr', label: 'FR', country: 'Français' }
-  ];
-
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
+const LanguageSwitcher: FC = () => {
+  const { i18n, t } = useTranslation();
+  const current = i18n.language?.split('-')[0];
 
   return (
-    <motion.div
-      className="language-switcher"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      {languages.map((lang) => (
-        <motion.button
+    <div className="language-switcher" role="group" aria-label={t('menu.language')}>
+      {LANGUAGES.map((lang) => (
+        <button
           key={lang.code}
-          onClick={() => changeLanguage(lang.code)}
-          className={`language-btn ${i18n.language === lang.code ? 'active' : ''}`}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          title={lang.country}
+          type="button"
+          lang={lang.code}
+          className="language-switcher__btn"
+          aria-pressed={current === lang.code}
+          title={lang.name}
+          onClick={() => void setLanguage(lang.code)}
         >
-          <span className="language-label">{lang.label}</span>
-        </motion.button>
+          {lang.label}
+        </button>
       ))}
-    </motion.div>
+    </div>
   );
 };
 

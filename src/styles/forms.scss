@@ -1,0 +1,65 @@
+// Shared form styles (contact form and CV request dialog)
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  label {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.65rem 0.85rem;
+    border-radius: var(--radius-btn);
+    border: 1px solid var(--border-strong);
+    background: var(--surface-1);
+    color: var(--text-color);
+    font-size: 1rem;
+
+    &:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 1px;
+    }
+
+    &[aria-invalid="true"] {
+      border-color: var(--danger);
+    }
+
+    &:disabled {
+      opacity: 0.7;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 140px;
+  }
+}
+
+.form-hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.form-status {
+  font-weight: 500;
+
+  &--success {
+    color: var(--success);
+  }
+
+  &--error,
+  &[role="alert"] {
+    color: var(--danger);
+  }
+}

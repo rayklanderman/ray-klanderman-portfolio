@@ -2,44 +2,40 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig({
+export default defineConfig(({ isSsrBuild }) => ({
   plugins: [
-    react({
-      include: /\.[tj]sx?$/,
-      jsxImportSource: '@emotion/react',
-      babel: {
-        plugins: [
-          '@emotion/babel-plugin'
-        ],
-        babelrc: false,
-        configFile: false,
-      }
-    }),
-    VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,jpg,ico}'],
-        skipWaiting: true,
-        clientsClaim: true,
-        cleanupOutdatedCaches: true,
-      },
-      devOptions: {
-        enabled: true
-      },
-      // The manifest is a static file (public/manifest.webmanifest) linked from index.html
-      manifest: false
-    })
+    react(),
+    // The service worker belongs to the browser build only, not the prerender (SSR) bundle.
+    !isSsrBuild &&
+      VitePWA({
+        registerType: 'autoUpdate',
+        workbox: {
+          globPatterns: ['**/*.{js,css,html,svg,png,jpg,webp,ico}'],
+          // Large badge artwork and stray local folders are not worth precaching.
+          globIgnores: ['**/node_modules/**', 'badges/**'],
+          skipWaiting: true,
+          clientsClaim: true,
+          cleanupOutdatedCaches: true,
+          navigateFallbackDenylist: [/^\/api\//],
+        },
+        devOptions: {
+          enabled: false,
+        },
+        // The manifest is a static file (public/manifest.webmanifest) linked from index.html
+        manifest: false,
+      }),
   ],
-  base: './',
+  // Absolute asset URLs: prerendered pages live in nested folders (e.g. /projects/<slug>/).
+  base: '/',
   server: {
     port: 3000,
     open: true,
-    hmr: true
+    hmr: true,
   },
   resolve: {
     alias: {
-      '@': '/src'
-    }
+      '@': '/src',
+    },
   },
   css: {
     preprocessorOptions: {
@@ -47,20 +43,25 @@ export default defineConfig({
         additionalData: `
           @use "sass:color";
           @use "sass:math";
-        `
-      }
-    }
+        `,
+      },
+    },
   },
-  build: {
-    sourcemap: true,
-    outDir: 'dist',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'ui-vendor': ['@emotion/react', 'framer-motion']
-        }
-      }
-    }
-  }
-})
+  ssr: {
+    // Bundle UI libraries into the prerender build so Node never imports their CSS directly.
+    noExternal: ['react-toastify', 'react-icons'],
+  },
+  build: isSsrBuild
+    ? { sourcemap: false }
+    : {
+        sourcemap: true,
+        outDir: 'dist',
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+            },
+          },
+        },
+      },
+}))

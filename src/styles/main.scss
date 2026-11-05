@@ -1,4 +1,4 @@
-// Design tokens — Forest-Ink palette
+// Design tokens — Forest-Ink (dark companion) palette
 $ink: #10231C;
 $parchment: #F4F4F0;
 $gold: #C99A3B;
@@ -6,122 +6,123 @@ $live: #00E599;
 $ink-raised: #17312A;
 $ink-surface-2: #1D3A31;
 $ink-border: #2A473D;
-$parchment-raised: #FFFFFF;
-$parchment-surface-2: #ECEBE4;
-$parchment-border: #DDDCD3;
-$text-muted-dark: #9DB4AA;
-$text-muted-light: #5B6660;
+$text-muted-dark: #A9BFB5;
 
-// Design tokens — "Say Briefly" (Brief) palette
+// Design tokens — "Say Briefly" cream palette (default)
 $forest-ink: #1a3300;      // Forest Ink — primary text/CTA
 $cream-paper: #fcfaf5;     // Cream Paper — page canvas
 $highlighter: #ffe95c;     // Highlighter Yellow — marker wash/tagline badge
 $pencil-gray: #b6b6b6;     // Pencil Gray — hairlines/borders
-$whisper-gray: #f1f1f1;    // Whisper Gray — muted helper text
-$sticky-note-teal: #a8e5e5; // Sticky Note Teal — pastel action
-$sticky-note-mint: #d5f5c2; // Sticky Note Mint — pastel card
-$sticky-note-blush: #f6d0ff; // Sticky Note Blush — decorative
-$terracotta: #cb5521;      // Terracotta — decorative card accent
+$whisper-gray: #f1f1f1;    // Whisper Gray
+$sticky-note-teal: #a8e5e5;
+$sticky-note-mint: #d5f5c2;
+$sticky-note-blush: #f6d0ff;
+$terracotta: #cb5521;
 
-// Import section title styles
 @use 'section-title';
+@use 'forms';
 
-// Spacing scale + theme-independent tokens
+// Theme-independent tokens
 :root {
-  --space-xs: 0.25rem;   // 4px
-  --space-sm: 0.5rem;    // 8px
-  --space-md: 1rem;      // 16px
-  --space-lg: 1.5rem;    // 24px
-  --space-xl: 2rem;      // 32px
-  --space-2xl: 3rem;     // 48px
-  --space-3xl: 4rem;     // 64px
-  --space-4xl: 6rem;     // 96px
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
 
-  // Typography
-  // Say Briefly: Bricolage Grotesque (display), Inter (body), Roboto Mono (micro labels)
-  --font-display: 'Bricolage Grotesque', 'Fraunces', Georgia, serif;
-  --font-body: 'Inter', 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: 'Roboto Mono', 'IBM Plex Mono', 'Courier New', monospace;
+  // Bricolage Grotesque (display), Inter (body), Roboto Mono (micro labels)
+  --font-display: 'Bricolage Grotesque', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, 'Cascadia Mono', 'Courier New', monospace;
 
-  /* ---- Brief design tokens ---- */
-  /* Forest Ink / Cream Paper / Highlighter Yellow */
   --forest-ink: #{$forest-ink};
   --cream-paper: #{$cream-paper};
   --highlighter-yellow: #{$highlighter};
-
-  // Sticky notes (pastel accents)
   --sticky-note-mint: #{$sticky-note-mint};
   --sticky-note-teal: #{$sticky-note-teal};
   --sticky-note-blush: #{$sticky-note-blush};
   --terracotta: #{$terracotta};
-
-  // Pencil Gray / Whisper Gray
   --pencil-gray: #{$pencil-gray};
   --whisper-gray: #{$whisper-gray};
-
-  // Brand colors shared by both themes
   --ink: #{$ink};
   --parchment: #{$parchment};
-  --accent-gold: #{$gold};
-  --accent-live: #{$live};
-  --on-gold: #{$ink};
-
-  // Semantic status colors (identical in both themes)
-  --success: #4ade80;
-  --danger: #ff5c5c;
 
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.08);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.12), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.16), 0 4px 6px -4px rgb(0 0 0 / 0.12);
-  --radius-btn: 6px;
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.14), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius-btn: 8px;
   --radius-card: 12px;
   --radius-nav: 16px;
   --radius-pill: 9999px;
+
+  --header-height: 64px;
+  --content-width: 1200px;
+  --measure: 68ch;
 }
 
-// Forest-Ink (dark) — default theme (deep forest companion to the cream palette)
-[data-theme="dark"] {
-  --bg-color: #{$ink};
-  --text-color: #{$parchment};
-  --surface-1: #{$ink-raised};
-  --surface-2: #{$ink-surface-2};
-  --border-color: #{$ink-border};
-  --text-muted: #{$text-muted-dark};
-  --header-bg: #{$ink};
-  --primary-color: #{$highlighter};
-  --on-primary: #{$ink};
-  --secondary-color: #{$highlighter};
-  --accent-color: #{$highlighter};
-  --card-bg: #{$ink-raised};
-  --glass-bg: rgba(16, 35, 28, 0.8);
-  --glass-border: rgba(42, 71, 61, 0.7);
-  --hover-overlay: rgba(244, 244, 240, 0.06);
-}
-
-// Light theme — Say Briefly Cream Paper canvas, Forest Ink text, Highlighter Yellow accent
+// Light (default) — Cream Paper canvas, Forest Ink text
+:root,
 [data-theme="light"] {
+  color-scheme: light;
   --bg-color: #{$cream-paper};
   --text-color: #{$forest-ink};
   --surface-1: #FFFFFF;
-  --surface-2: #{$sticky-note-mint};
-  --border-color: #{$pencil-gray};
-  --text-muted: #4f5c49; // muted forest-tinted gray, AA (>=7:1) on cream
+  --surface-2: #f2f7ec;
+  --surface-accent: #{$sticky-note-mint};
+  --border-color: #d9d8cf;
+  --border-strong: #{$pencil-gray};
+  --text-muted: #4f5c49; // >= 7:1 on cream
   --header-bg: #{$cream-paper};
   --primary-color: #{$forest-ink};
   --on-primary: #FFFFFF;
-  // Darker accent variants: the dark-theme gold/green are ~2:1 and ~1.4:1 on white, too faint for text
   --accent-gold: #8A6414;
   --accent-live: #00774F;
   --on-gold: #FFFFFF;
   --secondary-color: #{$forest-ink};
   --accent-color: #{$highlighter};
+  --link-color: #2d5a06;
+  --focus-ring: #{$forest-ink};
   --card-bg: #FFFFFF;
-  --glass-bg: rgba(252, 250, 245, 0.8);
+  --glass-bg: rgba(252, 250, 245, 0.88);
   --glass-border: rgba(182, 182, 182, 0.8);
   --hover-overlay: rgba(26, 51, 0, 0.06);
+  --success: #1d6b2a;
+  --danger: #b3261e;
 }
 
-// Global styles
+// Dark — Forest-Ink
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-color: #{$ink};
+  --text-color: #{$parchment};
+  --surface-1: #{$ink-raised};
+  --surface-2: #{$ink-surface-2};
+  --surface-accent: #{$ink-surface-2};
+  --border-color: #{$ink-border};
+  --border-strong: #3d5f53;
+  --text-muted: #{$text-muted-dark};
+  --header-bg: #{$ink};
+  --primary-color: #{$highlighter};
+  --on-primary: #{$ink};
+  --accent-gold: #{$gold};
+  --accent-live: #{$live};
+  --on-gold: #{$ink};
+  --secondary-color: #{$highlighter};
+  --accent-color: #{$highlighter};
+  --link-color: #b9e58f;
+  --focus-ring: #{$highlighter};
+  --card-bg: #{$ink-raised};
+  --glass-bg: rgba(16, 35, 28, 0.88);
+  --glass-border: rgba(42, 71, 61, 0.7);
+  --hover-overlay: rgba(244, 244, 240, 0.06);
+  --success: #6fdc8c;
+  --danger: #ff8a80;
+}
+
+// Global reset
 * {
   margin: 0;
   padding: 0;
@@ -130,26 +131,74 @@ $terracotta: #cb5521;      // Terracotta — decorative card accent
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  overflow-x: clip;
 }
 
 body {
   font-family: var(--font-body);
-  line-height: 1.7;
+  font-size: 1.0625rem; // 17px
+  line-height: 1.65;
   color: var(--text-color);
   background-color: var(--bg-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6, .section-title {
   font-family: var(--font-display);
+  line-height: 1.2;
+  text-wrap: balance;
 }
 
-// Global layout container. Several components (e.g. Education) use
-// `class="container"` directly; without this they spanned the full viewport
-// and their grids bled off-screen.
+img,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+// Links: inherit colour; body-copy links stay underlined so they are recognisable
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(p, li, dd, td) > a:not([class]),
+.text-link {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+// Layout
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--content-width);
   margin-inline: auto;
   padding-inline: 1.5rem;
 
@@ -158,28 +207,42 @@ h1, h2, h3, h4, h5, h6, .section-title {
   }
 }
 
-// Never allow horizontal page scroll from overflowing children
-html, body {
-  overflow-x: clip;
+.section {
+  padding-block: clamp(3rem, 7vw, 5rem);
 }
 
-// Shared section subtitle: readable measure + contrast on both themes
+.section--alt {
+  background: var(--surface-2);
+}
+
+// Sticky header must not cover anchor targets
+[id] {
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.anchor-alias {
+  display: block;
+  height: 0;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
 .section-subtitle {
   color: var(--text-muted);
   text-wrap: pretty;
+  max-width: var(--measure);
+  margin: 1.75rem auto 2.5rem;
+  text-align: center;
 }
 
-// Mono utility for tags, dates, status lines
 .mono {
   font-family: var(--font-mono);
   letter-spacing: 0.02em;
 }
 
-/* ---- Say Briefly utilities ---- */
-
-// Highlighter text wash — marker-pen effect behind keywords in headlines.
-// Reads as a yellow marker stroke, never as a CTA. Works on both themes
-// because it carries its own ink foreground.
+// Highlighter text wash — marker-pen effect behind keywords in headlines
 .highlight {
   background: var(--highlighter-yellow);
   color: var(--forest-ink);
@@ -187,29 +250,8 @@ html, body {
   border-radius: 3px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  line-height: inherit;
 }
 
-// Sticky-note card surface — base, then pastel variants.
-// No shadow: the color fill does the separation work. Forest Ink text + optional border.
-.sticky-note {
-  border-radius: 12px;
-  padding: 24px;
-  color: var(--forest-ink);
-  border: 1px solid color-mix(in srgb, var(--forest-ink) 12%, transparent);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  &:hover {
-    transform: translateY(-3px);
-  }
-
-  &--mint { background: var(--sticky-note-mint); }
-  &--teal { background: var(--sticky-note-teal); }
-  &--blush { background: var(--sticky-note-blush); }
-  &--terracotta { background: var(--terracotta); color: var(--cream-paper); }
-}
-
-// Tagline badge — small highlighter-yellow pill eyebrow above a headline
 .tagline-badge {
   display: inline-flex;
   align-items: center;
@@ -225,17 +267,176 @@ html, body {
   text-transform: uppercase;
 }
 
-// Ensure no underlines on any links
-a {
-  text-decoration: none !important;
-  &:hover, &:focus, &:visited {
-    text-decoration: none !important;
+// Buttons (links and buttons share the look)
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.6rem 1.15rem;
+  border-radius: var(--radius-btn);
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+
+  svg {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+
+  &--primary {
+    background: var(--forest-ink);
+    color: #fff;
+  }
+
+  &--secondary {
+    background: var(--surface-1);
+    color: var(--text-color);
+    border-color: var(--border-strong);
+
+    &:hover {
+      border-color: var(--text-color);
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: var(--text-color);
+    border-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      box-shadow: none;
+      background: var(--hover-overlay);
+    }
+  }
+
+  &--small {
+    min-height: 40px;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.875rem;
   }
 }
 
-// Accessibility: Respect user preferences for reduced motion
+[data-theme="dark"] .btn--primary {
+  background: var(--highlighter-yellow);
+  color: var(--ink);
+}
+
+// Status chip used on project cards and pages
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid color-mix(in srgb, var(--accent-live) 45%, transparent);
+  background: color-mix(in srgb, var(--accent-live) 8%, transparent);
+  color: var(--accent-live);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.source-private {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+
+  svg {
+    width: 0.85em;
+    height: 0.85em;
+  }
+}
+
+// Accessibility utilities
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-btn);
+  background: var(--forest-ink);
+  color: #fff;
+  font-weight: 600;
+
+  &:focus {
+    top: 0.75rem;
+  }
+}
+
+*:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+// Respect reduced-motion preferences
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -243,16 +444,9 @@ a {
   }
 }
 
-// Accessibility: Improved focus indicators
-*:focus-visible {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
-}
-
-// High contrast mode support
-@media (prefers-contrast: high) {
-  body {
-    background-color: #ffffff;
-    color: #000000;
+@media (prefers-contrast: more) {
+  :root {
+    --text-muted: var(--text-color);
+    --border-color: var(--text-color);
   }
 }

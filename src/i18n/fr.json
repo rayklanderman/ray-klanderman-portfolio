@@ -1,18 +1,11 @@
 {
   "header": {
-    "subtitle": "Développeur Logiciel | IA - ML | Créatif",
     "downloadCV": "Demander mon CV",
-    "share": "Partager le Profil",
-    "jobTitles": {
-      "softwareEngineer": "Ingénieur Logiciel",
-      "dataAnalyst": "Analyste de Données",
-      "promptEngineer": "IA - ML",
-      "creative": "Créatif"
-    }
+    "share": "Partager le profil"
   },
   "share": {
-    "message": "Découvrez le Portfolio de Raymond Klanderman - Développeur Logiciel & Ingénieur en IA",
-    "copied": "URL du portfolio copiée dans le presse-papiers !"
+    "copied": "Lien du portfolio copié dans le presse-papiers.",
+    "failed": "Le partage a échoué. Copiez l’adresse depuis votre navigateur."
   },
   "banner": {
     "devray": {
@@ -21,154 +14,22 @@
       "ariaLabel": "Services DevRay"
     }
   },
-  "profile": {
-    "title": "Profil Professionnel",
-    "strengthsTitle": "Points forts",
-    "openTo": "Ouvert aux postes en ingénierie logicielle, IA/ML et données, ainsi qu’aux collaborations autour d’une IA centrée sur l’humain.",
-    "strengths": [
-      {"title":"Livre des produits IA de bout en bout","text":"Produits en ligne sur le web et WhatsApp : AI Health Chat (bêta publique), TutaLearn et Sauti Mtaani Nairobi."},
-      {"title":"Réalisations dans le secteur public","text":"Deux ans à construire des systèmes numériques au sein du Parlement panafricain et du bureau d’un député."},
-      {"title":"Ingénierie cloud et agents","text":"Google Cloud Professional Cloud Architect, avec une pratique de Vertex AI ADK, Cloud Run et Kubernetes (KCNA)."},
-      {"title":"Données et machine learning","text":"ML de bout en bout sur 10 M de lignes sans échantillonnage ; RMSE du classement public passé de 1,21 à 0,82."},
-      {"title":"Conception accessible et multilingue","text":"EyeSense pour les personnes aveugles et malvoyantes ; produits en anglais et en swahili, AI Health Chat en cinq langues."},
-      {"title":"Efficace sous pression","text":"1re place au hackathon des diplômés 2024 du PLP ; Liste du Président à University of the People."}
-    ],
-    "description": "J'ai passé les deux dernières années à construire des systèmes numériques au sein d'institutions publiques — le Parlement panafricain et le bureau d'un député — tout en concevant et en lançant de manière indépendante des produits d'IA. Je construis des logiciels intelligents et évolutifs et des systèmes d'IA qui résolvent des problèmes concrets. Mon travail couvre l'ingénierie full-stack, l'apprentissage automatique, l'analyse de données, l'architecture cloud et les pipelines de déploiement automatisés.\n\nJe conçois et déploie des applications prêtes pour la production en utilisant Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL et Google Cloud. Je me spécialise dans les workflows intelligents alimentés par des API, des agents autonomes, la recherche vectorielle et la génération augmentée par récupération (RAG). Mes outils incluent Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph et des fournisseurs modernes de LLM comme OpenAI, Anthropic, Gemini, Groq et Ollama.\n\nAu-delà de l'ingénierie, je transforme les données en insights et les insights en fonctionnalités qui deviennent des produits sur lesquels les gens comptent. Je crée également du contenu technique clair—tutoriels, docs et démos—qui aide les équipes à adopter et étendre des systèmes complexes avec confiance.\n\nMa mission est simple : construire des outils qui comprennent les gens, et permettre aux gens de construire des outils encore meilleurs. La curiosité motive mon travail, du prototypage ML rapide à la mise en production d'agents et à l'automatisation des workflows de bout en bout.\n\nToujours ouvert à collaborer avec des équipes construisant la prochaine génération d'IA centrée sur l'humain."
-  },
   "projects": {
-    "title": "Projets en Vedette",
-    "subtitle": "Plateformes IA, outils intelligents et applications full-stack construits avec des technologies modernes.",
-    "viewProject": "Voir le Projet",
-    "featured": "En Vedette",
-    "more": "Autres Projets",
-    "comingSoon": "Bientôt Disponible",
-    "items": {
-      "mrp2026": {
-        "name": "Movie Recommendation Project 2026",
-        "shortDescription": "Prédicteur de notes de films par ML (RMSE sur classement public 0.82)",
-        "description": "Participation à une compétition de prédiction privée de la communauté ExploreAI Academy sur Kaggle (projet final ALX), utilisant Hybrid LightGBM sur une factorisation matricielle SVD à 50 facteurs. A conçu 156 caractéristiques sur 10M de lignes sans échantillonnage — incluant signaux collaboratifs, encodages basés sur le contenu et dynamiques temporelles. Le RMSE sur le classement public est passé de 1.21 (référence) à 0.82 en huit soumissions ; le résultat privé final est en attente.",
-        "technologies": ["Python", "LightGBM", "scikit-learn", "Pandas", "NumPy", "SciPy"],
-        "tags": ["Machine Learning", "Data Science"],
-        "tier": "secondary",
-        "category": "Ingénierie des données & Machine Learning"
-      },
-      "luminae": {
-        "name": "Luminae",
-        "shortDescription": "Plateforme d'analyse de recherche autonome avec essaim d'agents IA",
-        "description": "Téléchargez n'importe quel document et les 5 agents IA de Luminae fournissent une critique méthodologique, un audit de données, une conception d'expériences, une génération de subventions et une synthèse croisée. Utilise l'écosystème multimodal de Mistral AI pour une analyse approfondie des documents académiques.",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Mistral AI", "FastAPI", "Python", "Supabase", "Redis"],
-        "tags": ["IA", "LLM", "Agents Autonomes"],
-        "url": "https://luminae.qzz.io/",
-        "tier": "flagship",
-        "live": true,
-        "entered": "Participé — Mistral World Hackathon",
-        "metrics": [
-          { "label": "Orchestration", "value": "essaim de 5 agents" }
-        ]
-      },
-      "aiHealth": {
-        "name": "AI Health Chat",
-        "shortDescription": "Conseils de santé par IA sur le web et WhatsApp (bêta publique)",
-        "description": "Bêta publique. Triage et conseils de santé généraux par IA en cinq langues (anglais, swahili, français, espagnol, néerlandais) sur une application web installable et WhatsApp, avec triage par photo, suivi de santé et résumés de visite SOAP. Conseils éducatifs, pas un diagnostic. 1ère place au hackathon des diplômés de la promotion 2024 du Power Learn Project.",
-        "technologies": ["React 19", "Vite", "Vercel", "Supabase", "Groq", "OpenRouter", "Mistral"],
-        "tags": ["IA", "Santé"],
-        "url": "https://aihealthchat.qzz.io/",
-        "tier": "flagship",
-        "live": true,
-        "award": "1ère place — PLP Hackathon des diplômés 2024"
-      },
-      "sautiMtaani": {
-        "name": "Sauti Mtaani Nairobi",
-        "shortDescription": "Plateforme de retours des habitants pour le Bureau de la Représentante des femmes de Nairobi",
-        "description": "Plateforme officielle de retours des habitants pour le Bureau de la Représentante des femmes de Nairobi (Hon. Esther Passaris, patronne du NGAAF, comté de Nairobi), en anglais et en swahili. Les habitants donnent leur consentement, indiquent leur quartier (ward), leur tranche d'âge et leur genre, répondent à un court sondage de 2 à 4 questions et voient des résultats en direct protégeant la vie privée, tandis que le personnel autorisé reçoit uniquement des analyses agrégées sur la représentation, la réactivité du bureau, les programmes du NGAAF et les priorités des wards. Les résultats proviennent d'un groupe auto-sélectionné et ne constituent pas un sondage scientifique ; la participation n'a aucun effet sur l'éligibilité aux bourses ou à d'autres services.",
-        "technologies": ["Next.js", "Vercel"],
-        "tags": ["Civic Tech", "Full-Stack"],
-        "url": "https://www.sautimtaani.site/",
-        "tier": "flagship",
-        "live": true,
-        "entered": "Conçu pour le Bureau de la Représentante des femmes de Nairobi",
-        "metrics": [
-          { "label": "Langues", "value": "Anglais · Swahili" },
-          { "label": "Sondage", "value": "2 à 4 questions" }
-        ]
-      },
-      "eyeSense": {
-        "name": "EyeSense",
-        "shortDescription": "Assistance visuelle par IA pour les personnes aveugles et malvoyantes",
-        "description": "« Votre monde, décrit. » Application Flutter pensée d'abord pour Android qui aide les personnes aveugles et malvoyantes à comprendre leur environnement. Describe Scene utilise un modèle de vision Groq derrière un Cloudflare Worker sécurisé, Read Text fonctionne à 100 % hors ligne avec Google ML Kit, et Ask a Question permet de poser des questions de suivi, avec des commandes Stop et Repeat partout. Des agents (AgentCoordinator, SceneAgent, ConversationAgent) travaillent avec une couche OutputPolicy pour ce qui est prononcé. Mode hébergé à débit limité, ou clé Groq personnelle stockée dans un stockage sécurisé. Anglais et swahili, police Atkinson Hyperlegible, thème à contraste maximal et conception orientée TalkBack. Conçu pour MUA Innovation Week 2026 ; les mesures de contraste et les tests TalkBack sur appareil restent à faire.",
-        "technologies": ["Flutter", "Cloudflare Workers", "TypeScript", "Groq", "Google ML Kit", "Vitest"],
-        "tags": ["IA", "Accessibilité"],
-        "url": "#",
-        "tier": "flagship",
-        "entered": "Conçu pour MUA Innovation Week 2026",
-        "metrics": [
-          { "label": "Read Text", "value": "100 % hors ligne" },
-          { "label": "Tests", "value": "24 Flutter · 10 Worker" }
-        ]
-      },
-      "autoResearcher": {
-        "name": "AutoResearcher",
-        "shortDescription": "Équipe d'agents qui transforme un prompt en rapport de recherche sourcé",
-        "description": "Projet de fin du cours « 5-Day AI Agents » de Google. Un système hiérarchique de 7 agents qui transforme un simple prompt en rapport de recherche riche en citations, compilé en PDF LaTeX. Conçu avec le Vertex AI Agent Development Kit, Gemini 2.5 Pro et Flash, Tavily pour la recherche web, et Pandoc avec LaTeX pour le document final.",
-        "technologies": ["Vertex AI ADK", "Gemini 2.5 Pro", "Gemini 2.5 Flash", "Tavily", "Pandoc", "LaTeX", "Jupyter Notebook"],
-        "tags": ["IA", "Multi-agents"],
-        "url": "#",
-        "tier": "flagship",
-        "entered": "Projet de fin de cours — Google 5-Day AI Agents",
-        "metrics": [
-          { "label": "Architecture", "value": "Hiérarchie de 7 agents" },
-          { "label": "Résultat", "value": "PDF LaTeX sourcé" }
-        ]
-      },
-      "liveInterviewer": {
-        "name": "Live Interviewer",
-        "shortDescription": "Générateur de questions d'entretien IA avec interface premium",
-        "description": "Génère des questions d'entretien contextuelles et basées sur des scénarios adaptées à n'importe quel poste. Interface utilisateur de style Google avec animations Framer Motion, moteur de récupération API résilient, support multi-modèles (Mistral, Groq, Llama, Qwen) et PWA installable.",
-        "technologies": ["Next.js 16", "TypeScript", "Tailwind CSS v4", "Framer Motion", "Mistral AI", "Groq", "PWA"],
-        "tags": ["IA", "Application Web"],
-        "tier": "secondary",
-        "category": "Outils d'entretien IA"
-      },
-      "contentShapeshifterPro": {
-        "name": "Content Shapeshifter Pro",
-        "shortDescription": "Transformez tout contenu en posts optimisés pour les plateformes avec l'IA",
-        "description": "Scrape des URL ou articles et utilise Groq AI avec Llama 3 pour générer 4 variantes de plateforme : fils Twitter, posts LinkedIn, newsletters et légendes Instagram. Copie en un clic, feedback en temps réel et interface sombre élégante.",
-        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Groq", "Cheerio"],
-        "tags": ["IA", "Création de Contenu"],
-        "tier": "secondary",
-        "category": "Outils de contenu IA"
-      },
-      "serenityAI": {
-        "name": "SerenityAI",
-        "shortDescription": "Compagnon de bien-être mental alimenté par l'IA",
-        "description": "Un compagnon de bien-être mental alimenté par l'IA conçu pour aider les gens à mieux comprendre et prendre soin de leur bien-être mental. Fonctionnalités incluant des agents intelligents offrant un soutien émotionnel personnalisé, suivi de l'humeur, insights de journalisation et analyse des patterns.",
-        "technologies": ["React", "TypeScript", "JacLang", "Groq API", "Architecture LLM", "Agents IA"],
-        "tags": ["IA", "Santé Mentale"],
-        "url": "https://serenityai.qzz.io/",
-        "tier": "secondary",
-        "category": "IA & Bien-être"
-      },
-      "tutaLearn": {
-        "name": "TutaLearn - Plateforme Éducative Africaine",
-        "shortDescription": "Plateforme d'apprentissage par IA pour le programme CBC du Kenya",
-        "description": "Plateforme d'apprentissage alimentée par l'IA pour le programme CBC du Kenya, sur WhatsApp et le web, en anglais et en swahili, utilisable sans smartphone. En ligne et en développement actif avec des testeurs précoces.",
-        "technologies": ["Next.js", "React", "TypeScript", "Supabase", "OpenRouter", "M-Pesa (Daraja)", "WhatsApp API"],
-        "tags": ["Génie Logiciel", "EdTech"],
-        "url": "https://www.tutalearn.study/",
-        "tier": "secondary",
-        "category": "IA & EdTech"
-      },
-      "codebaseGenius": {
-        "name": "Codebase Genius - Système de Documentation IA",
-        "shortDescription": "Plateforme de documentation GitHub automatique par IA",
-        "description": "Plateforme alimentée par l'IA pour la documentation automatique GitHub. Génère des docs complets à partir de l'analyse de code base utilisant des LLMs, avec visualisation de structure de code basée sur des graphes.",
-        "technologies": ["Python", "TypeScript", "Google Gemini API", "Streamlit", "NetworkX", "FastAPI"],
-        "tags": ["IA", "Outils Développeur"],
-        "url": "https://geniuscodebase.streamlit.app/",
-        "tier": "secondary",
-        "category": "Outils développeur IA"
-      }
-    }
+    "title": "Projets",
+    "subtitle": "Produits d’IA appliquée, systèmes de ML et applications web et mobiles, avec des études de cas sur les choix techniques.",
+    "featured": "Études de cas principales",
+    "more": "Autres projets",
+    "filterLabel": "Filtrer les projets par catégorie",
+    "filterAll": "Tous",
+    "showing_one": "{{count}} projet affiché",
+    "showing_other": "{{count}} projets affichés",
+    "caseStudy": "Étude de cas",
+    "liveApp": "Application en ligne",
+    "viewSource": "Code source",
+    "sourcePrivate": "Code source privé",
+    "sourcePublic": "Dépôt public",
+    "sourceNotListed": "Non indiqué",
+    "techLabel": "Technologies"
   },
   "education": {
     "title": "Diplômes",
@@ -176,16 +37,14 @@
     "completed": "Terminé",
     "items": {
       "bachelor_cs": {
-        "name": "Bachelor of Computer Science",
+        "name": "Licence (BSc) en informatique",
         "type": "ongoing",
         "institution": "University of the People (UoPeople)",
-        "period": "2025 – 2028 (Prévu)",
+        "period": "2025 – fin prévue en 2028",
         "status": "En cours",
         "description": [
-          "Tableau d'honneur : President's List, trimestre 5 de 2025-2026",
-          "Moyenne Cumulative : 3.98",
-          "Crédits Obtenus : 45 / 120 (En septembre 2026)",
-          "Poursuite d'un diplôme complet en informatique avec une spécialisation en génie logiciel, algorithmes et technologies modernes."
+          "Tableau d’honneur : President’s List, trimestre 5 de 2025–2026",
+          "Diplôme en cours, axé sur le génie logiciel et l’algorithmique."
         ],
         "skills": []
       },
@@ -287,37 +146,28 @@
         "period": "2024",
         "status": "Terminé",
         "description": [
-          "Cours intensif de programmation Python de l'Université de Stanford",
-          "Évaluation diagnostique et projet final terminés avec distinction"
+          "Cours d’introduction à la programmation Python de l’Université de Stanford",
+          "Évaluation diagnostique et projet final terminés"
         ],
         "skills": [
           "Python",
-          "Programming Fundamentals",
-          "Diagnostic Badge",
-          "Final Project Badge"
+          "Fondamentaux de la programmation"
         ]
       }
-    }
-  },
-  "certifications": {
-    "title": "Certifications & Badges",
-    "viewCertification": "Voir le Certificat"
+    },
+    "degrees": "Diplômes",
+    "programmes": "Programmes et cours"
   },
   "badges": {
-    "title": "Badges & Certifications",
+    "title": "Certifications et apprentissage",
     "certified": "Certifié",
     "issuedBy": "Délivré par",
     "expires": "Expire le",
     "viewCertification": "Voir la certification",
-    "viewProfile": "Voir le profil",
     "badgesEarned": "badges obtenus",
     "moreSkills": "de plus",
-    "showMore": "Afficher Plus de Certifications",
-    "showLess": "Afficher Moins",
-    "alx_summary": {
-      "certification": "Analyse de données • Machine Learning • Science des données",
-      "description": "Trois certificats ALX Africa couvrant l'ensemble du pipeline de données — analyse, machine learning et science des données."
-    },
+    "showMore": "Afficher les badges numériques",
+    "showLess": "Masquer les badges numériques",
     "platforms": {
       "google_pca": {
         "platform": "Google Cloud",
@@ -450,16 +300,12 @@
       "google_adk": {
         "platform": "Google Cloud",
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
-        "description": "Problèmes de recherche sur les modèles de langage formulés ; un tokeniseur simple construit ; des ensembles de données préparés pour l'entraînement de modèles de langage transformer ; des LLM prétrainés et finetunés.",
+        "description": "Badge de compétence Google Cloud pour la création d’agents IA avec l’Agent Development Kit (ADK).",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
           "Agent Development Kit",
-          "AI Agents",
-          "LLM Fine-Tuning",
-          "Model Training",
-          "Pretraining LLMs",
-          "Tokenization"
+          "Agents IA"
         ]
       },
       "google_security": {
@@ -543,7 +389,14 @@
         "issued_by": "Google",
         "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
         "badges_count": "27",
-        "skills": ["Google Cloud", "IA/ML", "Sécurité Cloud", "Serverless", "Prompt Design", "MLOps"]
+        "skills": [
+          "Google Cloud",
+          "IA/ML",
+          "Sécurité Cloud",
+          "Serverless",
+          "Prompt Design",
+          "MLOps"
+        ]
       },
       "google_prompt_design": {
         "platform": "Google Cloud",
@@ -551,7 +404,12 @@
         "description": "Compétences pratiques en conception et optimisation de prompts pour les grands modèles de langage avec Vertex AI.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/c05f7979-d999-4b37-a1cd-9c566e2c0a40",
-        "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
+        "skills": [
+          "Prompt Engineering",
+          "Large Language Models",
+          "Vertex AI",
+          "Generative AI"
+        ]
       },
       "aws_educate_genai": {
         "platform": "AWS Educate",
@@ -559,7 +417,12 @@
         "description": "Compréhension fondamentale des concepts d'IA générative, incluant les grands modèles de langage, le prompt engineering et les principes d'IA responsable pour les applications cloud.",
         "issued_by": "Amazon Web Services (AWS)",
         "credential_url": "https://www.credly.com/badges/d6a0ac7a-2275-4b4b-b2b7-66b1e2b2ee73",
-        "skills": ["IA Générative", "Grands Modèles de Langage", "Prompt Engineering", "IA Responsable"]
+        "skills": [
+          "IA Générative",
+          "Grands Modèles de Langage",
+          "Prompt Engineering",
+          "IA Responsable"
+        ]
       },
       "aws_educate_ml": {
         "platform": "AWS Educate",
@@ -567,7 +430,13 @@
         "description": "Connaissances introductives en machine learning, incluant l'apprentissage supervisé et non supervisé, l'entraînement de modèles, l'évaluation et les stratégies de déploiement sur AWS.",
         "issued_by": "Amazon Web Services (AWS)",
         "credential_url": "https://www.credly.com/badges/bcc32848-a45f-4aff-87f4-2aa53ace81e8",
-        "skills": ["Machine Learning", "Apprentissage Supervisé", "Apprentissage Non Supervisé", "Entraînement de Modèles", "AWS"]
+        "skills": [
+          "Machine Learning",
+          "Apprentissage Supervisé",
+          "Apprentissage Non Supervisé",
+          "Entraînement de Modèles",
+          "AWS"
+        ]
       },
       "ibm_granite": {
         "platform": "IBM",
@@ -575,7 +444,13 @@
         "description": "Formation pratique en génération de code, optimisation et développement logiciel assisté par IA utilisant les modèles IBM Granite. Couvre la synthèse de code par prompt et l'optimisation des performances.",
         "issued_by": "IBM",
         "credential_url": "https://www.credly.com/badges/c5dcd4da-3757-4893-945b-50ca7d025ec2",
-        "skills": ["Génération de Code", "IBM Granite", "Développement Assisté par IA", "Prompt Engineering", "Optimisation de Code"]
+        "skills": [
+          "Génération de Code",
+          "IBM Granite",
+          "Développement Assisté par IA",
+          "Prompt Engineering",
+          "Optimisation de Code"
+        ]
       },
       "linux_lfs250": {
         "platform": "The Linux Foundation",
@@ -583,7 +458,14 @@
         "description": "Compréhension de l'architecture cloud native et de l'orchestration de conteneurs, de l'architecture de haut niveau de Kubernetes, ainsi que de l'observabilité cloud native et de la livraison d'applications avec des outils CI/CD et GitOps.",
         "issued_by": "The Linux Foundation",
         "credential_url": "https://www.credly.com/badges/e266ef63-cdbe-42c5-bdeb-aec0b47bb523",
-        "skills": ["Kubernetes", "Architecture Cloud Native", "Conteneurs", "GitOps", "CI/CD", "Observabilité"]
+        "skills": [
+          "Kubernetes",
+          "Architecture Cloud Native",
+          "Conteneurs",
+          "GitOps",
+          "CI/CD",
+          "Observabilité"
+        ]
       },
       "mckinsey_forward": {
         "platform": "McKinsey.org",
@@ -591,7 +473,12 @@
         "description": "Programme d'apprentissage en ligne McKinsey.org Forward terminé : l'approche McKinsey de la résolution de problèmes, la communication efficace, les états d'esprit et habitudes adaptables, et une boîte à outils numérique de base.",
         "issued_by": "McKinsey.org",
         "credential_url": "https://www.credly.com/badges/446ab0ba-2de5-49c4-9434-3930ab276aaf",
-        "skills": ["Résolution de Problèmes", "Communication", "Adaptabilité", "Outils Numériques"]
+        "skills": [
+          "Résolution de Problèmes",
+          "Communication",
+          "Adaptabilité",
+          "Outils Numériques"
+        ]
       },
       "google_app_dev_env": {
         "platform": "Google Cloud",
@@ -599,7 +486,13 @@
         "description": "Badge de compétences pour construire et connecter une infrastructure cloud centrée sur le stockage avec Cloud Storage, Identity and Access Management, Cloud Functions et Pub/Sub.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/80fb5417-b117-4789-878f-c154e6685892",
-        "skills": ["Cloud Storage", "IAM", "Cloud Functions", "Pub/Sub", "Monitoring"]
+        "skills": [
+          "Cloud Storage",
+          "IAM",
+          "Cloud Functions",
+          "Pub/Sub",
+          "Monitoring"
+        ]
       },
       "microsoft_ai_skills": {
         "platform": "Microsoft Elevate",
@@ -607,7 +500,12 @@
         "description": "Reconnaît l'ensemble des acquis dans plusieurs parcours d'apprentissage de l'IA avec des outils de l'écosystème Microsoft, comme Microsoft Copilot et Copilot Studio.",
         "issued_by": "Microsoft Elevate",
         "credential_url": "https://www.credly.com/badges/26b4ec5b-a305-4ab4-ba6b-8be05e7d1856",
-        "skills": ["IA Générative", "Prompting", "Usage Responsable de l'IA", "Innovation"]
+        "skills": [
+          "IA Générative",
+          "Prompting",
+          "Usage Responsable de l'IA",
+          "Innovation"
+        ]
       },
       "ibm_data_fundamentals": {
         "platform": "IBM SkillsBuild",
@@ -615,7 +513,13 @@
         "description": "Connaissance des concepts d'analyse de données, de la méthodologie de la data science et des outils de l'écosystème des données, avec une compréhension conceptuelle du nettoyage, de l'affinage et de la visualisation des données avec IBM Watson Studio.",
         "issued_by": "IBM SkillsBuild",
         "credential_url": "https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483",
-        "skills": ["Analyse de Données", "Data Science", "Visualisation de Données", "Watson Studio", "Nettoyage de Données"]
+        "skills": [
+          "Analyse de Données",
+          "Data Science",
+          "Visualisation de Données",
+          "Watson Studio",
+          "Nettoyage de Données"
+        ]
       },
       "ibm_cybersecurity_fundamentals": {
         "platform": "IBM SkillsBuild",
@@ -623,18 +527,33 @@
         "description": "Compréhension de base des concepts et pratiques de cybersécurité : groupes de menaces, types d'attaques, ingénierie sociale, cryptographie, et la manière dont les organisations préviennent, détectent et répondent aux cyberattaques.",
         "issued_by": "IBM SkillsBuild",
         "credential_url": "https://www.credly.com/badges/1b491137-814a-4f22-b67e-c4ea05586626",
-        "skills": ["Cybersécurité", "Cryptographie", "Ingénierie Sociale", "Réponse aux Incidents", "Analyse des Menaces"]
+        "skills": [
+          "Cybersécurité",
+          "Cryptographie",
+          "Ingénierie Sociale",
+          "Réponse aux Incidents",
+          "Analyse des Menaces"
+        ]
       }
-    }
+    },
+    "subtitle": "Les certifications professionnelles, les certificats de programme et les badges numériques sont présentés séparément.",
+    "professional": "Certifications professionnelles",
+    "programmes": "Certificats de programme",
+    "digital": "Badges numériques et cours suivis",
+    "skills": "Compétences"
   },
   "showcase": {
-    "title": "Vitrine",
-    "description": "Une playlist organisée de présentations de projets enregistrées, de démos en direct et de présentations techniques présentant des applications réelles que j'ai construites."
+    "title": "Vidéos de démonstration",
+    "description": "Présentations de projets, démonstrations et explications techniques enregistrées.",
+    "load": "Charger la playlist de démos",
+    "privacy": "Charge le lecteur YouTube (youtube-nocookie.com).",
+    "iframeTitle": "Playlist YouTube de démonstrations de projets",
+    "openOnYoutube": "Ouvrir la playlist sur YouTube"
   },
   "writing": {
-    "title": "Écrits & Perspectives",
-    "subtitle": "Essais et notes de terrain sur l'ingénierie IA, la qualité du code et la livraison de logiciels durables.",
-    "readMore": "Lire sur LinkedIn",
+    "title": "Articles et démos",
+    "subtitle": "Articles sur l’ingénierie assistée par l’IA et la mise en production, ainsi que des démos enregistrées.",
+    "readMore": "Plus d’articles sur LinkedIn",
     "items": [
       {
         "title": "La revue de code est le pare-feu contre la médiocrité de l'IA",
@@ -652,36 +571,27 @@
       }
     ]
   },
-  "skills": {
-    "aiData": "IA & Science des Données",
-    "frontendMobile": "Frontend & Mobile",
-    "backendCloud": "Backend & Cloud",
-    "viewLinkedIn": "Voir Mon Profil LinkedIn"
-  },
   "contact": {
-    "title": "Me Contacter",
-    "name": "Votre Nom",
-    "email": "Votre Email",
-    "message": "Votre Message",
+    "title": "Contact",
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
     "send": "Envoyer Message",
     "sending": "Envoi en cours...",
-    "success": "Message envoyé avec succès !",
-    "error": "Échec de l'envoi. Veuillez réessayer."
+    "success": "Merci, votre message a été envoyé. Je vous répondrai bientôt.",
+    "error": "Échec de l'envoi. Veuillez réessayer.",
+    "subtitle": "Une question sur un poste, une collaboration ou un projet ? Envoyez-moi un message, je vous répondrai par e-mail.",
+    "messageHint": "{{max}} caractères maximum.",
+    "errorRequired": "Veuillez indiquer votre nom, votre e-mail et votre message.",
+    "otherTitle": "Vous préférez LinkedIn ?",
+    "otherText": "Vous pouvez aussi me contacter via la messagerie LinkedIn.",
+    "linkedin": "M’écrire sur LinkedIn",
+    "privacy": "Les messages sont transmis via Formspree et servent uniquement à vous répondre."
   },
   "language": {
     "en": "Anglais",
     "nl": "Néerlandais",
     "fr": "Français"
-  },
-  "menu": {
-    "profile": "Profil",
-    "projects": "Projets",
-    "showcase": "Vitrine",
-    "education": "Éducation",
-    "writing": "Écrits",
-    "badges": "Badges",
-    "contact": "Me Contacter",
-    "services": "Services"
   },
   "chat": {
     "title": "Chat IA",
@@ -704,6 +614,142 @@
       "Avec quelles technologies IA/ML Ray travaille-t-il ?",
       "Comment puis-je contacter Ray ?",
       "Qu'est-ce qui distingue Ray en tant que développeur ?"
+    ],
+    "pageTitle": "Chat IA sur le travail de Raymond",
+    "conversation": "Conversation",
+    "thinking": "Réflexion…",
+    "inputLabel": "Votre question",
+    "send": "Envoyer le message"
+  },
+  "common": {
+    "newTab": "s’ouvre dans un nouvel onglet",
+    "close": "Fermer",
+    "cancel": "Annuler"
+  },
+  "menu": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "expertise": "Compétences",
+    "education": "Formation",
+    "credentials": "Certifications",
+    "writing": "Articles",
+    "contact": "Contact",
+    "chat": "Chat IA",
+    "services": "Services",
+    "mainNav": "Principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "darkMode": "Mode sombre",
+    "language": "Langue",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "hero": {
+    "location": "Nairobi, Kenya",
+    "title": "Ingénieur logiciel et IA",
+    "supporting": "IA appliquée · Apprentissage automatique · Systèmes agentiques · Cloud et full-stack",
+    "intro": "Je conçois et développe des logiciels intelligents qui répondent à des problèmes concrets dans la santé, l’éducation, l’accessibilité et la participation citoyenne. Depuis 2024, mon travail en IA appliquée couvre l’apprentissage automatique, les modèles multimodaux, les workflows d’agents et les applications full-stack. Je privilégie la fiabilité, une expérience utilisateur soignée, la confidentialité, l’accessibilité, les tests et un déploiement responsable, pas seulement des prototypes.",
+    "portraitAlt": "Portrait de Raymond Klanderman",
+    "ctaProjects": "Voir les projets",
+    "ctaGithub": "Voir GitHub",
+    "ctaDownloadCv": "Télécharger le CV",
+    "ctaContact": "Me contacter",
+    "liveWork": "En ligne"
+  },
+  "about": {
+    "title": "À propos",
+    "summary": "Je suis ingénieur logiciel et IA et je construis des systèmes concrets pour la santé, l’éducation, l’accessibilité et la participation citoyenne. Mon travail associe applications LLM, apprentissage automatique, workflows agentiques, développement web et mobile moderne et infrastructure cloud. À travers des produits indépendants et des projets de compétition, j’ai travaillé sur l’évaluation de modèles, les garde-fous de sécurité, les sorties structurées, la protection des données et le déploiement fiable. Mon objectif : rendre les technologies émergentes utiles aux personnes et aux communautés.",
+    "openTo": "Ouvert aux postes en génie logiciel, IA/ML et données, ainsi qu’aux collaborations autour d’une IA centrée sur l’humain.",
+    "backgroundTitle": "Parcours",
+    "background": "En parallèle de l’ingénierie, j’ai un parcours dans les médias numériques : spécialiste des médias numériques au Bureau de la représentante des femmes de Nairobi (2017–2024) et spécialiste des médias sous contrat au Parlement panafricain (2025). Je me suis formé avec Power Learn Project (2024) et le programme Data Science d’ALX (2025–2026), et je prépare une licence (BSc) en informatique à l’University of the People.",
+    "highlightsTitle": "En bref",
+    "highlights": [
+      {
+        "title": "Produits IA en ligne",
+        "text": "AI Health Chat (bêta publique), TutaLearn, Sauti Mtaani Nairobi et Luminae sont en ligne."
+      },
+      {
+        "title": "Sécurité et confidentialité",
+        "text": "Row Level Security, consentement, suppression des données personnelles, plafonds budgétaires et validation humaine des suggestions de l’IA."
+      },
+      {
+        "title": "Résultats ML mesurés",
+        "text": "Système de recommandation hybride SVD + LightGBM sur ~10 M de notes : RMSE au classement public de 1,21 à 0,82."
+      },
+      {
+        "title": "Accessible et multilingue",
+        "text": "EyeSense pour les personnes aveugles et malvoyantes ; produits en anglais et en kiswahili, et AI Health Chat en cinq langues."
+      },
+      {
+        "title": "Cloud et agents",
+        "text": "Google Cloud Professional Cloud Architect ; Luminae à cinq agents et un projet final à sept agents avec Vertex AI ADK."
+      },
+      {
+        "title": "Distinctions",
+        "text": "1re place au hackathon des diplômés de la promotion 2024 de Power Learn Project ; President’s List à l’University of the People."
+      }
     ]
+  },
+  "caseStudy": {
+    "breadcrumb": "Fil d’Ariane",
+    "atAGlance": "En bref",
+    "role": "Rôle",
+    "status": "Statut",
+    "type": "Type de projet",
+    "context": "Contexte",
+    "years": "Années",
+    "categories": "Catégories",
+    "source": "Code source",
+    "techStack": "Technologies",
+    "problem": "Problème",
+    "users": "Pour qui",
+    "built": "Ce que j’ai construit",
+    "architecture": "Architecture",
+    "challenges": "Défis techniques",
+    "quality": "Qualité et confiance",
+    "results": "Résultats",
+    "resultsCaption": "Résultats pour {{name}} et leur source",
+    "measure": "Mesure",
+    "value": "Valeur",
+    "evidence": "Source",
+    "limitations": "Limites",
+    "watchDemo": "Voir la vidéo de démonstration",
+    "moreProjects": "Autres projets",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "allProjects": "Tous les projets"
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Postes professionnels et formations qui sous-tendent mon travail d’ingénieur.",
+    "roles": "Postes professionnels",
+    "training": "Formations et apprentissages",
+    "related": "Projets liés"
+  },
+  "expertise": {
+    "title": "Expertise technique",
+    "subtitle": "Regroupée par discipline, et limitée aux outils utilisés dans les projets et formations présentés sur ce site."
+  },
+  "cvModal": {
+    "title": "Demander mon CV",
+    "description": "Laissez votre adresse e-mail et je vous enverrai mon CV à jour.",
+    "emailLabel": "Votre e-mail",
+    "noteLabel": "Poste ou organisation (facultatif)",
+    "submit": "Envoyer la demande",
+    "success": "Demande envoyée. Raymond vous répondra par e-mail.",
+    "error": "La demande n’a pas pu être envoyée. Veuillez réessayer.",
+    "errorEmail": "Veuillez saisir votre adresse e-mail."
+  },
+  "footer": {
+    "social": "Réseaux sociaux"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "projectTitle": "Projet introuvable",
+    "text": "La page que vous cherchez n’existe pas ou a été déplacée.",
+    "home": "Retour à l’accueil",
+    "projects": "Voir les projets",
+    "featured": "Études de cas principales"
   }
 }

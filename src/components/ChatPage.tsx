@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useMemo } from 'react';
 import { FaRobot, FaSpinner, FaPaperPlane, FaArrowLeft, FaTrash } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { sendMessage, buildSystemPrompt, ChatMessage } from '../services/groq';
+import { sendMessage, ChatMessage } from '../services/groq';
 import './ChatPage.scss';
 
 const ChatPage = () => {
@@ -11,7 +11,6 @@ const ChatPage = () => {
   const suggestions = t('chat.suggestions', { returnObjects: true }) as string[];
 
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'system', content: buildSystemPrompt() },
     {
       role: 'assistant',
       content: t('chat.greeting'),
@@ -21,11 +20,11 @@ const ChatPage = () => {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const visibleMessages = messages.filter((m) => m.role !== 'system');
+  const visibleMessages = messages;
   const hasUserMessages = useMemo(() => visibleMessages.some((m) => m.role === 'user'), [visibleMessages]);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ block: 'end' });
   }, [visibleMessages, loading]);
 
   const handleSend = async (text?: string) => {
@@ -51,7 +50,6 @@ const ChatPage = () => {
 
   const handleNewChat = () => {
     setMessages([
-      { role: 'system', content: buildSystemPrompt() },
       {
         role: 'assistant',
         content: t('chat.greeting'),
@@ -61,33 +59,34 @@ const ChatPage = () => {
 
   return (
     <div className="chat-page">
+      <h1 className="visually-hidden">{t('chat.pageTitle')}</h1>
       <div className="chat-sidebar">
         <div className="sidebar-header">
           <span className="sidebar-title">{t('chat.title')}</span>
         </div>
-        <button className="new-chat-btn" onClick={handleNewChat}>
-          <FaTrash /> {t('chat.newChat')}
+        <button type="button" className="new-chat-btn" onClick={handleNewChat}>
+          <FaTrash aria-hidden="true" /> {t('chat.newChat')}
         </button>
         <div className="sidebar-info">
           <p>{t('chat.sidebarInfo')}</p>
         </div>
         <div className="sidebar-footer">
           <Link to="/" className="back-link">
-            <FaArrowLeft /> {t('chat.backToPortfolio')}
+            <FaArrowLeft aria-hidden="true" /> {t('chat.backToPortfolio')}
           </Link>
         </div>
       </div>
 
       <div className="chat-main">
         <div className="chat-main-header">
-          <Link to="/" className="back-link-mobile">
-            <FaArrowLeft />
+          <Link to="/" className="back-link-mobile" aria-label={t('chat.backToPortfolio')}>
+            <FaArrowLeft aria-hidden="true" />
           </Link>
-          <FaRobot className="chat-main-icon" />
+          <FaRobot className="chat-main-icon" aria-hidden="true" />
           <span>{t('chat.assistantName')}</span>
         </div>
 
-        <div className="chat-messages-area">
+        <div className="chat-messages-area" role="log" aria-live="polite" aria-label={t('chat.conversation')}>
           {visibleMessages.map((msg, i) => (
             <div key={i} className={`msg-row ${msg.role}`}>
               {msg.role === 'assistant' && (
@@ -109,7 +108,8 @@ const ChatPage = () => {
               <div className="msg-bubble-wrap">
                 <div className="msg-label">{t('chat.rayAi')}</div>
                 <div className="msg-bubble loading-msg">
-                  <FaSpinner className="spin" />
+                  <FaSpinner className="spin" aria-hidden="true" />
+                  <span className="visually-hidden">{t('chat.thinking')}</span>
                 </div>
               </div>
             </div>
@@ -122,6 +122,7 @@ const ChatPage = () => {
                 {suggestions.map((s: string, i: number) => (
                   <button
                     key={i}
+                    type="button"
                     className="suggestion-chip"
                     onClick={() => handleSend(s)}
                     disabled={loading}
@@ -138,15 +139,26 @@ const ChatPage = () => {
 
         <div className="chat-input-area">
           <div className="chat-input-wrap">
+            <label htmlFor="chat-input" className="visually-hidden">
+              {t('chat.inputLabel')}
+            </label>
             <textarea
+              id="chat-input"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder={t('chat.inputPlaceholder')}
+              maxLength={2000}
               rows={1}
             />
-            <button className="send-btn" onClick={() => handleSend()} disabled={loading || !input.trim()}>
-              <FaPaperPlane />
+            <button
+              type="button"
+              className="send-btn"
+              onClick={() => handleSend()}
+              disabled={loading || !input.trim()}
+              aria-label={t('chat.send')}
+            >
+              <FaPaperPlane aria-hidden="true" />
             </button>
           </div>
           <p className="chat-footer-note">{t('chat.poweredBy')}</p>

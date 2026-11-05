@@ -1,18 +1,11 @@
 {
   "header": {
-    "subtitle": "Software Developer | AI - ML | Creative",
     "downloadCV": "Request CV",
-    "share": "Share Profile",
-    "jobTitles": {
-      "softwareEngineer": "Software Engineer",
-      "dataAnalyst": "Data Analyst",
-      "promptEngineer": "AI - ML",
-      "creative": "Creative"
-    }
+    "share": "Share profile"
   },
   "share": {
-    "message": "Check out Raymond Klanderman's Portfolio - Software Developer & AI Engineer",
-    "copied": "Portfolio URL copied to clipboard!"
+    "copied": "Portfolio link copied to clipboard.",
+    "failed": "Sharing failed. Please copy the address from your browser."
   },
   "banner": {
     "devray": {
@@ -21,214 +14,22 @@
       "ariaLabel": "DevRay services"
     }
   },
-  "profile": {
-    "title": "Professional Profile",
-    "strengthsTitle": "Core strengths",
-    "openTo": "Open to software engineering, AI/ML and data roles, and to collaborations on human-centered AI.",
-    "strengths": [
-      {"title":"Ships AI products end to end","text":"Live products on web and WhatsApp: AI Health Chat (public beta), TutaLearn and Sauti Mtaani Nairobi."},
-      {"title":"Public-sector delivery","text":"Two years building digital systems inside the Pan-African Parliament and a Member of Parliament’s office."},
-      {"title":"Cloud and agent engineering","text":"Google Cloud Professional Cloud Architect, plus hands-on Vertex AI ADK, Cloud Run and Kubernetes (KCNA)."},
-      {"title":"Data and machine learning","text":"End-to-end ML on 10M rows with no sampling; public-leaderboard RMSE improved from 1.21 to 0.82."},
-      {"title":"Accessible, multilingual design","text":"EyeSense for blind and low-vision users; products in English and Kiswahili, with AI Health Chat in five languages."},
-      {"title":"Proven under pressure","text":"1st place at the PLP Class of 2024 graduate hackathon; President’s List at University of the People."}
-    ],
-    "description": "I've spent the past two years building digital systems inside public institutions — the Pan-African Parliament and a Member of Parliament's office — while independently designing and shipping AI products. I build smart, scalable software and AI systems that solve real-world problems. My work spans full-stack engineering, machine learning, data analytics, cloud architecture, and automated deployment pipelines.\n\nI design and ship production-ready applications using Python (FastAPI, Streamlit, Pandas, Polars), TypeScript/React/Next.js, Flutter, SQL/NoSQL, and Google Cloud. I specialize in intelligent workflows powered by APIs, autonomous agents, vector search, and Retrieval-Augmented Generation (RAG). My tooling includes Pinecone, Weaviate, Qdrant, LangChain, LlamaIndex, LangGraph, and modern LLM providers like OpenAI, Anthropic, Gemini, Groq, and Ollama.\n\nBeyond engineering, I turn data into insights and insights into features that become products people rely on. I also create clear technical content—tutorials, docs, and demos—that helps teams adopt and extend complex systems with confidence.\n\nMy mission is simple: build tools that understand people, and empower people to build even better tools. Curiosity drives my work, from rapid ML prototyping to productionizing agents and automating end-to-end workflows.\n\nAlways open to collaborating with teams building the next generation of human-centered AI."
-  },
   "projects": {
-    "title": "Featured Projects",
-    "subtitle": "AI-powered platforms, intelligent tools, and full-stack applications built with modern technologies.",
-    "viewProject": "View Live",
-    "featured": "Featured",
-    "more": "More Projects",
-    "comingSoon": "Coming Soon",
-    "items": {
-      "mrp2026": {
-        "name": "Movie Recommendation Project 2026",
-        "shortDescription": "ML-powered movie rating predictor (public-leaderboard RMSE 0.82)",
-        "description": "An entry in a private ExploreAI Academy community prediction competition on Kaggle (ALX final project), using Hybrid LightGBM on 50-factor SVD matrix factorization. Engineered 156 features across 10M rows with no sampling — including collaborative signals, content-based encodings, and temporal dynamics. Public-leaderboard RMSE improved from 1.21 (baseline) to 0.82 across eight submissions; the final private result is pending.",
-        "technologies": [
-          "Python",
-          "LightGBM",
-          "scikit-learn",
-          "Pandas",
-          "NumPy",
-          "SciPy"
-        ],
-        "tags": ["Machine Learning", "Data Science"],
-        "tier": "secondary",
-        "category": "Data Engineering & Machine Learning"
-      },
-      "luminae": {
-        "name": "Luminae",
-        "shortDescription": "Autonomous research analysis platform with multi-agent AI swarm",
-        "description": "Upload any document and Luminae's 5 AI agents deliver methodology critique, dataset audit, experiment design, grant generation, and cross-agent synthesis. Uses Mistral AI's multimodal ecosystem for deep academic paper analysis.",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Mistral AI",
-          "FastAPI",
-          "Python",
-          "Supabase",
-          "Redis"
-        ],
-        "tags": ["AI Engineering", "LLM", "Autonomous Agents"],
-        "url": "https://luminae.qzz.io/",
-        "tier": "flagship",
-        "live": true,
-        "entered": "Entered — Mistral World Hackathon",
-        "metrics": [
-          { "label": "Orchestration", "value": "5-agent swarm" }
-        ]
-      },
-      "aiHealth": {
-        "name": "AI Health Chat",
-        "shortDescription": "AI health guidance on web and WhatsApp (live public beta)",
-        "description": "Live public beta. AI health triage and general guidance in five languages (English, Kiswahili, French, Spanish, Dutch) on an installable web app and WhatsApp, with photo triage, a health tracker and SOAP visit summaries. Educational guidance, not a diagnosis. First place at the Power Learn Project Class of 2024 graduate hackathon.",
-        "technologies": [
-          "React 19",
-          "Vite",
-          "Vercel",
-          "Supabase",
-          "Groq",
-          "OpenRouter",
-          "Mistral"
-        ],
-        "tags": ["AI Engineering", "Healthcare"],
-        "url": "https://aihealthchat.qzz.io/",
-        "tier": "flagship",
-        "live": true,
-        "award": "1st Place — PLP Class of 2024 Graduate Hackathon"
-      },
-      "sautiMtaani": {
-        "name": "Sauti Mtaani Nairobi",
-        "shortDescription": "Resident feedback platform for the Office of the Nairobi Woman Representative",
-        "description": "Official resident feedback platform for the Office of the Nairobi Woman Representative (Hon. Esther Passaris, NGAAF Patron, Nairobi County), in English and Kiswahili. Residents give consent, register their ward, age band and gender, answer a short 2–4 question poll and see privacy-safe live results, while authorised staff receive aggregate-only insight on representation, office responsiveness, NGAAF programmes and ward priorities. Results come from a self-selected group and are not a scientific poll; taking part has no effect on eligibility for bursaries or other services.",
-        "technologies": ["Next.js", "Vercel"],
-        "tags": ["Civic Tech", "Full-Stack"],
-        "url": "https://www.sautimtaani.site/",
-        "tier": "flagship",
-        "live": true,
-        "entered": "Built for the Office of the Nairobi Woman Representative",
-        "metrics": [
-          { "label": "Languages", "value": "English · Kiswahili" },
-          { "label": "Poll", "value": "2–4 questions" }
-        ]
-      },
-      "eyeSense": {
-        "name": "EyeSense",
-        "shortDescription": "AI visual assistance for blind and low-vision users",
-        "description": "\"Your world, described.\" An Android-first Flutter app that helps blind and low-vision users understand their surroundings. Describe Scene uses a Groq vision model behind a hardened Cloudflare Worker, Read Text runs 100% offline with Google ML Kit, and Ask a Question supports follow-ups, with Stop and Repeat controls throughout. Agents (AgentCoordinator, SceneAgent, ConversationAgent) work with an OutputPolicy layer for what is spoken. Users can use the hosted, rate-limited mode or bring their own Groq key, stored in secure storage. English and Kiswahili, Atkinson Hyperlegible font, a max-contrast theme and TalkBack-oriented design. Built for MUA Innovation Week 2026; contrast measurements and on-device TalkBack testing are still pending.",
-        "technologies": ["Flutter", "Cloudflare Workers", "TypeScript", "Groq", "Google ML Kit", "Vitest"],
-        "tags": ["AI Engineering", "Accessibility"],
-        "url": "#",
-        "tier": "flagship",
-        "entered": "Built for MUA Innovation Week 2026",
-        "metrics": [
-          { "label": "Read Text", "value": "100% offline" },
-          { "label": "Tests", "value": "24 Flutter · 10 Worker" }
-        ]
-      },
-      "autoResearcher": {
-        "name": "AutoResearcher",
-        "shortDescription": "Multi-agent crew that turns a prompt into a cited research report",
-        "description": "Capstone for Google's 5-Day AI Agents course. A 7-agent hierarchical system that turns a single prompt into a citation-rich research report, compiled to a LaTeX PDF. Built with the Vertex AI Agent Development Kit, Gemini 2.5 Pro and Flash, Tavily for web research, and Pandoc with LaTeX for the final document.",
-        "technologies": ["Vertex AI ADK", "Gemini 2.5 Pro", "Gemini 2.5 Flash", "Tavily", "Pandoc", "LaTeX", "Jupyter Notebook"],
-        "tags": ["AI Engineering", "Multi-Agent"],
-        "url": "#",
-        "tier": "flagship",
-        "entered": "Course Capstone — Google 5-Day AI Agents",
-        "metrics": [
-          { "label": "Architecture", "value": "7-agent hierarchy" },
-          { "label": "Output", "value": "Cited LaTeX PDF" }
-        ]
-      },
-      "liveInterviewer": {
-        "name": "Live Interviewer",
-        "shortDescription": "AI-powered interview question generator with premium UI",
-        "description": "Generates context-rich, scenario-driven interview questions tailored to any job role. Features Google-style UI/UX with Framer Motion animations, resilient API recovery engine, multi-model support (Mistral, Groq, Llama, Qwen), and installable PWA.",
-        "technologies": [
-          "Next.js 16",
-          "TypeScript",
-          "Tailwind CSS v4",
-          "Framer Motion",
-          "Mistral AI",
-          "Groq",
-          "PWA"
-        ],
-        "tags": ["AI Engineering", "Web App"],
-        "tier": "secondary",
-        "category": "AI Interview Tools"
-      },
-      "contentShapeshifterPro": {
-        "name": "Content Shapeshifter Pro",
-        "shortDescription": "Transform any content into platform-optimized posts with AI",
-        "description": "Scrapes URLs or articles and uses Groq AI with Llama 3 to generate 4 distinct platform variants: Twitter threads, LinkedIn posts, newsletters, and Instagram captions. Features one-click copy, real-time feedback, and elegant dark mode UI.",
-        "technologies": [
-          "Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Groq",
-          "Cheerio"
-        ],
-        "tags": ["AI Engineering", "Content Creation"],
-        "tier": "secondary",
-        "category": "AI Content Tools"
-      },
-      "serenityAI": {
-        "name": "SerenityAI",
-        "shortDescription": "AI-powered mental wellness companion",
-        "description": "An AI-powered mental wellness companion designed to help people better understand and care for their mental wellbeing. Features intelligent agents offering personalized emotional support, mood tracking, journaling insights, and pattern analysis.",
-        "technologies": [
-          "React",
-          "TypeScript",
-          "JacLang",
-          "Groq API",
-          "LLM Architecture",
-          "AI Agents"
-        ],
-        "tags": ["AI Engineering", "Mental Health"],
-        "url": "https://serenityai.qzz.io/",
-        "tier": "secondary",
-        "category": "AI & Wellness"
-      },
-      "tutaLearn": {
-        "name": "TutaLearn - African Educational Platform",
-        "shortDescription": "AI learning platform for Kenya's CBC curriculum",
-        "description": "AI-powered learning platform for Kenya's CBC curriculum on WhatsApp and web, in English and Kiswahili, usable without a smartphone. Live and in active development with early testers.",
-        "technologies": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Supabase",
-          "OpenRouter",
-          "M-Pesa (Daraja)",
-          "WhatsApp API"
-        ],
-        "tags": ["Software Engineering", "EdTech"],
-        "url": "https://www.tutalearn.study/",
-        "tier": "secondary",
-        "category": "AI & EdTech"
-      },
-      "codebaseGenius": {
-        "name": "Codebase Genius - AI Documentation System",
-        "shortDescription": "AI-powered platform for automatic GitHub documentation",
-        "description": "AI-powered platform for automatic GitHub documentation. Generates comprehensive docs from codebase analysis using LLMs, with graph-based code structure visualization.",
-        "technologies": [
-          "Python",
-          "TypeScript",
-          "Google Gemini API",
-          "Streamlit",
-          "NetworkX",
-          "FastAPI"
-        ],
-        "tags": ["AI Engineering", "Developer Tools"],
-        "url": "https://geniuscodebase.streamlit.app/",
-        "tier": "secondary",
-        "category": "AI Developer Tools"
-      }
-    }
+    "title": "Projects",
+    "subtitle": "Applied AI products, ML systems and web and mobile apps, with case studies on the engineering decisions behind them.",
+    "featured": "Featured case studies",
+    "more": "More projects",
+    "filterLabel": "Filter projects by category",
+    "filterAll": "All",
+    "showing_one": "Showing {{count}} project",
+    "showing_other": "Showing {{count}} projects",
+    "caseStudy": "Case study",
+    "liveApp": "Live app",
+    "viewSource": "View source",
+    "sourcePrivate": "Source private",
+    "sourcePublic": "Public repository",
+    "sourceNotListed": "Not listed",
+    "techLabel": "Technologies"
   },
   "education": {
     "title": "Education",
@@ -236,28 +37,26 @@
     "completed": "Completed",
     "items": {
       "bachelor_cs": {
-        "name": "Bachelor of Computer Science",
+        "name": "Bachelor of Science in Computer Science",
         "type": "ongoing",
         "institution": "University of the People (UoPeople)",
-        "period": "2025 – 2028 (Projected)",
-        "status": "In Progress",
+        "period": "2025 – expected 2028",
+        "status": "In progress",
         "description": [
-          "Honors: President's List, Term 5 of 2025-2026",
-          "Cumulative GPA: 3.98",
-          "Credits Earned: 45 / 120 (As of September 2026)",
-          "Pursuing a comprehensive degree in Computer Science with a focus on software engineering, algorithms, and modern technologies."
+          "Honours: President’s List, Term 5 of 2025–2026",
+          "Degree in progress, with a focus on software engineering and algorithms."
         ],
         "skills": []
       },
       "diploma_ict": {
-        "name": "Diploma in Information Communication Technology",
+        "name": "Diploma in Information and Communication Technology",
         "type": "completed",
         "institution": "Management University of Africa (MUA)",
         "period": "2021 – 2024",
         "status": "Completed",
         "description": [
           "Graduated with Distinction",
-          "Focus on modern software development and IT infrastructure"
+          "Focus on software development and IT infrastructure"
         ],
         "skills": [
           "Software Development",
@@ -266,38 +65,36 @@
         ]
       },
       "alx_ds": {
-        "name": "Data Science Program",
+        "name": "Data Science Programme (apprenticeship)",
         "type": "completed",
         "institution": "ALX",
         "period": "2025 – Apr 2026",
         "status": "Completed",
         "description": [
-          "Advanced from completed Data Analytics Cohort 2025",
-          "Advanced expertise in data cleaning, visualization, and interpretation using SQL, Power BI, and Tableau",
-          "Mastery of Advanced Python, Machine Learning, AI, and predictive modeling",
-          "Applying Agile methodologies for collaborative, real-world problem-solving"
+          "Follows the completed ALX Data Analytics programme (2025)",
+          "Python, SQL, Power BI and Tableau for analysis and visualisation",
+          "Machine learning, predictive modelling and model evaluation",
+          "Optional final project: the Movie Recommendation Project"
         ],
         "skills": [
+          "Python",
           "SQL",
-          "Power BI",
-          "Tableau",
-          "Advanced Python",
           "Machine Learning",
-          "AI",
-          "Agile",
-          "Data Science"
+          "Model Evaluation",
+          "Power BI",
+          "Tableau"
         ]
       },
       "plp_africa": {
-        "name": "Power Learn Project (PLP) Africa – Software Development Program",
+        "name": "Software Development Programme",
         "type": "completed",
         "institution": "Power Learn Project (PLP) Africa",
         "period": "Completed December 2024",
         "status": "Completed",
         "description": [
-          "Successfully completed a 16-week intensive program in Software Development",
-          "Specialized in Web Development, Python Development, and Database Development",
-          "Mastered Python, Web Technologies, Database Management, Dart with Flutter, and Soft Skills"
+          "16-week software development programme",
+          "Python, web development, databases and Dart with Flutter",
+          "1st place at the Class of 2024 graduate hackathon"
         ],
         "skills": [
           "Python",
@@ -315,8 +112,8 @@
         "period": "2025 – Present",
         "status": "In Progress",
         "description": [
-          "Mastering deep learning frameworks and computer vision techniques",
-          "Building and deploying real-world AI applications"
+          "Deep learning and computer vision techniques",
+          "Applied computer-vision projects"
         ],
         "skills": [
           "Deep Learning",
@@ -347,33 +144,28 @@
         "period": "2024",
         "status": "Completed",
         "description": [
-          "Intensive Python programming course from Stanford University",
-          "Completed diagnostic assessment and final project with distinction"
+          "Introductory Python programming course from Stanford University",
+          "Completed the diagnostic assessment and final project"
         ],
         "skills": [
           "Python",
-          "Programming Fundamentals",
-          "Diagnostic Badge",
-          "Final Project Badge"
+          "Programming Fundamentals"
         ]
       }
-    }
+    },
+    "degrees": "Degrees & diplomas",
+    "programmes": "Programmes & courses"
   },
   "badges": {
-    "title": "Badges & Certifications",
+    "title": "Certifications & learning",
     "certified": "Certified",
     "issuedBy": "Issued by",
     "expires": "Expires",
     "viewCertification": "View Certification",
-    "viewProfile": "View Profile",
     "badgesEarned": "badges earned",
     "moreSkills": "more",
-    "showMore": "Show More Certifications",
-    "showLess": "Show Fewer",
-    "alx_summary": {
-      "certification": "Data Analytics • Machine Learning • Data Science",
-      "description": "Three ALX Africa certificates covering the full data pipeline — analytics, machine learning, and data science."
-    },
+    "showMore": "Show digital badges",
+    "showLess": "Hide digital badges",
     "platforms": {
       "google_pca": {
         "platform": "Google Cloud",
@@ -506,16 +298,12 @@
       "google_adk": {
         "platform": "Google Cloud",
         "certification": "Engineer AI Agents with Agent Development Kit (ADK)",
-        "description": "Formulated real-world language model research problems; built a simple tokenizer; prepared datasets for training transformer language models; pretrained and fine-tuned LLMs.",
+        "description": "Google Cloud skill badge for building AI agents with the Agent Development Kit (ADK).",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/3495f598-449d-47c6-9321-6378f27f86a6",
         "skills": [
           "Agent Development Kit",
-          "AI Agents",
-          "LLM Fine-Tuning",
-          "Model Training",
-          "Pretraining LLMs",
-          "Tokenization"
+          "AI Agents"
         ]
       },
       "google_security": {
@@ -587,7 +375,11 @@
         "description": "Demonstrates foundational knowledge of Generative AI principles, applications, and ethical considerations.",
         "issued_by": "BCS, The Chartered Institute for IT",
         "credential_url": "https://somas.ouk.ac.ke/mod/customcert/verify_certificate.php?code=ICaIFl00uF&qrcode=1&contextid=236583",
-        "skills": ["Generative AI", "AI Ethics", "AI Principles"]
+        "skills": [
+          "Generative AI",
+          "AI Ethics",
+          "AI Principles"
+        ]
       },
       "google_skills": {
         "platform": "Google Skills",
@@ -595,7 +387,14 @@
         "issued_by": "Google",
         "profile_url": "https://www.skills.google/public_profiles/5d88baf2-c5cf-40af-bc9e-e995812ff504",
         "badges_count": "27",
-        "skills": ["Google Cloud", "AI/ML", "Cloud Security", "Serverless", "Prompt Design", "MLOps"]
+        "skills": [
+          "Google Cloud",
+          "AI/ML",
+          "Cloud Security",
+          "Serverless",
+          "Prompt Design",
+          "MLOps"
+        ]
       },
       "google_prompt_design": {
         "platform": "Google Cloud",
@@ -603,7 +402,12 @@
         "description": "Practical skills in designing and optimizing prompts for Large Language Models using Vertex AI.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/c05f7979-d999-4b37-a1cd-9c566e2c0a40",
-        "skills": ["Prompt Engineering", "Large Language Models", "Vertex AI", "Generative AI"]
+        "skills": [
+          "Prompt Engineering",
+          "Large Language Models",
+          "Vertex AI",
+          "Generative AI"
+        ]
       },
       "aws_educate_genai": {
         "platform": "AWS Educate",
@@ -611,7 +415,12 @@
         "description": "Foundational understanding of generative AI concepts, including large language models, prompt engineering, and responsible AI principles for real-world cloud applications.",
         "issued_by": "Amazon Web Services (AWS)",
         "credential_url": "https://www.credly.com/badges/d6a0ac7a-2275-4b4b-b2b7-66b1e2b2ee73",
-        "skills": ["Generative AI", "Large Language Models", "Prompt Engineering", "Responsible AI"]
+        "skills": [
+          "Generative AI",
+          "Large Language Models",
+          "Prompt Engineering",
+          "Responsible AI"
+        ]
       },
       "aws_educate_ml": {
         "platform": "AWS Educate",
@@ -619,7 +428,13 @@
         "description": "Introductory knowledge of machine learning concepts, including supervised and unsupervised learning, model training, evaluation, and deployment strategies on AWS.",
         "issued_by": "Amazon Web Services (AWS)",
         "credential_url": "https://www.credly.com/badges/bcc32848-a45f-4aff-87f4-2aa53ace81e8",
-        "skills": ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Model Training", "AWS"]
+        "skills": [
+          "Machine Learning",
+          "Supervised Learning",
+          "Unsupervised Learning",
+          "Model Training",
+          "AWS"
+        ]
       },
       "ibm_granite": {
         "platform": "IBM",
@@ -627,7 +442,13 @@
         "description": "Hands-on training in code generation, optimization, and AI-assisted software development using IBM Granite models. Covers prompt-based code synthesis and performance tuning.",
         "issued_by": "IBM",
         "credential_url": "https://www.credly.com/badges/c5dcd4da-3757-4893-945b-50ca7d025ec2",
-        "skills": ["Code Generation", "IBM Granite", "AI-Assisted Development", "Prompt Engineering", "Code Optimization"]
+        "skills": [
+          "Code Generation",
+          "IBM Granite",
+          "AI-Assisted Development",
+          "Prompt Engineering",
+          "Code Optimization"
+        ]
       },
       "linux_lfs250": {
         "platform": "The Linux Foundation",
@@ -635,7 +456,14 @@
         "description": "Understanding of cloud native architecture and container orchestration, the high-level architecture of Kubernetes, and cloud native observability and application delivery with CI/CD and GitOps tools.",
         "issued_by": "The Linux Foundation",
         "credential_url": "https://www.credly.com/badges/e266ef63-cdbe-42c5-bdeb-aec0b47bb523",
-        "skills": ["Kubernetes", "Cloud Native Architecture", "Containers", "GitOps", "CI/CD", "Observability"]
+        "skills": [
+          "Kubernetes",
+          "Cloud Native Architecture",
+          "Containers",
+          "GitOps",
+          "CI/CD",
+          "Observability"
+        ]
       },
       "mckinsey_forward": {
         "platform": "McKinsey.org",
@@ -643,7 +471,12 @@
         "description": "Completed the McKinsey.org Forward online learning program: the McKinsey approach to problem-solving, effective communication, adaptable mindsets and habits, and a foundational digital toolkit.",
         "issued_by": "McKinsey.org",
         "credential_url": "https://www.credly.com/badges/446ab0ba-2de5-49c4-9434-3930ab276aaf",
-        "skills": ["Problem Solving", "Communication", "Adaptability", "Digital Toolkit"]
+        "skills": [
+          "Problem Solving",
+          "Communication",
+          "Adaptability",
+          "Digital Toolkit"
+        ]
       },
       "google_app_dev_env": {
         "platform": "Google Cloud",
@@ -651,7 +484,13 @@
         "description": "Skill badge for building and connecting storage-centric cloud infrastructure with Cloud Storage, Identity and Access Management, Cloud Functions, and Pub/Sub.",
         "issued_by": "Google Cloud",
         "credential_url": "https://www.credly.com/badges/80fb5417-b117-4789-878f-c154e6685892",
-        "skills": ["Cloud Storage", "IAM", "Cloud Functions", "Pub/Sub", "Monitoring"]
+        "skills": [
+          "Cloud Storage",
+          "IAM",
+          "Cloud Functions",
+          "Pub/Sub",
+          "Monitoring"
+        ]
       },
       "microsoft_ai_skills": {
         "platform": "Microsoft Elevate",
@@ -659,7 +498,12 @@
         "description": "Recognises cumulative achievement across AI learning experiences using tools in the Microsoft ecosystem, such as Microsoft Copilot and Copilot Studio.",
         "issued_by": "Microsoft Elevate",
         "credential_url": "https://www.credly.com/badges/26b4ec5b-a305-4ab4-ba6b-8be05e7d1856",
-        "skills": ["Generative AI", "Prompting", "Responsible Use of AI", "Innovation"]
+        "skills": [
+          "Generative AI",
+          "Prompting",
+          "Responsible Use of AI",
+          "Innovation"
+        ]
       },
       "ibm_data_fundamentals": {
         "platform": "IBM SkillsBuild",
@@ -667,7 +511,13 @@
         "description": "Knowledge of data analytics concepts, data science methodology, and the tools used in the data ecosystem, including a conceptual understanding of cleaning, refining, and visualizing data with IBM Watson Studio.",
         "issued_by": "IBM SkillsBuild",
         "credential_url": "https://www.credly.com/badges/9951d70b-194f-44b8-91af-ee174cc73483",
-        "skills": ["Data Analysis", "Data Science", "Data Visualization", "Watson Studio", "Data Cleaning"]
+        "skills": [
+          "Data Analysis",
+          "Data Science",
+          "Data Visualization",
+          "Watson Studio",
+          "Data Cleaning"
+        ]
       },
       "ibm_cybersecurity_fundamentals": {
         "platform": "IBM SkillsBuild",
@@ -675,28 +525,50 @@
         "description": "Foundational understanding of cybersecurity concepts and practices, including threat groups, attack types, social engineering, cryptography, and how organizations prevent, detect, and respond to cyber attacks.",
         "issued_by": "IBM SkillsBuild",
         "credential_url": "https://www.credly.com/badges/1b491137-814a-4f22-b67e-c4ea05586626",
-        "skills": ["Cybersecurity", "Cryptography", "Social Engineering", "Incident Response", "Threat Analysis"]
+        "skills": [
+          "Cybersecurity",
+          "Cryptography",
+          "Social Engineering",
+          "Incident Response",
+          "Threat Analysis"
+        ]
       }
-    }
+    },
+    "subtitle": "Professional certifications, programme certificates and digital learning badges are listed separately.",
+    "professional": "Professional certifications",
+    "programmes": "Programme certificates",
+    "digital": "Digital badges & course completions",
+    "skills": "Skills"
   },
   "contact": {
-    "title": "Contact Me",
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Your Message",
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
     "send": "Send Message",
     "sending": "Sending...",
-    "success": "Message sent successfully!",
-    "error": "Failed to send message. Please try again."
+    "success": "Thanks, your message was sent. I’ll get back to you soon.",
+    "error": "Failed to send message. Please try again.",
+    "subtitle": "Questions about a role, a collaboration or a project? Send a message and I’ll reply by email.",
+    "messageHint": "Up to {{max}} characters.",
+    "errorRequired": "Please fill in your name, email and message.",
+    "otherTitle": "Prefer LinkedIn?",
+    "otherText": "You can also reach me through LinkedIn messages.",
+    "linkedin": "Message me on LinkedIn",
+    "privacy": "Messages are delivered through Formspree and used only to reply to you."
   },
   "showcase": {
-    "title": "Showcase",
-    "description": "A curated playlist of recorded project presentations, live demos, and technical walkthroughs showcasing real-world applications I've built."
+    "title": "Demo videos",
+    "description": "Recorded project presentations, demos and technical walkthroughs.",
+    "load": "Load the demo playlist",
+    "privacy": "Loads the YouTube player (youtube-nocookie.com).",
+    "iframeTitle": "Project demo playlist on YouTube",
+    "openOnYoutube": "Open the playlist on YouTube"
   },
   "writing": {
-    "title": "Writing & Insights",
-    "subtitle": "Essays and field notes on AI engineering, code quality, and shipping software that lasts.",
-    "readMore": "Read on LinkedIn",
+    "title": "Writing & demos",
+    "subtitle": "Articles on AI-assisted engineering and production readiness, plus recorded demos.",
+    "readMore": "More writing on LinkedIn",
     "items": [
       {
         "title": "Code Review Is the Firewall Against AI Slop",
@@ -713,22 +585,6 @@
         "url": "#"
       }
     ]
-  },
-  "skills": {
-    "aiData": "AI & Data Science",
-    "frontendMobile": "Frontend & Mobile",
-    "backendCloud": "Backend & Cloud",
-    "viewLinkedIn": "View My LinkedIn Profile"
-  },
-  "menu": {
-    "profile": "Profile",
-    "projects": "Projects",
-    "showcase": "Showcase",
-    "education": "Education",
-    "writing": "Writing",
-    "badges": "Badges",
-    "contact": "Contact Me",
-    "services": "Services"
   },
   "language": {
     "en": "English",
@@ -756,6 +612,142 @@
       "What AI/ML technologies does Ray work with?",
       "How can I contact Ray?",
       "What makes Ray stand out as a developer?"
+    ],
+    "pageTitle": "AI chat about Raymond’s work",
+    "conversation": "Conversation",
+    "thinking": "Thinking…",
+    "inputLabel": "Your question",
+    "send": "Send message"
+  },
+  "common": {
+    "newTab": "opens in a new tab",
+    "close": "Close",
+    "cancel": "Cancel"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "expertise": "Skills",
+    "education": "Education",
+    "credentials": "Credentials",
+    "writing": "Writing",
+    "contact": "Contact",
+    "chat": "AI Chat",
+    "services": "Services",
+    "mainNav": "Main",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "darkMode": "Dark mode",
+    "language": "Language",
+    "skipToContent": "Skip to main content"
+  },
+  "hero": {
+    "location": "Nairobi, Kenya",
+    "title": "Software & AI Engineer",
+    "supporting": "Applied AI · Machine Learning · Agentic Systems · Cloud & Full-Stack Engineering",
+    "intro": "I design and build intelligent software that addresses practical challenges in healthcare, education, accessibility and civic participation. Since 2024, my applied AI work has spanned machine learning, multimodal models, agent workflows and full-stack applications. I focus on reliability, thoughtful user experience, privacy, accessibility, testing and responsible deployment, not just prototypes.",
+    "portraitAlt": "Portrait of Raymond Klanderman",
+    "ctaProjects": "Explore projects",
+    "ctaGithub": "View GitHub",
+    "ctaDownloadCv": "Download CV",
+    "ctaContact": "Contact me",
+    "liveWork": "Live now"
+  },
+  "about": {
+    "title": "About",
+    "summary": "I’m a software and AI engineer building practical systems for healthcare, education, accessibility and public participation. My work combines LLM applications, machine learning, agentic workflows, modern web and mobile engineering, and cloud infrastructure. Across independent products and challenge projects, I’ve worked on model evaluation, safety controls, structured outputs, data privacy and reliable deployment. I aim to make emerging technology useful to people and communities.",
+    "openTo": "Open to software engineering, AI/ML and data roles, and to collaborations on human-centred AI.",
+    "backgroundTitle": "Background",
+    "background": "Alongside engineering, I have a background in digital media: I was Digital Media Specialist at the Office of the Nairobi Woman Representative (2017–2024) and Media Specialist on contract with the Pan-African Parliament (2025). I trained through Power Learn Project (2024) and the ALX Data Science programme (2025–2026), and I am studying for a BSc in Computer Science at the University of the People.",
+    "highlightsTitle": "At a glance",
+    "highlights": [
+      {
+        "title": "Live AI products",
+        "text": "AI Health Chat (public beta), TutaLearn, Sauti Mtaani Nairobi and Luminae are live on the web."
+      },
+      {
+        "title": "Safety and privacy controls",
+        "text": "Row Level Security, consent flows, PII scrubbing, budget caps and staff approval of AI suggestions."
+      },
+      {
+        "title": "Measured ML results",
+        "text": "Hybrid SVD + LightGBM recommender on ~10M ratings: public-leaderboard RMSE 1.21 → 0.82."
+      },
+      {
+        "title": "Accessible and multilingual",
+        "text": "EyeSense for blind and low-vision users; products in English and Kiswahili, and AI Health Chat in five languages."
+      },
+      {
+        "title": "Cloud and agents",
+        "text": "Google Cloud Professional Cloud Architect; the five-agent Luminae and a seven-agent Vertex AI ADK capstone."
+      },
+      {
+        "title": "Recognition",
+        "text": "1st place at the Power Learn Project Class of 2024 graduate hackathon; President’s List at University of the People."
+      }
     ]
+  },
+  "caseStudy": {
+    "breadcrumb": "Breadcrumb",
+    "atAGlance": "At a glance",
+    "role": "Role",
+    "status": "Status",
+    "type": "Type of work",
+    "context": "Context",
+    "years": "Years",
+    "categories": "Categories",
+    "source": "Source code",
+    "techStack": "Technology",
+    "problem": "Problem",
+    "users": "Who it’s for",
+    "built": "What I built",
+    "architecture": "Architecture",
+    "challenges": "Engineering challenges",
+    "quality": "Quality and trust",
+    "results": "Results",
+    "resultsCaption": "Results for {{name}} with their evidence source",
+    "measure": "Measure",
+    "value": "Value",
+    "evidence": "Evidence",
+    "limitations": "Limitations",
+    "watchDemo": "Watch the demo video",
+    "moreProjects": "More projects",
+    "previous": "Previous",
+    "next": "Next",
+    "allProjects": "All projects"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional roles, and the training programmes behind my engineering work.",
+    "roles": "Professional roles",
+    "training": "Training & apprenticeships",
+    "related": "Related projects"
+  },
+  "expertise": {
+    "title": "Technical expertise",
+    "subtitle": "Grouped by discipline, and limited to tools used in the projects and training shown on this site."
+  },
+  "cvModal": {
+    "title": "Request my CV",
+    "description": "Leave your email address and I’ll send you my current CV.",
+    "emailLabel": "Your email",
+    "noteLabel": "Role or organisation (optional)",
+    "submit": "Send request",
+    "success": "Request sent. Raymond will reply by email.",
+    "error": "The request could not be sent. Please try again.",
+    "errorEmail": "Please enter your email address."
+  },
+  "footer": {
+    "social": "Social profiles"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "projectTitle": "Project not found",
+    "text": "The page you were looking for doesn’t exist or has moved.",
+    "home": "Go to the home page",
+    "projects": "Browse projects",
+    "featured": "Featured case studies"
   }
 }

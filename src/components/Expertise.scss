@@ -1,0 +1,23 @@
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 1.25rem;
+}
+
+.expertise-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border-color);
+  background: var(--surface-1);
+
+  h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.35rem;
+  }
+
+  p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+}

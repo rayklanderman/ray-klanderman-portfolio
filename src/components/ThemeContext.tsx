@@ -1,11 +1,14 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState, ReactNode } from 'react';
 
-type Theme = 'light' | 'dark';
+export type Theme = 'light' | 'dark';
 
 interface ThemeContextType {
   theme: Theme;
   toggleTheme: () => void;
 }
+
+/** Only explicit choices are stored, under a new key, so the cream light theme is the default. */
+export const THEME_STORAGE_KEY = 'colorTheme';
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
@@ -18,34 +21,30 @@ export const useTheme = () => {
   return context;
 };
 
-interface ThemeProviderProps {
-  children: ReactNode;
-}
+const readDomTheme = (): Theme =>
+  document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
 
-const getInitialTheme = (): Theme => {
-  if (typeof window === 'undefined') return 'dark';
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
-  // No saved choice: Forest-Ink dark is the brand-primary presentation; follow the system if it asks for light
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-};
-
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-  const [theme, setTheme] = useState<Theme>(getInitialTheme);
+/**
+ * The inline script in index.html sets `data-theme` before first paint. React state starts
+ * as 'light' on both server and client (so hydration matches) and syncs from the DOM after mount.
+ */
+export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const [theme, setTheme] = useState<Theme>('light');
 
   useEffect(() => {
-    // Apply theme to document
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+    setTheme(readDomTheme());
+  }, []);
 
-  const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
-  };
+  const toggleTheme = useCallback(() => {
+    const next: Theme = readDomTheme() === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', next);
+    try {
+      localStorage.setItem(THEME_STORAGE_KEY, next);
+    } catch {
+      // storage unavailable; the choice lasts for this page view only
+    }
+    setTheme(next);
+  }, []);
 
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;
 };

@@ -1,54 +1,50 @@
-import { FC } from 'react';
-import { motion } from 'framer-motion';
+import { FC, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FaPlay, FaYoutube } from 'react-icons/fa';
+import { LINKS } from '../data/site';
 import './Showcase.scss';
 
+/**
+ * Demo playlist. The YouTube player (~1 MB of third-party script) loads only after
+ * the visitor asks for it; until then a lightweight placeholder is shown.
+ */
 const Showcase: FC = () => {
   const { t } = useTranslation();
+  const [loaded, setLoaded] = useState(false);
 
   return (
-    <section id="showcase" className="showcase-section">
-      <div className="container">
-        <motion.h2 
-          className="section-title"
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          {t('showcase.title')}
-        </motion.h2>
-
-        <motion.p
-          className="section-subtitle"
-          initial={{ y: 20, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          viewport={{ once: true }}
-        >
-          {t('showcase.description')}
-        </motion.p>
-        
-        <motion.div 
-          className="video-container"
-          initial={{ y: 30, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          <iframe 
-            className="video-iframe"
-            src="https://www.youtube.com/embed/videoseries?si=55iPflPwk5-WWJ2g&amp;list=PL6L2igbPbRQjRmYLSaT5QH-lKJhYJsk4G" 
-            title="My Showcase Playlist" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    <div id="showcase" className="showcase">
+      <h3 id="showcase-title" className="showcase__title">
+        {t('showcase.title')}
+      </h3>
+      <p className="showcase__description">{t('showcase.description')}</p>
+      <div className="showcase__frame">
+        {loaded ? (
+          <iframe
+            className="showcase__iframe"
+            src={`${LINKS.showcaseEmbed}&autoplay=1`}
+            title={t('showcase.iframeTitle')}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            loading="lazy"
             allowFullScreen
-          ></iframe>
-        </motion.div>
+          />
+        ) : (
+          <button type="button" className="showcase__placeholder" onClick={() => setLoaded(true)}>
+            <span className="showcase__play" aria-hidden="true">
+              <FaPlay />
+            </span>
+            <span className="showcase__label">{t('showcase.load')}</span>
+            <span className="showcase__hint">{t('showcase.privacy')}</span>
+          </button>
+        )}
       </div>
-    </section>
+      <p className="showcase__link">
+        <a href={LINKS.showcasePlaylist} target="_blank" rel="noopener noreferrer" className="text-link">
+          <FaYoutube aria-hidden="true" /> {t('showcase.openOnYoutube')}
+          <span className="visually-hidden"> ({t('common.newTab')})</span>
+        </a>
+      </p>
+    </div>
   );
 };
 

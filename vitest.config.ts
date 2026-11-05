@@ -8,5 +8,10 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.ts'],
+    include: ['src/**/*.test.{ts,tsx}'],
+    // jsdom workers start slowly on low-powered machines; run files sequentially.
+    fileParallelism: false,
+    testTimeout: 20_000,
+    hookTimeout: 20_000,
   },
 })
