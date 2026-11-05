@@ -20,6 +20,7 @@ const OWNER_LIVE_URLS: Record<string, string> = {
   postshifterpro: 'https://postshifterpro.qzz.io/',
   'live-interviewer': 'https://liveinterviewer.vercel.app/',
   'sauti-mtaani-nairobi': 'https://www.sautimtaani.site/',
+  'kazi-connect': 'https://kazi-connect.vercel.app/',
 };
 
 const PRIVATE_REPO_NAMES = ['ai-health-chat', 'tutalearn', 'Serenity-AI', 'live-interviewer', 'kazi-connect', 'UrbanSpark'];
